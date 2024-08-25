@@ -1,0 +1,2478 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+
+.backgroundspread{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+.wave1{
+    position: relative;
+    top: 565px;
+    width: 100%;
+    height:400px;
+    background: url(wave1.png);
+    background-repeat: repeat-x;
+    opacity: 0.06;
+    animation: animate 10s linear infinite;
+    backdrop-filter: blur(5px);
+}
+.bg1{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height:100px;
+    background: #8296F9;
+    opacity: 1;
+    display:block;
+    background-repeat: repeat-x;
+}
+.wave2{
+    position: relative;
+    top: 565px;
+    width: 100%;
+    height:400px;
+    background: url(wave2.png);
+    background-repeat: repeat-x;
+    opacity: 0.6;
+    display:block;
+    animation: animate 16s linear infinite;
+    backdrop-filter: blur(5px);
+}
+.bg2{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height:100px;
+    background: #4CBEFF;
+    opacity: 1;
+    display:block;
+    background-repeat: repeat-x;
+}
+.wave3{
+    position: relative;
+    top: 565px;
+    width: 100%;
+    height:400px;
+    background: url(wave3.png);
+    background-repeat: repeat-x;
+    opacity: 0.2;
+    display:block;
+    animation: animate 12s linear infinite;
+    backdrop-filter: blur(5px);
+}
+.bg3{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height:100px;
+    background: #73D148;
+    opacity: 1;
+    display:block;
+    background-repeat: repeat-x;
+}
+.bubbleone{
+    position: relative;
+    top: 600px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.3;
+    animation: lift 10s linear infinite, disappear 10s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.bubbletwo{
+    position: relative;
+    top: 600px;
+    left: 350px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.2;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+}
+.bubblethree{
+    position: relative;
+    top: 600px;
+    left: 550px;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.4;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 15s linear infinite, disappear 15s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+.bubblefour{
+    position: relative;
+    top: 600px;
+    left: 800px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.1;
+    animation: lift 20s linear infinite, disappear 20s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+}
+.bubblefive{
+    position: relative;
+    top: 600px;
+    left: 1000px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.2;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.bubblesix{
+    position: relative;
+    top: 600px;
+    left: 1310px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #8296F9;
+    color: #8296F9;
+    opacity: 0.3;
+    animation: lift 14s linear infinite, disappear 14s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+.dlostbubbleone{
+    position: relative;
+    top: 600px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #8296F9;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    opacity: 0.3;
+    animation: lift 10s linear infinite, disappear 10s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.dlostbubbletwo{
+    position: relative;
+    top: 600px;
+    left: 350px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: hsl(230, 91%, 74%);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.2;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+}
+.dlostbubblethree{
+    position: relative;
+    top: 600px;
+    left: 550px;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    color: #8296F9;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.4;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 15s linear infinite, disappear 15s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+.dlostbubblefour{
+    position: relative;
+    top: 600px;
+    left: 800px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: #8296F9;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.1;
+    animation: lift 20s linear infinite, disappear 20s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+}
+.dlostbubblefive{
+    position: relative;
+    top: 600px;
+    left: 1000px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #8296F9;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.2;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.dlostbubblesix{
+    position: relative;
+    top: 600px;
+    left: 1310px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #8296F9;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.3;
+    animation: lift 14s linear infinite, disappear 14s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+.lostbubbleone{
+    position: relative;
+    top: 600px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.3;
+    animation: lift 10s linear infinite, disappear 10s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+
+.lostbubbletwo{
+    position: relative;
+    top: 600px;
+    left: 350px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.2;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+}
+
+.lostbubblethree{
+    position: relative;
+    top: 600px;
+    left: 550px;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0.4;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 15s linear infinite, disappear 15s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+
+.lostbubblefour{
+    position: relative;
+    top: 600px;
+    left: 800px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.1;
+    animation: lift 20s linear infinite, disappear 20s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+}
+
+.lostbubblefive{
+    position: relative;
+    top: 600px;
+    left: 1000px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.2;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+
+.lostbubblesix{
+    position: relative;
+    top: 600px;
+    left: 1310px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: #d8d8d8;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.3;
+    animation: lift 14s linear infinite, disappear 14s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+
+
+.jsbubbleone{
+    position: relative;
+    top: 600px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.3;
+    animation: lift 10s linear infinite, disappear 10s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.jsbubbletwo{
+    position: relative;
+    top: 600px;
+    left: 350px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.2;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+}
+.jsbubblethree{
+    position: relative;
+    top: 600px;
+    left: 550px;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.4;
+    transition: 100ms ease-in-out 100ms;
+    animation: lift 15s linear infinite, disappear 15s linear infinite;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+.jsbubblefour{
+    position: relative;
+    top: 600px;
+    left: 800px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.1;
+    animation: lift 20s linear infinite, disappear 20s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+}
+.jsbubblefive{
+    position: relative;
+    top: 600px;
+    left: 1000px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.2;
+    animation: lift 12s linear infinite, disappear 12s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+}
+.jsbubblesix{
+    position: relative;
+    top: 600px;
+    left: 1310px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+    opacity: 0.3;
+    animation: lift 14s linear infinite, disappear 14s linear infinite;
+    transition: 100ms ease-in-out 100ms;
+    text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+}
+
+
+.four{
+    position: absolute;
+    top: -170px;
+    font-size: 500px;
+    font-weight: 400;
+    color: #0010552f;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+.zero{
+    position: absolute;
+    bottom: 30px;
+    left: 390px;
+    background-image: transparent;
+    border: 3px solid #0010552f;
+    border-radius: 600px;
+    height: 650px;
+    width: 650px;
+    color: #d2daff17;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+.fourtwo{
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    font-size: 500px;
+    font-weight: 400;
+    color: #0010552f;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+.dfour{
+    position: absolute;
+    top: -170px;
+    font-size: 500px;
+    font-weight: 400;
+    color: #6461ff21;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+.dzero{
+    position: absolute;
+    bottom: 30px;
+    left: 390px;
+    background-image: transparent;
+    border: 3px solid #6461ff21;
+    border-radius: 600px;
+    height: 650px;
+    width: 650px;
+    color: #d2daff17;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+.dfourtwo{
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    font-size: 500px;
+    font-weight: 400;
+    color: #6461ff21;
+    font: 'Merriweather';
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+
+@keyframes animate{
+    0%{
+        background-position-x: 0px;        
+    }
+    5%{
+        background-position-x: 40px;
+    }
+    45%{
+        background-position-x: 900px;
+    }
+    48%{
+        background-position-x: 930px;
+    }
+    50%{
+        background-position-x: 940px;
+    }
+    52%{
+        background-position-x: 930px;
+    }
+    55%{
+        background-position-x: 900px;
+    }
+    95%{
+        background-position-x: 40px;
+    }
+    100%{
+        background-position-x: 0px;  
+    }
+}
+
+@keyframes lift{
+    0%{
+        position: relative;
+        top: 700px; 
+    }    
+    100%{
+        position: relative;
+        top: 0px; 
+    }
+}
+@keyframes disappear{
+    0%{
+        opacity: 1;
+    }    
+    50%{
+        opacity: 0.5; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    100%{
+        opacity: 0; 
+    }
+}
+
+@media screen and (max-width:520px) {
+    .backgroundspread{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+    }
+    .wave1{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave1.png);
+        background-repeat: repeat-x;
+        opacity: 0.06;
+        animation: animate 10s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg1{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #8296F9;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave2{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave2.png);
+        background-repeat: repeat-x;
+        opacity: 0.6;
+        display:block;
+        animation: animate 16s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg2{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #4CBEFF;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave3{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave3.png);
+        background-repeat: repeat-x;
+        opacity: 0.2;
+        display:block;
+        animation: animate 12s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg3{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #73D148;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .bubbleone{        
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .bubbletwo{        
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .bubblethree{        
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .bubblefour{
+        display:none;
+    }
+    .bubblefive{
+        display:none;
+    }
+    .bubblesix{
+        display:none;
+    }
+    .dlostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .dlostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: hsl(230, 91%, 74%);
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .dlostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .dlostbubblefour{
+        display: none;
+    }
+    .dlostbubblefive{
+        display: none;
+    }
+    .dlostbubblesix{
+        display: none;
+    }
+    .lostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    
+    .lostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    
+    .lostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    
+    .lostbubblefour{
+        display: none;
+    }
+    
+    .lostbubblefive{
+        display: none;
+    }
+    
+    .lostbubblesix{
+        display: none;
+    }
+    .four{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .zero{
+        position: absolute;
+        bottom: 110px;
+        left: 2%;
+        background-image: transparent;
+        border: 3px solid #0010552f;
+        border-radius: 600px;
+        height: 440px;
+        width: 440px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .fourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfour{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dzero{
+        position: absolute;
+        bottom: 110px;
+        left: 2%;
+        background-image: transparent;
+        border: 3px solid #6461ff21;
+        border-radius: 600px;
+        height: 440px;
+        width: 440px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .jsbubbleone{
+        position: relative;
+        top: 600px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .jsbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 350px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .jsbubblethree{
+        position: relative;
+        top: 600px;
+        left: 550px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .jsbubblefour{
+        display: none;
+    }
+    .jsbubblefive{
+        display: none;
+    }
+    .jsbubblesix{
+        display: none;
+    }
+}
+@media screen and (max-width:612px) and (min-width:520px){
+    .backgroundspread{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+    }
+    .wave1{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave1.png);
+        background-repeat: repeat-x;
+        opacity: 0.06;
+        animation: animate 10s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg1{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #8296F9;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave2{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave2.png);
+        background-repeat: repeat-x;
+        opacity: 0.6;
+        display:block;
+        animation: animate 16s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg2{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #4CBEFF;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave3{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave3.png);
+        background-repeat: repeat-x;
+        opacity: 0.2;
+        display:block;
+        animation: animate 12s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg3{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #73D148;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .bubbleone{        
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .bubbletwo{        
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .bubblethree{        
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .bubblefour{
+        display:none;
+    }
+    .bubblefive{
+        display:none;
+    }
+    .bubblesix{
+        display:none;
+    }
+    .dlostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .dlostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: hsl(230, 91%, 74%);
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .dlostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .dlostbubblefour{
+        display: none;
+    }
+    .dlostbubblefive{
+        display: none;
+    }
+    .dlostbubblesix{
+        display: none;
+    }
+    .lostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    
+    .lostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    
+    .lostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    
+    .lostbubblefour{
+        display: none;
+    }
+    
+    .lostbubblefive{
+        display: none;
+    }
+    
+    .lostbubblesix{
+        display: none;
+    }
+    .four{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .zero{
+        position: absolute;
+        bottom: 80px;
+        left: 2%;
+        background-image: transparent;
+        border: 3px solid #0010552f;
+        border-radius: 600px;
+        height: 500px;
+        width: 500px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .fourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfour{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dzero{
+        position: absolute;
+        bottom: 80px;
+        left: 2%;
+        background-image: transparent;
+        border: 3px solid #6461ff21;
+        border-radius: 600px;
+        height: 500px;
+        width: 500px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .jsbubbleone{
+        position: relative;
+        top: 600px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .jsbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 350px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .jsbubblethree{
+        position: relative;
+        top: 600px;
+        left: 550px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .jsbubblefour{
+        display: none;
+    }
+    .jsbubblefive{
+        display: none;
+    }
+    .jsbubblesix{
+        display: none;
+    }
+}
+@media screen and (max-width:680px) and (min-width:612px){
+    .backgroundspread{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+    }
+    .wave1{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave1.png);
+        background-repeat: repeat-x;
+        opacity: 0.06;
+        animation: animate 10s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg1{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #8296F9;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave2{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave2.png);
+        background-repeat: repeat-x;
+        opacity: 0.6;
+        display:block;
+        animation: animate 16s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg2{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #4CBEFF;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave3{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave3.png);
+        background-repeat: repeat-x;
+        opacity: 0.2;
+        display:block;
+        animation: animate 12s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg3{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #73D148;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .bubbleone{        
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .bubbletwo{        
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .bubblethree{        
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .bubblefour{
+        display:none;
+    }
+    .bubblefive{
+        display:none;
+    }
+    .bubblesix{
+        display:none;
+    }
+    .dlostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .dlostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: hsl(230, 91%, 74%);
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .dlostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .dlostbubblefour{
+        display: none;
+    }
+    .dlostbubblefive{
+        display: none;
+    }
+    .dlostbubblesix{
+        display: none;
+    }
+    .lostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    
+    .lostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    
+    .lostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    
+    .lostbubblefour{
+        display: none;
+    }
+    
+    .lostbubblefive{
+        display: none;
+    }
+    
+    .lostbubblesix{
+        display: none;
+    }
+    .four{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .zero{
+        position: absolute;
+        bottom: 60px;
+        left: 6%;
+        background-image: transparent;
+        border: 3px solid #0010552f;
+        border-radius: 600px;
+        height: 540px;
+        width: 540px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .fourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfour{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dzero{
+        position: absolute;
+        bottom: 60px;
+        left: 6%;
+        background-image: transparent;
+        border: 3px solid #6461ff21;
+        border-radius: 600px;
+        height: 540px;
+        width: 540px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .jsbubbleone{
+        position: relative;
+        top: 600px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .jsbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 350px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .jsbubblethree{
+        position: relative;
+        top: 600px;
+        left: 550px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .jsbubblefour{
+        display: none;
+    }
+    .jsbubblefive{
+        display: none;
+    }
+    .jsbubblesix{
+        display: none;
+    }
+}
+@media screen and (max-width:840px) and (min-width:679px) {
+    .backgroundspread{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+    }
+    .wave1{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave1.png);
+        background-repeat: repeat-x;
+        opacity: 0.06;
+        animation: animate 10s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg1{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #8296F9;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave2{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave2.png);
+        background-repeat: repeat-x;
+        opacity: 0.6;
+        display:block;
+        animation: animate 16s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg2{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #4CBEFF;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave3{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave3.png);
+        background-repeat: repeat-x;
+        opacity: 0.2;
+        display:block;
+        animation: animate 12s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg3{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #73D148;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .bubbleone{        
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .bubbletwo{        
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .bubblethree{        
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .bubblefour{position: relative;
+        top: 600px;
+        left: 740px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    .bubblefive{
+        display:none;
+    }
+    .bubblesix{
+        display:none;
+    }
+    .dlostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .dlostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: hsl(230, 91%, 74%);
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .dlostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .dlostbubblefour{
+        position: relative;
+        top: 600px;
+        left: 740px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }   
+    .dlostbubblefive{
+        display: none;
+    }
+    .dlostbubblesix{
+        display: none;
+    }
+    .lostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    
+    .lostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    
+    .lostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    
+    .lostbubblefour{
+        position: relative;
+        top: 600px;
+        left: 740px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    
+    .lostbubblefive{
+        display: none;
+    }
+    
+    .lostbubblesix{
+        display: none;
+    }
+    .four{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .zero{
+        position: absolute;
+        bottom: 50px;
+        left: 20%;
+        background-image: transparent;
+        border: 3px solid #0010552f;
+        border-radius: 600px;
+        height: 550px;
+        width: 550px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .fourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfour{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dzero{
+        position: absolute;
+        bottom: 50px;
+        left: 15%;
+        background-image: transparent;
+        border: 3px solid #6461ff21;
+        border-radius: 600px;
+        height: 550px;
+        width: 550px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .jsbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .jsbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .jsbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .jsbubblefour{ 
+        position: relative;
+        top: 600px;
+        left: 740px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    .jsbubblefive{
+        display: none;
+    }
+    .jsbubblesix{
+        display: none;
+    }
+}
+@media screen and (max-width:992px) and (min-width:840px) {
+    .backgroundspread{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+    }
+    .wave1{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave1.png);
+        background-repeat: repeat-x;
+        opacity: 0.06;
+        animation: animate 10s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg1{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #8296F9;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave2{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave2.png);
+        background-repeat: repeat-x;
+        opacity: 0.6;
+        display:block;
+        animation: animate 16s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg2{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #4CBEFF;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .wave3{
+        position: relative;
+        top: 565px;
+        width: 100%;
+        height:400px;
+        background: url(wave3.png);
+        background-repeat: repeat-x;
+        opacity: 0.2;
+        display:block;
+        animation: animate 12s linear infinite;
+        backdrop-filter: blur(5px);
+    }
+    .bg3{
+        position: relative;
+        top: 120px;
+        width: 100%;
+        height:100px;
+        background: #73D148;
+        opacity: 1;
+        display:block;
+        background-repeat: repeat-x;
+    }
+    .bubbleone{        
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .bubbletwo{        
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .bubblethree{        
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .bubblefour{position: relative;
+        top: 600px;
+        left: 760px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #8296F9;
+        color: #8296F9;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    .bubblefive{
+        display: none;
+    }
+    .bubblesix{
+        display:none;
+    }
+    .dlostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .dlostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: hsl(230, 91%, 74%);
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .dlostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .dlostbubblefour{
+        position: relative;
+        top: 600px;
+        left: 760px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #8296F9;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }   
+    .dlostbubblefive{
+        display: none;
+}
+    .dlostbubblesix{
+        display: none;
+    }
+    .lostbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    
+    .lostbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    
+    .lostbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 35px;
+        height: 35px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    
+    .lostbubblefour{
+        position: relative;
+        top: 600px;
+        left: 760px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        color: #d8d8d8;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    
+    .lostbubblefive{
+        display: none;
+}
+    
+    .lostbubblesix{
+        display: none;
+    }
+    .four{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .zero{
+        position: absolute;
+        bottom: 50px;
+        left: 15%;
+        background-image: transparent;
+        border: 3px solid #0010552f;
+        border-radius: 600px;
+        height: 550px;
+        width: 550px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .fourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #0010552f;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfour{
+        position: absolute;
+        top: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dzero{
+        position: absolute;
+        bottom: 50px;
+        left: 20%;
+        background-image: transparent;
+        border: 3px solid #6461ff21;
+        border-radius: 600px;
+        height: 550px;
+        width: 550px;
+        color: #d2daff17;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dfourtwo{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 400px;
+        font-weight: 400;
+        color: #6461ff21;
+        font: 'Merriweather';
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .jsbubbleone{
+        position: relative;
+        top: 600px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.3;
+        animation: lift 10s linear infinite, disappear 10s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    .jsbubbletwo{
+        position: relative;
+        top: 600px;
+        left: 310px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.2;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 12s linear infinite, disappear 12s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 7px #adb9ff;
+    }
+    .jsbubblethree{
+        position: relative;
+        top: 600px;
+        left: 510px;
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.4;
+        transition: 100ms ease-in-out 100ms;
+        animation: lift 15s linear infinite, disappear 15s linear infinite;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 5px #adb9ff;
+    }
+    .jsbubblefour{ 
+        position: relative;
+        top: 600px;
+        left: 760px;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #e0e0e0;
+        color: #e0e0e0;
+        opacity: 0.1;
+        animation: lift 20s linear infinite, disappear 20s linear infinite;
+        transition: 100ms ease-in-out 100ms;
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 6px #adb9ff, 0 0 8px #adb9ff;
+    }
+    .jsbubblefive{
+        display: none;
+    }
+    .jsbubblesix{
+        display: none;
+    }
+}

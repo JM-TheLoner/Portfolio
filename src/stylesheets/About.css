@@ -1,0 +1,2266 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+
+.About{
+  background-color: #3272a0;
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+}
+.dAbout{
+  background-color: #010327;
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+}
+.AboutYellow{
+  background: linear-gradient(to bottom, #fff12f,#8f7500);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutBlue{
+  background: linear-gradient(to bottom, #188bff, #0018a0);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutLightGreen{
+  background: linear-gradient(to bottom, #65ff0c, #047700);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutYellowExpress{
+  background: linear-gradient(to bottom, #fff133, #7a6e00);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutDarkGreen{
+  background: linear-gradient(to bottom, #6aff25, #00ac1d);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutBlueYellow{
+  background: linear-gradient(to bottom, #0029df, #ffc800);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutDeepBlue{
+  background: linear-gradient(to bottom, #0f00dd, #0A054D);
+  flex-grow: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 81vh;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.topbox{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -30px;
+  margin-bottom: -50px;
+}
+
+.story{
+  /* font-family: 'Merriweather'; */
+  color:#d8d8d8;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.dstory{
+  /* font-family: 'Merriweather'; */
+  color:#9caeff;
+  transition: 100ms ease-in-out 100ms;
+}  
+.bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#d8d8d8;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#9caeff;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutYellow .story{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutYellow .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutYellow .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutYellow .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutYellow .bottomlineone{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+  font-size: 20px;
+  position: relative;
+  left: 200px;
+  display: flex;
+  animation: blink 600ms linear 0s infinite;
+}  
+
+.AboutBlue .story{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutBlue .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutBlue .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutBlue .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutBlue .bottomlinetwo{
+  font-size: 20px;
+  position: relative;
+  left: 300px;
+  display: flex;
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+.AboutLightGreen .bottomlinetwo{
+  font-size: 20px;
+  position: relative;
+  left: 300px;
+  display: flex;
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+.AboutYellowExpress .bottomlinetwo{
+  font-size: 20px;
+  position: relative;
+  left: 300px;
+  display: flex;
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+.AboutDarkGreen .bottomlinetwo{
+  font-size: 20px;
+  position: relative;
+  left: 300px;
+  display: flex;
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+
+.AboutBlueYellow .story{
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutBlueYellow .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutBlueYellow .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutBlueYellow .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutBlueYellow .bottomlinethree{
+  font-size: 20px;
+  position: relative;
+  left: 400px;
+  display: flex;
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+
+.AboutDarkGreen .story{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutDarkGreen .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutDarkGreen .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutDarkGreen .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutDeepBlue .story{
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutDeepBlue .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutDeepBlue .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutDeepBlue .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#d8daff;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutDeepBlue .bottomlinefour{
+  font-size: 20px;
+  position: relative;
+  left: 480px;
+  display: flex;
+  color:#d8daff;
+  transition: 100ms ease-in-out 100ms;
+  animation: blink 600ms linear 0s infinite;
+}
+
+.AboutLightGreen .story{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutLightGreen .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutLightGreen .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutLightGreen .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutYellowExpress .story{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutYellowExpress .dstory{
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutYellowExpress .bottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutYellowExpress .dbottomstory{
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.overline{
+  font-size: 60px;
+}
+.bottomlineone{
+  font-size: 20px;
+  position: relative;
+  left: 200px;
+  display: flex;
+}
+.bottomlinetwo{
+  font-size: 20px;
+  position: relative;
+  left: 300px;
+  display: flex;
+}
+.bottomlinethree{
+  font-size: 20px;
+  position: relative;
+  left: 400px;
+  display: flex;
+}
+.bottomlinefour{
+  font-size: 20px;
+  position: relative;
+  left: 480px;
+  display: flex;
+}
+.aboutimage{
+  position: relative;
+  height: 15em;
+  pointer-events: none;
+  filter: grayscale(30%)
+  /* transform: rotate(90deg); */
+}
+
+.bottombox{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.accordion{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+  transition: 100ms ease-in-out 100ms;
+}
+
+.accordion:hover{
+  /* gap: 2px; */
+  /* if no background */
+  gap: 0;
+  /* if background*/
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 30px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit: contain; */
+  filter: grayscale(0.5);
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span{
+  transition: 100ms ease-in-out 100ms;
+}
+
+.accordion h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 15px;
+  background: #02022e;
+  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50px;
+  translate: -300px 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion li:hover{
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+
+.accordion li:hover .content{
+  opacity: 1;
+  visibility: visible;
+}
+.accordion li:hover img{
+  filter: grayscale(0);
+}
+
+.accordion li:hover span {
+  translate: -50% 0;  
+  opacity: 1;
+  visibility: visible;
+}
+.covering{
+  display: none;
+}
+@keyframes appear{
+  0%{
+      opacity: 0.5;
+  }    
+  50%{
+      opacity: 0.5; 
+  }
+  70%{
+      opacity: 0.5; 
+  }
+  100%{
+      opacity: 1; 
+  }
+}
+@keyframes blink{
+  0%{
+      color: #303bff;
+  }    
+  50%{
+      color: #010327; 
+  }
+  70%{
+      color: #303bff;
+  }
+  100%{
+      color: #010327; 
+  }
+}
+
+@media screen and (max-width:560px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+
+  .AboutYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomlineone{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    font-size: 20px;
+    position: relative;
+    left: 200px;
+    display: flex;
+    animation: blink 600ms linear 0s infinite;
+  }  
+  
+  .AboutBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutLightGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutYellowExpress .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutDarkGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutBlueYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlueYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlueYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomlinethree{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 400px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutDarkGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDarkGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDarkGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDarkGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDeepBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDeepBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .bottomlinefour{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutLightGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutLightGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutLightGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutLightGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellowExpress .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutYellowExpress .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .overline{
+    display: none;
+  }
+  .bottomstory{
+    display: none;
+  }    
+  .dbottomstory{
+    display: none;
+  }  
+  .bottombox{
+    text-align: center;
+    align-items: normal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .accordion{
+    margin-top: 60px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 3%;
+    transition: 100ms ease-in-out 100ms;
+    margin-left: -10%;
+  }
+  .accordion:hover{
+    /* gap: 2px; */
+    /* if no background */
+    gap: 0;
+    /* if background*/
+    margin-top: 120px;
+  }
+  
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .accordion li:hover,
+  .accordion li:focus{
+    flex: 0 0 50%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .accordion li:hover .content,
+  .accordion li:focus .content{
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li:hover img,
+  .accordion li:focus img{
+    filter: grayscale(0);
+  }
+  
+  .accordion li:hover span ,
+  .accordion li:focus span{
+    translate: 0;  
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li img {
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    filter: grayscale(0); 
+  }
+  .covering{
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 3.5em;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    z-index: 5;
+  }
+}
+@media screen and (max-width:696px) and (min-width:560px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+
+  .AboutYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomlineone{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    font-size: 20px;
+    position: relative;
+    left: 200px;
+    display: flex;
+    animation: blink 600ms linear 0s infinite;
+  }  
+  
+  .AboutBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutLightGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutYellowExpress .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutDarkGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutBlueYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlueYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlueYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomlinethree{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 400px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutDarkGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDarkGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDarkGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDarkGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDeepBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDeepBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .bottomlinefour{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutLightGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutLightGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutLightGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutLightGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellowExpress .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutYellowExpress .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .overline{
+    display: none;
+  }
+  .bottomstory{
+    display: none;
+  }    
+  .dbottomstory{
+    display: none;
+  }  
+  .bottombox{
+    text-align: center;
+    align-items: normal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .accordion{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 3%;
+    transition: 100ms ease-in-out 100ms;
+    margin-left: -10%;
+  }
+  .accordion:hover{
+    /* gap: 2px; */
+    /* if no background */
+    gap: 0;
+    /* if background*/
+    margin-top: 120px;
+  }
+  
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    border-radius: 5px;
+    width: 155px;
+    height: 155px;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .accordion li:hover,
+  .accordion li:focus{
+    flex: 0 0 50%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .accordion li:hover .content,
+  .accordion li:focus .content{
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li:hover img,
+  .accordion li:focus img{
+    filter: grayscale(0);
+  }
+  
+  .accordion li:hover span ,
+  .accordion li:focus span{
+    translate: 0;  
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li img {
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    filter: grayscale(0);
+  }
+  .covering{
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 3.5em;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    z-index: 5;
+  }
+}
+@media screen and (max-width:840px) and (min-width:696px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+
+  .AboutYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellow .bottomlineone{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    font-size: 20px;
+    position: relative;
+    left: 200px;
+    display: flex;
+    animation: blink 600ms linear 0s infinite;
+  }  
+  
+  .AboutBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlue .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutLightGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutYellowExpress .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutDarkGreen .bottomlinetwo{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutBlueYellow .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutBlueYellow .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutBlueYellow .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutBlueYellow .bottomlinethree{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 400px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutDarkGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDarkGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDarkGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDarkGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutDeepBlue .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutDeepBlue .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8daff;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutDeepBlue .bottomlinefour{
+    display: none;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  
+  .AboutLightGreen .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutLightGreen .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutLightGreen .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutLightGreen .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .story{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .AboutYellowExpress .dstory{
+    display: none;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .AboutYellowExpress .bottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  
+  .AboutYellowExpress .dbottomstory{
+    display: none;
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .overline{
+    display: none;
+  }
+  .bottomstory{
+    display: none;
+  }    
+  .dbottomstory{
+    display: none;
+  }  
+  .bottombox{
+    text-align: center;
+    align-items: normal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .accordion{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 10px;
+    transition: 100ms ease-in-out 100ms;
+    margin-left: -10%;
+  }
+  .accordion:hover{
+    /* gap: 2px; */
+    /* if no background */
+    gap: 0;
+    /* if background*/
+    margin-top: 120px;
+  }
+  
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    border-radius: 5px;
+    width: 155px;
+    height: 155px;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .accordion li:hover,
+  .accordion li:focus{
+    flex: 0 0 50%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .accordion li:hover .content,
+  .accordion li:focus .content{
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li:hover img,
+  .accordion li:focus img{
+    filter: grayscale(0);
+  }
+  
+  .accordion li:hover span ,
+  .accordion li:focus span{
+    translate: 0;  
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li img {
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    filter: grayscale(0);
+  }
+  .covering{
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 3.5em;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    z-index: 5;
+  }
+}
+@media screen and (max-width:992px) and (min-width:840px) {
+  .overline{
+    font-size: 40px;
+  }
+  .bottomstory{
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#d8d8d8;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  
+  .dbottomstory{
+    font-weight: 100;
+    /* font-family: 'Merriweather'; */
+    color:#9caeff;
+    display: flex;
+    margin-top: -30px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    transition: 100ms ease-in-out 100ms;
+  }  
+  .bottomlineone{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+  }
+  .bottomlinetwo{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+  }
+  .bottomlinethree{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+  }
+  .bottomlinefour{
+    font-size: 16px;
+    position: relative;
+    left:10px;
+    display: flex;
+  }  
+  .AboutYellow .bottomlineone{
+    /* font-family: 'Merriweather'; */
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    animation: blink 600ms linear 0s infinite;
+  }  
+  .AboutBlue .bottomlinetwo{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutLightGreen .bottomlinetwo{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutYellowExpress .bottomlinetwo{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutDarkGreen .bottomlinetwo{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#010327;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .AboutBlueYellow .bottomlinethree{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }  
+  .AboutDeepBlue .bottomlinefour{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    color:#d8daff;
+    transition: 100ms ease-in-out 100ms;
+    animation: blink 600ms linear 0s infinite;
+  }
+  .bottombox{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: -20px;
+  }
+}

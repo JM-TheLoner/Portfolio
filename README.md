@@ -1,3 +1,14 @@
+# Portfolio
+My Personal Portfolio. Subject to Change
+
+**Description:**
+
+Made up of Javascript, HTML and CSS using react
+
+If you download this code, run "npm i" in your terminal. this installs all the dependencies used in production
+
+[ <img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://glitch.com/edit/#!/import/github/JM-TheLoner/Portfolio)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

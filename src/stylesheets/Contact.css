@@ -1,0 +1,2719 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+
+.Contact{
+  background-color: #3272a0;
+    max-width: 100%;
+    flex-grow: 1; 
+    padding: 1rem;
+    overflow-y: auto;
+    min-height: 90vh;
+    display: flex;
+    transition: 100ms, ease-in-out, 100ms;
+}
+.dContact{
+  background-color: #010327;
+    max-width: 100%;
+    flex-grow: 1; 
+    padding: 1rem;
+    overflow-y: auto;
+    min-height: 90vh;
+    display: flex;
+    transition: 100ms, ease-in-out, 100ms;
+}
+.contacttext{
+  width: 70%;
+}
+.contactleft{
+  justify-content: center;
+  margin-top: 5em;
+  width: 50%;
+  margin-left: 3em;
+}
+.contacthead{
+  text-align: center;
+  font-family: 'Merriweather';
+  font-weight: 100;
+  font-size: 3.3em;
+  color:#d8d8d8;
+  cursor: default;
+  margin-bottom: -10px;
+  margin-left: 40px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.contactbody{  
+  text-align: center;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: 100;
+  font-size: 20px;
+  color:#d8d8d8;
+  cursor: default;
+  width: 110%;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.dcontacthead{
+  text-align: center;
+  font-family: 'Merriweather';
+  font-weight: 100;
+  font-size: 3.3em;
+  color:#9caeff;
+  cursor: default;
+  margin-bottom: -10px;
+  margin-left: 40px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+
+.dcontactbody{  
+  text-align: center;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: 100;
+  font-size: 20px;
+  color:#9caeff;
+  cursor: default;
+  width: 110%;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.line1{
+  margin-left:10px;
+  /* font-family: 'Merriweather'; */
+  cursor: pointer;
+}
+.holes{
+  color:#000000;
+  font-size: 1.2em;
+  color:#d8d8d8;  
+  /* font-family: 'Merriweather'; */
+  position: relative;
+  bottom: 15px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.dholes{
+  color:#9caeff;
+  font-size: 1.2em;
+  color:#9caeff;
+  /* font-family: 'Merriweather'; */
+  position: relative;
+  bottom: 15px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.contactsameline{
+  display: flex;
+}
+.holes:hover,
+.holes:focus{
+  color: #734cff;
+}
+.dholes:hover,
+.dholes:focus{
+  color: #734cff;
+}
+.ogo1 {
+  height: 5vmin;
+  pointer-events: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.ImgTag{
+  font-size:1.3em;
+  font-weight: 700;
+}
+.ogo2 {
+  height: 5vmin;
+  pointer-events: none;
+  position: relative;
+  left: 145px;
+  top: 0px;
+}
+.phone1{
+  /* font-family: 'Merriweather';   */
+  position: relative;
+  bottom: 20px;
+  left: 160px;
+  font-size: 15px;
+  color:#d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.dphone1{
+  /* font-family: 'Merriweather';   */
+  position: relative;
+  bottom: 20px;
+  left: 160px;
+  font-size: 15px;
+  color:#9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.ogo3 {
+  height: 9.5vmin;
+  pointer-events: none;
+  position: relative;
+  bottom: 35px;
+  left: 105px;
+}
+.email{
+  /* font-family:'Merriweather'; */
+  font-size: 15px;
+  color:#d8d8d8;
+  position: relative;
+  bottom: 25px;
+  left: 145px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.demail{
+  /* font-family:'Merriweather'; */
+  font-size: 15px;
+  color:#9caeff;
+  position: relative;
+  bottom: 25px;
+  left: 145px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.contactsamelinesocs{
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+}
+.contactwrapper{  
+  margin-top: 1em;
+  width: 55em;
+  background-image: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(107, 107, 107, 0.76);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.685); 
+  border-radius: 15px;
+  padding:  10px;
+  height: 46em;
+}
+.dcontactwrapper{  
+  margin-top: 1em;
+  width: 55em;
+  background-image: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  box-shadow: 0 0 8px #adadadcb; 
+  border-radius: 15px;
+  padding:  10px;
+  height: 46em;
+}
+.getin{
+  display: flex;
+  margin-left: 20px;
+  margin-top: -35px;
+}
+.right1{
+  color:#d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  text-align: left;
+  font-family:'Merriweather';
+  font-size: 3.5em;
+  cursor: default;
+}
+.dright1{
+  color:#9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  text-align: left;
+  font-family:'Merriweather';
+  font-size: 3.5em;
+  cursor: default;
+}
+.right2{
+  text-align: left;
+  font-family:'Merriweather';
+  font-size: 3.5em;
+  color:#080052;
+  transition: 100ms, ease-in-out, 100ms;
+  cursor: default;
+  position: absolute;
+  left: 235px;
+  top: -34px;
+}
+.dright2{
+  color:#002efc;
+  transition: 100ms, ease-in-out, 100ms;
+  text-align: left;
+  font-family:'Merriweather';
+  font-size: 3.5em;
+  cursor: default;
+  position: absolute;
+  left: 235px;
+  top: -34px;
+}
+.right3{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 1.5em;
+  color:#d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  cursor: default;
+  position: absolute;  
+  left: 30px;
+  top: 60px;
+}
+.dright3{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 1.5em;
+  color:#9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  cursor: default;
+  position: absolute;  
+  left: 30px;
+  top: 60px;
+}
+.social1 {
+  height: 5vmin;
+  pointer-events: none;
+  margin-top: 10px;
+}
+.social2 {
+  height: 5vmin;
+  pointer-events: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.social3 {
+  height: 5vmin;
+  pointer-events: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.social4 {
+  height: 5vmin;
+  pointer-events: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.social5 {
+  height: 5vmin;
+  pointer-events: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.fullnameText{
+  color: #d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.contactemailText{
+  color: #d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 290px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.contactaddressText{
+  color: #d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.messageText{
+  color: #d8d8d8;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.dfullnameText{
+  color: #9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.dcontactemailText{
+  color: #9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 290px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.dcontactaddressText{
+  color: #9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.dmessageText{
+  color: #9caeff;
+  transition: 100ms, ease-in-out, 100ms;
+  margin-left: 15px;
+  font-size:1.3em;
+  font-weight: 100;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.fullnameinputBox{
+  width: 46.5%;
+  height: 60px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 10px;
+}
+  
+.fullnameinputBox input{
+  width: 97%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e ;
+  /* font-family:''; */
+}
+  
+.fullnameinputBox input::placeholder{
+  color:rgb(170, 170, 170);
+}
+  
+.fullnameinputBoxred{
+  width: 46.5%;
+  height: 60px;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+  
+.fullnameinputBoxred input{
+  width: 97%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e ;
+  /* font-family:''; */
+  box-shadow: 0 0 10px #4d0000;
+}
+.fullnameinputBox input:hover,
+.fullnameinputBox input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.fullnameinputBoxred input:hover,
+.fullnameinputBoxred input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.fullnameinputBoxred input::placeholder{
+  color:rgb(170, 170, 170);
+  }
+  
+.contactemailinputBox{
+  width: 46.5%;
+  height: 60px;
+  margin-top: -10px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.contactemailinputBox input{
+  width: 97%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e ;
+  /* font-family:''; */
+}
+
+.contactemailinputBox input::placeholder{
+  color:rgb(170, 170, 170);
+}
+  
+.contactemailinputBoxred{
+  width: 46.5%;
+  height: 60px;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contactemailinputBoxred input{
+  width: 97%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e ;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactemailinputBox input:hover,
+.contactemailinputBox input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.contactemailinputBoxred input:hover,
+.contactemailinputBoxred input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.contactemailinputBoxred input::placeholder{
+  color:rgb(170, 170, 170);
+}
+  
+.contactaddressinputBox{
+  width: 96.5%;
+  height: 60px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.contactaddressinputBox input{
+  width: 98.5%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e;
+  /* font-family:''; */
+}
+
+.contactaddressinputBox input::placeholder{
+  color:rgb(170, 170, 170);
+}
+
+.contactaddressinputBoxred{
+  width: 95%;
+  height: 60px;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contactaddressinputBoxred input{
+  width: 98.5%;
+  height: 2em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #dddddd5e ;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactaddressinputBox input:hover,
+.contactaddressinputBox input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.contactaddressinputBoxred input:hover,
+.contactaddressinputBoxred input:focus{
+  background-color: rgb(153, 153, 153);
+}
+.contactaddressinputBoxred input::placeholder{
+  color:rgb(170, 170, 170);
+}
+
+.messageinputBox{
+  width: 96.5%;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBox textarea{
+  width: 98.5%;
+  height: 13em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #dddddd5e;
+  overflow-wrap: break-word;
+  resize: none;
+  /* font-family:''; */
+}
+
+.messageinputBox textarea::placeholder{
+  color:rgb(170, 170, 170);
+  font-size: 20px;
+}
+  
+.messageinputBoxred{
+  width: 96.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBoxred textarea{
+  width: 100%;
+  height: 13em;
+  border: 3px solid rgba(128, 128, 128, 0.438);
+  border-radius: 05px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  background: #dddddd5e ;
+  resize: none;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.messageinputBox textarea:hover,
+.messageinputBox textarea:focus{
+  background-color: rgb(153, 153, 153);
+}
+  .messageinputBoxred textarea:hover,
+  .messageinputBoxred textarea:focus{
+  background-color: rgb(153, 153, 153);
+}
+  .messageinputBoxred textarea::placeholder{
+  color:rgb(170, 170, 170);
+  }
+.loc{
+  margin-left: 0.6em;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-size: 12px;
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+}
+.locwhat{
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+  top:10px;
+}
+.locinsta{
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 30px;
+  top:10px;
+}
+.loctwitter{
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 50px;
+  top:10px;
+}
+.loclinkedin{
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 70px;
+  top:10px;
+}
+.locgithub{
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  color:#000000;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  left: 90px;
+  top:10px;
+}
+.contactbutton{
+  padding-top: 5px;
+  margin-left: 20%;
+  width: 60%;
+  height: 55px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:30px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+    
+.contactbutton:hover{
+    background: #5869ff;
+}
+.dcontactbutton{
+  padding-top: 5px;
+  margin-left: 20%;
+  width: 60%;
+  height: 55px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:30px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+    
+.dcontactbutton:hover{
+    background: #000957;
+}
+.contwhatsappimg{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
+  filter: grayscale(100%)
+}
+.instaimg{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
+  filter: grayscale(100%)
+}
+.twitterimg{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
+  filter: grayscale(100%)
+}
+.linkedinimg{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
+  filter: grayscale(100%)
+}
+.githubimg{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
+  filter: grayscale(100%)
+}
+.contactedbackground{
+  position: absolute;
+  width: 100%;
+  height: 118vh;
+  top: 0%;
+  left: 0%;
+  background-image: transparent;
+  backdrop-filter: blur(3px);
+}
+.contacted{  
+  position: sticky;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: 20%;  
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  border-radius: 5px;
+  background-color: #e6ebff;
+}
+.contactedbutton{
+  position: relative;
+  top: 0;
+  left: 36%;
+  width: 30px;
+  height: 30px;  
+  background-color: #d2daff;
+  color: #010327;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.76);
+}
+.contactedbutton:hover{
+  background-color: #001366;
+  color: #dadbff;
+}
+.contactedtop{
+  display: flex;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 32px;
+  background-color: #9ba5ff;
+}
+.contactedline{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.contactedlineone{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.contactedlinetwo{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+
+}
+
+@media screen and (max-width:570px) {
+  .Contact{
+    background-color: #3272a0;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .dContact{
+    background-color: #010327;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactedbackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-image: transparent;
+    backdrop-filter: blur(3px);
+  }
+  .contacttext{
+    width: 95%;
+  }
+  .contactleft{
+    justify-content: center;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 10px;
+  }
+  .contactbody{  
+    display: none;
+  }
+  .dcontactbody{  
+    display: none;
+  }
+  .right1{
+    display: none;    
+  }
+  .dright1{
+    display: none;    
+  }
+  .right2{
+    display: none;    
+  }
+  .dright2{
+    display: none;
+  }
+  .right3{
+    display: none;
+  }
+  .dright3{
+    display: none;
+  }
+  .fullnameText{
+    display: none;
+  }
+  .contactemailText{
+    display: none;
+  }
+  .contactaddressText{
+    display: none;
+  }
+  .messageText{
+    display: none;
+  }
+  .dfullnameText{
+    display: none;
+  }
+  .dcontactemailText{
+    display: none;
+  }
+  .dcontactaddressText{
+    display: none;
+  }
+  .dmessageText{
+    display: none;
+  }
+  .contacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#d8d8d8;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .dcontacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#9caeff;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactwrapper{  
+    margin-top: 10px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(107, 107, 107, 0.76);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.685); 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .dcontactwrapper{  
+    margin-top: 10px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 0px #adadadcb; 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .contactsamelinesocs{
+    display: flex;
+    position: relative;
+    top: 280px;
+    left: 0px;
+  }
+  .holes{
+    font-size: 15px;
+    color:#050149;  
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .dholes{
+    color:#050149;
+    font-size: 15px;
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .phone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#d8d8d8;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .dphone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#9caeff;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .email{
+    top: 335px;
+    /* font-family:'Merriweather'; */
+    font-size: 15px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .demail{
+    top: 335px;
+    /* font-family:'Merriweather'; */
+    font-size: 15px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .fullnameinputBox{
+    width: 46%;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }    
+  .fullnameinputBox input{
+    width: 97%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .fullnameinputBoxred{
+    width: 46%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }    
+  .fullnameinputBoxred input{
+    width: 97%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+    box-shadow: 0 0 10px #4d0000;
+  }
+  .contactemailinputBox{
+    width: 46%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }  
+  .contactemailinputBox input{
+    width: 97%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .contactemailinputBoxred{
+    width: 46%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactemailinputBoxred input{
+    width: 97%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .contactaddressinputBox{
+    width: 98%;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .contactaddressinputBox input{
+    width: 98.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e;
+    /* font-family:''; */
+  }
+    .contactaddressinputBoxred{
+    width: 98%;
+    height: 60px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactaddressinputBoxred input{
+    width: 98.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .messageinputBox{
+  width: 98.5%;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBox textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #dddddd5e;
+  overflow-wrap: break-word;
+  resize: none;
+  /* font-family:''; */
+}
+.messageinputBoxred{
+  width: 98.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBoxred textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  background: #dddddd5e ;
+  resize: none;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.dcontactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #3305dba6;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.contacted{  
+  position: sticky;
+  top: 40%;
+  left: 15%;
+  width: 305px;
+  height: 140px;  
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  border-radius: 2px;
+  background-color: #e6ebff;
+}
+.contactedbutton{
+  position: relative;
+  top: 0;
+  left: 6%;
+  width: 30px;
+  height: 30px;  
+  background-color: #d2daff;
+  color: #010327;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.76);
+}
+.contactedtop{
+  display: flex;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 30px;
+  background-color: #9ba5ff;
+}
+.contactedline{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.contactedlineone{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.contactedlinetwo{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+}
+@media screen and (max-width:640px) and (min-width:570px) {
+  .Contact{
+    background-color: #3272a0;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .dContact{
+    background-color: #010327;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactedbackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-image: transparent;
+    backdrop-filter: blur(3px);
+  }
+  .contacttext{
+    width: 95%;
+  }
+  .contactleft{
+    justify-content: center;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 10px;
+  }
+  .contactbody{  
+    display: none;
+  }
+  .dcontactbody{  
+    display: none;
+  }
+  .right1{
+    display: none;    
+  }
+  .dright1{
+    display: none;    
+  }
+  .right2{
+    display: none;    
+  }
+  .dright2{
+    display: none;
+  }
+  .right3{
+    display: none;
+  }
+  .dright3{
+    display: none;
+  }
+  .fullnameText{
+    display: none;
+  }
+  .contactemailText{
+    display: none;
+  }
+  .contactaddressText{
+    display: none;
+  }
+  .messageText{
+    display: none;
+  }
+  .dfullnameText{
+    display: none;
+  }
+  .dcontactemailText{
+    display: none;
+  }
+  .dcontactaddressText{
+    display: none;
+  }
+  .dmessageText{
+    display: none;
+  }
+  .contacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#d8d8d8;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .dcontacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#9caeff;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactwrapper{  
+    margin-top: 30px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(107, 107, 107, 0.76);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.685); 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .dcontactwrapper{  
+    margin-top: 30px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 0px #adadadcb; 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .contactsamelinesocs{
+    display: flex;
+    position: relative;
+    top: 300px;
+    left: 0px;
+  }
+  .holes{
+    font-size: 15px;
+    color:#050149;  
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    left: -5%;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: left;
+  }
+  .dholes{
+    color:#050149;
+    font-size: 15px;
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    left: -5%;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: left;
+  }
+  .phone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#d8d8d8;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .dphone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#9caeff;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .email{
+    top: 355px;
+    /* font-family:'Merriweather'; */
+    font-size: 15px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .demail{
+    top: 355px;
+    /* font-family:'Merriweather'; */
+    font-size: 15px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .fullnameinputBox{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }    
+  .fullnameinputBox input{
+    width: 97.5%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .fullnameinputBoxred{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }    
+  .fullnameinputBoxred input{
+    width: 97.5%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+    box-shadow: 0 0 10px #4d0000;
+  }
+  .contactemailinputBox{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }  
+  .contactemailinputBox input{
+    width: 97.5%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .contactemailinputBoxred{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactemailinputBoxred input{
+    width: 97.5%;
+    height: 20px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .contactaddressinputBox{
+    width: 98%;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .contactaddressinputBox input{
+    width: 98.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e;
+    /* font-family:''; */
+  }
+    .contactaddressinputBoxred{
+    width: 98%;
+    height: 60px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactaddressinputBoxred input{
+    width: 98.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .messageinputBox{
+  width: 98.5%;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBox textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #dddddd5e;
+  overflow-wrap: break-word;
+  resize: none;
+  /* font-family:''; */
+}
+.messageinputBoxred{
+  width: 98.5%;
+  margin-top: -10px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBoxred textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  background: #dddddd5e ;
+  resize: none;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.dcontactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #3305dba6;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.contacted{  
+  position: sticky;
+  top: 40%;
+  left: 15%;
+  width: 305px;
+  height: 140px;  
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  border-radius: 2px;
+  background-color: #e6ebff;
+}
+.contactedbutton{
+  position: relative;
+  top: 0;
+  left: 6%;
+  width: 30px;
+  height: 30px;  
+  background-color: #d2daff;
+  color: #010327;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.76);
+}
+.contactedtop{
+  display: flex;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 30px;
+  background-color: #9ba5ff;
+}
+.contactedline{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.contactedlineone{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.contactedlinetwo{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+}
+@media screen and (max-width:841px) and (min-width:640px) {
+  .Contact{
+    background-color: #3272a0;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .dContact{
+    background-color: #010327;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: block;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactedbackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-image: transparent;
+    backdrop-filter: blur(3px);
+  }
+  .contacttext{
+    width: 95%;
+  }
+  .contactleft{
+    justify-content: center;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 10px;
+  }
+  .contactbody{  
+    display: none;
+  }
+  .dcontactbody{  
+    display: none;
+  }
+  .right1{
+    display: none;    
+  }
+  .dright1{
+    display: none;    
+  }
+  .right2{
+    display: none;    
+  }
+  .dright2{
+    display: none;
+  }
+  .right3{
+    display: none;
+  }
+  .dright3{
+    display: none;
+  }
+  .fullnameText{
+    display: none;
+  }
+  .contactemailText{
+    display: none;
+  }
+  .contactaddressText{
+    display: none;
+  }
+  .messageText{
+    display: none;
+  }
+  .dfullnameText{
+    display: none;
+  }
+  .dcontactemailText{
+    display: none;
+  }
+  .dcontactaddressText{
+    display: none;
+  }
+  .dmessageText{
+    display: none;
+  }
+  .contacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#d8d8d8;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .dcontacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#9caeff;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    position: relative;
+    top: -40px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactwrapper{  
+    margin-top: 20px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(107, 107, 107, 0.76);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.685); 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .dcontactwrapper{  
+    margin-top: 20px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 0px #adadadcb; 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    bottom: 160px;
+  }
+  .contactsamelinesocs{
+    display: flex;
+    position: relative;
+    top: 300px;
+    left: 0px;
+  }
+  .holes{
+    font-size: 16px;
+    color:#050149;  
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    left: -2%;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .dholes{
+    color:#050149;
+    font-size: 16px;
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 455px;
+    left: -2%;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .phone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#d8d8d8;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .dphone1{
+    top: 435px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 15px;
+    color:#9caeff;
+    transition: 100ms, ease-in-out, 100ms;
+    display: none;
+    justify-content: space-around;
+  }
+  .email{
+    top: 355px;
+    /* font-family:'Merriweather'; */
+    font-size: 16px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .demail{
+    top: 355px;
+    /* font-family:'Merriweather'; */
+    font-size: 16px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 60%;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .fullnameinputBox{
+    width: 47.2%;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }    
+  .fullnameinputBox input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .fullnameinputBoxred{
+    width: 47.2%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }    
+  .fullnameinputBoxred input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+    box-shadow: 0 0 10px #4d0000;
+  }
+  .contactemailinputBox{
+    width: 47.2%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }  
+  .contactemailinputBox input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .contactemailinputBoxred{
+    width: 47.2%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactemailinputBoxred input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .contactaddressinputBox{
+    width: 98%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .contactaddressinputBox input{
+    width: 98.5%;
+    height: 40px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e;
+    /* font-family:''; */
+  }
+    .contactaddressinputBoxred{
+    width: 98%;
+    height: 60px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactaddressinputBoxred input{
+    width: 98.5%;
+    height: 40px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .messageinputBox{
+  width: 98.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBox textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #dddddd5e;
+  overflow-wrap: break-word;
+  resize: none;
+  /* font-family:''; */
+}
+.messageinputBoxred{
+  width: 98.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBoxred textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  background: #dddddd5e ;
+  resize: none;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.dcontactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #3305dba6;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.contacted{  
+  position: sticky;
+  top: 40%;
+  left: 25%;
+  width: 355px;
+  height: 160px;  
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  border-radius: 2px;
+  background-color: #e6ebff;
+}
+.contactedbutton{
+  position: relative;
+  top: 0;
+  left: 20%;
+  width: 30px;
+  height: 30px;  
+  background-color: #d2daff;
+  color: #010327;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.76);
+}
+.contactedtop{
+  display: flex;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 30px;
+  background-color: #9ba5ff;
+}
+.contactedline{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.contactedlineone{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.contactedlinetwo{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+}
+@media screen and (max-width:992px) and (min-width:841px) {
+  .Contact{
+    background-color: #3272a0;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: flex;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .dContact{
+    background-color: #010327;
+      max-width: 100%;
+      flex-grow: 1; 
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 90vh;
+      display: flex;
+      transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactedbackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-image: transparent;
+    backdrop-filter: blur(3px);
+  }
+  .contacttext{
+    width: 95%;
+  }
+  .contactleft{
+    justify-content: center;
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 10px;
+  }
+
+.contactbody{  
+  position: relative;
+  text-align: center;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: 100;
+  font-size: 20px;
+  color:#d8d8d8;
+  cursor: default;
+  width: 100%;
+  transition: 100ms, ease-in-out, 100ms;
+  bottom: 70px;
+}
+.dcontactbody{  
+  position: relative;
+  text-align: center;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: 100;
+  font-size: 20px;
+  color:#9caeff;
+  cursor: default;
+  width: 100%;
+  transition: 100ms, ease-in-out, 100ms;
+  bottom: 70px;
+}
+.right1{
+  display: none;
+}
+.dright1{
+  display: none;
+}
+.right2{
+  display: none;
+}
+.dright2{
+  display: none;
+}
+.right3{
+  display: none;
+}
+.dright3{
+  display: none;
+}
+  .fullnameText{
+    display: none;
+  }
+  .contactemailText{
+    display: none;
+  }
+  .contactaddressText{
+    display: none;
+  }
+  .messageText{
+    display: none;
+  }
+  .dfullnameText{
+    display: none;
+  }
+  .dcontactemailText{
+    display: none;
+  }
+  .dcontactaddressText{
+    display: none;
+  }
+  .dmessageText{
+    display: none;
+  }
+  .contacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#d8d8d8;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    position: relative;
+    top: -60px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .dcontacthead{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    font-size:40px;
+    color:#9caeff;
+    cursor: default;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    position: relative;
+    top: -60px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .contactwrapper{  
+    margin-top: 20px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(107, 107, 107, 0.76);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.685); 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    top: 100px;
+  }
+  .dcontactwrapper{  
+    margin-top: 20px;
+    width: 95%;
+    background-image: transparent;
+    backdrop-filter: blur(0px);
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 0px #adadadcb; 
+    border-radius: 15px;
+    padding:  0px;
+    height: fit-content;
+    position: relative;
+    top: 100px;
+  }
+  .contactsamelinesocs{
+    display: flex;
+    position: relative;
+    bottom: 330px;
+    left: 50px;
+  }
+  .locwhat{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    top:10px;
+  }
+  .locinsta{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+    top:10px;
+  }
+  .loctwitter{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 40px;
+    top:10px;
+  }
+  .loclinkedin{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 50px;
+    top:10px;
+  }
+  .locgithub{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 60px;
+    top:10px;
+  }
+  .contwhatsappimg{
+    height: 4vmin;
+    pointer-events: none;
+    position: relative;
+    margin-bottom: -15px;
+    filter: grayscale(100%)
+  }
+  .instaimg{
+    height: 4vmin;
+    pointer-events: none;
+    position: relative;
+    margin-bottom: -15px;
+    filter: grayscale(100%)
+  }
+  .twitterimg{
+    height: 4vmin;
+    pointer-events: none;
+    position: relative;
+    margin-bottom: -15px;
+    filter: grayscale(100%)
+  }
+  .linkedinimg{
+    height: 4vmin;
+    pointer-events: none;
+    position: relative;
+    margin-bottom: -15px;
+    filter: grayscale(100%)
+  }
+  .githubimg{
+    height: 4vmin;
+    pointer-events: none;
+    position: relative;
+    margin-bottom: -15px;
+    filter: grayscale(100%)
+  }
+  .holes{
+    font-size: 16px;
+    color:#050149;  
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 75px;
+    left: -30px;
+    width: 300px;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .dholes{
+    color:#050149;
+    font-size: 16px;
+    /* font-family: 'Merriweather'; */
+    position: relative;
+    top: 75px;
+    left: -30px;
+    width: 330px;
+    transition: 100ms, ease-in-out, 100ms;
+    text-align: center;
+  }
+  .phone1{
+    top: -145px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    left: 80px;
+    font-size: 15px;
+    color:#d8d8d8;
+    transition: 100ms, ease-in-out, 100ms;
+    display:block;
+    justify-content: space-around;
+  }
+  .dphone1{
+    top: -145px;
+    /* font-family: 'Merriweather';   */
+    position: relative;
+    left: 80px;
+    font-size: 15px;
+    color:#9caeff;
+    transition: 100ms, ease-in-out, 100ms;
+    display:block;
+    justify-content: space-around;
+  }
+  .email{
+    top: -145px;
+    /* font-family:'Merriweather'; */
+    font-size: 16px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 70px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .demail{
+    top: -145px;
+    /* font-family:'Merriweather'; */
+    font-size: 16px;
+    color:#d8d8d8;
+    position: relative;
+    bottom: 25px;
+    left: 70px;
+    transition: 100ms, ease-in-out, 100ms;
+  }
+  .fullnameinputBox{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }    
+  .fullnameinputBox input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .fullnameinputBoxred{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }    
+  .fullnameinputBoxred input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius:0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+    box-shadow: 0 0 10px #4d0000;
+  }
+  .contactemailinputBox{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }  
+  .contactemailinputBox input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    /* font-family:''; */
+  }
+  .contactemailinputBoxred{
+    width: 46.5%;
+    height: 40px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactemailinputBoxred input{
+    width: 97.5%;
+    height: 30px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .contactaddressinputBox{
+    width: 98%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .contactaddressinputBox input{
+    width: 98.5%;
+    height: 40px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e;
+    /* font-family:''; */
+  }
+    .contactaddressinputBoxred{
+    width: 98%;
+    height: 60px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contactaddressinputBoxred input{
+    width: 98.5%;
+    height: 40px;
+    border: 0px solid rgba(128, 128, 128, 0.438);
+    border-radius: 0px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #dddddd5e ;
+    box-shadow: 0 0 10px #4d0000;
+    /* font-family:''; */
+  }
+  .messageinputBox{
+  width: 98.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBox textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #dddddd5e;
+  overflow-wrap: break-word;
+  resize: none;
+  /* font-family:''; */
+}
+.messageinputBoxred{
+  width: 98.5%;
+  margin-top: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.messageinputBoxred textarea{
+  width: 98%;
+  height: 13em;
+  border: 0px solid rgba(128, 128, 128, 0.438);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  background: #dddddd5e ;
+  resize: none;
+  box-shadow: 0 0 10px #4d0000;
+  /* font-family:''; */
+}
+.contactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #4c1cfa2a;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.dcontactbutton{
+  padding-top: 5px;
+  margin-left: 33%;
+  width: 40%;
+  height: 45px;
+  background: #3305dba6;
+  border-radius: 05px;
+  box-shadow: 0 0 10px rgb(29, 29, 29);
+  cursor: pointer;
+  color: #000000;
+  font-weight: 700;
+  font-size:25px;
+  font-family:'Merriweather';
+  transition: 100ms ease-in-out 100ms;
+}
+.contacted{  
+  position: sticky;
+  top: 40%;
+  left: 25%;
+  width: 355px;
+  height: 160px;  
+  border: 1px solid rgba(194, 194, 194, 0.76);
+  border-radius: 2px;
+  background-color: #e6ebff;
+}
+.contactedbutton{
+  position: relative;
+  top: 0;
+  left: 20%;
+  width: 30px;
+  height: 30px;  
+  background-color: #d2daff;
+  color: #010327;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(194, 194, 194, 0.76);
+}
+.contactedtop{
+  display: flex;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 30px;
+  background-color: #9ba5ff;
+}
+.contactedline{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.contactedlineone{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.contactedlinetwo{
+  text-align: left;
+  /* font-family:'Merriweather'; */
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+}

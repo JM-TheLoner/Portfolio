@@ -1,0 +1,1452 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+
+.Home{
+    background-color: #3272a0;
+    padding: 1rem;
+    max-width: 100%;
+    height: 85vh;
+    padding-bottom: 0px;
+    transition: 100ms ease-in-out 100ms;
+    overflow-y: hidden;
+}
+.dHome{
+    background-color: #010327;
+    padding: 1rem;
+    max-width: 100%;
+    height: 85vh;
+    padding-bottom: 0px;
+    transition: 100ms ease-in-out 100ms;
+    overflow-y: hidden;
+}
+.spliting{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: -110px;
+    position: relative;
+}
+
+.leftside{
+    justify-content: left;
+    width:50%;
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
+.rightside{
+    justify-content: right;
+    width:30%;
+    height: 30.8em;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border: 0px solid rgba(107, 107, 107, 0.76);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    padding: 0px 10px 10px 10px;
+    overflow-y: visible;
+    transition: 100ms ease-in-out 100ms;
+    backdrop-filter: blur(5px);
+}
+.drightside{
+    backdrop-filter: blur(5px);
+    justify-content: right;
+    width:30%;
+    height: 30.8em;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 8px #adadadcb;  
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0px 10px 10px 10px;
+    overflow-y: visible;
+    transition: 100ms ease-in-out 100ms;
+    background-color: rgba(1, 0, 7, 0.514);
+}
+.rightside:hover,
+.drightside:hover{
+    backdrop-filter: blur(50px);
+}
+.lonerlogo{
+    z-index: 20;
+    height: 105vmin;
+    pointer-events: none;
+    position: absolute;
+    top:-160px;
+    right: -130px;
+    filter: drop-shadow(16px 7px 8px #020061);
+    transition: 100ms ease-in-out 100ms;
+  }
+.dlonerlogo{
+    height: 105vmin;
+    pointer-events: none;
+    position: absolute;
+    top:-160px;
+    right: -130px;
+    filter: drop-shadow(26px 7px 8px #000108);
+    transition: 100ms ease-in-out 100ms;
+    animation: shadowflicker 500ms linear 0s 1;
+  }
+.TopLine{
+    text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 70px;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 80px;
+    color: #d8d8d8;
+    /* animation: fadein 300ms linear 0s 1; */
+    width:130%;
+}
+.LineThree{
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    /* font-family: ''; */
+    font-weight: 400;
+    font-size: 20px;
+    color: #d8d8d8;
+    /* animation: fadein 300ms linear 0s 1; */
+    width:130%;
+}
+.LineFour{
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    /* font-family: ''; */
+    font-weight: 400;
+    font-size: 20px;
+    color: #d8d8d8;
+    /* animation: fadein 300ms linear 0s 1; */
+    width:130%;
+}
+  .dTopLine{
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 70px;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 80px;
+    color: #2d54ff;
+    animation: flicker 500ms linear 0s 1;
+    width:130%;
+    text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+}
+
+
+.dLineThree{
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    /* font-family: ''; */
+    font-weight: 400;
+    font-size: 20px;
+    color: #9caeff;
+    /* animation: fadein 300ms linear 0s 1; */
+    width:130%;
+}
+.dLineFour{
+    transition: 100ms ease-in-out 100ms;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    /* font-family: ''; */
+    font-weight: 400;
+    font-size: 20px;
+    color: #9caeff;
+    /* animation: fadein 300ms linear 0s 1; */
+    width:130%;
+}
+.LineFour .levlink{
+    color: #d8d8d8;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 100ms ease-in-out 100ms;
+}
+.dLineFour .levlink{
+    color: #c1ccff;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 100ms ease-in-out 100ms;
+}
+.dLineFour .levlink:hover{
+  color: #734cff;
+} 
+.LineFour .levlink:hover{
+    color: #2f05ca;  
+}
+.sidebuttons{
+    display: flex;
+    position: relative; 
+    top:10px;
+}
+.donbtnhome{
+    position: relative; top:10px; left:10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background: rgba(196, 196, 196, 0.071);
+    border-radius: 30px;
+    box-shadow: 0 0 0px #01003a;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #ffffff;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms, ease-in-out, 100ms;
+}
+.dHome .donbtnhome{
+    position: relative; top:10px; left:10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background: rgba(146, 146, 146, 0.071);
+    border-radius: 30px;
+    box-shadow: 0 0 0px #d8d8d8;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #9caeff;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+.Home .donbtnhome:hover,
+.Home .donbtnhome:focus{
+    background-color: #14005e;
+}
+.dHome .donbtnhome:hover,
+.dHome .donbtnhome:focus{
+    background-color: #d9cfff;
+    color: #000620;
+}
+.donbtnhome1{
+    position: relative; top:10px; left:50px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background: rgba(196, 196, 196, 0.071);
+    border-radius: 30px;
+    box-shadow: 0 0 0px #01003a;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #ffffff;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+.Home .donbtnhome1:hover,
+.Home .donbtnhome1:focus{
+    background-color: #14005e;
+}
+
+.dHome .donbtnhome1{
+    position: relative; top:10px; left:50px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background: rgba(146, 146, 146, 0.071);
+    border-radius: 30px;
+    box-shadow: 0 0 0px #d8d8d8;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #9caeff;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms, ease-in-out, 100ms;
+}
+
+.dHome .donbtnhome1:hover,
+.dHome .donbtnhome1:focus{
+    background-color: #d9cfff;
+    color: #000620;
+}
+.downloadimg{    
+  height: 2vmin;
+  pointer-events: none;
+  position: relative;
+  top:1px;
+  left:10px;
+  animation: fadein 300ms linear 0s 1;
+}
+.whatsappimg{
+    height: 3vmin;
+    pointer-events: none;
+    position: relative;
+    top:-10px;
+    left:10px;
+    margin-bottom: -15px;
+    animation: fadein 300ms linear 0s 1;
+}
+@keyframes slidein {
+    from{
+        color: transparent;
+        margin-left: -1em;
+    }
+    to{
+        color: inherit;
+        margin-left: 10px;
+    }
+  }
+@keyframes fadein {
+    from{
+        position: inherit;
+        color: transparent;
+    }
+    to{
+        position: inherit;
+        color: inherit;
+    }
+  }
+@keyframes flicker {
+    0%{
+        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
+    }
+    25%{
+        text-shadow: none;
+    }
+    50%{
+        text-shadow: 0 0 2.5px #adb9ff, 0 0 5px #adb9ff, 0 0 7.5px #adb9ff, 0 0 10px #adb9ff, 0 0 12.5px #adb9ff, 0 0 15px #adb9ff;
+    }
+    75%{
+        text-shadow: none;
+    }
+    100%{
+        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    }
+}
+@keyframes shadowflicker {
+    0%{
+        filter: drop-shadow(5px 7px 2px #000108)
+    }
+    25%{
+        filter: none
+    }
+    50%{
+        filter: drop-shadow(13px 7px 4px #000108)
+    }
+    75%{
+        filter: none
+    }
+    100%{
+        filter: drop-shadow(26px 7px 8px #000108)
+    }
+}
+
+@media screen and (max-width:526px) {
+    .Home{
+        background-color: #3272a0;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .dHome{
+        background-color: #010327;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .spliting{
+        display:block;
+    }
+    .leftside{
+        position: relative;
+        top: 210px;
+        left: -5%;
+        z-index: 4;
+        text-align: center;
+        width: 75%;
+    }
+    .rightside{
+        height: 490px;
+        position: relative;
+        top: -260px;
+        left: -10%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(107, 107, 107, 0.76);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; 
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        backdrop-filter: blur(1px);
+    }
+   .drightside{
+        height: 490px;
+        position: relative;
+        top: -280px;
+        left: -10%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(194, 194, 194, 0.76);
+        box-shadow: 0 0 8px #adadadcb;  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        background-color: rgba(1, 0, 7, 0.514);
+        backdrop-filter: blur(1px);
+    }
+    .TopLine{
+        text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #d8d8d8;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineThree{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight:6400;
+        font-size:5px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+      .dTopLine{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #2d54ff;
+        animation: flicker 500ms linear 0s 1;
+        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    }
+    
+    
+    .dLineThree{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .dLineFour{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .dLineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .sidebuttons{
+        display: flex;
+        position: relative; 
+        top:0px;
+        width: 300px;
+        left: 10%;
+    }
+    .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .whatlink{
+        position: relative; top:-10px; left:20px;
+    }
+    .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    
+    .downloadimg{    
+        height: 4vmin;
+        pointer-events: none;
+        position: relative;
+        top:1px;
+        left:10px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .whatsappimg{
+        height: 5vmin;
+        pointer-events: none;
+        position: relative;
+        top:-10px;
+        left:10px;
+        margin-bottom: -15px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .lonerlogo{
+        height: 170vmin;
+        padding-right: -200px;
+        pointer-events: none;
+        position: absolute;
+        top:-150px;
+        right: 0px;
+        margin-right: -190px;
+        overflow-x:hidden;
+        filter: drop-shadow(16px 7px 8px #020061);
+        transition: 100ms ease-in-out 100ms;
+      }
+    .dlonerlogo{
+        height: 170vmin;
+        padding-right: -200px;
+        pointer-events: none;
+        position: absolute;
+        top:-150px;
+        right: 0px;
+        margin-right: -190px;
+        overflow-x:hidden;
+        filter: drop-shadow(26px 7px 8px #000108);
+        transition: 100ms ease-in-out 100ms;
+        animation: shadowflicker 500ms linear 0s 1;
+      }
+}
+@media screen and (max-width:692px) and (min-width:526px) {    
+    .Home{
+        background-color: #3272a0;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .dHome{
+        background-color: #010327;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .spliting{
+        display:block;
+    }
+    .leftside{
+        position: relative;
+        top: 220px;
+        left: -5%;
+        z-index: 4;
+        text-align: center;
+        width: 75%;
+    }
+    .rightside{
+        height: 510px;
+        position: relative;
+        top: -285px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(107, 107, 107, 0.76);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; 
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        backdrop-filter: blur(1px);
+    }
+   .drightside{
+        height: 510px;
+        position: relative;
+        top: -285px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(194, 194, 194, 0.76);
+        box-shadow: 0 0 8px #adadadcb;  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        background-color: rgba(1, 0, 7, 0.514);
+        backdrop-filter: blur(1px);
+    }
+    .TopLine{
+        text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #d8d8d8;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineThree{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight:6400;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+      .dTopLine{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #2d54ff;
+        animation: flicker 500ms linear 0s 1;
+        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    }
+    
+    
+    .dLineThree{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .dLineFour{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .dLineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .sidebuttons{
+        display: flex;
+        position: relative; 
+        top:0px;
+        width: 100%;
+        left: 10%;
+        justify-content: space-around;
+    }
+    .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 170px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 170px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .whatlink{
+        position: relative; top:-10px; left:50px;
+    }
+    .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 170px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 170px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    
+    .downloadimg{    
+        height: 20px;
+        pointer-events: none;
+        position: relative;
+        top:1px;
+        left:10px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .whatsappimg{
+        height: 25px;
+        pointer-events: none;
+        position: relative;
+        top:-10px;
+        left:10px;
+        margin-bottom: -15px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .lonerlogo{
+        height: 150vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -170px;
+        filter: drop-shadow(16px 7px 8px #020061);
+        transition: 100ms ease-in-out 100ms;
+      }
+    .dlonerlogo{
+        height: 150vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -170px;
+        filter: drop-shadow(26px 7px 8px #000108);
+        transition: 100ms ease-in-out 100ms;
+        animation: shadowflicker 500ms linear 0s 1;
+      }
+}
+@media screen and (max-width:840px) and (min-width:692px) {    
+    .Home{
+        background-color: #3272a0;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .dHome{
+        background-color: #010327;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .spliting{
+        display:block;
+    }
+    .leftside{
+        position: relative;
+        top: 310px;
+        left: -5%;
+        z-index: 4;
+        text-align: center;
+        width: 75%;
+    }
+    .rightside{
+        height: 510px;
+        position: relative;
+        top: -200px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(107, 107, 107, 0.76);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; 
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        backdrop-filter: blur(1px);
+    }
+   .drightside{
+        height: 510px;
+        position: relative;
+        top: -200px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(194, 194, 194, 0.76);
+        box-shadow: 0 0 8px #adadadcb;  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        background-color: rgba(1, 0, 7, 0.514);
+        backdrop-filter: blur(1px);
+    }
+    .TopLine{
+        text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #d8d8d8;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineThree{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight:6400;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+      .dTopLine{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #2d54ff;
+        animation: flicker 500ms linear 0s 1;
+        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    }
+    
+    
+    .dLineThree{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .dLineFour{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .dLineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .sidebuttons{
+        display: flex;
+        position: relative; 
+        top:0px;
+        width: 100%;
+        left: 10%;
+        justify-content: space-around;
+    }
+    .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 190px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 190px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .whatlink{
+        position: relative; top:-10px; left:50px;
+    }
+    .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 190px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 190px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    
+    .downloadimg{    
+        height: 20px;
+        pointer-events: none;
+        position: relative;
+        top:1px;
+        left:10px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .whatsappimg{
+        height: 25px;
+        pointer-events: none;
+        position: relative;
+        top:-10px;
+        left:10px;
+        margin-bottom: -15px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .lonerlogo{
+        height: 110vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -90px;
+        filter: drop-shadow(16px 7px 8px #020061);
+        transition: 100ms ease-in-out 100ms;
+      }
+    .dlonerlogo{
+        height: 110vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -90px;
+        filter: drop-shadow(26px 7px 8px #000108);
+        transition: 100ms ease-in-out 100ms;
+        animation: shadowflicker 500ms linear 0s 1;
+      }
+}
+@media screen and (max-width:992px) and (min-width:840px) {
+    .Home{
+        background-color: #3272a0;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .dHome{
+        background-color: #010327;
+        padding: 1rem;
+        max-width: 100%;
+        height: 85vh;
+        padding-bottom: 0px;
+        transition: 100ms ease-in-out 100ms;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .spliting{
+        display:block;
+    }
+    .leftside{
+        position: relative;
+        top: 310px;
+        left: -5%;
+        z-index: 4;
+        text-align: center;
+        width: 75%;
+    }
+    .rightside{
+        height: 510px;
+        position: relative;
+        top: -200px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(107, 107, 107, 0.76);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; 
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        backdrop-filter: blur(1px);
+    }
+   .drightside{
+        height: 510px;
+        position: relative;
+        top: -200px;
+        left: -5%;
+        z-index: 3;
+        width: 100%;
+        border: 0px solid rgba(194, 194, 194, 0.76);
+        box-shadow: 0 0 8px #adadadcb;  
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0px 10px 10px 10px;
+        overflow-y: visible;
+        transition: 100ms ease-in-out 100ms;
+        background-color: rgba(1, 0, 7, 0.514);
+        backdrop-filter: blur(1px);
+    }
+    .TopLine{
+        text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #d8d8d8;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineThree{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight:6400;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+      .dTopLine{
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 70px;
+        font-family: 'Merriweather';
+        font-weight: 900;
+        font-size: 70px;
+        text-align: center;
+        color: #2d54ff;
+        animation: flicker 500ms linear 0s 1;
+        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    }
+    
+    
+    .dLineThree{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .dLineFour{
+        text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
+        transition: 100ms ease-in-out 100ms;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        /* font-family: ''; */
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        color: #00011e;
+        /* animation: fadein 300ms linear 0s 1; */
+    }
+    .LineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .dLineFour .levlink{
+        color: #2f1ddf;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: 100ms ease-in-out 100ms;
+    }
+    .sidebuttons{
+        display: flex;
+        position: relative; 
+        top:0px;
+        width: 100%;
+        left: 10%;
+        justify-content: space-around;
+    }
+    .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome{
+        position: relative; top:-10px; left:0px;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .whatlink{
+        position: relative; top:-10px; left:50px;
+    }
+    .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        background: rgba(1, 0, 71, 0.719);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #01003a;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #ffffff;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    .dHome .donbtnhome1{
+        position: relative; top:0px; left:0px;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        background: rgba(235, 235, 255, 0.521);
+        border-radius: 30px;
+        box-shadow: 0 0 0px #d8d8d8;
+        border: 2px solid rgb(155, 155, 155);
+        backdrop-filter: blur(50px);
+        cursor: pointer;
+        color: #000133;
+        font-size:15px;
+        /* font-family:'Times New Roman', Times, serif; */
+        transition: 100ms, ease-in-out, 100ms;
+    }
+    
+    .downloadimg{    
+        height: 20px;
+        pointer-events: none;
+        position: relative;
+        top:1px;
+        left:10px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .whatsappimg{
+        height: 25px;
+        pointer-events: none;
+        position: relative;
+        top:-10px;
+        left:10px;
+        margin-bottom: -15px;
+        animation: fadein 300ms linear 0s 1;
+    }
+    .lonerlogo{
+        height: 120vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -20px;
+        filter: drop-shadow(16px 7px 8px #020061);
+        transition: 100ms ease-in-out 100ms;
+      }
+    .dlonerlogo{
+        height: 120vmin;
+        pointer-events: none;
+        position: absolute;
+        top:-130px;
+        right: -20px;
+        filter: drop-shadow(26px 7px 8px #000108);
+        transition: 100ms ease-in-out 100ms;
+        animation: shadowflicker 500ms linear 0s 1;
+      }
+}

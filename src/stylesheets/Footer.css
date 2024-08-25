@@ -1,0 +1,627 @@
+.Footer {
+    background: #3272a0;
+    display:flex;
+    font-weight: bolder;
+    z-index: 9;
+    position: relative;
+    transition: 100ms ease-in-out 100ms;
+    height: 4em;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 8px #010921;
+  }
+.dFooter {
+    background: #010327;
+    display:flex;
+    font-weight: bolder;
+    z-index: 9;
+    position: relative;
+    transition: 100ms ease-in-out 100ms;
+    height: 4em;
+    border-bottom: 2px solid rgb(9, 0, 87);
+    box-shadow: 0 0 8px #0731b1;
+  }
+  .FooterYellow{
+    background:#856d01;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterBlue{
+    background:#01168d;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterLightGreen{
+    background:#046900;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterYellowExpress{
+    background:#6e6300;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterDarkGreen{
+    background:#018f19;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterBlueYellow{
+    background:#c79c00;
+    width:100%; 
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .FooterDeepBlue{
+    background:#080441;
+    width:100%;
+    height: 4em;
+    z-index: 7;
+    display: flex;
+    border-bottom: 2px solid rgb(3, 0, 156);
+    box-shadow: 0 0 5px #010921;
+    transition: 100ms ease-in-out 100ms;
+  }
+  
+  .Footertext{
+    text-align: center;
+    position: relative;
+    left: 550px;
+    bottom: 10px;
+  }
+  
+  .FooterCopyright{
+    color: #d8d8d8;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+  }
+
+  .dFootertext{
+    text-align: center;
+    position: relative;
+    left: 550px;
+    bottom: 10px;
+    font-weight:600;
+    font-size:20px;
+  }
+  
+  .dFooterCopyright{
+    color: #9caeff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 100ms ease-in-out 100ms;
+  }
+
+  
+  @media screen and (max-width:552px) {
+    .Footer {
+      position: relative;
+      bottom: 0px;
+      background: #3272a0;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 8px #010921;
+    }
+  .dFooter {
+    position: relative;
+      bottom: 0px;
+      background: #010327;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(9, 0, 87);
+      box-shadow: 0 0 8px #0731b1;
+    }
+    .FooterYellow{
+      bottom: 0px;
+      background:#856d01;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlue{
+      bottom: 0px;
+      background:#01168d;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterLightGreen{
+      bottom: 0px;
+      background:#046900;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterYellowExpress{
+      bottom: 0px;
+      background:#6e6300;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDarkGreen{
+      bottom: 0px;
+      background:#018f19;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlueYellow{
+      bottom: 0px;
+      background:#c79c00;
+      width:100%; 
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDeepBlue{
+      bottom: 0px;
+      background:#080441;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .Footertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;
+      left: 15%;
+      font-weight:lighter;
+      font-size:17px;
+    }  
+    .dFootertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;    
+      left: 15%;
+      font-weight:lighter;
+      font-size:17px;
+    }
+    .FooterCopyright{
+      color: #d8d8d8;
+      font-family:'Times New Roman', Times, serif;
+      transition: 100ms ease-in-out 100ms;
+    }  
+  }
+
+  @media screen and (max-width:620px) and (min-width:552px) {
+    .Footer {
+      position: relative;
+      bottom: 0px;
+      background: #3272a0;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 8px #010921;
+    }
+  .dFooter {
+    position: relative;
+      bottom: 0px;
+      background: #010327;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(9, 0, 87);
+      box-shadow: 0 0 8px #0731b1;
+    }
+    .FooterYellow{
+      bottom: 0px;
+      background:#856d01;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlue{
+      bottom: 0px;
+      background:#01168d;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterLightGreen{
+      bottom: 0px;
+      background:#046900;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterYellowExpress{
+      bottom: 0px;
+      background:#6e6300;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDarkGreen{
+      bottom: 0px;
+      background:#018f19;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlueYellow{
+      bottom: 0px;
+      background:#c79c00;
+      width:100%; 
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDeepBlue{
+      bottom: 0px;
+      background:#080441;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .Footertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;
+      left: 20%;
+      font-weight:lighter;
+      font-size:17px;
+    }  
+    .dFootertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;    
+      left: 20%;
+      font-weight:lighter;
+      font-size:17px;
+    }
+    .FooterCopyright{
+      color: #d8d8d8;
+      font-family:'Times New Roman', Times, serif;
+      transition: 100ms ease-in-out 100ms;
+    }  
+  }
+  @media screen and (max-width:800px) and (min-width:620px) {
+    .Footer {
+      position: relative;
+      bottom: 0px;
+      background: #3272a0;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 8px #010921;
+    }
+  .dFooter {
+    position: relative;
+      bottom: 0px;
+      background: #010327;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3em;
+      border-bottom: 2px solid rgb(9, 0, 87);
+      box-shadow: 0 0 8px #0731b1;
+    }
+    .FooterYellow{
+      bottom: 0px;
+      background:#856d01;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlue{
+      bottom: 0px;
+      background:#01168d;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterLightGreen{
+      bottom: 0px;
+      background:#046900;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterYellowExpress{
+      bottom: 0px;
+      background:#6e6300;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDarkGreen{
+      bottom: 0px;
+      background:#018f19;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlueYellow{
+      bottom: 0px;
+      background:#c79c00;
+      width:100%; 
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDeepBlue{
+      bottom: 0px;
+      background:#080441;
+      width:100%;
+      height: 3em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .Footertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;
+      left: 25%;
+      font-weight:lighter;
+      font-size:17px;
+    }  
+    .dFootertext{
+      text-align: left;
+      position: relative;
+      bottom: 10px;    
+      left: 25%;
+      font-weight:lighter;
+      font-size:17px;
+    }
+    .FooterCopyright{
+      color: #d8d8d8;
+      font-family:'Times New Roman', Times, serif;
+      transition: 100ms ease-in-out 100ms;
+    }
+  }
+  @media screen and (max-width:992px) and (min-width:800px) {
+    .Footer {
+      position: relative;
+      background: #3272a0;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3.5em;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 8px #010921;
+      bottom: 0px;
+    }
+  .dFooter {
+    position: relative;
+      background: #010327;
+      display:flex;
+      font-weight: bolder;
+      z-index: 9;
+      position: relative;
+      transition: 100ms ease-in-out 100ms;
+      height: 3.5em;
+      border-bottom: 2px solid rgb(9, 0, 87);
+      box-shadow: 0 0 8px #0731b1;
+      bottom: 0px;
+    }
+    .FooterYellow{
+      bottom: 0px;
+      background:#856d01;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlue{
+      bottom: 0px;
+      background:#01168d;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterLightGreen{
+      bottom: 0px;
+      background:#046900;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterYellowExpress{
+      bottom: 0px;
+      background:#6e6300;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDarkGreen{
+      bottom: 0px;
+      background:#018f19;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterBlueYellow{
+      bottom: 0px;
+      background:#c79c00;
+      width:100%; 
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .FooterDeepBlue{
+      bottom: 0px;
+      background:#080441;
+      width:100%;
+      height: 3.5em;
+      z-index: 7;
+      display: flex;
+      border-bottom: 2px solid rgb(3, 0, 156);
+      box-shadow: 0 0 5px #010921;
+      transition: 100ms ease-in-out 100ms;
+    }
+    .Footertext{
+      text-align: left;
+      position: relative;
+      bottom: 15px;
+      left: 28%;
+      font-weight:lighter;
+      font-size:20px;
+    }  
+    .dFootertext{
+      text-align: left;
+      position: relative;
+      bottom: 15px;    
+      left: 28%;
+      font-weight:lighter;
+      font-size:20px;
+    }
+    .FooterCopyright{
+      color: #d8d8d8;
+      font-family:'Times New Roman', Times, serif;
+      transition: 100ms ease-in-out 100ms;
+    }
+  }
