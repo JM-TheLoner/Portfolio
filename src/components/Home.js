@@ -2,7 +2,11 @@ import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect } from 'react'
+<<<<<<< HEAD
 // import imageone from './homeimageone.png'
+=======
+//import imageone from './homeimageone.png'
+>>>>>>> f8cb13692f66ab3d510958e2bb9f47dabea8b479
 import imagetwo from './homeimagetwo.png'
 import dondark from './downloadblack.png'
 import donlight from './downloadwhite.png'

@@ -85,7 +85,7 @@ const Header = ({ title }) => {
                     <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
                 </div>
                 <div className='linklist2' onClick={(e)=>{navabout()}}>                
-                    <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>Skills</Link>
+                    <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>About</Link>
                 </div>
                 <div className='linklist3' onClick={(e)=>{navcontact()}}>                
                     <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
