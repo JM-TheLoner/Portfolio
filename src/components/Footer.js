@@ -39,7 +39,7 @@ const Footer = () => {
         :
           footstate
         }>
-        <div className={!dark ? 'Footertext' : 'dFootertext'}>
+        <div className='Footertext'>
           <h5 className={!dark ? 'FooterCopyright' : 'dFooterCopyright'}>&copy; 2023 - All Rights Reserved by J.M_TheLoner</h5>
         </div>
       </footer>

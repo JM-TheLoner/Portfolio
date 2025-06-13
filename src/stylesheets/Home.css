@@ -30,7 +30,7 @@
     justify-content: left;
     width:50%;
     position: relative;
-    top: 60px;
+    top: 75px;
     left: 20px;
 }
 .rightside{
@@ -114,9 +114,22 @@
     /* font-family: ''; */
     font-weight: 400;
     font-size: 20px;
-    color: #d8d8d8;
+    /* color: #d8d8d8; */
     /* animation: fadein 300ms linear 0s 1; */
     width:130%;
+
+        color: #d8d8d8a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
 .LineFour{
     transition: 100ms ease-in-out 100ms;
@@ -126,23 +139,42 @@
     /* font-family: ''; */
     font-weight: 400;
     font-size: 20px;
-    color: #d8d8d8;
+    /* color: #d8d8d8; */
     /* animation: fadein 300ms linear 0s 1; */
     width:130%;
+
+    color: #d8d8d8a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
   .dTopLine{
     transition: 100ms ease-in-out 100ms;
     position: relative;
-    top: 70px;
+    top: 20px;
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 80px;
     color: #2d54ff;
-    animation: flicker 500ms linear 0s 1;
+    animation: swipein 1s linear 0s 1;
     width:130%;
-    text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
+    text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff;
 }
 
+.writer{
+    font-weight: 900;
+    font-size: 20px;
+    color: green;
+    position: absolute;
+}
 
 .dLineThree{
     transition: 100ms ease-in-out 100ms;
@@ -152,9 +184,22 @@
     /* font-family: ''; */
     font-weight: 400;
     font-size: 20px;
-    color: #9caeff;
+    /* color: #9caeff; */
     /* animation: fadein 300ms linear 0s 1; */
     width:130%;
+
+    color: #fafafaa4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
 .dLineFour{
     transition: 100ms ease-in-out 100ms;
@@ -164,10 +209,25 @@
     /* font-family: ''; */
     font-weight: 400;
     font-size: 20px;
-    color: #9caeff;
+    /* color: #9caeff; */
     /* animation: fadein 300ms linear 0s 1; */
     width:130%;
+
+    color: #fafafaa4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
+
+
 .LineFour .levlink{
     color: #d8d8d8;
     margin-left: 10px;
@@ -186,6 +246,62 @@
 .LineFour .levlink:hover{
     color: #2f05ca;  
 }
+
+@keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
+
+  @keyframes  swipein {
+    0%{       
+        text-shadow: none;
+        background: #010327;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    15%{
+        text-shadow: none;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 15%, white calc(15% + 1px), white calc(15% + 10px), #010327 calc(15% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30%{
+        text-shadow: none;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 30%, white calc(30% + 1px), white calc(30% + 10px), #010327 calc(30% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    45%{
+        text-shadow: none;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 45%, white calc(45% + 1px), white calc(45% + 10px), #010327 calc(45% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60%{
+        text-shadow: none;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 60%, white calc(60% + 1px), white calc(60% + 10px), #010327 calc(60% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        text-shadow: none;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 75%, white calc(75% + 1px), white calc(75% + 10px), #010327 calc(75% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{       
+        color: #2d54ff;
+        text-shadow: 0 0 5px #adb9ffbe, 0 0 6px #adb9ffbe, 0 0 7px #adb9ffbe, 0 0 8px #adb9ffbe, 0 0 9px #adb9ffbe;
+    }
+    100%{
+        text-shadow: inherit;
+    }
+  }
+  
 .sidebuttons{
     display: flex;
     position: relative; 
@@ -314,23 +430,6 @@
         color: inherit;
     }
   }
-@keyframes flicker {
-    0%{
-        text-shadow: 0 0 1px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff, 0 0 4px #adb9ff, 0 0 5px #adb9ff, 0 0 6px #adb9ff;
-    }
-    25%{
-        text-shadow: none;
-    }
-    50%{
-        text-shadow: 0 0 2.5px #adb9ff, 0 0 5px #adb9ff, 0 0 7.5px #adb9ff, 0 0 10px #adb9ff, 0 0 12.5px #adb9ff, 0 0 15px #adb9ff;
-    }
-    75%{
-        text-shadow: none;
-    }
-    100%{
-        text-shadow: 0 0 5px #adb9ff, 0 0 10px #adb9ff, 0 0 15px #adb9ff, 0 0 20px #adb9ff, 0 0 25px #adb9ff, 0 0 30px #adb9ff;
-    }
-}
 @keyframes shadowflicker {
     0%{
         filter: drop-shadow(5px 7px 2px #000108)

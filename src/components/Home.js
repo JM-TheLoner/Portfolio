@@ -2,12 +2,13 @@ import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect } from 'react'
-import imageone from './homeimageone.png'
+// import imageone from './homeimageone.png'
 import imagetwo from './homeimagetwo.png'
 import dondark from './downloadblack.png'
 import donlight from './downloadwhite.png'
 import whatlight from './whatsapplight.png'
 import whatdark from './whatsappdark.png'
+import DecryptedText from './animations/decryptedText'
 
 const Home = () => {
 
@@ -72,7 +73,28 @@ const Home = () => {
 
       <div className='spliting'>
         <div className='leftside'>
-          <h1 className={!dark ? "TopLine" : "dTopLine"}>Olaitan Oluwaseun</h1>
+
+          <div className={!dark ? "TopLine" : "dTopLine"}>
+            <DecryptedText            
+              speed={80}
+              maxIterations={20}
+              text="Olaitan"
+              animateOn="view"
+              revealDirection="start"
+            />
+          </div>
+          <div className={!dark ? "TopLine" : "dTopLine"}>
+            <DecryptedText            
+              speed={80}
+              maxIterations={20}
+              text="Oluwaseun . N"
+              animateOn="view"
+              revealDirection="start"
+            />
+          </div>
+
+          
+          {/* <h1 className={!dark ? "TopLine" : "dTopLine"}>Olaitan Oluwaseun</h1> */}
           <h1 className={!dark ? "LineThree" : "dLineThree"}>Full-stack Developer || Software Engineer || Electrical Engineer</h1>          
           <h1 className={!dark ? "LineFour" : "dLineFour"}>
             Co-founder of 

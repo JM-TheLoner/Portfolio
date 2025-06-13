@@ -4,7 +4,7 @@ import '../stylesheets/Contact.css'
 // import phone from './phone.png'
 import { useEffect, useState, useContext, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import DataContext from '../context/Datacontext'
+import DataContext from '../context/Datacontext' 
 import whatlight from './whatsapplight.png'
 import whatdark from './whatsappdark.png'
 import insta from './insta.png'
@@ -75,7 +75,6 @@ const Contact = () => {
     setcontactemail('')
     setmessage('')
     setcontacted(true)
-
 
     console.log(`Full Name: ${fullname}`)
     console.log(`Email: ${contactemail}`)

@@ -96,23 +96,15 @@
     position: relative;
     left: 550px;
     bottom: 10px;
+    font-weight:300;
+    font-size:20px;
   }
   
   .FooterCopyright{
     color: #d8d8d8;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: 100ms ease-in-out 100ms;
-  }
-
-  .dFootertext{
-    text-align: center;
-    position: relative;
-    left: 550px;
-    bottom: 10px;
-    font-weight:600;
-    font-size:20px;
-  }
-  
+  }  
   .dFooterCopyright{
     color: #9caeff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

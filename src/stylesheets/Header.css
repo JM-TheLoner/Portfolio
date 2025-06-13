@@ -9,6 +9,7 @@
     z-index: 9;
     position: sticky;
     top: 0;
+    backdrop-filter: blur(10px);
   }
   .dHeader {
     height: 100%;
@@ -18,11 +19,14 @@
     z-index: 9;
     position: sticky;
     top: 0;
+    backdrop-filter: blur(10px);
   }
 .smallHead{
+    backdrop-filter: blur(10px);
   display: none;
 }
 .dsmallHead{
+    backdrop-filter: blur(10px);
   display: none;
 }
 .Topbar{
@@ -31,8 +35,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .dTopbar{
@@ -41,8 +45,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(9, 0, 87);
-  box-shadow: 0 0 5px #0731b1;
+  border-bottom: 0px solid rgb(9, 0, 87);
+  box-shadow: 0 0 1px #0731b1;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarYellow{
@@ -51,8 +55,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarBlue{
@@ -61,8 +65,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarLightGreen{
@@ -71,8 +75,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarYellowExpress{
@@ -81,8 +85,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarDarkGreen{
@@ -91,8 +95,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarBlueYellow{
@@ -101,8 +105,8 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
 .TopbarDeepBlue{
@@ -111,9 +115,15 @@
   height: 4em;
   z-index: 7;
   display: flex;
-  border-bottom: 2px solid rgb(3, 0, 156);
-  box-shadow: 0 0 5px #010921;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
+}
+.listicle{
+  position: absolute;
+  right: 250px;
+  display: flex;
+  font-weight: 300;
 }
 .linklist1{
   color: black;
@@ -124,11 +134,7 @@
   color: black;
   text-decoration: none;
   position: relative;
-  left: 260px;
-}
-.linklist1:hover{
-  color: red;
-  cursor: default;
+  left: 0px;
 }
 .linklist2{
   color: black;
@@ -139,11 +145,7 @@
   color: black;
   text-decoration: none;
   position: relative;
-  left: 300px;
-}
-.linklist2:hover{
-  color: red;
-  cursor: default;
+  left: 20px;
 }
 .linklist3{
   color: black;
@@ -154,11 +156,7 @@
   color: black;
   text-decoration: none;
   position: relative;
-  left: 340px;
-}
-.linklist3:hover{
-  color: red;
-  cursor: default;
+  left: 40px;
 }
 .linklist5{
   color: black;
@@ -169,16 +167,12 @@
   color: black;
   text-decoration: none;
   position: relative;
-  left: 420px;
-}
-.linklist5:hover{
-  color: red;
-  cursor: default;
+  left: 100px;
 }
 .headbtnlinetwo{
   font-size: 23px;
-  margin-top: 20px;
-  font-weight: 500;
+  margin-top: 15px;
+  font-weight: 400;
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   position: relative;
   bottom:0px;
@@ -188,8 +182,8 @@
 }
 .dheadbtnlinetwo{
   font-size: 23px;
-  margin-top: 20px;
-  font-weight: 500;
+  margin-top: 15px;
+  font-weight: 400;
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   position: relative;
   bottom:0px;
@@ -197,23 +191,27 @@
   color: #c1ccff;
   transition: 100ms ease-in-out 100ms;
 }
+.appbtn{
+  cursor: pointer;
+  margin-right: 10px;
+}
  .App-logo2{
-  height: 55px;
+  height: 45px;
   pointer-events: none;
   margin-left: 60px;
   position: relative;
-  top:5px;
+  top:10px;
   right:30px;
 }
 .lightndark{
-  position: relative;
-  left: 800px;
-  top: 15px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
   cursor: pointer;
 }
 .lightbtn{
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   background-color: transparent;
   cursor: pointer;
   position:relative;
@@ -224,7 +222,7 @@
   border: none;
 }
 .lightimg{
-  height: 4vmin;
+  height:3.5vmin;
   pointer-events: none;
   position: relative;
   right:3px;
@@ -233,8 +231,8 @@
   transition: 100ms ease-in-out 100ms;
 }
 .darkbtn{
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   background-color: transparent;
   cursor: pointer;
   position:relative;
@@ -245,7 +243,7 @@
   border: none;
 }
 .darkimg{
-  height: 4vmin;
+  height:3.5vmin;
   pointer-events: none;
   position: relative;
   background-color: #e9e9e9;
@@ -254,7 +252,7 @@
   top: 1px;
   animation: fadein 100ms linear 0s 1;
   transition: 100ms ease-in-out 100ms;
-  box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+  box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
 }
 
 .btn:hover,
@@ -415,6 +413,7 @@
     display: none;
   }
   .smallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -423,6 +422,7 @@
     display: block;
   }
   .dsmallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -480,7 +480,7 @@
     top: 1px;
     animation: fadein 100ms linear 0s 1;
     transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
   }  
   .App-logo2{
     height: 35px;
@@ -496,7 +496,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .dsmallTopbar{
@@ -506,7 +506,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgb(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .smallheadbtnlinetwo{
@@ -689,6 +689,7 @@
     display: none;
   }
   .smallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -697,6 +698,7 @@
     display: block;
   }
   .dsmallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -754,7 +756,7 @@
     top: 1px;
     animation: fadein 100ms linear 0s 1;
     transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
   }  
   .App-logo2{
     height: 35px;
@@ -770,7 +772,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .dsmallTopbar{
@@ -780,7 +782,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgb(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .smallheadbtnlinetwo{
@@ -964,6 +966,7 @@
     display: none;
   }
   .smallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -972,6 +975,7 @@
     display: block;
   }
   .dsmallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -1029,7 +1033,7 @@
     top: 1px;
     animation: fadein 100ms linear 0s 1;
     transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
   }  
   .App-logo2{
     height: 35px;
@@ -1045,7 +1049,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .dsmallTopbar{
@@ -1055,7 +1059,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgb(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .smallheadbtnlinetwo{
@@ -1239,6 +1243,7 @@
     display: none;
   }
   .smallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -1247,6 +1252,7 @@
     display: block;
   }
   .dsmallHead{
+    backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -1304,7 +1310,7 @@
     top: 1px;
     animation: fadein 100ms linear 0s 1;
     transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
   }  
   .App-logo2{
     height: 35px;
@@ -1320,7 +1326,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .dsmallTopbar{
@@ -1330,7 +1336,7 @@
     height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 1px solid rgb(155, 155, 155, 0.322);
+    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
     transition: 100ms ease-in-out 100ms;
   }
   .smallheadbtnlinetwo{
@@ -1513,8 +1519,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .dTopbar{
@@ -1523,8 +1529,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(9, 0, 87);
-    box-shadow: 0 0 5px #0731b1;
+    border-bottom: 0px solid rgb(9, 0, 87);
+    box-shadow: 0 0 1px #0731b1;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarYellow{
@@ -1533,8 +1539,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarBlue{
@@ -1543,8 +1549,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarLightGreen{
@@ -1553,8 +1559,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarYellowExpress{
@@ -1563,8 +1569,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarDarkGreen{
@@ -1573,8 +1579,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarBlueYellow{
@@ -1583,8 +1589,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .TopbarDeepBlue{
@@ -1593,8 +1599,8 @@
     height: 4em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-bottom: 0px solid rgb(3, 0, 156);
+    box-shadow: 0 0 1px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .linklist1{
@@ -1767,6 +1773,6 @@
       top: 1px;
       animation: fadein 100ms linear 0s 1;
       transition: 100ms ease-in-out 100ms;
-      box-shadow: 0 0 5px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
+      box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
     }  
 }

@@ -45,26 +45,26 @@ const Header = ({ title }) => {
     headstate = 'TopbarDeepBlue'
   }
 
-    const navhome = (e) =>{            
-        navigate('/')
-        setslider(false)
-    }
-    const navport = (e) =>{        
-        navigate('/portfolio')
-        setslider(false)
-    }
-    const navabout = (e) =>{        
-        navigate('/skills')
-        setslider(false)
-    }
-    const navcontact = (e) =>{        
-        navigate('/contact')
-        setslider(false)
-    }
+  const navhome = (e) =>{            
+      navigate('/')
+      setslider(false)
+  }
+  const navport = (e) =>{        
+      navigate('/portfolio')
+      setslider(false)
+  }
+  const navabout = (e) =>{        
+      navigate('/skills')
+      setslider(false)
+  }
+  const navcontact = (e) =>{        
+      navigate('/contact')
+      setslider(false)
+  }
 
-const linkstyle = {
-    textDecoration:"none"
-}
+  const linkstyle = {
+      textDecoration:"none"
+  }
 
   return (     
     <> 
@@ -76,19 +76,23 @@ const linkstyle = {
           :
             headstate
           }>
-              <img src={logo} className="App-logo2" alt="logo"/>
-              <p className={!dark ? 'headbtnlinetwo' : 'dheadbtnlinetwo'}>J.M_TheLoner</p>                       
-              <div className='linklist1' onClick={(e)=>{navhome()}}>                    
-                  <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
-              </div>
-              <div className='linklist2' onClick={(e)=>{navabout()}}>                
-                  <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>Skills</Link>
-              </div>
-              <div className='linklist3' onClick={(e)=>{navcontact()}}>                
-                  <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
-              </div>
-              <div className='linklist5' onClick={(e)=>{navport()}}>                
-                  <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
+              <div onClick={(e) => {navhome(e)}} className='appbtn'>
+                <img src={logo} className="App-logo2" alt="logo"/>
+              </div>              
+              <p className={!dark ? 'headbtnlinetwo' : 'dheadbtnlinetwo'}>J.M_TheLoner</p>  
+              <div className='listicle'>                     
+                <div className='linklist1' onClick={(e)=>{navhome()}}>                    
+                    <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
+                </div>
+                <div className='linklist2' onClick={(e)=>{navabout()}}>                
+                    <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>Skills</Link>
+                </div>
+                <div className='linklist3' onClick={(e)=>{navcontact()}}>                
+                    <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
+                </div>
+                <div className='linklist5' onClick={(e)=>{navport()}}>                
+                    <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
+                </div>
               </div>
               <div className='lightndark' onClick={(e) => {darkmode(e)}}>
                   { dark ?                 

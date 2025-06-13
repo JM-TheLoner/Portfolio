@@ -10,8 +10,10 @@ import pandas from './pandas.jpg'
 import javascript from './javascript.jpg'
 import { useEffect, useContext, useState } from 'react'
 import DataContext from '../context/Datacontext'
+import ClickSpark from './animations/TapSpark'
 
-const About = () => {
+
+const About = () => { 
 
   const { dark, aboutClassname, setaboutClassname } = useContext(DataContext)
   const [backState, setbackState] = useState(false)
@@ -49,48 +51,20 @@ const About = () => {
     setbackState(false)
     setaboutClassname(null)
   }
-  const clickedTruejs = () =>{
-    setbackState(true)
-    setaboutClassname('AboutYellow')
-  }
-  const clickedTruereact = () =>{
-    setbackState(true)
-    setaboutClassname('AboutBlue')
-  }
-  const clickedTruemongo = () =>{
-    setbackState(true)
-    setaboutClassname('AboutLightGreen')
-  }
-  const clickedTrueexpress = () =>{
-    setbackState(true)
-    setaboutClassname('AboutYellowExpress')
-  }
-  const clickedTruenode = () =>{
-    setbackState(true)
-    setaboutClassname('AboutDarkGreen')
-  }
-  const clickedTruepython = () =>{
-    setbackState(true)
-    setaboutClassname('AboutBlueYellow')
-  }
-  const clickedTruepandas = () =>{
-    setbackState(true)
-    setaboutClassname('AboutDeepBlue')
-  }
-  const clickedFalse = () =>{
-    backState ? 
-      setbackState(false)
-    :
-      setbackState(true)
-  }
-
   
   useEffect(()=>{
     window.scrollTo(0,0)
  }, [])
 
   return (
-    // <div className={!dark ? 'About' : 'dAbout'}> 
+    <ClickSpark
+    sparkColor='#fff'
+    sparkSize={15}
+    sparkRadius={25}
+    sparkCount={8}
+    duration={400}
+  >
+    
     <div className={
       !backState 
       ? 
@@ -170,14 +144,10 @@ const About = () => {
 
 
       <div className='bottombox'>
-        <ul className='accordion'
-            onClick={()=>{clickedFalse()}}
-            >
+        <ul className='accordion'>
           <li
             onMouseEnter={()=>{backStaterTruejs()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruejs()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={javascript} alt='javascript'/>
             <div className='content'>
               <span>
@@ -188,9 +158,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTruemongo()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruemongo()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={mongo} alt='mongo'/>
             <div className='content'>
               <span>
@@ -201,9 +169,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTrueexpress()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTrueexpress()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={express} alt='express'/>
             <div className='content'>
               <span>
@@ -214,9 +180,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTruereact()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruereact()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={react} alt='react'/>
             <div className='content'>
               <span>
@@ -227,9 +191,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTruenode()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruenode()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={node} alt='node'/>
             <div className='content'>
               <span>
@@ -240,9 +202,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTruepython()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruepython()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={python} alt='python'/>
             <div className='content'>
               <span>
@@ -253,9 +213,7 @@ const About = () => {
           </li>
           <li
             onMouseEnter={()=>{backStaterTruepandas()}}
-            onMouseLeave={()=>{backStaterFalse()}}
-            onClick={()=>{clickedTruepandas()}}
-          >
+            onMouseLeave={()=>{backStaterFalse()}}>
             <img src={pandas} alt='pandas'/>
             <div className='content'>
               <span>
@@ -267,7 +225,10 @@ const About = () => {
         </ul>
       </div>
     </div>
-  )
+
+    
+  </ClickSpark>
+      )
 }
 
 export default About
