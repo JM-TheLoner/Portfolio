@@ -1,12 +1,8 @@
 import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import DataContext from '../context/Datacontext'
-import { useContext, useEffect } from 'react'
-<<<<<<< HEAD
-// import imageone from './homeimageone.png'
-=======
+import { useContext, useEffect, useState } from 'react'
 //import imageone from './homeimageone.png'
->>>>>>> f8cb13692f66ab3d510958e2bb9f47dabea8b479
 import imagetwo from './homeimagetwo.png'
 import dondark from './downloadblack.png'
 import donlight from './downloadwhite.png'
@@ -17,6 +13,15 @@ import DecryptedText from './animations/decryptedText'
 const Home = () => {
 
   const { navigate, dark } = useContext(DataContext)
+  const [insidedon, setinsidedon] = useState(false)
+  const [insidewhat, setinsidewhat] = useState(false)
+
+  const changeInsidedon = (newstate) => {
+    setinsidedon(newstate)
+  }
+  const changeInsidewhat = (newstate) => {
+    setinsidewhat(newstate)
+  }
 
   const download = () =>{
     const pdfurl = "MERN CV.pdf"
@@ -113,13 +118,14 @@ const Home = () => {
              Branding Agency
             </h1>
           <div className='sidebuttons'>
-            <button className='donbtnhome' onClick={download}>
+            <button className='donbtnhome' onClick={download} onMouseEnter={()=>{changeInsidedon(true)}} onMouseLeave={()=>{changeInsidedon(false)}}>
               Download CV
-              {!dark ?
+              {!insidedon ?
                 <img src={donlight} className="downloadimg" alt="donlight"/>
               :
                 <img src={dondark} className="downloadimg" alt="dondark"/>
               }
+              
             </button>
             <a
               className="whatlink"
@@ -127,13 +133,13 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className='donbtnhome1' onClick={(e)=>{move1(e)}}>
-                Contact Me
-                {!dark ?
-                  <img src={whatlight} className="whatsappimg" alt="whatlight"/>
-                :
-                  <img src={whatdark} className="whatsappimg" alt="whatdark"/>
-                }
+              <button className='donbtnhome1' onClick={(e)=>{move1(e)}} onMouseEnter={()=>{changeInsidewhat(true)}} onMouseLeave={()=>{changeInsidewhat(false)}}>
+                Contact Me                
+                  {!insidewhat ?
+                    <img src={whatlight} className="whatsappimg" alt="whatlight"/>                    
+                  :
+                    <img src={whatdark} className="whatsappimg" alt="whatdark"/>
+              }                
               </button>
             </a>
           </div>

@@ -92,6 +92,7 @@
   }
   
   .Footertext{
+    font-family: arial;
     text-align: center;
     position: relative;
     left: 550px;
@@ -102,13 +103,15 @@
   
   .FooterCopyright{
     color: #d8d8d8;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 100ms ease-in-out 100ms;
+    font-weight: 300;
   }  
   .dFooterCopyright{
     color: #9caeff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 100ms ease-in-out 100ms;
+    font-weight: 300;
   }
 
   
@@ -217,6 +220,7 @@
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
+      font-family: arial;
       text-align: left;
       position: relative;
       bottom: 10px;
@@ -344,6 +348,7 @@
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
+      font-family: arial;
       text-align: left;
       position: relative;
       bottom: 10px;
@@ -470,6 +475,7 @@
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
+      font-family: arial;
       text-align: left;
       position: relative;
       bottom: 10px;
@@ -596,6 +602,7 @@
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
+      font-family: arial;
       text-align: left;
       position: relative;
       bottom: 15px;
@@ -603,14 +610,6 @@
       font-weight:lighter;
       font-size:20px;
     }  
-    .dFootertext{
-      text-align: left;
-      position: relative;
-      bottom: 15px;    
-      left: 28%;
-      font-weight:lighter;
-      font-size:20px;
-    }
     .FooterCopyright{
       color: #d8d8d8;
       font-family:'Times New Roman', Times, serif;

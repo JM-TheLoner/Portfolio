@@ -49,18 +49,18 @@ const Header = ({ title }) => {
       navigate('/')
       setslider(false)
   }
-  const navport = (e) =>{        
-      navigate('/portfolio')
-      setslider(false)
-  }
-  const navabout = (e) =>{        
-      navigate('/skills')
-      setslider(false)
-  }
-  const navcontact = (e) =>{        
-      navigate('/contact')
-      setslider(false)
-  }
+  // const navport = (e) =>{        
+  //     navigate('/portfolio')
+  //     setslider(false)
+  // }
+  // const navabout = (e) =>{        
+  //     navigate('/skills')
+  //     setslider(false)
+  // }
+  // const navcontact = (e) =>{        
+  //     navigate('/contact')
+  //     setslider(false)
+  // }
 
   const linkstyle = {
       textDecoration:"none"
@@ -81,16 +81,16 @@ const Header = ({ title }) => {
               </div>              
               <p className={!dark ? 'headbtnlinetwo' : 'dheadbtnlinetwo'}>J.M_TheLoner</p>  
               <div className='listicle'>                     
-                <div className='linklist1' onClick={(e)=>{navhome()}}>                    
+                <div className='linklist1'>
                     <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
                 </div>
-                <div className='linklist2' onClick={(e)=>{navabout()}}>                
+                <div className='linklist2'>
                     <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>About</Link>
                 </div>
-                <div className='linklist3' onClick={(e)=>{navcontact()}}>                
+                <div className='linklist3'>
                     <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
                 </div>
-                <div className='linklist5' onClick={(e)=>{navport()}}>                
+                <div className='linklist5'>
                     <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
                 </div>
               </div>
@@ -135,16 +135,16 @@ const Header = ({ title }) => {
                   </div>
               </button>   
               <img src={logo} className="App-logo2" alt="logo"/>             
-              <div className='smalllinklist' onClick={(e)=>{navhome()}}>                    
+              <div className='smalllinklist'>
                   <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
               </div>
-              <div className='smalllinklist' onClick={(e)=>{navabout()}}>                
+              <div className='smalllinklist'>
                   <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>Skills</Link>
               </div>
-              <div className='smalllinklist' onClick={(e)=>{navcontact()}}>                
+              <div className='smalllinklist'>
                   <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
               </div>
-              <div className='smalllinklist' onClick={(e)=>{navport()}}>                
+              <div className='smalllinklist'>
                   <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
               </div>  
             </div>              

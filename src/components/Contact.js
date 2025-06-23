@@ -149,10 +149,10 @@ const handleContacted = async(e) =>{
 
       <div className='contactleft'>
         <div className='contacttext'>
-          <p className={!dark ? 'contacthead' : 'dcontacthead'}>Talk To Me</p>
-          <p className={!dark ? 'contactbody' : 'dcontactbody'}>Trying to reach a brand new target audience in the modern world? Send a message and let's get you online.</p>
+          <p className={!dark ? 'contacthead' : 'dcontacthead'}>Reach Out!</p>
+          <p className={!dark ? 'contactbody' : 'dcontactbody'}>In business, Size Matters Not.<br/>In Faith, take the leap and get the exposure you Deserve.<br/>Do or do not. There is no try!</p>
         </div>
-        <div className='contactsameline'>
+        
           {/* <img src={lov} className="ogo1" alt="logo" /> */}
           <figcaption className='ImgTag'>
             <a
@@ -166,16 +166,17 @@ const handleContacted = async(e) =>{
               </div>
             </a>
           </figcaption> 
-        </div>
-        <div className='contactsameline'>
+          
           {/* <img src={phone} className="ogo2" alt="logo" /> */}
           <figcaption className='ImgTag'>
             <div className={!dark ? 'phone1' : 'dphone1'}>
-              <p>+234 902 328 2736</p>
-              <p>+234 815 892 1148</p>
+              <p>
+                +234 902 328 2736
+                <br/>
+                +234 815 892 1148
+              </p>
             </div>
           </figcaption>
-        </div>
         <div>
           {/* <img src={email} className="ogo3" alt="logo" /> */}
           <figcaption className='ImgTag'>
@@ -191,9 +192,9 @@ const handleContacted = async(e) =>{
                 rel="noopener noreferrer"
               >
                 {!dark ?
-                  <img src={whatdark} className="contwhatsappimg" alt="whatdark"/>
+                  <img src={whatdark} className="contwhatsappimg smlogo" alt="whatdark"/>
                 :
-                  <img src={whatlight} className="contwhatsappimg" alt="whatlight"/>
+                  <img src={whatlight} className="contwhatsappimg smlogo" alt="whatlight"/>
                 }
               </a>
             <a
@@ -202,7 +203,7 @@ const handleContacted = async(e) =>{
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={insta} className="instaimg" alt="insta"/>
+                <img src={insta} className="instaimg smlogo" alt="insta"/>
               </a>
             <a
                 className="loctwitter"
@@ -210,7 +211,7 @@ const handleContacted = async(e) =>{
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={twitter} className="twitterimg" alt="twitter"/>
+                <img src={twitter} className="twitterimg smlogo" alt="twitter"/>
               </a>
             <a
                 className="loclinkedin"
@@ -218,7 +219,7 @@ const handleContacted = async(e) =>{
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={linkedin} className="linkedinimg" alt="linkedin"/>
+                <img src={linkedin} className="linkedinimg smlogo" alt="linkedin"/>
               </a>
             <a
                 className="locgithub" 
@@ -226,7 +227,7 @@ const handleContacted = async(e) =>{
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                  <img src={github} className="githubimg" alt="github"/>
+                  <img src={github} className="githubimg smlogo" alt="github"/>
               </a>
           </div>
         </div>        
@@ -234,8 +235,8 @@ const handleContacted = async(e) =>{
 
 
       <div className={!dark ? 'contactwrapper' : 'dcontactwrapper'}>
-        <div className='getin'><h1 className={!dark ? 'right1' : 'dright1'}>Send A </h1><h2 className={!dark ? 'right2' : 'dright2'}>Message</h2></div>        
-        <h2 className={!dark ? 'right3' : 'dright3'}>I'd Love To Hear From You!</h2>
+        {/* <div className='getin'><h1 className={!dark ? 'right1' : 'dright1'}>Send A </h1><h2 className={!dark ? 'right2' : 'dright2'}>Message</h2></div>         */}
+        {/* <h2 className={!dark ? 'right3' : 'dright3'}>Do or do not. There is no try!</h2> */}
         <div className='contactsameline'>
           <h1 className={!dark ? 'fullnameText' : 'dfullnameText'}>Full Name</h1>
           <h1 className={!dark ? 'contactemailText' : 'dcontactemailText'}>Email</h1>
@@ -283,7 +284,7 @@ const handleContacted = async(e) =>{
               name='message'
               onChange={(e)=>{setmessage(e.target.value)}}/>
           </div>
-          <button type='submit' value='Send' className={!dark ? 'contactbutton' : 'dcontactbutton'} onClick={(e)=>{handleContact(e)}}>Submit</button>   
+          <button type='submit' value='Send' className={!dark ? 'contactbutton' : 'dcontactbutton'} onClick={(e)=>{handleContact(e)}}>Send</button>   
         </form>
       </div>
 

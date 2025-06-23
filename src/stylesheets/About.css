@@ -1,33 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+.variable-proximity {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 .About{
   background-color: #3272a0;
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
 }
 .dAbout{
   background-color: #010327;
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
 }
 .AboutYellow{
   background: linear-gradient(to bottom, #fff12f,#8f7500);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -35,10 +55,10 @@
 .AboutBlue{
   background: linear-gradient(to bottom, #188bff, #0018a0);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -46,10 +66,10 @@
 .AboutLightGreen{
   background: linear-gradient(to bottom, #65ff0c, #047700);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -57,10 +77,10 @@
 .AboutYellowExpress{
   background: linear-gradient(to bottom, #fff133, #7a6e00);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -68,10 +88,10 @@
 .AboutDarkGreen{
   background: linear-gradient(to bottom, #6aff25, #00ac1d);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -79,10 +99,10 @@
 .AboutBlueYellow{
   background: linear-gradient(to bottom, #0029df, #ffc800);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -90,10 +110,10 @@
 .AboutDeepBlue{
   background: linear-gradient(to bottom, #0f00dd, #0A054D);
   flex-grow: 1;
-  padding: 1rem;
+  padding: 1px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   height: 81vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
@@ -103,208 +123,190 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -30px;
+  top: -35px;
   margin-bottom: -50px;
 }
 
 .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#d8d8d8;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#9caeff;
   transition: 100ms ease-in-out 100ms;
 }  
 .bottomstory{
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 300;
   /* font-family: 'Merriweather'; */
   color:#d8d8d8;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 10px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .dbottomstory{
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 300;
   /* font-family: 'Merriweather'; */
   color:#9caeff;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 10px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutYellow .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutYellow .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutYellow .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutYellow .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
-.AboutYellow .bottomlineone{
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-  font-size: 20px;
-  position: relative;
-  left: 200px;
-  display: flex;
-  animation: blink 600ms linear 0s infinite;
-}  
 
 .AboutBlue .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutBlue .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutBlue .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 
 .AboutBlue .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
-.AboutBlue .bottomlinetwo{
-  font-size: 20px;
-  position: relative;
-  left: 300px;
-  display: flex;
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-.AboutLightGreen .bottomlinetwo{
-  font-size: 20px;
-  position: relative;
-  left: 300px;
-  display: flex;
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-.AboutYellowExpress .bottomlinetwo{
-  font-size: 20px;
-  position: relative;
-  left: 300px;
-  display: flex;
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-.AboutDarkGreen .bottomlinetwo{
-  font-size: 20px;
-  position: relative;
-  left: 300px;
-  display: flex;
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-
 .AboutBlueYellow .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutBlueYellow .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutBlueYellow .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
-  display: flex;
-  margin-top: -30px;
+  /* display: flex; */
+  margin-top: -35px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 
 .AboutBlueYellow .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
-.AboutBlueYellow .bottomlinethree{
-  font-size: 20px;
-  position: relative;
-  left: 400px;
-  display: flex;
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-
 .AboutDarkGreen .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutDarkGreen .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutDarkGreen .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
@@ -312,31 +314,39 @@
 
 
 .AboutDarkGreen .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutDeepBlue .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutDeepBlue .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutDeepBlue .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
@@ -344,41 +354,38 @@
 
 
 .AboutDeepBlue .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#d8daff;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
-
-.AboutDeepBlue .bottomlinefour{
-  font-size: 20px;
-  position: relative;
-  left: 480px;
-  display: flex;
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-  animation: blink 600ms linear 0s infinite;
-}
-
 .AboutLightGreen .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutLightGreen .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutLightGreen .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
@@ -386,31 +393,39 @@
 
 
 .AboutLightGreen .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutYellowExpress .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 
 .AboutYellowExpress .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
   /* font-family: 'Merriweather'; */
   color:#010327;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutYellowExpress .bottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
@@ -418,10 +433,11 @@
 
 
 .AboutYellowExpress .dbottomstory{
+  font-size: 20px;
   font-weight: 100;
   /* font-family: 'Merriweather'; */
   color:#010327;
-  display: flex;
+  /* display: flex; */
   margin-top: -30px;
   margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
@@ -429,31 +445,9 @@
 
 
 .overline{
+  font-family: "times new roman";
+  font-weight: 400;
   font-size: 60px;
-}
-.bottomlineone{
-  font-size: 20px;
-  position: relative;
-  left: 200px;
-  display: flex;
-}
-.bottomlinetwo{
-  font-size: 20px;
-  position: relative;
-  left: 300px;
-  display: flex;
-}
-.bottomlinethree{
-  font-size: 20px;
-  position: relative;
-  left: 400px;
-  display: flex;
-}
-.bottomlinefour{
-  font-size: 20px;
-  position: relative;
-  left: 480px;
-  display: flex;
 }
 .aboutimage{
   position: relative;
@@ -607,7 +601,7 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
@@ -617,17 +611,17 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
   .AboutYellow{
     background: linear-gradient(to bottom, #fff12f,#8f7500);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -635,10 +629,10 @@
   .AboutBlue{
     background: linear-gradient(to bottom, #188bff, #0018a0);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -646,10 +640,10 @@
   .AboutLightGreen{
     background: linear-gradient(to bottom, #65ff0c, #047700);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -657,10 +651,10 @@
   .AboutYellowExpress{
     background: linear-gradient(to bottom, #fff133, #7a6e00);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -668,10 +662,10 @@
   .AboutDarkGreen{
     background: linear-gradient(to bottom, #6aff25, #00ac1d);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -679,10 +673,10 @@
   .AboutBlueYellow{
     background: linear-gradient(to bottom, #0029df, #ffc800);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -690,346 +684,316 @@
   .AboutDeepBlue{
     background: linear-gradient(to bottom, #0f00dd, #0A054D);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
   }
 
   .AboutYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomlineone{
-    display: none;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    font-size: 20px;
-    position: relative;
-    left: 200px;
-    display: flex;
-    animation: blink 600ms linear 0s infinite;
-  }  
-  
+  }    
   .AboutBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
-  .AboutBlue .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutLightGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutYellowExpress .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutDarkGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutBlueYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlueYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlueYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlueYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  .AboutBlueYellow .bottomlinethree{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 400px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutDarkGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDarkGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDarkGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDarkGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDeepBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDeepBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  
-  .AboutDeepBlue .bottomlinefour{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 480px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
+
   .AboutLightGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutLightGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutLightGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutLightGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellowExpress .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutYellowExpress .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   .overline{
-    display: none;
+    font-family: "times new roman";
+    font-weight: 400;
   }
   .bottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }    
   .dbottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }  
   .bottombox{
     text-align: center;
@@ -1122,7 +1086,7 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
@@ -1132,17 +1096,17 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
   .AboutYellow{
     background: linear-gradient(to bottom, #fff12f,#8f7500);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1150,10 +1114,10 @@
   .AboutBlue{
     background: linear-gradient(to bottom, #188bff, #0018a0);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1161,10 +1125,10 @@
   .AboutLightGreen{
     background: linear-gradient(to bottom, #65ff0c, #047700);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1172,10 +1136,10 @@
   .AboutYellowExpress{
     background: linear-gradient(to bottom, #fff133, #7a6e00);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1183,10 +1147,10 @@
   .AboutDarkGreen{
     background: linear-gradient(to bottom, #6aff25, #00ac1d);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1194,10 +1158,10 @@
   .AboutBlueYellow{
     background: linear-gradient(to bottom, #0029df, #ffc800);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1205,346 +1169,314 @@
   .AboutDeepBlue{
     background: linear-gradient(to bottom, #0f00dd, #0A054D);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
   }
 
   .AboutYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomlineone{
-    display: none;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    font-size: 20px;
-    position: relative;
-    left: 200px;
-    display: flex;
-    animation: blink 600ms linear 0s infinite;
-  }  
-  
+  }    
   .AboutBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  
-  .AboutBlue .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutLightGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutYellowExpress .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutDarkGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutBlueYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlueYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlueYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlueYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  .AboutBlueYellow .bottomlinethree{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 400px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutDarkGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDarkGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDarkGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDarkGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDeepBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDeepBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  
-  .AboutDeepBlue .bottomlinefour{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 480px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutLightGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutLightGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutLightGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutLightGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellowExpress .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutYellowExpress .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   .overline{
-    display: none;
+    font-family: "times new roman";
+    font-weight: 400;
   }
   .bottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }    
   .dbottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }  
   .bottombox{
     text-align: center;
@@ -1637,7 +1569,7 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
@@ -1647,17 +1579,17 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
   .AboutYellow{
     background: linear-gradient(to bottom, #fff12f,#8f7500);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1665,10 +1597,10 @@
   .AboutBlue{
     background: linear-gradient(to bottom, #188bff, #0018a0);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1676,10 +1608,10 @@
   .AboutLightGreen{
     background: linear-gradient(to bottom, #65ff0c, #047700);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1687,10 +1619,10 @@
   .AboutYellowExpress{
     background: linear-gradient(to bottom, #fff133, #7a6e00);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1698,10 +1630,10 @@
   .AboutDarkGreen{
     background: linear-gradient(to bottom, #6aff25, #00ac1d);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1709,10 +1641,10 @@
   .AboutBlueYellow{
     background: linear-gradient(to bottom, #0029df, #ffc800);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
@@ -1720,344 +1652,312 @@
   .AboutDeepBlue{
     background: linear-gradient(to bottom, #0f00dd, #0A054D);
     flex-grow: 1;
-    padding: 1rem;
+    padding: 1px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     height: 110vh;
     transition: 100ms ease-in-out 100ms;
     animation: appear 200ms linear 0s 1;
   }
 
   .AboutYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomlineone{
-    display: none;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    font-size: 20px;
-    position: relative;
-    left: 200px;
-    display: flex;
-    animation: blink 600ms linear 0s infinite;
-  }  
-  
+  }    
   .AboutBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  
-  .AboutBlue .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutLightGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutYellowExpress .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutDarkGreen .bottomlinetwo{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 300px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutBlueYellow .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutBlueYellow .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutBlueYellow .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutBlueYellow .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  .AboutBlueYellow .bottomlinethree{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 400px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutDarkGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDarkGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDarkGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDarkGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutDeepBlue .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutDeepBlue .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutDeepBlue .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8daff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
-  
-  .AboutDeepBlue .bottomlinefour{
-    display: none;
-    font-size: 20px;
-    position: relative;
-    left: 480px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  
   .AboutLightGreen .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutLightGreen .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutLightGreen .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutLightGreen .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .story{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .AboutYellowExpress .dstory{
-    display: none;
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
     /* font-family: 'Merriweather'; */
     color:#010327;
     transition: 100ms ease-in-out 100ms;
   }  
   .AboutYellowExpress .bottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   
   .AboutYellowExpress .dbottomstory{
+    font-size: 20px;
     display: none;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#010327;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   .overline{
-    display: none;
+    font-family: "times new roman";
+    font-weight: 400;
   }
   .bottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }    
   .dbottomstory{
-    display: none;
+    font-size: 20px;
+    display: contents;
   }  
   .bottombox{
     text-align: center;
@@ -2145,115 +2045,31 @@
 }
 @media screen and (max-width:992px) and (min-width:840px) {
   .overline{
+    font-family: "times new roman";
+    font-weight: 400;
     font-size: 40px;
   }
   .bottomstory{
+    font-size: 20px;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#d8d8d8;
     display: flex;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-bottom: 20px;
     transition: 100ms ease-in-out 100ms;
   }  
   
   .dbottomstory{
+    font-size: 20px;
     font-weight: 100;
     /* font-family: 'Merriweather'; */
     color:#9caeff;
-    display: flex;
-    margin-top: -30px;
+    /* display: flex; */
+    margin-top: -35px;
     justify-content: space-around;
     margin-bottom: 40px;
     transition: 100ms ease-in-out 100ms;
-  }  
-  .bottomlineone{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-  }
-  .bottomlinetwo{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-  }
-  .bottomlinethree{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-  }
-  .bottomlinefour{
-    font-size: 16px;
-    position: relative;
-    left:10px;
-    display: flex;
-  }  
-  .AboutYellow .bottomlineone{
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    animation: blink 600ms linear 0s infinite;
-  }  
-  .AboutBlue .bottomlinetwo{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutLightGreen .bottomlinetwo{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutYellowExpress .bottomlinetwo{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutDarkGreen .bottomlinetwo{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }
-  .AboutBlueYellow .bottomlinethree{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
-  }  
-  .AboutDeepBlue .bottomlinefour{
-    font-size: 16px;
-    position: relative;
-    left: 10px;
-    display: flex;
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-    animation: blink 600ms linear 0s infinite;
   }
   .bottombox{
     text-align: center;

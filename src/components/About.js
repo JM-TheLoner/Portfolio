@@ -1,24 +1,19 @@
 import '../stylesheets/About.css'
 import '../stylesheets/Background.css'
-// import logo from './aboutimage.png'
-import node from './node.jpg'
-import express from './express.jpg'
-import react from './react.jpg'
-import python from './python.jpg'
-import mongo from './mongo.jpg'
-import pandas from './pandas.jpg'
-import javascript from './javascript.jpg'
-import { useEffect, useContext, useState } from 'react'
+import { useEffect, useContext, useState, useRef } from 'react'
 import DataContext from '../context/Datacontext'
 import ClickSpark from './animations/TapSpark'
+import VariableProximity from './animations/variableProximity'
 
 
 const About = () => { 
 
+  const containerRef = useRef(null);
+
   const { dark, aboutClassname, setaboutClassname } = useContext(DataContext)
   const [backState, setbackState] = useState(false)
- 
-  
+
+    
   const backStaterTruejs = () =>{
     setbackState(true)
     setaboutClassname('AboutYellow')
@@ -54,181 +49,203 @@ const About = () => {
   
   useEffect(()=>{
     window.scrollTo(0,0)
- }, [])
+  }, [])
 
   return (
     <ClickSpark
-    sparkColor='#fff'
-    sparkSize={15}
-    sparkRadius={25}
-    sparkCount={8}
-    duration={400}
-  >
+      sparkColor='#fff'
+      sparkSize={15}
+      sparkRadius={25}
+      sparkCount={8}
+      duration={400}
+    >
     
-    <div className={
-      !backState 
-      ? 
-        !dark ? 'About' : 'dAbout'
-      :
-        aboutClassname
-      }> 
+      <div className={
+        !backState 
+        ? 
+          !dark ? 'About' : 'dAbout'
+        :
+          aboutClassname
+        }> 
 
-      { !backState 
-      ?
-        <>
-          <div className='backgroundspread'>
-            <div className='wave3'>
-              <div className='bg3'></div>
+        { !backState 
+        ?
+          <>
+            <div className='backgroundspread'>
+              <div className='wave3'>
+                <div className='bg3'></div>
+              </div>
             </div>
-          </div>
-          <div className='backgroundspread'>
-            <div className='wave2'>
-              <div className='bg2'></div>
+            <div className='backgroundspread'>
+              <div className='wave2'>
+                <div className='bg2'></div>
+              </div>
             </div>
-          </div>
-          <div className='backgroundspread'>
-            <div className='wave1'>
-              <div className='bg1'></div>
+            <div className='backgroundspread'>
+              <div className='wave1'>
+                <div className='bg1'></div>
+              </div>
             </div>
-          </div>
-        </>
-      :
-        <></>
+          </>
+        :
+          <></>
+        }
+
+        { backState ?
+          <>
+            <div className='backgroundspread'>
+                <div className='jsbubbleone'></div>
+            </div>
+            <div className='backgroundspread'>
+                <div className='jsbubbletwo'></div>
+            </div>
+            <div className='backgroundspread'>
+                <div className='jsbubblethree'></div>
+            </div>
+            <div className='backgroundspread'>
+                <div className='jsbubblefour'></div>
+            </div>
+            <div className='backgroundspread'>
+                <div className='jsbubblefive'></div>
+            </div>
+            <div className='backgroundspread'>
+                <div className='jsbubblesix'></div> 
+            </div>
+          </>
+        :
+        <></>    
       }
 
-      { backState ?
-        <>
-          <div className='backgroundspread'>
-              <div className='jsbubbleone'></div>
-          </div>
-          <div className='backgroundspread'>
-              <div className='jsbubbletwo'></div>
-          </div>
-          <div className='backgroundspread'>
-              <div className='jsbubblethree'></div>
-          </div>
-          <div className='backgroundspread'>
-              <div className='jsbubblefour'></div>
-          </div>
-          <div className='backgroundspread'>
-              <div className='jsbubblefive'></div>
-          </div>
-          <div className='backgroundspread'>
-              <div className='jsbubblesix'></div> 
-          </div>
-        </>
-      :
-      <></>    
-    }
+        <div className='covering'></div>
+        <div className='topbox'>
+          <div className={!dark ? 'story' : 'dstory'}>
+            <h1 className='overline'>Who am I</h1>
+            <p className={!dark ? 'bottomstory' : 'dbottomstory'}>
 
-      <div className='covering'></div>
-      <div className='topbox'>
-        <div className={!dark ? 'story' : 'dstory'}>
-          <h1 className='overline'>What I do</h1>
-          <div className={!dark ? 'bottomstory' : 'dbottomstory'}>
-            <h1 className='bottomlineone'>
-              JavaScript
-            </h1>
-            <h1 className='bottomlinetwo'>
-              MERN Stack (Full stack) development
-            </h1>
-            <h1 className='bottomlinethree'>
-              Python
-            </h1>
-            <h1 className='bottomlinefour'>
-              Pandas (Machine Learning / AI)
-            </h1>
-          </div>
-        </div> 
+                <div
+                ref={containerRef}
+                style={{position: 'relative'}}
+                >
+                  <VariableProximity
+                    label={"A FULL-STACK developer with lots of ideas and the power to bring them to life."}
+                    fromFontVariationSettings="'wght' 300, 'opsz' 9"
+                    toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                    containerRef={containerRef}
+                    radius={100}
+                    falloff='linear'
+                  />
+                  <br/>
+                  <VariableProximity
+                    label={"I'm all about Codes, Games, Music and quality meals. A loner with time to perfect his craft. Nothing is true and Everything is permitted when it comes to the fast and highly functional pages, operation or processes you deserve. You only need reach out with force!"}
+                    fromFontVariationSettings="'wght' 300, 'opsz' 9"
+                    toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                    containerRef={containerRef}
+                    radius={100}
+                    falloff='linear'
+                  />
+                  <br/>
+                  <VariableProximity
+                    label={" Hover over a card to see what I can do"}
+                    fromFontVariationSettings="'wght' 300, 'opsz' 9"
+                    toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                    containerRef={containerRef}
+                    radius={100}
+                    falloff='linear'
+                  />
+                </div>
+
+
+            </p>
+          </div> 
+        </div>
+
+
+        <div className='bottombox'>
+          <ul className='accordion'>
+            <li
+              onMouseEnter={()=>{backStaterTruejs()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10"} alt='javascript'/>
+              <div className='content'>
+                <span>
+                  <h2>Javascript</h2>
+                  <p className='selftaught'>WEB DEVELOPMENT</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTruemongo()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10"} alt='mongo'/>
+              <div className='content'>
+                <span>
+                  <h2>mongodb</h2>
+                  <p className='selftaught'>DATABASE SERVICE</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTrueexpress()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png"} alt='express'/>
+              <div className='content'>
+                <span>
+                  <h2>express</h2>
+                  <p className='selftaught'>BACKEND</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTruereact()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png"} alt='react'/>
+              <div className='content'>
+                <span>
+                  <h2>react</h2>
+                  <p className='selftaught'>FRONTEND</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTruenode()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10"} alt='node'/>
+              <div className='content'>
+                <span>
+                  <h2>node</h2>
+                  <p className='selftaught'>BACKEND</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTruepython()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10"} alt='python'/>
+              <div className='content'>
+                <span>
+                  <h2>Python</h2>
+                  <p className='selftaught'>PROGRAMMING</p>
+                </span>
+              </div>
+            </li>
+            <li
+              onMouseEnter={()=>{backStaterTruepandas()}}
+              onMouseLeave={()=>{backStaterFalse()}}>
+              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10"} alt='pandas'/>
+              <div className='content'>
+                <span>
+                  <h2>pandas</h2>
+                  <p className='selftaught'>MACHINE LEARNING*</p>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
 
-
-      <div className='bottombox'>
-        <ul className='accordion'>
-          <li
-            onMouseEnter={()=>{backStaterTruejs()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={javascript} alt='javascript'/>
-            <div className='content'>
-              <span>
-                <h2>Javascript</h2>
-                <p className='selftaught'>WEB DEVELOPMENT</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTruemongo()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={mongo} alt='mongo'/>
-            <div className='content'>
-              <span>
-                <h2>mongodb</h2>
-                <p className='selftaught'>DATABASE SERVICE</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTrueexpress()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={express} alt='express'/>
-            <div className='content'>
-              <span>
-                <h2>express</h2>
-                <p className='selftaught'>BACKEND</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTruereact()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={react} alt='react'/>
-            <div className='content'>
-              <span>
-                <h2>react</h2>
-                <p className='selftaught'>FRONTEND</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTruenode()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={node} alt='node'/>
-            <div className='content'>
-              <span>
-                <h2>node</h2>
-                <p className='selftaught'>BACKEND</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTruepython()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={python} alt='python'/>
-            <div className='content'>
-              <span>
-                <h2>Python</h2>
-                <p className='selftaught'>PROGRAMMING</p>
-              </span>
-            </div>
-          </li>
-          <li
-            onMouseEnter={()=>{backStaterTruepandas()}}
-            onMouseLeave={()=>{backStaterFalse()}}>
-            <img src={pandas} alt='pandas'/>
-            <div className='content'>
-              <span>
-                <h2>pandas</h2>
-                <p className='selftaught'>MACHINE LEARNING*</p>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    
-  </ClickSpark>
-      )
+      
+    </ClickSpark>
+  )
 }
 
 export default About

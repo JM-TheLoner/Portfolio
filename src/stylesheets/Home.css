@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
 
 .Home{
     background-color: #3272a0;
@@ -95,16 +95,28 @@
     animation: shadowflicker 500ms linear 0s 1;
   }
 .TopLine{
-    text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
+    text-shadow: 0 0 5px #102abd, 0 0 6px #233fdf, 0 0 7px #697ff8, 0 0 8px #b2bcf7, 0 0 9px #d2d8f7;
     transition: 100ms ease-in-out 100ms;
     position: relative;
-    top: 70px;
+    top: 20px;
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 80px;
-    color: #d8d8d8;
+    color: #d8d8d8da;
     /* animation: fadein 300ms linear 0s 1; */
     width:130%;
+
+        background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
 .LineThree{
     transition: 100ms ease-in-out 100ms;
@@ -163,10 +175,22 @@
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 80px;
-    color: #2d54ff;
+    color: #9caeffda;
     animation: swipein 1s linear 0s 1;
     width:130%;
-    text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff;
+    text-shadow: 0 0 3px #adb9ff;
+
+      background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
 }
 
 .writer{
@@ -246,61 +270,6 @@
 .LineFour .levlink:hover{
     color: #2f05ca;  
 }
-
-@keyframes shine {
-    0% {
-      background-position: 100%;
-    }
-    100% {
-      background-position: -100%;
-    }
-  }
-
-  @keyframes  swipein {
-    0%{       
-        text-shadow: none;
-        background: #010327;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    15%{
-        text-shadow: none;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 15%, white calc(15% + 1px), white calc(15% + 10px), #010327 calc(15% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    30%{
-        text-shadow: none;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 30%, white calc(30% + 1px), white calc(30% + 10px), #010327 calc(30% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    45%{
-        text-shadow: none;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 45%, white calc(45% + 1px), white calc(45% + 10px), #010327 calc(45% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    60%{
-        text-shadow: none;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 60%, white calc(60% + 1px), white calc(60% + 10px), #010327 calc(60% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    75%{
-        text-shadow: none;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 75%, white calc(75% + 1px), white calc(75% + 10px), #010327 calc(75% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    90%{       
-        color: #2d54ff;
-        text-shadow: 0 0 5px #adb9ffbe, 0 0 6px #adb9ffbe, 0 0 7px #adb9ffbe, 0 0 8px #adb9ffbe, 0 0 9px #adb9ffbe;
-    }
-    100%{
-        text-shadow: inherit;
-    }
-  }
   
 .sidebuttons{
     display: flex;
@@ -318,7 +287,18 @@
     border: 2px solid rgb(155, 155, 155);
     backdrop-filter: blur(50px);
     cursor: pointer;
-    color: #ffffff;
+            color: #ffffffb9; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
     font-size:15px;
     /* font-family:'Times New Roman', Times, serif; */
     transition: 100ms, ease-in-out, 100ms;
@@ -334,7 +314,18 @@
     border: 2px solid rgb(155, 155, 155);
     backdrop-filter: blur(50px);
     cursor: pointer;
-    color: #9caeff;
+            color: #d8d8d8a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
     font-size:15px;
     /* font-family:'Times New Roman', Times, serif; */
     transition: 100ms, ease-in-out, 100ms;
@@ -342,11 +333,14 @@
 
 .Home .donbtnhome:hover,
 .Home .donbtnhome:focus{
-    background-color: #14005e;
+    color: #14005e;
+    background: #d9cfff;
+
+    
 }
 .dHome .donbtnhome:hover,
 .dHome .donbtnhome:focus{
-    background-color: #d9cfff;
+    background: #d9cfff;
     color: #000620;
 }
 .donbtnhome1{
@@ -360,7 +354,18 @@
     border: 2px solid rgb(155, 155, 155);
     backdrop-filter: blur(50px);
     cursor: pointer;
-    color: #ffffff;
+                color: #ffffffb9; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
     font-size:15px;
     /* font-family:'Times New Roman', Times, serif; */
     transition: 100ms, ease-in-out, 100ms;
@@ -368,7 +373,8 @@
 
 .Home .donbtnhome1:hover,
 .Home .donbtnhome1:focus{
-    background-color: #14005e;
+    background: #d9cfff;
+    color: #14005e;
 }
 
 .dHome .donbtnhome1{
@@ -382,7 +388,18 @@
     border: 2px solid rgb(155, 155, 155);
     backdrop-filter: blur(50px);
     cursor: pointer;
-    color: #9caeff;
+                color: #d8d8d8b9; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.911) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
     font-size:15px;
     /* font-family:'Times New Roman', Times, serif; */
     transition: 100ms, ease-in-out, 100ms;
@@ -390,7 +407,7 @@
 
 .dHome .donbtnhome1:hover,
 .dHome .donbtnhome1:focus{
-    background-color: #d9cfff;
+    background: #d9cfff;
     color: #000620;
 }
 .downloadimg{    
@@ -410,6 +427,60 @@
     margin-bottom: -15px;
     animation: fadein 300ms linear 0s 1;
 }
+@keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
+
+  @keyframes  swipein {
+    0%{       
+        text-shadow:  0 0 5px #adb9ff15, 0 0 6px #adb9ff15, 0 0 7px #adb9ff15, 0 0 8px #adb9ff15, 0 0 9px #adb9ff15;
+        background: #010327;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    15%{
+        text-shadow:   0 0 5px #adb9ff44, 0 0 6px #adb9ff44, 0 0 7px #adb9ff44, 0 0 8px #adb9ff44, 0 0 9px #adb9ff44;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 15%, white calc(15% + 1px), white calc(15% + 10px), #010327 calc(15% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30%{
+        text-shadow:   0 0 5px #adb9ff79, 0 0 6px #adb9ff79, 0 0 7px #adb9ff79, 0 0 8px #adb9ff79, 0 0 9px #adb9ff79;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 30%, white calc(30% + 1px), white calc(30% + 10px), #010327 calc(30% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    45%{
+        text-shadow:   0 0 5px #adb9ff94, 0 0 6px #adb9ff94, 0 0 7px #adb9ff94, 0 0 8px #adb9ff94, 0 0 9px #adb9ff94;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 45%, white calc(45% + 1px), white calc(45% + 10px), #010327 calc(45% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60%{
+        text-shadow:   0 0 5px #adb9ffaf, 0 0 6px #adb9ffaf, 0 0 7px #adb9ffaf, 0 0 8px #adb9ffaf, 0 0 9px #adb9ffaf;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 60%, white calc(60% + 1px), white calc(60% + 10px), #010327 calc(60% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        text-shadow:   0 0 5px #adb9ffb2, 0 0 6px #adb9ffb2, 0 0 7px #adb9ffb2, 0 0 8px #adb9ffb2, 0 0 9px #adb9ffb2;          
+        background: linear-gradient(to right, #2d54ff, #2d54ff 75%, white calc(75% + 1px), white calc(75% + 10px), #010327 calc(75% + 10px), #010327 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{       
+        color: #2d54ff;
+        text-shadow: 0 0 5px #adb9ffbe, 0 0 6px #adb9ffbe, 0 0 7px #adb9ffbe, 0 0 8px #adb9ffbe, 0 0 9px #adb9ffbe;
+    }
+    100%{
+        text-shadow: inherit;
+    }
+  }
 @keyframes slidein {
     from{
         color: transparent;
