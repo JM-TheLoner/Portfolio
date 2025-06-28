@@ -1,114 +1,137 @@
 .Footer {
-    background: #3272a0;
+    background: #40a2cf;
     display:flex;
-    font-weight: bolder;
     z-index: 9;
     position: relative;
     transition: 100ms ease-in-out 100ms;
-    height: 4em;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 8px #010921;
+    height: 3em;
+    border-top: 1px solid #378eb6;
+    border-bottom: 6px solid #3d9ac5;
+    box-shadow: 0 0 3px #3a92bb;
+    display: flex;
+    justify-content: center;    
   }
 .dFooter {
-    background: #010327;
+    background: #3881b4;
     display:flex;
-    font-weight: bolder;
     z-index: 9;
     position: relative;
     transition: 100ms ease-in-out 100ms;
-    height: 4em;
-    border-bottom: 2px solid rgb(9, 0, 87);
-    box-shadow: 0 0 8px #0731b1;
+    height: 3em;
+    border-top: 1px solid #3477a7;
+    border-bottom: 6px solid #3881b4;
+    box-shadow: 0 0 3px #2d6892;
+    display: flex;
+    justify-content: center;    
   }
   .FooterYellow{
     background:#856d01;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #7e6700;
+    border-bottom: 6px solid #856d01;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterBlue{
     background:#01168d;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #011480;
+    border-bottom: 6px solid #01168d;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterLightGreen{
     background:#046900;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #046100;
+    border-bottom: 6px solid #046900;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterYellowExpress{
     background:#6e6300;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #635901;
+    border-bottom: 6px solid #6e6300;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterDarkGreen{
     background:#018f19;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #008316;
+    border-bottom: 6px solid #018f19;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterBlueYellow{
     background:#c79c00;
     width:100%; 
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #bb9200;
+    border-bottom: 6px solid #c79c00;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   .FooterDeepBlue{
     background:#080441;
     width:100%;
-    height: 4em;
+    height: 3em;
     z-index: 7;
     display: flex;
-    border-bottom: 2px solid rgb(3, 0, 156);
-    box-shadow: 0 0 5px #010921;
+    border-top: 1px solid #060333;
+    border-bottom: 6px solid #080441;
+      display: flex;
+      justify-content: center;      
+    box-shadow: 0 0 3px #010921;
     transition: 100ms ease-in-out 100ms;
   }
   
   .Footertext{
     font-family: arial;
     text-align: center;
-    position: relative;
-    left: 550px;
-    bottom: 10px;
     font-weight:300;
     font-size:20px;
+    align-self: center;
   }
   
   .FooterCopyright{
-    color: #d8d8d8;
+    color: #010327;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 100ms ease-in-out 100ms;
     font-weight: 300;
   }  
   .dFooterCopyright{
-    color: #9caeff;
+    color: #d8d8d8;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 100ms ease-in-out 100ms;
     font-weight: 300;
@@ -121,26 +144,30 @@
       bottom: 0px;
       background: #3272a0;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 8px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
     }
   .dFooter {
     position: relative;
       bottom: 0px;
       background: #010327;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(9, 0, 87);
-      box-shadow: 0 0 8px #0731b1;
+      border-top: 1px solid rgb(9, 0, 87);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #0731b1;
     }
     .FooterYellow{
       bottom: 0px;
@@ -149,8 +176,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlue{
@@ -160,8 +189,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterLightGreen{
@@ -171,8 +202,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterYellowExpress{
@@ -182,8 +215,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDarkGreen{
@@ -193,8 +228,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlueYellow{
@@ -204,8 +241,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDeepBlue{
@@ -215,8 +254,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
@@ -227,15 +268,8 @@
       left: 15%;
       font-weight:lighter;
       font-size:17px;
+    align-self: center;
     }  
-    .dFootertext{
-      text-align: left;
-      position: relative;
-      bottom: 10px;    
-      left: 15%;
-      font-weight:lighter;
-      font-size:17px;
-    }
     .FooterCopyright{
       color: #d8d8d8;
       font-family:'Times New Roman', Times, serif;
@@ -249,26 +283,30 @@
       bottom: 0px;
       background: #3272a0;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 8px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
     }
   .dFooter {
     position: relative;
       bottom: 0px;
       background: #010327;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(9, 0, 87);
-      box-shadow: 0 0 8px #0731b1;
+      border-top: 1px solid rgb(9, 0, 87);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #0731b1;
     }
     .FooterYellow{
       bottom: 0px;
@@ -277,8 +315,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlue{
@@ -288,8 +328,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterLightGreen{
@@ -299,8 +341,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterYellowExpress{
@@ -310,8 +354,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDarkGreen{
@@ -321,8 +367,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlueYellow{
@@ -332,8 +380,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDeepBlue{
@@ -343,8 +393,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
@@ -355,15 +407,8 @@
       left: 20%;
       font-weight:lighter;
       font-size:17px;
+    align-self: center;
     }  
-    .dFootertext{
-      text-align: left;
-      position: relative;
-      bottom: 10px;    
-      left: 20%;
-      font-weight:lighter;
-      font-size:17px;
-    }
     .FooterCopyright{
       color: #d8d8d8;
       font-family:'Times New Roman', Times, serif;
@@ -376,26 +421,30 @@
       bottom: 0px;
       background: #3272a0;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 8px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
     }
   .dFooter {
     position: relative;
       bottom: 0px;
       background: #010327;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
       height: 3em;
-      border-bottom: 2px solid rgb(9, 0, 87);
-      box-shadow: 0 0 8px #0731b1;
+      border-top: 1px solid rgb(9, 0, 87);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #0731b1;
     }
     .FooterYellow{
       bottom: 0px;
@@ -404,8 +453,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlue{
@@ -415,8 +466,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterLightGreen{
@@ -426,8 +479,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterYellowExpress{
@@ -437,8 +492,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDarkGreen{
@@ -448,8 +505,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlueYellow{
@@ -459,8 +518,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDeepBlue{
@@ -470,8 +531,10 @@
       height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
@@ -482,15 +545,8 @@
       left: 25%;
       font-weight:lighter;
       font-size:17px;
+    align-self: center;
     }  
-    .dFootertext{
-      text-align: left;
-      position: relative;
-      bottom: 10px;    
-      left: 25%;
-      font-weight:lighter;
-      font-size:17px;
-    }
     .FooterCopyright{
       color: #d8d8d8;
       font-family:'Times New Roman', Times, serif;
@@ -502,103 +558,121 @@
       position: relative;
       background: #3272a0;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
-      height: 3.5em;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 8px #010921;
+      height: 3em;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       bottom: 0px;
     }
   .dFooter {
     position: relative;
       background: #010327;
       display:flex;
-      font-weight: bolder;
+
       z-index: 9;
       position: relative;
       transition: 100ms ease-in-out 100ms;
-      height: 3.5em;
-      border-bottom: 2px solid rgb(9, 0, 87);
-      box-shadow: 0 0 8px #0731b1;
+      height: 3em;
+      border-top: 1px solid rgb(9, 0, 87);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #0731b1;
       bottom: 0px;
     }
     .FooterYellow{
       bottom: 0px;
       background:#856d01;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlue{
       bottom: 0px;
       background:#01168d;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterLightGreen{
       bottom: 0px;
       background:#046900;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterYellowExpress{
       bottom: 0px;
       background:#6e6300;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDarkGreen{
       bottom: 0px;
       background:#018f19;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterBlueYellow{
       bottom: 0px;
       background:#c79c00;
       width:100%; 
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .FooterDeepBlue{
       bottom: 0px;
       background:#080441;
       width:100%;
-      height: 3.5em;
+      height: 3em;
       z-index: 7;
       display: flex;
-      border-bottom: 2px solid rgb(3, 0, 156);
-      box-shadow: 0 0 5px #010921;
+      border-top: 1px solid rgb(3, 0, 156);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 3px #010921;
       transition: 100ms ease-in-out 100ms;
     }
     .Footertext{
@@ -609,6 +683,7 @@
       left: 28%;
       font-weight:lighter;
       font-size:20px;
+    align-self: center;
     }  
     .FooterCopyright{
       color: #d8d8d8;

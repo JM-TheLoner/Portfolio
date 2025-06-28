@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -59,7 +59,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -70,7 +70,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -81,7 +81,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -92,7 +92,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -103,7 +103,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -114,7 +114,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  height: 81vh;
+  height: 82vh;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -476,7 +476,7 @@
 .accordion:hover{
   /* gap: 2px; */
   /* if no background */
-  gap: 0;
+  gap: 3px;
   /* if background*/
 }
 
@@ -506,16 +506,9 @@
 .accordion li .content,
 .accordion li .content span{
   transition: 100ms ease-in-out 100ms;
+  width: 100%;
 }
 
-.accordion h2 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 45px;
-  border-bottom: 2px solid #fff;
-  margin-bottom: 10px;
-  white-space: nowrap;
-}
 
 .accordion li .content {
   position: absolute;
@@ -525,7 +518,7 @@
   bottom: 0;
   z-index: 1;
   color: #fff;
-  padding: 15px;
+  padding: 5px;
   background: #02022e;
   background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
   opacity: 0;
@@ -552,6 +545,7 @@
 .accordion li:hover .content{
   opacity: 1;
   visibility: visible;
+  width: 100%
 }
 .accordion li:hover img{
   filter: grayscale(0);

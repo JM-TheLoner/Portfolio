@@ -4,20 +4,18 @@
 .Portfolio{
     background-color: #3272a0;
     flex-grow: 1;
-    padding: 1rem;
+    padding: 10px;
     max-width: 100%;
-    padding-bottom: 20px;
-    min-height: 85vh;
+    min-height: 80%;
     transition: 100ms ease-in-out 100ms;
     overflow-y: auto;
   }
 .dPortfolio{
     background-color: #010327;
     flex-grow: 1;
-    padding: 1rem;
+    padding: 10px;
     max-width: 100%;
-    padding-bottom: 20px;
-    min-height: 90vh;
+    min-height: 80%;
     transition: 100ms ease-in-out 100ms;
     overflow-y: auto;
 }

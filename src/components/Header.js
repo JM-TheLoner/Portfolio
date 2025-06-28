@@ -91,7 +91,7 @@ const Header = ({ title }) => {
                     <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
                 </div>
                 <div className='linklist5'>
-                    <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
+                    <Link to={'/portfolio'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
                 </div>
               </div>
               <div className='lightndark' onClick={(e) => {darkmode(e)}}>

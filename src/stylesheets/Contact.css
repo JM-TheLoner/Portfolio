@@ -203,8 +203,11 @@
   bottom: 30px;
   left: 17%;
 }
-.contactsamelinesocs:hover{
-  gap: 15px;
+.smlogo{
+  height: 4.5vmin;
+  pointer-events: none;
+  position: relative;
+  margin-bottom: -15px;
 }
 .contactwrapper{  
   margin-top: 1em;
@@ -613,6 +616,13 @@
   position: relative;
   left: 10px;
   top:10px;
+  filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+.locwhat:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  margin: 0px 3px;
 }
 .locinsta{
   /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
@@ -622,6 +632,13 @@
   position: relative;
   left: 30px;
   top:10px;
+  filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+.locinsta:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  margin: 0px 3px;
 }
 .loctwitter{
   /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
@@ -631,6 +648,13 @@
   position: relative;
   left: 50px;
   top:10px;
+  filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+.loctwitter:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  margin: 0px 3px;
 }
 .loclinkedin{
   /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
@@ -640,6 +664,13 @@
   position: relative;
   left: 70px;
   top:10px;
+  filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+.loclinkedin:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  margin: 0px 3px;
 }
 .locgithub{
   /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
@@ -649,6 +680,13 @@
   position: relative;
   left: 90px;
   top:10px;
+  filter: grayscale(100%);
+  transition: ease-in-out 200ms;
+}
+.locgithub:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  margin: 0px 3px;
 }
 .contactbutton{
   padding-top: 5px;
@@ -721,43 +759,7 @@
     background: #d9cfff;
     color: #000620;
 }
-.contwhatsappimg{
-  height: 4.5vmin;
-  pointer-events: none;
-  position: relative;
-  margin-bottom: -15px;
-}
-.instaimg{
-  height: 4.5vmin;
-  pointer-events: none;
-  position: relative;
-  margin-bottom: -15px;
-}
-.twitterimg{
-  height: 4.5vmin;
-  pointer-events: none;
-  position: relative;
-  margin-bottom: -15px;
-}
-.linkedinimg{
-  height: 4.5vmin;
-  pointer-events: none;
-  position: relative;
-  margin-bottom: -15px;
-}
-.githubimg{
-  height: 4.5vmin;
-  pointer-events: none;
-  position: relative;
-  margin-bottom: -15px;
-}
-.smlogo{
-  filter: grayscale(100%);
-}
-.smlogo:hover{
-  filter: grayscale(0%);
-  transform: scale(1.5);
-}
+
 .contactedbackground{
   position: absolute;
   width: 100%;

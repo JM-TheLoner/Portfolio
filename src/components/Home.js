@@ -2,7 +2,7 @@ import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect, useState } from 'react'
-//import imageone from './homeimageone.png'
+import imageone from './homeimageone.png'
 import imagetwo from './homeimagetwo.png'
 import dondark from './downloadblack.png'
 import donlight from './downloadwhite.png'
@@ -12,9 +12,24 @@ import DecryptedText from './animations/decryptedText'
 
 const Home = () => {
 
-  const { navigate, dark } = useContext(DataContext)
+  const { navigate, dark, useInterval } = useContext(DataContext)
   const [insidedon, setinsidedon] = useState(false)
   const [insidewhat, setinsidewhat] = useState(false)
+  const imagelist = [imageone, imagetwo]
+  const [show, setshow] = useState(0)
+
+  let num_images = imagelist.length
+
+  const revolver = () => {
+    let fake = show + 1
+    if (fake < num_images) {
+      setshow(fake)
+    } else{
+      setshow(0)
+    }
+  }
+
+  useInterval(revolver, 5000);
 
   const changeInsidedon = (newstate) => {
     setinsidedon(newstate)
@@ -100,10 +115,8 @@ const Home = () => {
               animateOn="view"
               revealDirection="start"
             />
-          </div>
-
+          </div>        
           
-          {/* <h1 className={!dark ? "TopLine" : "dTopLine"}>Olaitan Oluwaseun</h1> */}
           <h1 className={!dark ? "LineThree" : "dLineThree"}>Full-stack Developer || Software Engineer || Electrical Engineer</h1>          
           <h1 className={!dark ? "LineFour" : "dLineFour"}>
             Co-founder of 
@@ -144,10 +157,26 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className={!dark ? "rightside" : "drightside"}>
-          <img src={imagetwo} className={!dark ? "lonerlogo" : "dlonerlogo"} alt="lonerhalf"/>          
-        </div>
+
+    
+        <div className="rightside" id='imgone'>
+          <div className={!dark ? "backer" : "dbacker"}></div> 
+          <div className='imager'>
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+              <div className="carousel-inner great-positioner">
+                <div className="carousel-item active w-100 image_actual">
+                  <img src={imagetwo} className="d-block" height='650' alt="image_two"/>
+                </div>
+                <div className="carousel-item w-100 image_actual_one">
+                  <img src={imageone} className="d-block" height='650' alt="image_one"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
       </div>
+
   </div>
   )
 }

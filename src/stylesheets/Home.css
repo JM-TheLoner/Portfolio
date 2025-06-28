@@ -22,77 +22,88 @@
 .spliting{
     display: flex;
     margin-left: 50px;
-    margin-bottom: -110px;
     position: relative;
+    height: 85vh;
 }
 
 .leftside{
-    justify-content: left;
+    align-self: center;
     width:50%;
     position: relative;
-    top: 75px;
+    top: 15px;
     left: 20px;
 }
 .rightside{
-    justify-content: right;
-    width:30%;
-    height: 30.8em;
+    width: 50%;
+    justify-self: flex-end;
     position: relative;
-    top: 100px;
-    left: 100px;
+}
+.backer{
+    position: absolute;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    right: 50px;
     border: 0px solid rgba(107, 107, 107, 0.76);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px; 
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px;
     overflow-y: visible;
     transition: 100ms ease-in-out 100ms;
     backdrop-filter: blur(5px);
+
 }
-.drightside{
+.dbacker{
+    position: absolute;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
     backdrop-filter: blur(5px);
-    justify-content: right;
-    width:30%;
+    width: 80%;
     height: 30.8em;
-    position: relative;
-    top: 100px;
-    left: 100px;
+    right: 50px;
+    bottom: 10px;
     border: 0px solid rgba(194, 194, 194, 0.76);
     box-shadow: 0 0 8px #adadadcb;  
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px;
     overflow-y: visible;
     transition: 100ms ease-in-out 100ms;
     background-color: rgba(1, 0, 7, 0.514);
 }
-.rightside:hover,
-.drightside:hover{
+.backer:hover,
+.dbacker:hover{
     backdrop-filter: blur(50px);
 }
-.lonerlogo{
-    z-index: 20;
-    height: 105vmin;
-    pointer-events: none;
-    position: absolute;
-    top:-160px;
-    right: -130px;
-    filter: drop-shadow(16px 7px 8px #020061);
-    transition: 100ms ease-in-out 100ms;
+
+.imager{
+    width: 70%;
+}
+
+.overflower{
+    overflow-y: visible;
+}
+  .image_actual_one{
+    bottom: 5px;
+    filter: drop-shadow(16px 7px 8px #000108);
+    transition: 350ms ease-in-out 100ms; 
   }
-.dlonerlogo{
-    height: 105vmin;
-    pointer-events: none;
-    position: absolute;
-    top:-160px;
-    right: -130px;
-    filter: drop-shadow(26px 7px 8px #000108);
-    transition: 100ms ease-in-out 100ms;
-    animation: shadowflicker 500ms linear 0s 1;
+  .image_actual{
+    bottom: 30px;
+    filter: drop-shadow(16px 7px 8px #000108);
+    transition: 350ms ease-in-out 100ms;    
+  }
+  .great-positioner{
+    left: 20%;
+    overflow-x: hidden;
   }
 .TopLine{
     text-shadow: 0 0 5px #102abd, 0 0 6px #233fdf, 0 0 7px #697ff8, 0 0 8px #b2bcf7, 0 0 9px #d2d8f7;
@@ -175,10 +186,10 @@
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 80px;
-    color: #9caeffda;
+    color:rgba(156, 174, 255, 0.77);
     animation: swipein 1s linear 0s 1;
     width:130%;
-    text-shadow: 0 0 3px #adb9ff;
+    text-shadow: 0 0 3px #adb9ffc7;
 
       background: linear-gradient(
     120deg,
@@ -481,43 +492,16 @@
         text-shadow: inherit;
     }
   }
-@keyframes slidein {
-    from{
-        color: transparent;
-        margin-left: -1em;
-    }
-    to{
-        color: inherit;
-        margin-left: 10px;
-    }
-  }
 @keyframes fadein {
     from{
         position: inherit;
-        color: transparent;
+        opacity: 1;
     }
     to{
         position: inherit;
-        color: inherit;
+        opacity: 0;
     }
   }
-@keyframes shadowflicker {
-    0%{
-        filter: drop-shadow(5px 7px 2px #000108)
-    }
-    25%{
-        filter: none
-    }
-    50%{
-        filter: drop-shadow(13px 7px 4px #000108)
-    }
-    75%{
-        filter: none
-    }
-    100%{
-        filter: drop-shadow(26px 7px 8px #000108)
-    }
-}
 
 @media screen and (max-width:526px) {
     .Home{
@@ -795,7 +779,7 @@
         overflow-x:hidden;
         filter: drop-shadow(26px 7px 8px #000108);
         transition: 100ms ease-in-out 100ms;
-        animation: shadowflicker 500ms linear 0s 1;
+
       }
 }
 @media screen and (max-width:692px) and (min-width:526px) {    
@@ -1069,7 +1053,7 @@
         right: -170px;
         filter: drop-shadow(26px 7px 8px #000108);
         transition: 100ms ease-in-out 100ms;
-        animation: shadowflicker 500ms linear 0s 1;
+
       }
 }
 @media screen and (max-width:840px) and (min-width:692px) {    
@@ -1343,7 +1327,7 @@
         right: -90px;
         filter: drop-shadow(26px 7px 8px #000108);
         transition: 100ms ease-in-out 100ms;
-        animation: shadowflicker 500ms linear 0s 1;
+
       }
 }
 @media screen and (max-width:992px) and (min-width:840px) {
@@ -1617,6 +1601,6 @@
         right: -20px;
         filter: drop-shadow(26px 7px 8px #000108);
         transition: 100ms ease-in-out 100ms;
-        animation: shadowflicker 500ms linear 0s 1;
+
       }
 }
