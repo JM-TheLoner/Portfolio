@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
 
 .Header {
-    height: 100%;
+    height: 3.5em;
     width: 100%;
     font-weight:bolder;
     font-size:1em;
@@ -10,9 +10,10 @@
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
+    align-items: center;
   }
   .dHeader {
-    height: 100%;
+    height: 3.5em;
     width: 100%;
     font-weight:bolder;
     font-size:1em;
@@ -20,6 +21,7 @@
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
+    align-items: center;
   }
 .smallHead{
     backdrop-filter: blur(10px);
@@ -32,7 +34,7 @@
 .Topbar{
   background:#3272a0;
   width:100%;
-  height: 4em;
+  height: 100%;
   z-index: 7;
   display: flex;
   border-bottom: 0px solid rgb(3, 0, 156);
@@ -42,7 +44,7 @@
 .dTopbar{
   background:#010327;
   width:100%;
-  height: 4em;
+  height: 100%;
   z-index: 7;
   display: flex;
   border-bottom: 0px solid rgb(9, 0, 87);
@@ -131,7 +133,6 @@
   height:3em;
   font-size: 20px;
   padding-bottom: 10px;
-  color: black;
   text-decoration: none;
   position: relative;
   left: 0px;
@@ -142,7 +143,6 @@
   height:3em;
   font-size: 20px;
   padding-bottom: 10px;
-  color: black;
   text-decoration: none;
   position: relative;
   left: 20px;
@@ -153,7 +153,6 @@
   height:3em;
   font-size: 20px;
   padding-bottom: 10px;
-  color: black;
   text-decoration: none;
   position: relative;
   left: 40px;
@@ -164,7 +163,6 @@
   height:3em;
   font-size: 20px;
   padding-bottom: 10px;
-  color: black;
   text-decoration: none;
   position: relative;
   left: 100px;
@@ -311,51 +309,55 @@
 
 .dhomepos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
+  transition: 50ms ease-in-out 50ms;
   position: relative;
   top: 20px;
   left: 20px;
-  color: #c1ccff;
+  color: #acbbff;
 }
 .dhomepos:hover{
-  color: #734cff;
+  color: #fff1f1;
   cursor: pointer;
+  transition: 50ms ease-in-out 50ms;
 }
 .dportpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
+  transition: 50ms ease-in-out 50ms;
   position: relative;
   top: 20px;
   left: 40px;
-  color: #c1ccff;
+  color: #acbbff;
 }
 .dportpos:hover{
-  color: #734cff;
-  cursor: pointer;  
+  color: #fff1f1;
+  cursor: pointer;
+  transition: 50ms ease-in-out 50ms;
 }
 .daboutpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
+  transition: 50ms ease-in-out 50ms;
   position: relative;
   top: 20px;
   left: 40px;
-  color: #c1ccff;
+  color: #acbbff;
 }
 .daboutpos:hover{
-  color: #734cff;
-  cursor: pointer;  
+  color: #fff1f1;
+  cursor: pointer;
+  transition: 50ms ease-in-out 50ms;
 }
 .dcontpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
+  transition: 50ms ease-in-out 50ms;
   position: relative;
   top: 20px;
   left: 60px;
-  color: #c1ccff;
+  color: #acbbff;
 }
 .dcontpos:hover{
-  color: #734cff;
-  cursor: pointer;  
+  color: #fff1f1;
+  cursor: pointer;
+  transition: 50ms ease-in-out 50ms;
 } 
 
 @keyframes spinleft {

@@ -24,97 +24,97 @@
 .About{
   background-color: #3272a0;
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
-  height: 81vh;
+  padding-bottom: 5px;
+  min-height: 90%;
   transition: 100ms ease-in-out 100ms;
 }
 .dAbout{
   background-color: #010327;
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
-  height: 81vh;
+  padding-bottom: 5px;
+  min-height: 90%;
   transition: 100ms ease-in-out 100ms;
 }
 .AboutYellow{
   background: linear-gradient(to bottom, #fff12f,#8f7500);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutBlue{
   background: linear-gradient(to bottom, #188bff, #0018a0);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutLightGreen{
   background: linear-gradient(to bottom, #65ff0c, #047700);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutYellowExpress{
   background: linear-gradient(to bottom, #fff133, #7a6e00);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutDarkGreen{
   background: linear-gradient(to bottom, #6aff25, #00ac1d);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutBlueYellow{
   background: linear-gradient(to bottom, #0029df, #ffc800);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
 .AboutDeepBlue{
   background: linear-gradient(to bottom, #0f00dd, #0A054D);
   flex-grow: 1;
-  padding: 1px;
+  padding-top: 25px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  height: 82vh;
+  padding-bottom: 20px;
+  height: 95%;
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
@@ -190,7 +190,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -201,7 +201,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -229,7 +229,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -241,7 +241,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -269,7 +269,7 @@
   color:#d8daff;
   /* display: flex; */
   margin-top: -35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -281,7 +281,7 @@
   color:#d8daff;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutDarkGreen .story{
@@ -308,7 +308,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -320,7 +320,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -348,7 +348,7 @@
   color:#d8daff;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -360,7 +360,7 @@
   color:#d8daff;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 .AboutLightGreen .story{
@@ -387,7 +387,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -399,7 +399,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -427,7 +427,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -439,7 +439,7 @@
   color:#010327;
   /* display: flex; */
   margin-top: -30px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
 
@@ -448,6 +448,7 @@
   font-family: "times new roman";
   font-weight: 400;
   font-size: 60px;
+  margin-bottom: 25px;
 }
 .aboutimage{
   position: relative;
