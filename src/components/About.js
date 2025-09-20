@@ -13,7 +13,6 @@ const About = () => {
 
   const { dark, aboutClassname, setaboutClassname } = useContext(DataContext)
   const [backState, setbackState] = useState(false)
-
     
   const backStaterTruejs = () =>{
     setbackState(true)
@@ -48,6 +47,16 @@ const About = () => {
     setaboutClassname(null)
   }
   
+  const skills = [    
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10', alt:'Node', enter:backStaterTruenode, leave:backStaterFalse, bodyName:'BACKEND', bodyDesc:'The FOUNDATION on which FUNCTIONS and OPERATIONS run'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10', alt:'Mongo', enter:backStaterTruemongo, leave:backStaterFalse, bodyName:'DATABASE SERVICE', bodyDesc:'The ARCHIVES that hold the DATA'},
+    {image:'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png', alt:'Express', enter:backStaterTrueexpress, leave:backStaterFalse, bodyName:'BACKEND', bodyDesc:'Works in the DARK to serve the LIGHT'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10', alt:'Javascript', enter:backStaterTruejs, leave:backStaterFalse, bodyName:'Framework Systems', bodyDesc:'The Force that BREATHES through, SURROUNDS and BINDS all things TOGETHER'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10', alt:'Python', enter:backStaterTruepython, leave:backStaterFalse, bodyName:'PROGRAMMING', bodyDesc:'My GATEWAY into this LIFE. It CHOSE me'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10', alt:'Pandas', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'MACHINE LEARNING*', bodyDesc:'let the MACHINES take over.'},
+    {image:'https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png', alt:'React', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'FRONTEND', bodyDesc:'Controls EVERYTHING the light TOUCHES and MORE'}
+  ]
+
   useEffect(()=>{
     window.scrollTo(0,0)
   }, [])
@@ -163,76 +172,20 @@ const About = () => {
 
         <div className='bottombox'>
           <ul className='accordion'>
-            <li
-              onMouseEnter={()=>{backStaterTruejs()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10"} alt='javascript'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>Framework Systems <br/>The Force that BREATHES through, SURROUNDS and BINDS all things TOGETHER</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTruemongo()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10"} alt='mongo'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>DATABASE SERVICE <br/> The ARCHIVES that hold the DATA</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTrueexpress()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png"} alt='express'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>BACKEND <br/>Works in the DARK to serve the LIGHT.</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTruereact()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png"} alt='react'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>FRONTEND <br/>Controls EVERYTHING the light TOUCHES and MORE</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTruenode()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10"} alt='node'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>BACKEND <br/>The FOUNDATION on which FUNCTIONS and OPERATIONS run</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTruepython()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10"} alt='python'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>PROGRAMMING<br/>My GATEWAY into this LIFE. It CHOSE me</p>
-                </span>
-              </div>
-            </li>
-            <li
-              onMouseEnter={()=>{backStaterTruepandas()}}
-              onMouseLeave={()=>{backStaterFalse()}}>
-              <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10"} alt='pandas'/>
-              <div className='content'>
-                <span>
-                  <p className='selftaught'>MACHINE LEARNING*<br/>let the MACHINES take over.</p>
-                </span>
-              </div>
-            </li>
+            {skills.map(
+              (skill)=> (
+                <li
+                  onMouseEnter={()=>{skill.enter()}}
+                  onMouseLeave={()=>{skill.leave()}}>
+                  <img src={skill.image} alt={skill.alt}/>
+                  <div className='content'>
+                    <span>
+                      <p className='selftaught'>{skill.bodyName}<br/>{skill.bodyDesc}</p>
+                    </span>
+                  </div>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>

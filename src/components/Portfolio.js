@@ -2,7 +2,7 @@ import '../stylesheets/Portfolio.css'
 import '../stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
-import image from './image.png'
+import image from '../Assets/Images/image.png'
 // import swordSwipe from './draw-sword1-44724.mp3' 
 
 const Portfolio = () => {

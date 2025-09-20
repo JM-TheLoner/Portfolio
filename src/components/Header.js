@@ -2,9 +2,9 @@ import '../stylesheets/Header.css'
 import { Link } from 'react-router-dom';
 import DataContext from '../context/Datacontext'
 import { useContext, useState } from 'react'
-import logo from './logo.png'
-import lightimg from './light.png'
-import darkimg from './dark.png'
+import logo from '../Assets/Images/logo.png'
+import lightimg from '../Assets/Images/light.png'
+import darkimg from '../Assets/Images/dark.png' 
 
 const Header = ({ title }) => {
 

@@ -5,12 +5,12 @@ import '../stylesheets/Contact.css'
 import { useEffect, useState, useContext, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import DataContext from '../context/Datacontext' 
-import whatlight from './whatsapplight.png'
-import whatdark from './whatsappdark.png'
-import insta from './insta.png'
-import twitter from './twitter.png'
-import github from './github.png'
-import linkedin from './linkedin.png'
+import whatlight from '../Assets/Images/whatsapplight.png'
+import whatdark from '../Assets/Images/whatsappdark.png'
+import insta from '../Assets/Images/insta.png'
+import twitter from '../Assets/Images/twitter.png'
+import github from '../Assets/Images/github.png'
+import linkedin from '../Assets/Images/linkedin.png'
 
 
 const Contact = () => {
@@ -22,7 +22,6 @@ const Contact = () => {
   const[contactemail, setcontactemail] = useState('')
   const[contactaddress, setcontactaddress] = useState('')
   const[message, setmessage] = useState('')
-  const[contacted, setcontacted] = useState(false)
   const[nofullname, setnofullname] = useState(false)
   const[nocontactemail, setnocontactemail] = useState(false)
   const[nocontactaddress, setnocontactaddress] = useState(false)
@@ -74,12 +73,7 @@ const Contact = () => {
     setcontactaddress('')
     setcontactemail('')
     setmessage('')
-    setcontacted(true)
-
-    console.log(`Full Name: ${fullname}`)
-    console.log(`Email: ${contactemail}`)
-    console.log(`Address: ${contactaddress}`)
-    console.log(`Message: ${message}`)
+    navigate('/')
 
     window.scrollTo(0,0)
 
@@ -101,13 +95,6 @@ const Contact = () => {
     );
   }
 }
-
-const handleContacted = async(e) =>{
-  e.preventDefault()
-  setcontacted(false)
-  navigate('/')
-}
-
 
   return ( 
     <div className={!dark ? 'Contact' : 'dContact'}>
@@ -285,22 +272,6 @@ const handleContacted = async(e) =>{
           <button type='submit' value='Send' className={!dark ? 'contactbutton' : 'dcontactbutton'} onClick={(e)=>{handleContact(e)}}>Send</button>   
         </form>
       </div>
-
-      {contacted
-      ? 
-        <div className='contactedbackground' onClick={(e)=>{handleContacted(e)}}>
-          <div className='contacted'>
-            <div className='contactedtop'>
-              <p className='contactedline'>Your message has been sent</p>
-              <button type='submit' className='contactedbutton' onClick={(e)=>{handleContacted(e)}}>X</button>
-            </div>
-            <p className='contactedlineone'>Thank You for Contacting Me</p>
-            <p className='contactedlinetwo'>I will get back to you in 3-5 Business days</p>
-          </div>
-        </div>
-      :
-        <div></div>
-      }
     </div>
   )
 }

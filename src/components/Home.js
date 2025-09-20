@@ -2,12 +2,13 @@ import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect, useState } from 'react'
-import imageone from './homeimageone.png'
-import imagetwo from './homeimagetwo.png'
-import dondark from './downloadblack.png'
-import donlight from './downloadwhite.png'
-import whatlight from './whatsapplight.png'
-import whatdark from './whatsappdark.png'
+import imageone from '../Assets/Images/homeimageone.png'
+import imagetwo from '../Assets/Images/homeimagetwo.png'
+import dondark from '../Assets/Images/downloadblack.png'
+import donlight from '../Assets/Images/downloadwhite.png'
+import whatlight from '../Assets/Images/whatsapplight.png'
+import whatdark from '../Assets/Images/whatsappdark.png'
+import pdfurl from '../Assets/Documents/MERN CV.pdf'
 import DecryptedText from './animations/decryptedText'
 
 const Home = () => {
@@ -39,7 +40,6 @@ const Home = () => {
   }
 
   const download = () =>{
-    const pdfurl = "MERN CV.pdf"
     const link = document.createElement("a")
     link.href = pdfurl
     link.download = "Olaitan Oluwaseun CV.pdf"
