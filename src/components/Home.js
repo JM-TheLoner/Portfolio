@@ -16,7 +16,9 @@ const Home = () => {
   const { navigate, dark, useInterval } = useContext(DataContext)
   const [insidedon, setinsidedon] = useState(false)
   const [insidewhat, setinsidewhat] = useState(false)
-  const imagelist = [imageone, imagetwo]
+  const imagelist = [
+    {image: imageone, alt: 'Image One', class: "carousel-item active w-100 image_actual"}, 
+    {image: imagetwo, alt: 'Image Two', class: "carousel-item active w-100 image_actual_one"}]
   const [show, setshow] = useState(0)
 
   let num_images = imagelist.length
@@ -164,12 +166,11 @@ const Home = () => {
           <div className='imager'>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner great-positioner">
-                <div className="carousel-item active w-100 image_actual">
-                  <img src={imagetwo} className="d-block" height='650' alt="image_two"/>
-                </div>
-                <div className="carousel-item w-100 image_actual_one">
-                  <img src={imageone} className="d-block" height='650' alt="image_one"/>
-                </div>
+                {imagelist.map((image)=>(
+                  <div className={image.class}>
+                    <img src={image.image} className="d-block" height='650' alt={image.alt}/>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
