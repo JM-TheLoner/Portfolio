@@ -122,13 +122,13 @@ const Home = () => {
             Co-founder of 
             <a
               className="levlink"
-              href="https://github.com/dashboard"
+              href="/"
               target="_blank"
               rel="noopener noreferrer" 
             > 
               I-Leverage
             </a>
-             Branding Agency
+            Agency
             </h1>
           <div className='sidebuttons'>
             <button className='donbtnhome' onClick={download} onMouseEnter={()=>{changeInsidedon(true)}} onMouseLeave={()=>{changeInsidedon(false)}}>

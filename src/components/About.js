@@ -5,9 +5,28 @@ import { useEffect, useContext, useState, useRef } from 'react'
 import DataContext from '../context/Datacontext'
 import ClickSpark from './animations/TapSpark'
 import VariableProximity from './animations/variableProximity'
+import draw from '../Assets/Audio/hidden-blade-draw.mp3'
+import retract from '../Assets/Audio/hidden-blade-retract.mp3'
 
 
 const About = () => { 
+
+  const colorList = ['#ff0000', '#3648ff', '#2ff924', '#9734d1ff', '#ffe600ff', '#fff']
+
+  const [color, setColor] = useState(colorList[2])
+
+
+  const selectcol = () =>{
+    let num = (Math.random() * 6)
+    let choice = Math.floor(num)
+    setColor(colorList[choice])
+  }
+
+
+  const playSound = (sound)=>{
+    var audio = new Audio(sound)
+    audio.play()
+  }
 
   const containerRef = useRef(null);
 
@@ -42,19 +61,26 @@ const About = () => {
     setbackState(true)
     setaboutClassname('AboutDeepBlue')
   }
+  const backStaterTrueHTML = () =>{
+    setbackState(true)
+    setaboutClassname('AboutOrange')
+  }
   const backStaterFalse = () =>{
     setbackState(false)
     setaboutClassname(null)
   }
   
   const skills = [    
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10', alt:'Node', enter:backStaterTruenode, leave:backStaterFalse, bodyName:'BACKEND', bodyDesc:'The FOUNDATION on which FUNCTIONS and OPERATIONS run'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10', alt:'Mongo', enter:backStaterTruemongo, leave:backStaterFalse, bodyName:'DATABASE SERVICE', bodyDesc:'The ARCHIVES that hold the DATA'},
-    {image:'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png', alt:'Express', enter:backStaterTrueexpress, leave:backStaterFalse, bodyName:'BACKEND', bodyDesc:'Works in the DARK to serve the LIGHT'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10', alt:'Javascript', enter:backStaterTruejs, leave:backStaterFalse, bodyName:'Framework Systems', bodyDesc:'The Force that BREATHES through, SURROUNDS and BINDS all things TOGETHER'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10', alt:'Python', enter:backStaterTruepython, leave:backStaterFalse, bodyName:'PROGRAMMING', bodyDesc:'My GATEWAY into this LIFE. It CHOSE me'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10', alt:'Pandas', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'MACHINE LEARNING*', bodyDesc:'let the MACHINES take over.'},
-    {image:'https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png', alt:'React', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'FRONTEND', bodyDesc:'Controls EVERYTHING the light TOUCHES and MORE'}
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10', alt:'Node Logo', enter:backStaterTruenode, leave:backStaterFalse, bodyName:'Node JS', bodyDesc:'JavaScript Runtime Environment'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10', alt:'Mongo Logo', enter:backStaterTruemongo, leave:backStaterFalse, bodyName:'Mongo DB', bodyDesc:'No-SQL DataBase Service'},
+    {image:'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png', alt:'Express Logo', enter:backStaterTrueexpress, leave:backStaterFalse, bodyName:'Express JS', bodyDesc:'Node.JS Backend Framework'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10', alt:'Javascript Logo', enter:backStaterTruejs, leave:backStaterFalse, bodyName:'JavaScript', bodyDesc:'High Level Programming Language (Web Development, Web Interactivity, UI Creation)'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10', alt:'Python Logo', enter:backStaterTruepython, leave:backStaterFalse, bodyName:'Python', bodyDesc:'High Level Programming Language (Scripting, Automation, Machine Learning)'},
+    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10', alt:'Pandas Logo', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'Pandas*', bodyDesc:'Machine Learning, Data Manipulation & Analysis using Python'},
+    {image:'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png', alt:'React Logo', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'React', bodyDesc:'JavaScript Library for building User Interfaces'},
+    {image:'https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png', alt:'PostgreSQL Logo', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'PostgreSQL', bodyDesc:'SQL Database Service'},
+    {image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png', alt:'CSS Logo', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'CSS', bodyDesc:'Cascading Style Sheet. (Web Styling)'},
+    {image:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png', alt:'HTML Logo', enter:backStaterTrueHTML, leave:backStaterFalse, bodyName:'HTML', bodyDesc:'HyperText Markup Language. (Web Structuring)'}
   ]
 
   useEffect(()=>{
@@ -63,7 +89,7 @@ const About = () => {
 
   return (
     <ClickSpark
-      sparkColor='#fff'
+      sparkColor={color}
       sparkSize={15}
       sparkRadius={25}
       sparkCount={8}
@@ -76,7 +102,9 @@ const About = () => {
           !dark ? 'About' : 'dAbout'
         :
           aboutClassname
-        }> 
+        }
+        onClick={()=>{selectcol()}}
+      > 
 
         { !backState 
         ?
@@ -171,7 +199,11 @@ const About = () => {
 
 
         <div className='bottombox'>
-          <ul className='accordion'>
+          <ul 
+            className='accordion'
+            onMouseEnter={()=>{playSound(draw)}}
+            onMouseLeave={()=>{playSound(retract)}}
+          >
             {skills.map(
               (skill)=> (
                 <li
@@ -180,7 +212,7 @@ const About = () => {
                   <img src={skill.image} alt={skill.alt}/>
                   <div className='content'>
                     <span>
-                      <p className='selftaught'>{skill.bodyName}<br/>{skill.bodyDesc}</p>
+                      <p className='selftaught'><p className='bold'>{skill.bodyName}</p><br/>{skill.bodyDesc}</p>
                     </span>
                   </div>
                 </li>

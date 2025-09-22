@@ -29,6 +29,9 @@ const Footer = () => {
   if (aboutClassname === 'AboutDeepBlue'){
     footstate = 'FooterDeepBlue'
   }
+  if (aboutClassname === 'AboutOrange'){
+    footstate = 'FooterOrange'
+  }
 
   return (  
     <>

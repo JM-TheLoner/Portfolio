@@ -3,16 +3,17 @@ import '../stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
 import image from '../Assets/Images/image.png'
-// import swordSwipe from './draw-sword1-44724.mp3' 
+import whoosh1 from '../Assets/Audio/lightsaber-whoosh-03.mp3'
+import whoosh2 from '../Assets/Audio/lightsaber-whoosh-04.mp3'
 
 const Portfolio = () => {
 
   const { dark } = useContext(DataContext)
 
-  // const soundon = ()=>{
-  //   var audio = new Audio(swordSwipe)
-  //   audio.play()
-  // }
+  const playSound = (sound)=>{
+    var audio = new Audio(sound)
+    audio.play()
+  }
 
   let projectList = [
     {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"], projectDate:"JULY 2025"}, 
@@ -70,7 +71,8 @@ const Portfolio = () => {
           <a    href={project.projectLink}>
             <div 
             className={!dark ? 'project' : 'dproject'}
-            // onMouseEnter={()=>{soundon()}}
+            onMouseEnter={()=>{playSound(whoosh1)}}
+            onMouseLeave={()=>{playSound(whoosh2)}}
             > 
               <img className='image' src={project.projectImg || image} alt=''/>
               <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>

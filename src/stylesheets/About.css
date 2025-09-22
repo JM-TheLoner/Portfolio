@@ -118,6 +118,17 @@
   transition: 100ms ease-in-out 100ms;
   animation: appear 200ms linear 0s 1;
 }
+.AboutOrange{
+  background: linear-gradient(to bottom, #fa6c2e, #d8621d);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
 .topbox{
   text-align: center;
   align-items: center;
@@ -442,6 +453,45 @@
   margin-bottom: 35px;
   transition: 100ms ease-in-out 100ms;
 }  
+.AboutOrange .story{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+.AboutOrange .dstory{
+  justify-self: center;
+  margin-bottom: 25px;
+  width: 85%;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  transition: 100ms ease-in-out 100ms;
+}  
+.AboutOrange .bottomstory{
+  font-size: 20px;
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  /* display: flex; */
+  margin-top: -30px;
+  margin-bottom: 35px;
+  transition: 100ms ease-in-out 100ms;
+}  
+
+
+.AboutOrange .dbottomstory{
+  font-size: 20px;
+  font-weight: 100;
+  /* font-family: 'Merriweather'; */
+  color:#010327;
+  /* display: flex; */
+  margin-top: -30px;
+  margin-bottom: 35px;
+  transition: 100ms ease-in-out 100ms;
+}  
 
 
 .overline{
@@ -465,6 +515,11 @@
   display: flex;
 }
 
+.bold{
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .accordion{
   width: 100%;
   display: flex;
@@ -477,7 +532,7 @@
 .accordion:hover{
   /* gap: 2px; */
   /* if no background */
-  gap: 3px;
+  gap: 8px;
   /* if background*/
 }
 
@@ -500,6 +555,7 @@
   object-fit: cover;
   /* object-fit: contain; */
   filter: grayscale(0.5);
+  background: #d8d8d877;
 }
 
 .accordion li,
@@ -550,6 +606,7 @@
 }
 .accordion li:hover img{
   filter: grayscale(0);
+  background: #d8d8d8;
 }
 
 .accordion li:hover span {

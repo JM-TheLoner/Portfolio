@@ -346,6 +346,7 @@
 .Home .donbtnhome:focus{
     color: #14005e;
     background: #d9cfff;
+    transition: 100ms ease-in-out 100ms;
 
     
 }
@@ -353,6 +354,7 @@
 .dHome .donbtnhome:focus{
     background: #d9cfff;
     color: #000620;
+    transition: 100ms ease-in-out 100ms;
 }
 .donbtnhome1{
     position: relative; top:10px; left:50px;
@@ -386,6 +388,7 @@
 .Home .donbtnhome1:focus{
     background: #d9cfff;
     color: #14005e;
+    transition: 100ms ease-in-out 100ms;
 }
 
 .dHome .donbtnhome1{
@@ -420,14 +423,16 @@
 .dHome .donbtnhome1:focus{
     background: #d9cfff;
     color: #000620;
+    transition: 100ms ease-in-out 100ms;
 }
 .downloadimg{    
   height: 2vmin;
   pointer-events: none;
   position: relative;
-  top:1px;
+  top:0px;
   left:10px;
   animation: fadein 300ms linear 0s 1;
+    transition: 100ms ease-in-out 100ms;
 }
 .whatsappimg{
     height: 3vmin;
@@ -437,6 +442,7 @@
     left:10px;
     margin-bottom: -15px;
     animation: fadein 300ms linear 0s 1;
+    transition: 100ms ease-in-out 100ms;
 }
 @keyframes shine {
     0% {

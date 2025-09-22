@@ -44,23 +44,14 @@ const Header = ({ title }) => {
   if (aboutClassname === 'AboutDeepBlue'){
     headstate = 'TopbarDeepBlue'
   }
+  if (aboutClassname === 'AboutOrange'){
+    headstate = 'TopbarOrange'
+  }
 
   const navhome = (e) =>{            
       navigate('/')
       setslider(false)
   }
-  // const navport = (e) =>{        
-  //     navigate('/portfolio')
-  //     setslider(false)
-  // }
-  // const navabout = (e) =>{        
-  //     navigate('/skills')
-  //     setslider(false)
-  // }
-  // const navcontact = (e) =>{        
-  //     navigate('/contact')
-  //     setslider(false)
-  // }
 
   const linkstyle = {
       textDecoration:"none"
