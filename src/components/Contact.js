@@ -6,7 +6,6 @@ import { useEffect, useState, useContext, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import DataContext from '../context/Datacontext' 
 import whatlight from '../Assets/Images/whatsapplight.png'
-import whatdark from '../Assets/Images/whatsappdark.png'
 import insta from '../Assets/Images/insta.png'
 import twitter from '../Assets/Images/twitter.png'
 import github from '../Assets/Images/github.png'
@@ -137,86 +136,70 @@ const Contact = () => {
       <div className='contactleft'>
         <div className='contacttext'>
           <p className={!dark ? 'contacthead' : 'dcontacthead'}>Reach Out!</p>
-          <p className={!dark ? 'contactbody' : 'dcontactbody'}>In business, Size Matters Not.<br/>In Faith, take the leap and get the exposure you Deserve.<br/>Do or do not. There is no try!</p>
+          <p className={!dark ? 'contactbody' : 'dcontactbody'}>In business, Size matters not<br/>Take the leap of faith and get what you Deserve</p>
         </div>
-        
-          {/* <img src={lov} className="ogo1" alt="logo" /> */}
-          <figcaption className='ImgTag'>
-            <a
-              className="loc"
-              href="https://maps.app.goo.gl/bLeBW9cEfVpSCGK86"
+
+        <div className={!dark ? 'holes' : 'dholes'}>
+          <p className='line1'>Lagos, Nigeria</p>
+        </div>
+      
+        <div className={!dark ? 'phone1' : 'dphone1'}>
+          <p>
+            <a className={!dark ? 'fromAbove firstPhoneNum' : 'fromAbove dfirstPhoneNum'} href='tel:+234-902-328-2736'>+234 902 328 2736</a>            
+            <br/>
+            <a className={!dark ? 'fromAbove secondPhoneNum' : 'fromAbove dsecondPhoneNum'} href='tel:+234-815-892-1148'>+234 815 892 1148</a>
+          </p>
+        </div>
+
+        <div>
+          
+            <p className={!dark ? 'email' : 'demail'}>
+              <a className='fromAbove' href='mailto:oolaitan13@gmail.com'>Oolaitan13@gmail.com</a>
+            </p>
+                  
+        </div>
+
+        <div className='contactsamelinesocs'>
+          <a
+              className="locwhat"
+              href="https://wa.me/qr/7K2XV7UM75H4N1"
               target="_blank"
               rel="noopener noreferrer"
-              >
-              <div className={!dark ? 'holes' : 'dholes'}>
-                <p className='line1'>Plot 13D, Block 2, Lonex Gardens Estate, Isheri-North, Lagos, Nigeria</p>
-              </div>
+            >
+              <img src={whatlight} className="smlogo" alt="whatlight"/>
             </a>
-          </figcaption> 
-          
-          {/* <img src={phone} className="ogo2" alt="logo" /> */}
-          <figcaption className='ImgTag'>
-            <div className={!dark ? 'phone1' : 'dphone1'}>
-              <p>
-                +234 902 328 2736
-                <br/>
-                +234 815 892 1148
-              </p>
-            </div>
-          </figcaption>
-        <div>
-          {/* <img src={email} className="ogo3" alt="logo" /> */}
-          <figcaption className='ImgTag'>
-            <p className={!dark ? 'email' : 'demail'}>Oolaitan13@gmail.com</p>
-          </figcaption>
-        </div>
-        <div>
-          <div className='contactsamelinesocs'>
-            <a
-                className="locwhat"
-                href="https://wa.me/qr/7K2XV7UM75H4N1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {!dark ?
-                  <img src={whatdark} className="smlogo" alt="whatdark"/>
-                :
-                  <img src={whatlight} className="smlogo" alt="whatlight"/>
-                }
-              </a>
-            <a
-                className="locinsta"
-                href="https://www.instagram.com/_the.loner?igsh=MTF0Zzk0ZmQ1OHBkZg=="
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={insta} className="smlogo" alt="insta"/>
-              </a>
-            <a
-                className="loctwitter"
-                href="https://x.com/JayMono7?t=xIJr3zKtuCv6LZM1U3A1_w&s=09"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={twitter} className="smlogo" alt="twitter"/>
-              </a>
-            <a
-                className="loclinkedin"
-                href="https://www.linkedin.com/in/oluwaseun-olaitan-059b23201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={linkedin} className="smlogo" alt="linkedin"/>
-              </a>
-            <a
-                className="locgithub" 
-                href="https://github.com/JM-TheLoner"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                  <img src={github} className="smlogo" alt="github"/>
-              </a>
-          </div>
+          <a
+              className="locinsta"
+              href="https://www.instagram.com/_the.loner?igsh=MTF0Zzk0ZmQ1OHBkZg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={insta} className="smlogo" alt="insta"/>
+            </a>
+          <a
+              className="loctwitter"
+              href="https://x.com/JayMono7?t=xIJr3zKtuCv6LZM1U3A1_w&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={twitter} className="smlogo" alt="twitter"/>
+            </a>
+          <a
+              className="loclinkedin"
+              href="https://www.linkedin.com/in/oluwaseun-olaitan-059b23201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedin} className="smlogo" alt="linkedin"/>
+            </a>
+          <a
+              className="locgithub" 
+              href="https://github.com/JM-TheLoner"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                <img src={github} className="smlogo" alt="github"/>
+            </a>
         </div>        
       </div>
 

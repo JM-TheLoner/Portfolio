@@ -76,26 +76,26 @@ const Home = () => {
         <div className='wave1'>
           <div className='bg1'></div>
         </div>
-      </div>
+      </div> 
 
       <div className='backgroundspread'>
-          <div className='bubbleone'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubbletwo'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblethree'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblefour'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblefive'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblesix'></div>
-      </div>
+        <div className='bubbleone'></div>
+     </div>
+     <div className='backgroundspread'>
+         <div className='bubbletwo'></div>
+     </div>
+     <div className='backgroundspread'>
+         <div className='bubblethree'></div>
+     </div>
+     <div className='backgroundspread'>
+         <div className='bubblefour'></div>
+     </div>
+     <div className='backgroundspread'>
+         <div className='bubblefive'></div>
+     </div>
+     <div className='backgroundspread'>
+         <div className='bubblesix'></div>
+     </div>
 
       <div className='spliting'>
         <div className='leftside'>

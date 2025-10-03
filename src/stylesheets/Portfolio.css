@@ -6,6 +6,8 @@
     flex-grow: 1;
     padding-top: 3px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     min-height: 85vh;
     transition: 100ms ease-in-out 100ms;
@@ -16,6 +18,8 @@
     flex-grow: 1;
     padding-top: 3px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     min-height: 85vh;
     transition: 100ms ease-in-out 100ms;
@@ -24,7 +28,7 @@
 .projTitle{
   width: 100%;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   transition: 100ms ease-in-out 100ms;
 }
 .lightWords{
@@ -40,6 +44,7 @@ a{
   text-decoration: none;
 }
 .projectlister{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,25 +78,23 @@ a{
   text-align: left;
   overflow: hidden;
   padding: 0.5px 0.5px 3px 1px;
-  background-color: #3a96ff65;
-  border: 1px solid #a9a3ffdc;
+  background-color: #3a24ff38;
+  border: 1px solid #040042dc;
   cursor: pointer;
 }
 
 .dproject:hover,
 .dproject:focus{
-  background-color: #04003b;
-  border: 1px solid #a9a3ff;
-  border-radius: 8px;
+  background-color: #09008b;
+  border-radius: 5px;
   box-shadow: 0px, 0px, 15px, 0px;
   transition: 150ms ease-in-out 150ms;
   animation: wipe 200ms ease-in-out 100ms 1;
 }
 .project:hover,
 .project:focus{
-  background-color: #473aff;
-  border: 1px solid #a9a3ff;
-  border-radius: 8px;
+  background-color: #000983;
+  border-radius: 5px;
   box-shadow: 0px, 0px, 15px, 0px;
   transition: 150ms ease-in-out 150ms;
   animation: wipelight 200ms ease-in-out 100ms 1;

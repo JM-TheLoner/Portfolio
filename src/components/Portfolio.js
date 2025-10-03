@@ -65,33 +65,35 @@ const Portfolio = () => {
       <div className='backgroundspread'>
           <div className='bubblesix'></div>
       </div>
-      <div className='projectlister'>  
+      <div>
         <h1 className={!dark ? 'projTitle lightWords' : 'projTitle darkWords'}>My Projects</h1>
-        {projectList.map((project)=>(
-          <a    href={project.projectLink}>
-            <div 
-            className={!dark ? 'project' : 'dproject'}
-            onMouseEnter={()=>{playSound(whoosh1)}}
-            onMouseLeave={()=>{playSound(whoosh2)}}
-            > 
-              <img className='image' src={project.projectImg || image} alt=''/>
-              <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>
-              <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p>
-            
-              <div className='d-flex complist'>
-                {project.projectComponents.map((component)=>(
-                  <div className='comp'>
-                    <div className='siteComponent'>
-                      {component}
+        <div className='projectlister'
+          onMouseEnter={()=>{playSound(whoosh1)}}
+          onMouseLeave={()=>{playSound(whoosh2)}}
+        >  
+          {projectList.map((project)=>(
+            <a    href={project.projectLink}>
+              <div className={!dark ? 'project' : 'dproject'}> 
+                <img className='image' src={project.projectImg || image} alt=''/>
+                <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>
+                <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p>
+              
+                <div className='d-flex complist'>
+                  {project.projectComponents.map((component)=>(
+                    <div className='comp'>
+                      <div className='siteComponent'>
+                        {component}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-            </div>
-          </a>
-        ))}
+              </div>
+            </a>
+          ))}
+        </div>        
       </div>
+
     </div>
   )
 }

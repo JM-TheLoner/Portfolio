@@ -40,22 +40,24 @@
 }
 .backer{
     position: absolute;
-    width: 100%;
     align-self: flex-end;
     display: flex;
     justify-content: center;
-    bottom: 10px;
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 30.8em;
     right: 50px;
-    border: 0px solid rgba(107, 107, 107, 0.76);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+    bottom: 10px;    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
     padding: 0px 10px;
     overflow-y: visible;
     transition: 100ms ease-in-out 100ms;
-    backdrop-filter: blur(5px);
+    border: 0px solid rgba(12, 0, 66, 0.76);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
+    background-color: #7cc4f896;
 
 }
 .dbacker{
@@ -67,9 +69,7 @@
     width: 80%;
     height: 30.8em;
     right: 50px;
-    bottom: 10px;
-    border: 0px solid rgba(194, 194, 194, 0.76);
-    box-shadow: 0 0 8px #adadadcb;  
+    bottom: 10px;    
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 5px;
@@ -77,6 +77,8 @@
     padding: 0px 10px;
     overflow-y: visible;
     transition: 100ms ease-in-out 100ms;
+    border: 0px solid rgba(194, 194, 194, 0.76);
+    box-shadow: 0 0 8px #adadadcb;  
     background-color: rgba(1, 0, 7, 0.514);
 }
 .backer:hover,
@@ -106,7 +108,7 @@
     overflow-x: hidden;
   }
 .TopLine{
-    text-shadow: 0 0 5px #102abd, 0 0 6px #233fdf, 0 0 7px #697ff8, 0 0 8px #b2bcf7, 0 0 9px #d2d8f7;
+    text-shadow: 0 0 3px #697ff8;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -186,7 +188,7 @@
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 80px;
-    color:rgba(156, 174, 255, 0.77);
+    color:#fafafaa6;
     animation: swipein 1s linear 0s 1;
     width:130%;
     text-shadow: 0 0 3px #adb9ffc7;

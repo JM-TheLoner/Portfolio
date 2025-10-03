@@ -136,7 +136,7 @@
   position: absolute;
   right: 250px;
   display: flex;
-  font-weight: 300;
+  font-weight: 300; 
 }
 .linklist1{
   color: black;
@@ -197,7 +197,7 @@
   position: relative;
   bottom:0px;
   right: 20px;
-  color: #c1ccff;
+  color: #d8d8d8;
   transition: 100ms ease-in-out 100ms;
 }
 .appbtn{
@@ -278,8 +278,10 @@
   color: #d8d8d8;
 }
 .homepos:hover{
-  color: #14005e;
+  color: #130069;
   cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
 }
 .portpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -290,8 +292,10 @@
   color: #d8d8d8;
 }
 .portpos:hover{
-  color: #14005e;
+  color: #130069;
   cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
 }
 .aboutpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -302,8 +306,10 @@
   color: #d8d8d8;
 }
 .aboutpos:hover{
-  color: #14005e;
+  color: #130069;
   cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
 }
 .contpos{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -314,8 +320,10 @@
   color: #d8d8d8;
 }
 .contpos:hover{
-  color: #14005e;
+  color: #130069;
   cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
 }
 
 .dhomepos{
@@ -324,11 +332,12 @@
   position: relative;
   top: 20px;
   left: 20px;
-  color: #acbbff;
+  color: #d8d8d8;
 }
 .dhomepos:hover{
-  color: #fff1f1;
+  color: #9caeff;
   cursor: pointer;
+  font-weight: 500; 
   transition: 50ms ease-in-out 50ms;
 }
 .dportpos{
@@ -337,11 +346,12 @@
   position: relative;
   top: 20px;
   left: 40px;
-  color: #acbbff;
+  color: #d8d8d8;
 }
 .dportpos:hover{
-  color: #fff1f1;
+  color: #9caeff;
   cursor: pointer;
+  font-weight: 500; 
   transition: 50ms ease-in-out 50ms;
 }
 .daboutpos{
@@ -350,11 +360,12 @@
   position: relative;
   top: 20px;
   left: 40px;
-  color: #acbbff;
+  color: #d8d8d8;
 }
 .daboutpos:hover{
-  color: #fff1f1;
+  color: #9caeff;
   cursor: pointer;
+  font-weight: 500; 
   transition: 50ms ease-in-out 50ms;
 }
 .dcontpos{
@@ -363,11 +374,12 @@
   position: relative;
   top: 20px;
   left: 60px;
-  color: #acbbff;
+  color: #d8d8d8;
 }
 .dcontpos:hover{
-  color: #fff1f1;
+  color: #9caeff;
   cursor: pointer;
+  font-weight: 500; 
   transition: 50ms ease-in-out 50ms;
 } 
 
