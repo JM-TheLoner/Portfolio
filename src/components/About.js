@@ -5,8 +5,8 @@ import { useEffect, useContext, useState, useRef } from 'react'
 import DataContext from '../context/Datacontext'
 import ClickSpark from './animations/TapSpark'
 import VariableProximity from './animations/variableProximity'
-import draw from '../Assets/Audio/hidden-blade-draw.mp3'
-import retract from '../Assets/Audio/hidden-blade-retract.mp3'
+import draw from '../Assets/Audio/lightsaber-whoosh-03.mp3'
+import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
 
 
 const About = () => { 

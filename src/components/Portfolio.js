@@ -3,8 +3,8 @@ import '../stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
 import image from '../Assets/Images/image.png'
-import whoosh1 from '../Assets/Audio/lightsaber-whoosh-03.mp3'
-import whoosh2 from '../Assets/Audio/lightsaber-whoosh-04.mp3'
+import whoosh1 from '../Assets/Audio/hidden-blade-draw.mp3'
+import whoosh2 from '../Assets/Audio/hidden-blade-retract.mp3'
 
 const Portfolio = () => {
 
