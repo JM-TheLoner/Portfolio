@@ -2,89 +2,241 @@
 @import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
 
 .Home{
-    background-color: #3272a0;
-    padding: 3px 3px 3px 3px;
+    background-color: #F5F4F9;
+    padding: 3px 15px 3px 15px;
     max-width: 100%;
-    height: 85vh;
+    height: 100vh;
     padding-bottom: 0px;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     overflow-y: hidden;
 }
 .dHome{
-    background-color: #010327;
-    padding: 3px 3px 3px 3px;
+    background-color: #050B1A;
+    padding: 3px 15px 3px 15px;
     max-width: 100%;
-    height: 85vh;
+    height: 100vh;
     padding-bottom: 0px;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     overflow-y: hidden;
 }
 .spliting{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
     display: flex;
-    margin-left: 50px;
+    justify-content: center;
+}
+.leftside{
+    background-color: green;
+    width:56%;
     position: relative;
-    height: 85vh;
 }
 
-.leftside{
-    align-self: center;
-    width:50%;
-    position: relative;
-    top: 15px;
-    left: 20px;
+
+
+
+
+.sidebuttons{
+    display: flex;
+    position: relative; 
+    height: 60px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
 }
+.downloadimg{    
+  height: 15px;
+  pointer-events: none;
+  position: relative;
+  animation: fadein 300ms linear 0s 1;
+  transition: 100ms ease-in-out 0ms;
+}
+.donbtnhome{
+    position: relative;
+    width: 180px;
+    height: 45px;
+    background: rgba(196, 196, 196, 0.071);
+    border-radius: 7px;
+    box-shadow: 0 0 0px #01003a;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #1a1a1a; /* Adjust this color to change intensity/style */
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.911) 50%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: shine 3s linear infinite;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms ease-in-out 0ms;
+}
+.dHome .donbtnhome{
+    position: relative;
+    width: 180px;
+    height: 45px;
+    background: rgba(146, 146, 146, 0.071);
+    border-radius: 7px;
+    box-shadow: 0 0 0px #d8d8d8;
+    border: 2px solid rgb(155, 155, 155);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    color: #d8d8d8a4; /* Adjust this color to change intensity/style */
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.911) 50%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: shine 3s linear infinite;
+    font-size:15px;
+    /* font-family:'Times New Roman', Times, serif; */
+    transition: 100ms ease-in-out 0ms;
+}
+.Home .donbtnhome:hover,
+.Home .donbtnhome:focus{
+    color: #14005e;
+    background: #d9cfff;
+    transition: 100ms ease-in-out 0ms; 
+}
+.dHome .donbtnhome:hover,
+.dHome .donbtnhome:focus{
+    background: #d9cfff;
+    color: #000620;
+    transition: 100ms ease-in-out 0ms;
+}
+.donbtnhome1{
+    width: 180px;
+    height: 45px;
+    position: relative; 
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(25deg, #c552ff 0%, #724bff 50%, #3c26ff 100%);
+    box-shadow: 0 4px 20px rgba(226, 118, 250, 0.386);
+    border: 1px solid rgb(155, 155, 155);
+    cursor: pointer;
+    transition: 100ms ease-in-out 0ms;
+}
+.Home .donbtnhome1:hover{
+  background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+  box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+}
+
+.dHome .donbtnhome1{
+    width: 180px;
+    height: 45px;
+    position: relative; 
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
+    box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
+    border: 1px solid rgb(155, 155, 155);
+    cursor: pointer;
+    transition: 100ms ease-in-out 0ms;
+}
+.dHome .donbtnhome1:hover{
+  background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
+  box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+}
+.seeWork{
+  color: #F9F9F9;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.dseeWork{
+  color: #F9F9F9;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.btnswarrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+
 .rightside{
-    width: 50%;
+    background-color: red;
+    width: 41%;
     justify-self: flex-end;
     position: relative;
 }
 .backer{
-    position: absolute;
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(5px);
-    width: 80%;
-    height: 30.8em;
-    right: 50px;
-    bottom: 10px;    
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 0px 10px;
+    width: 390px;
+    height: 430px;
+    background: linear-gradient(25deg, #c552ffbd 0%, #724bffbd 50%, #3c26ffbd 100%);
+    border: 2px solid rgba(148, 148, 148, 0.496);
+    box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
+    border-radius: 30% 18% 70% 18% / 30% 18% 70% 18%;
+    backdrop-filter: blur(10px);
+    transform: rotate(2deg);
+    transition: 100ms ease-in-out 0ms;
     overflow-y: visible;
-    transition: 100ms ease-in-out 100ms;
-    border: 0px solid rgba(12, 0, 66, 0.76);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.685);  
-    background-color: #7cc4f896;
-
+    position: absolute;
+    justify-self: center;
+    bottom: 0;
 }
 .dbacker{
-    position: absolute;
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(5px);
-    width: 80%;
-    height: 30.8em;
-    right: 50px;
-    bottom: 10px;    
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 0px 10px;
+    width: 390px;
+    height: 430px;
+    background: linear-gradient(35deg, #c552ff77 0%, #a24bff7b 50%, #3c26ffca 100%);
+    border: 2px solid rgba(240, 240, 240, 0.76);
+    box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
+    border-radius: 30% 18% 70% 18% / 30% 18% 70% 18%;
+    backdrop-filter: blur(10px);
+    transform: rotate(2deg);
+    transition: 100ms ease-in-out 0ms;
     overflow-y: visible;
-    transition: 100ms ease-in-out 100ms;
-    border: 0px solid rgba(194, 194, 194, 0.76);
-    box-shadow: 0 0 8px #adadadcb;  
-    background-color: rgba(1, 0, 7, 0.514);
+    position: absolute;
+    justify-self: center;
+    bottom: 0;   
 }
-.backer:hover,
-.dbacker:hover{
-    backdrop-filter: blur(50px);
-}
+
+
+
+
+
+
+
+
+
+
+/* Haven't worked on code past this line */
+
+
+
+
+
+
+
+
 
 .imager{
     width: 70%;
@@ -109,7 +261,7 @@
   }
 .TopLine{
     text-shadow: 0 0 3px #697ff8;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 20px;
     font-family: 'Merriweather';
@@ -132,7 +284,7 @@
   animation: shine 3s linear infinite;
 }
 .LineThree{
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 15px;
     left: 15px;
@@ -157,7 +309,7 @@
   animation: shine 3s linear infinite;
 }
 .LineFour{
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 5px;
     left: 15px;
@@ -182,7 +334,7 @@
   animation: shine 3s linear infinite;
 }
   .dTopLine{
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -214,7 +366,7 @@
 }
 
 .dLineThree{
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 15px;
     left: 15px;
@@ -239,7 +391,7 @@
   animation: shine 3s linear infinite;
 }
 .dLineFour{
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
     position: relative;
     top: 5px;
     left: 15px;
@@ -269,13 +421,13 @@
     color: #d8d8d8;
     margin-left: 10px;
     margin-right: 10px;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
 }
 .dLineFour .levlink{
     color: #c1ccff;
     margin-left: 10px;
     margin-right: 10px;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
 }
 .dLineFour .levlink:hover{
   color: #734cff;
@@ -284,158 +436,8 @@
     color: #2f05ca;  
 }
   
-.sidebuttons{
-    display: flex;
-    position: relative; 
-    top:10px;
-}
-.donbtnhome{
-    position: relative; top:10px; left:10px;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    background: rgba(196, 196, 196, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #01003a;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
-    cursor: pointer;
-            color: #ffffffb9; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-    font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms, ease-in-out, 100ms;
-}
-.dHome .donbtnhome{
-    position: relative; top:10px; left:10px;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    background: rgba(146, 146, 146, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #d8d8d8;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
-    cursor: pointer;
-            color: #d8d8d8a4; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-    font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms, ease-in-out, 100ms;
-}
 
-.Home .donbtnhome:hover,
-.Home .donbtnhome:focus{
-    color: #14005e;
-    background: #d9cfff;
-    transition: 100ms ease-in-out 100ms;
 
-    
-}
-.dHome .donbtnhome:hover,
-.dHome .donbtnhome:focus{
-    background: #d9cfff;
-    color: #000620;
-    transition: 100ms ease-in-out 100ms;
-}
-.donbtnhome1{
-    position: relative; top:10px; left:50px;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    background: rgba(196, 196, 196, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #01003a;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
-    cursor: pointer;
-                color: #ffffffb9; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-    font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms, ease-in-out, 100ms;
-}
-
-.Home .donbtnhome1:hover,
-.Home .donbtnhome1:focus{
-    background: #d9cfff;
-    color: #14005e;
-    transition: 100ms ease-in-out 100ms;
-}
-
-.dHome .donbtnhome1{
-    position: relative; top:10px; left:50px;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    background: rgba(146, 146, 146, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #d8d8d8;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
-    cursor: pointer;
-                color: #d8d8d8b9; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-    font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms, ease-in-out, 100ms;
-}
-
-.dHome .donbtnhome1:hover,
-.dHome .donbtnhome1:focus{
-    background: #d9cfff;
-    color: #000620;
-    transition: 100ms ease-in-out 100ms;
-}
-.downloadimg{    
-  height: 2vmin;
-  pointer-events: none;
-  position: relative;
-  top:0px;
-  left:10px;
-  animation: fadein 300ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-}
 .whatsappimg{
     height: 3vmin;
     pointer-events: none;
@@ -444,7 +446,7 @@
     left:10px;
     margin-bottom: -15px;
     animation: fadein 300ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 0ms;
 }
 @keyframes shine {
     0% {
@@ -518,7 +520,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -528,7 +530,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -558,7 +560,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -576,13 +578,13 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -593,7 +595,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -606,7 +608,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -619,7 +621,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -634,7 +636,7 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -648,7 +650,7 @@
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -664,13 +666,13 @@
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -693,7 +695,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -709,7 +711,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:20px;
@@ -728,7 +730,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -744,7 +746,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -774,7 +776,7 @@
         margin-right: -190px;
         overflow-x:hidden;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 170vmin;
@@ -786,7 +788,7 @@
         margin-right: -190px;
         overflow-x:hidden;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
 
       }
 }
@@ -797,7 +799,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -807,7 +809,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -837,7 +839,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -855,13 +857,13 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -872,7 +874,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -885,7 +887,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -898,7 +900,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -913,7 +915,7 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -927,7 +929,7 @@
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -943,13 +945,13 @@
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -973,7 +975,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -989,7 +991,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1008,7 +1010,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1024,7 +1026,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1051,7 +1053,7 @@
         top:-130px;
         right: -170px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 150vmin;
@@ -1060,7 +1062,7 @@
         top:-130px;
         right: -170px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
 
       }
 }
@@ -1071,7 +1073,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1081,7 +1083,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1111,7 +1113,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -1129,13 +1131,13 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -1146,7 +1148,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -1159,7 +1161,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -1172,7 +1174,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -1187,7 +1189,7 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -1201,7 +1203,7 @@
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -1217,13 +1219,13 @@
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -1247,7 +1249,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -1263,7 +1265,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1282,7 +1284,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1298,7 +1300,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1325,7 +1327,7 @@
         top:-130px;
         right: -90px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 110vmin;
@@ -1334,7 +1336,7 @@
         top:-130px;
         right: -90px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
 
       }
 }
@@ -1345,7 +1347,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1355,7 +1357,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1385,7 +1387,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -1403,13 +1405,13 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -1420,7 +1422,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -1433,7 +1435,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -1446,7 +1448,7 @@
         /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 70px;
         font-family: 'Merriweather';
@@ -1461,7 +1463,7 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
@@ -1475,7 +1477,7 @@
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
@@ -1491,13 +1493,13 @@
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -1521,7 +1523,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -1537,7 +1539,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1556,7 +1558,7 @@
         color: #ffffff;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1572,7 +1574,7 @@
         color: #000133;
         font-size:15px;
         /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms, ease-in-out, 100ms;
+        transition: 100ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1599,7 +1601,7 @@
         top:-130px;
         right: -20px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 120vmin;
@@ -1608,7 +1610,7 @@
         top:-130px;
         right: -20px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 100ms;
+        transition: 100ms ease-in-out 0ms;
 
       }
 }

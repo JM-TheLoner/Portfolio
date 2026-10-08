@@ -2,46 +2,20 @@ import '../stylesheets/Home.css'
 import '../stylesheets/Background.css'
 import Header from './Header';
 import DataContext from '../context/Datacontext'
-import { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { useContext, useEffect } from 'react'
 import imageone from '../Assets/Images/homeimageone.png'
-import imagetwo from '../Assets/Images/homeimagetwo.png'
 import dondark from '../Assets/Images/downloadblack.png'
 import donlight from '../Assets/Images/downloadwhite.png'
-import whatlight from '../Assets/Images/whatsapplight.png'
-import whatdark from '../Assets/Images/whatsappdark.png'
 import pdfurl from '../Assets/Documents/MERN CV.pdf'
 import DecryptedText from './animations/decryptedText'
 
 const Home = () => {
 
-  const { navigate, dark, useInterval } = useContext(DataContext)
+  const { dark } = useContext(DataContext)
   // const { navigate, dark, useInterval, decrypted, setDecrypted } = useContext(DataContext)
-  const [insidedon, setinsidedon] = useState(false)
-  const [insidewhat, setinsidewhat] = useState(false)
-  const imagelist = [
-    {image: imageone, alt: 'Image One', class: "carousel-item active w-100 image_actual"}, 
-    {image: imagetwo, alt: 'Image Two', class: "carousel-item active w-100 image_actual_one"}]
-  const [show, setshow] = useState(0)
+  const displayImage = {image: imageone, alt: 'Image One', class: "carousel-item active w-100 image_actual"}
 
-  let num_images = imagelist.length
-
-  const revolver = () => {
-    let fake = show + 1
-    if (fake < num_images) {
-      setshow(fake)
-    } else{
-      setshow(0)
-    }
-  }
-
-  useInterval(revolver, 5000);
-
-  const changeInsidedon = (newstate) => {
-    setinsidedon(newstate)
-  }
-  const changeInsidewhat = (newstate) => {
-    setinsidewhat(newstate)
-  }
 
   const download = () =>{
     const link = document.createElement("a")
@@ -56,9 +30,8 @@ const Home = () => {
     window.scrollTo(0,0)
  }, [])
 
-  const move1 = (e) =>{
-    e.preventDefault()
-    navigate('/contact')
+  const linkstyle = {
+    textDecoration:"none"
   }
   
   // const decryptOnce = (text) => {
@@ -157,30 +130,23 @@ const Home = () => {
                 Agency
                 </h1>
               <div className='sidebuttons'>
-                <button className='donbtnhome' onClick={download} onMouseEnter={()=>{changeInsidedon(true)}} onMouseLeave={()=>{changeInsidedon(false)}}>
+                <Link to={'/projects'} style={linkstyle}>
+                  <button className='donbtnhome1'>
+                    <div className={!dark ? 'seeWork' : 'dseeWork'}>
+                        <div className='btnswarrow' style={{fontSize: '15px'}}>View My Work</div>
+                        <div className='btnswarrow' style={{fontSize: '25px'}}>&#x2192;</div>
+                    </div>                      
+                  </button>
+                </Link>
+                <button className='donbtnhome' onClick={download}>
                   Download CV
-                  {!insidedon ?
+                  {dark?
                     <img src={donlight} className="downloadimg" alt="donlight"/>
                   :
                     <img src={dondark} className="downloadimg" alt="dondark"/>
                   }
                   
                 </button>
-                <a
-                  className="whatlink"
-                  href="https://wa.me/qr/7K2XV7UM75H4N1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className='donbtnhome1' onClick={(e)=>{move1(e)}} onMouseEnter={()=>{changeInsidewhat(true)}} onMouseLeave={()=>{changeInsidewhat(false)}}>
-                    View My Work                
-                      {!insidewhat ?
-                        <img src={whatlight} className="whatsappimg" alt="whatlight"/>                    
-                      :
-                        <img src={whatdark} className="whatsappimg" alt="whatdark"/>
-                  }                
-                  </button>
-                </a>
               </div>
             </div>
 
@@ -190,11 +156,9 @@ const Home = () => {
               <div className='imager'>
                 <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                   <div className="carousel-inner great-positioner">
-                    {imagelist.map((image)=>(
-                      <div className={image.class}>
-                        <img src={image.image} className="d-block" height='650' alt={image.alt}/>
+                      <div className={displayImage.class}>
+                        <img src={displayImage.image} className="d-block" height='650' alt={displayImage.alt}/>
                       </div>
-                    ))}
                   </div>
                 </div>
               </div>

@@ -8,7 +8,7 @@ import darkimg from '../Assets/Images/dark.png'
 
 const Header = ({ title }) => {
 
-  const { dark, setdark, aboutClassname } = useContext(DataContext)
+  const { dark, setdark, aboutClassname} = useContext(DataContext)
   const[slider, setslider] = useState(false)
 
   const handleslider = () =>{
@@ -68,35 +68,53 @@ const Header = ({ title }) => {
                 <div className='headtxt'>
                     <p className={!dark ? 'lheadtxt' : 'dheadtxt'}>The Loner</p>
                 </div>
-              </div>      
-                
-              <div className='listicle'>                     
-                <div className='linklist1'>
-                    <Link to={'/'} style={linkstyle} className={!dark ? 'home' : 'dhome'}>Home</Link>
-                </div>
-                <div className='linklist2'>
-                    <Link to={'/about'} style={linkstyle} className={!dark ? 'about' : 'dabout'}>About</Link>
-                </div>
-                <div className='linklist3'>
-                    <Link to={'/skills'} style={linkstyle} className={!dark ? 'skills' : 'dskills'}>Skills</Link>
-                </div>
-                <div className='linklist4'>
-                    <Link to={'/contact'} style={linkstyle} className={!dark ? 'cont' : 'dcont'}>Contact</Link>
-                </div>
-                <div className='linklist5'>
-                    <Link to={'/projects'} style={linkstyle} className={!dark ? 'proj' : 'dproj'}>Projects</Link>
-                </div>
+              </div>                     
+              <div className='listicle'>
+                <Link to={'/'}>
+                    <div className={`linklist1 ${!dark ? 'linklght' : 'linkdrk'}`}>
+                        <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Home</div>
+                    </div>
+                </Link>                     
+                <Link to={'/about'}>
+                    <div className={`linklist2 ${!dark ? 'linklght' : 'linkdrk'}`}>
+                        <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>About</div>
+                    </div>
+                </Link>                     
+                <Link to={'/skills'}>
+                    <div className={`linklist3 ${!dark ? 'linklght' : 'linkdrk'}`}>
+                        <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Skills</div>
+                    </div>
+                </Link>                     
+                <Link to={'/contact'}>
+                    <div className={`linklist4 ${!dark ? 'linklght' : 'linkdrk'}`}>
+                        <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Contact</div>
+                    </div>
+                </Link>                     
+                <Link to={'/projects'}>
+                    <div className={`linklist5 ${!dark ? 'linklght' : 'linkdrk'}`}>
+                        <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Projects</div>
+                    </div>
+                </Link>                     
               </div>
-              <div className='lightndark' onClick={(e) => {darkmode(e)}}>
-                  { dark ?                 
-                      <button  className='darkbtn' onClick={(e) => {darkmode(e)}}>
-                          <img src={darkimg} className="darkimg" alt="dark"/>
-                      </button>  
-                  :
-                      <button  className='lightbtn' onClick={(e) => {darkmode(e)}}>
-                          <img src={lightimg} className="lightimg" alt="light"/>                        
-                      </button>  
-                  }     
+
+              <div className='lightndark'>
+                <div className={`talkbtn ${!dark ? 'contlght' : 'contdrk'}`}>
+                    <Link to={'/contact'} style={linkstyle}>
+                        <div className={!dark ? 'talk' : 'dtalk'}>
+                            <div className='btnarrow' style={{fontSize: '15px'}}>Let's Talk</div>
+                            <div className='btnarrow' style={{fontSize: '25px'}}>&#x2192;</div>
+                        </div> 
+                    </Link>
+                </div>
+                { !dark ?                 
+                    <button  className='darkbtn' onClick={(e) => {darkmode(e)}}>
+                        <img src={darkimg} className="darkimg" alt="dark"/>
+                    </button>  
+                :
+                    <button  className='lightbtn' onClick={(e) => {darkmode(e)}}>
+                        <img src={lightimg} className="lightimg" alt="light"/>                        
+                    </button>  
+                }     
               </div>     
           </div>    
       </header>

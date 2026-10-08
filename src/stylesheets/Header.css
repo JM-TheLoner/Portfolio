@@ -12,30 +12,30 @@
   justify-self: center;
   }
 .Topbar{
-  background:#3272a078;
+  background:#FAFAFCae;
   width:100%;
   height: 100%;
   z-index: 7;
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px 0px 30px;
-  border-bottom: 0px solid rgb(3, 0, 156);
-  box-shadow: 0 0 1px #010921;
-  transition: 100ms ease-in-out 100ms;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.925);
+  box-shadow: 0 0 2px #f1f1f3;
+  transition: 100ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
 }
 .dTopbar{
-  background:#01032778;
+  background:#050b1aae;
   width:100%;
   height: 100%;
   z-index: 7;
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px 0px 30px;
-  border-bottom: 0px solid rgb(9, 0, 87);
-  box-shadow: 0 0 1px #0731b1;
-  transition: 100ms ease-in-out 100ms;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  box-shadow: 0 0px 2px rgba(128, 31, 255, 0.386);
+  transition: 100ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
 }
@@ -63,7 +63,7 @@
   color: #d8d8d8;
 }
 .lheadtxt{
-  color: #d8d8d8;
+  color: #191919;
 }
 .listicle{
   width: 35%;
@@ -74,140 +74,230 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 15px;
 }
 .linklist1{
+  background-color: transparent;
   animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  padding-bottom: 10px;
   text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
 .linklist2{
+  background-color: transparent;
   animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  padding-bottom: 10px;
   text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
 .linklist3{
+  background-color: transparent;
   animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  padding-bottom: 10px;
   text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
 .linklist4{
+  background-color: transparent;
   animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  padding-bottom: 10px;
   text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
 .linklist5{
+  background-color: transparent;
   animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  padding-bottom: 10px;
   text-decoration: none;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
-.home{
-  transition: 100ms ease-in-out 100ms;
+.linklght:hover{
+  background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+  box-shadow: 0 3px 20px rgba(226, 118, 250, 0.666);
+}
+.linkdrk:hover{
+  background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
+  box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
+}
+.linkbtn{
+  color: #191919;
+}
+.linklght:hover .linkbtn{
+  color: #F9F9F9;
+}
+.dlinkbtn{
   color: #d8d8d8;
 }
-.home:hover{
-  color: #130069;
+.lightndark{
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contlght{
+  background: linear-gradient(25deg, #c552ff 0%, #724bff 50%, #3c26ff 100%);
+  box-shadow: 0 4px 20px rgba(226, 118, 250, 0.386);
+  transition: 100ms ease-in-out 0ms;
+}
+.contlght:hover{
+  background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+  box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+}
+.contdrk{
+  background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
+  box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
+  transition: 100ms ease-in-out 0ms;
+}
+.contdrk:hover{
+  background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
+  box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+}
+.talk{
+  color: #F9F9F9;
+  width: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.contlght:hover .talk{
+  color: #F9F9F9;
+}
+.dtalk{
+  color: #F9F9F9;
+  width: 95px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.btnarrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.talkbtn{
+  animation: slideopennav 175ms linear 0ms 1;
+  text-decoration: none;
   cursor: pointer;
-  font-weight: 600; 
-  transition: 50ms ease-in-out 50ms;
+  width: 110px;
+  height: 40px;
+  border-radius: 6px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms ease-in-out 0ms;
 }
-.proj{  
-  transition: 100ms ease-in-out 100ms;
-  color: #d8d8d8;
-}
-.proj:hover{
-  color: #130069;
+.lightbtn{
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+  transition: 100ms ease-in-out 0ms;
+  border: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-.about{  
-  transition: 100ms ease-in-out 100ms;
-  color: #d8d8d8;
-}
-.about:hover{
-  color: #130069;
+.darkbtn{
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+  transition: 100ms ease-in-out 0ms;
+  border: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-.cont{
-  transition: 100ms ease-in-out 100ms;
-  color: #d8d8d8;
+.lightimg{
+  height:20px;
+  transition: 100ms ease-in-out 0ms;
+  background-color: transparent;
+  filter: brightness(0) invert(1);
+  opacity: 0.65;
 }
-.cont:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+.darkimg{
+  height:20px;
+  transition: 100ms ease-in-out 0ms;
+  background-color: transparent;
+  filter: brightness(0);
+  opacity: 0.65;
 }
-.skills{  
-  transition: 100ms ease-in-out 100ms;
-  color: #d8d8d8;
+.lightimg:hover{
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  box-shadow: 0 4px 20px rgba(241, 240, 241, 0.386);
 }
-.skills:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+.darkimg:hover{
+  filter: brightness(0);
+  opacity: 1;
+  box-shadow: 0 4px 20px rgba(241, 240, 241, 0.386);
 }
-.dhome{  
-  transition: 50ms ease-in-out 50ms;
-  color: #d8d8d8;
+
+@keyframes fadein {
+  from{
+    display: none;
+  }
+  to{
+    display: contents;
+  }
 }
-.dhome:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+@keyframes slideinnav {
+  from{
+      background-color: transparent;
+      width: 0em;
+  }
+  to{
+      background-color: rgba(255, 109, 111, 0.8);
+      width: inherit;
+  }
 }
-.dproj{  
-  transition: 50ms ease-in-out 50ms;
-  color: #d8d8d8;
-}
-.dproj:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.dabout{  
-  transition: 50ms ease-in-out 50ms;
-  color: #d8d8d8;
-}
-.dabout:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.dcont{  
-  transition: 50ms ease-in-out 50ms;
-  color: #d8d8d8;
-}
-.dcont:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-} 
-.dskills{  
-  transition: 100ms ease-in-out 100ms;
-  color: #d8d8d8;
-}
-.dskills:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
+@keyframes slideopennav {
+  0%{
+      opacity: 0;
+  }
+  40%{
+    opacity: 0;
+    margin-left: -40px;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 
+/* Haven't worked on code past this line */
 
 
 
@@ -296,113 +386,7 @@
   box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
-.lightndark{
-  background-color: yellow;
-  /* position: absolute;
-  right: 10px;
-  top: 20px; */
-  width: 200px;
-  cursor: pointer;
-}
-.lightbtn{
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  cursor: pointer;
-  position:relative;
-  right: 9px;
-  bottom: 1px;
-  animation: spinleft 100ms linear 0s 1;
-  transition: 100ms ease-in-out 100ms;
-  border: none;
-}
-.lightimg{
-  height:3.5vmin;
-  pointer-events: none;
-  position: relative;
-  right:3px;
-  top: 2px;
-  animation: fadein 100ms linear 0s 1;
-  transition: 100ms ease-in-out 100ms;
-}
-.darkbtn{
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  cursor: pointer;
-  position:relative;
-  right: 9px;
-  bottom: 1px;
-  animation: spinright 100ms linear 0s 1;
-  transition: 100ms ease-in-out 100ms;
-  border: none;
-}
-.darkimg{
-  height:3.5vmin;
-  pointer-events: none;
-  position: relative;
-  background-color: #e9e9e9;
-  border-radius: 30px;
-  right:4px;
-  top: 1px;
-  animation: fadein 100ms linear 0s 1;
-  transition: 100ms ease-in-out 100ms;
-  box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-}
 
-.btn:hover,
-.dbtn:hover{
-  transform: scale(0.9);
-  transition: ease-in-out;
-}
-
-
-@keyframes spinleft {
-  from{
-      transform: rotate(180deg)
-  }
-  to{
-      transform: rotate(0deg)
-  }
-}
-@keyframes spinright {
-  from{
-    transform: rotate(-180deg)
-  }
-  to{
-    transform: rotate(0deg)
-  }
-}
-@keyframes fadein {
-  from{
-    display: none;
-  }
-  to{
-    display: contents;
-  }
-}
-@keyframes slideinnav {
-  from{
-      background-color: transparent;
-      width: 0em;
-  }
-  to{
-      background-color: rgba(255, 109, 111, 0.8);
-      width: inherit;
-  }
-}
-@keyframes slideopennav {
-  0%{
-      opacity: 0;
-  }
-  40%{
-    opacity: 0;
-    margin-left: -40px;
-  }
-  100%{
-    opacity: 1;
-  }
-}
 
 @media screen and (max-width:552px) {
   .Header {
