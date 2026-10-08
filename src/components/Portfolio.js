@@ -1,4 +1,5 @@
 import '../stylesheets/Portfolio.css'
+import Header from './Header';
 import '../stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
@@ -30,7 +31,7 @@ const Portfolio = () => {
 
   return (
     <div className={!dark ? 'Portfolio' : 'dPortfolio'}>
-      
+      <Header/> 
       <div className='backgroundspread'>
         <div className='wave3'>
           <div className='bg3'></div>

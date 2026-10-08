@@ -4,10 +4,7 @@
 .Portfolio{
     background-color: #3272a0;
     flex-grow: 1;
-    padding-top: 3px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 3px 3px 3px 3px;
     width: 100%;
     min-height: 85vh;
     transition: 100ms ease-in-out 100ms;
@@ -16,10 +13,7 @@
 .dPortfolio{
     background-color: #010327;
     flex-grow: 1;
-    padding-top: 3px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 3px 3px 3px 3px;
     width: 100%;
     min-height: 85vh;
     transition: 100ms ease-in-out 100ms;

@@ -24,7 +24,7 @@
 .About{
   background-color: #3272a0;
   flex-grow: 1;
-  padding-top: 30px;
+  padding: 3px 3px 3px 3px;
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
@@ -34,7 +34,7 @@
 .dAbout{
   background-color: #010327;
   flex-grow: 1;
-  padding-top: 30px;
+  padding: 3px 3px 3px 3px;
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
@@ -514,106 +514,6 @@
   justify-content: center;
   display: flex;
 }
-
-.bold{
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.accordion{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  gap: 16px;
-  transition: 100ms ease-in-out 100ms;
-}
-
-.accordion:hover{
-  /* gap: 2px; */
-  /* if no background */
-  gap: 8px;
-  /* if background*/
-}
-
-.accordion li {
-  position: relative;
-  overflow: hidden;
-  flex: 0 0 80px;
-  border-radius: 30px;
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-.accordion li img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* object-fit: contain; */
-  filter: grayscale(0.5);
-  background: #d8d8d877;
-}
-
-.accordion li,
-.accordion li img,
-.accordion li .content,
-.accordion li .content span{
-  transition: 100ms ease-in-out 100ms;
-  width: 100%;
-}
-
-
-.accordion li .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  color: #fff;
-  padding: 5px;
-  background: #02022e;
-  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.accordion li .content span {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 50px;
-  translate: -300px 0;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.accordion li:hover{
-  flex: 0 1 260px;
-  scale: 1.1;
-  z-index: 10;
-  opacity: 1;
-}
-
-.accordion li:hover .content{
-  opacity: 1;
-  visibility: visible;
-  width: 100%
-}
-.accordion li:hover img{
-  filter: grayscale(0);
-  background: #d8d8d8;
-}
-
-.accordion li:hover span {
-  translate: -50% 0;  
-  opacity: 1;
-  visibility: visible;
-}
 .covering{
   display: none;
 }
@@ -1055,71 +955,6 @@
     flex-wrap: wrap;
     height: 80%;
   }
-  .accordion{
-    margin-top: 60px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 450px;
-    gap: 3%;
-    transition: 100ms ease-in-out 100ms;
-    margin-left: -10%;
-  }
-  .accordion:hover{
-    /* gap: 2px; */
-    /* if no background */
-    gap: 0;
-    /* if background*/
-    margin-top: 120px;
-  }
-  
-  .accordion li {
-    position: relative;
-    overflow: hidden;
-    flex: none;
-    border-radius: 5px;
-    width: 125px;
-    height: 125px;
-    opacity: 0.75;
-    cursor: pointer;
-  }
-  .accordion li:hover,
-  .accordion li:focus{
-    flex: 0 0 50%;
-    scale: 1;
-    z-index: 10;
-    opacity: 1;
-  }
-  
-  .accordion li:hover .content,
-  .accordion li:focus .content{
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li:hover img,
-  .accordion li:focus img{
-    filter: grayscale(0);
-  }
-  
-  .accordion li:hover span ,
-  .accordion li:focus span{
-    translate: 0;  
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li img {
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* object-fit: contain; */
-    filter: grayscale(0); 
-  }
   .covering{
     display: block;
     background-color: transparent;
@@ -1538,71 +1373,6 @@
     flex-wrap: wrap;
     height: 80%;
   }
-  .accordion{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 450px;
-    gap: 3%;
-    transition: 100ms ease-in-out 100ms;
-    margin-left: -10%;
-  }
-  .accordion:hover{
-    /* gap: 2px; */
-    /* if no background */
-    gap: 0;
-    /* if background*/
-    margin-top: 120px;
-  }
-  
-  .accordion li {
-    position: relative;
-    overflow: hidden;
-    flex: none;
-    border-radius: 5px;
-    width: 155px;
-    height: 155px;
-    opacity: 0.75;
-    cursor: pointer;
-  }
-  .accordion li:hover,
-  .accordion li:focus{
-    flex: 0 0 50%;
-    scale: 1;
-    z-index: 10;
-    opacity: 1;
-  }
-  
-  .accordion li:hover .content,
-  .accordion li:focus .content{
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li:hover img,
-  .accordion li:focus img{
-    filter: grayscale(0);
-  }
-  
-  .accordion li:hover span ,
-  .accordion li:focus span{
-    translate: 0;  
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li img {
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* object-fit: contain; */
-    filter: grayscale(0);
-  }
   .covering{
     display: block;
     background-color: transparent;
@@ -2018,71 +1788,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-  }
-  .accordion{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 450px;
-    gap: 10px;
-    transition: 100ms ease-in-out 100ms;
-    margin-left: -10%;
-  }
-  .accordion:hover{
-    /* gap: 2px; */
-    /* if no background */
-    gap: 0;
-    /* if background*/
-    margin-top: 120px;
-  }
-  
-  .accordion li {
-    position: relative;
-    overflow: hidden;
-    flex: none;
-    border-radius: 5px;
-    width: 155px;
-    height: 155px;
-    opacity: 0.75;
-    cursor: pointer;
-  }
-  .accordion li:hover,
-  .accordion li:focus{
-    flex: 0 0 50%;
-    scale: 1;
-    z-index: 10;
-    opacity: 1;
-  }
-  
-  .accordion li:hover .content,
-  .accordion li:focus .content{
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li:hover img,
-  .accordion li:focus img{
-    filter: grayscale(0);
-  }
-  
-  .accordion li:hover span ,
-  .accordion li:focus span{
-    translate: 0;  
-    opacity: 1;
-    visibility: visible;
-  }
-  .accordion li img {
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* object-fit: contain; */
-    filter: grayscale(0);
   }
   .covering{
     display: block;

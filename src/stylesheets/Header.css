@@ -2,56 +2,220 @@
 @import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
 
 .Header {
-    height: 3.5em;
-    width: 100%;
-    font-weight:bolder;
-    font-size:1em;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-    align-items: center;
+  height: 60px;
+  width: 98%;
+  z-index: 9;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
   }
-  .dHeader {
-    height: 3.5em;
-    width: 100%;
-    font-weight:bolder;
-    font-size:1em;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-    align-items: center;
-  }
+.Topbar{
+  background:#3272a078;
+  width:100%;
+  height: 100%;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  border-bottom: 0px solid rgb(3, 0, 156);
+  box-shadow: 0 0 1px #010921;
+  transition: 100ms ease-in-out 100ms;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.dTopbar{
+  background:#01032778;
+  width:100%;
+  height: 100%;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  border-bottom: 0px solid rgb(9, 0, 87);
+  box-shadow: 0 0 1px #0731b1;
+  transition: 100ms ease-in-out 100ms;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.applogo{
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+ .logoimg{
+  height: 43.5px;
+  pointer-events: none;
+}
+.headtxt{
+  width: 150px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 100ms ease-in-out 100ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.dheadtxt{
+  color: #d8d8d8;
+}
+.lheadtxt{
+  color: #d8d8d8;
+}
+.listicle{
+  width: 35%;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+}
+.linklist1{
+  animation: slideopennav 175ms linear 0ms 1;
+  height:3em;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.linklist2{
+  animation: slideopennav 175ms linear 0ms 1;
+  height:3em;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.linklist3{
+  animation: slideopennav 175ms linear 0ms 1;
+  height:3em;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.linklist4{
+  animation: slideopennav 175ms linear 0ms 1;
+  height:3em;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.linklist5{
+  animation: slideopennav 175ms linear 0ms 1;
+  height:3em;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.home{
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.home:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 600; 
+  transition: 50ms ease-in-out 50ms;
+}
+.proj{  
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.proj:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.about{  
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.about:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.cont{
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.cont:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.skills{  
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.skills:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.dhome{  
+  transition: 50ms ease-in-out 50ms;
+  color: #d8d8d8;
+}
+.dhome:hover{
+  color: #9caeff;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.dproj{  
+  transition: 50ms ease-in-out 50ms;
+  color: #d8d8d8;
+}
+.dproj:hover{
+  color: #9caeff;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.dabout{  
+  transition: 50ms ease-in-out 50ms;
+  color: #d8d8d8;
+}
+.dabout:hover{
+  color: #9caeff;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+.dcont{  
+  transition: 50ms ease-in-out 50ms;
+  color: #d8d8d8;
+}
+.dcont:hover{
+  color: #9caeff;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+} 
+.dskills{  
+  transition: 100ms ease-in-out 100ms;
+  color: #d8d8d8;
+}
+.dskills:hover{
+  color: #130069;
+  cursor: pointer;
+  font-weight: 500; 
+  transition: 50ms ease-in-out 50ms;
+}
+
+
+
+
+
 .smallHead{
     backdrop-filter: blur(10px);
   display: none;
 }
-.dsmallHead{
-    backdrop-filter: blur(10px);
-  display: none;
-}
-.Topbar{
-  background:#3272a0;
-  width:100%;
-  height: 100%;
-  z-index: 7;
-  display: flex;
-  border-bottom: 0px solid rgb(3, 0, 156);
-  box-shadow: 0 0 1px #010921;
-  transition: 100ms ease-in-out 100ms;
-}
-.dTopbar{
-  background:#010327;
-  width:100%;
-  height: 100%;
-  z-index: 7;
-  display: flex;
-  border-bottom: 0px solid rgb(9, 0, 87);
-  box-shadow: 0 0 1px #0731b1;
-  transition: 100ms ease-in-out 100ms;
-  backdrop-filter: blur(10px);
-}
+
 .TopbarYellow{
   background:#ddcf0a;
   width:100%;
@@ -132,90 +296,12 @@
   box-shadow: 0 0 1px #010921;
   transition: 100ms ease-in-out 100ms;
 }
-.listicle{
-  position: absolute;
-  right: 250px;
-  display: flex;
-  font-weight: 300; 
-}
-.linklist1{
-  color: black;
-  animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  font-size: 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  left: 0px;
-}
-.linklist2{
-  color: black;
-  animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  font-size: 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-}
-.linklist3{
-  color: black;
-  animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  font-size: 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  left: 40px;
-}
-.linklist5{
-  color: black;
-  animation: slideopennav 175ms linear 0ms 1;
-  height:3em;
-  font-size: 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  left: 100px;
-}
-.headbtnlinetwo{
-  font-size: 23px;
-  margin-top: 15px;
-  font-weight: 400;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  position: relative;
-  bottom:0px;
-  right: 20px;
-  color: #d8d8d8;
-  transition: 100ms ease-in-out 100ms;
-}
-.dheadbtnlinetwo{
-  font-size: 23px;
-  margin-top: 15px;
-  font-weight: 400;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  position: relative;
-  bottom:0px;
-  right: 20px;
-  color: #d8d8d8;
-  transition: 100ms ease-in-out 100ms;
-}
-.appbtn{
-  cursor: pointer;
-  margin-right: 10px;
-}
- .App-logo2{
-  height: 45px;
-  pointer-events: none;
-  margin-left: 60px;
-  position: relative;
-  top:10px;
-  right:30px;
-}
 .lightndark{
-  position: absolute;
+  background-color: yellow;
+  /* position: absolute;
   right: 10px;
-  top: 20px;
+  top: 20px; */
+  width: 200px;
   cursor: pointer;
 }
 .lightbtn{
@@ -269,119 +355,7 @@
   transform: scale(0.9);
   transition: ease-in-out;
 }
-.homepos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  color: #d8d8d8;
-}
-.homepos:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.portpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: 40px;
-  color: #d8d8d8;
-}
-.portpos:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.aboutpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: 40px;
-  color: #d8d8d8;
-}
-.aboutpos:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.contpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: 60px;
-  color: #d8d8d8;
-}
-.contpos:hover{
-  color: #130069;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
 
-.dhomepos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 50ms ease-in-out 50ms;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  color: #d8d8d8;
-}
-.dhomepos:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.dportpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 50ms ease-in-out 50ms;
-  position: relative;
-  top: 20px;
-  left: 40px;
-  color: #d8d8d8;
-}
-.dportpos:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.daboutpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 50ms ease-in-out 50ms;
-  position: relative;
-  top: 20px;
-  left: 40px;
-  color: #d8d8d8;
-}
-.daboutpos:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-}
-.dcontpos{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  transition: 50ms ease-in-out 50ms;
-  position: relative;
-  top: 20px;
-  left: 60px;
-  color: #d8d8d8;
-}
-.dcontpos:hover{
-  color: #9caeff;
-  cursor: pointer;
-  font-weight: 500; 
-  transition: 50ms ease-in-out 50ms;
-} 
 
 @keyframes spinleft {
   from{
@@ -641,7 +615,7 @@
   border-radius: 0px;
   cursor: pointer;
 }
-.homepos{
+.home{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -649,7 +623,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.portpos{
+.proj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -657,7 +631,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.aboutpos{
+.about{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -665,7 +639,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.contpos{
+.cont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -673,7 +647,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.dhomepos{
+.dhome{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -681,7 +655,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dportpos{
+.dproj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -689,7 +663,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.daboutpos{
+.dabout{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -697,7 +671,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dcontpos{
+.dcont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -918,7 +892,7 @@
   border-radius: 0px;
   cursor: pointer;
 }
-.homepos{
+.home{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -926,7 +900,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.portpos{
+.proj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -934,7 +908,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.aboutpos{
+.about{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -942,7 +916,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.contpos{
+.cont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -950,7 +924,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.dhomepos{
+.dhome{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -958,7 +932,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dportpos{
+.dproj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -966,7 +940,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.daboutpos{
+.dabout{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -974,7 +948,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dcontpos{
+.dcont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1195,7 +1169,7 @@
   border-radius: 0px;
   cursor: pointer;
 }
-.homepos{
+.home{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1203,7 +1177,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.portpos{
+.proj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1211,7 +1185,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.aboutpos{
+.about{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1219,7 +1193,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.contpos{
+.cont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1227,7 +1201,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.dhomepos{
+.dhome{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1235,7 +1209,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dportpos{
+.dproj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1243,7 +1217,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.daboutpos{
+.dabout{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1251,7 +1225,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dcontpos{
+.dcont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1472,7 +1446,7 @@
   border-radius: 0px;
   cursor: pointer;
 }
-.homepos{
+.home{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1480,7 +1454,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.portpos{
+.proj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1488,7 +1462,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.aboutpos{
+.about{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1496,7 +1470,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.contpos{
+.cont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1504,7 +1478,7 @@
   left: -40px;
   color: #d8d8d8;
 }
-.dhomepos{
+.dhome{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1512,7 +1486,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dportpos{
+.dproj{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1520,7 +1494,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.daboutpos{
+.dabout{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1528,7 +1502,7 @@
   left: -40px;
   color: #c1ccff;
 }
-.dcontpos{
+.dcont{
   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   transition: 100ms ease-in-out 100ms;
   position: relative;
@@ -1639,7 +1613,7 @@
     position: relative;
     left: 60px;
   }
-  .homepos{
+  .home{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1647,7 +1621,7 @@
     left: 10px;
     color: #d8d8d8;
   }
-  .dhomepos{
+  .dhome{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1688,7 +1662,7 @@
     position: relative;
     left: 190px;
   }
-  .portpos{
+  .proj{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1696,7 +1670,7 @@
     left: 40px;
     color: #d8d8d8;
   }
-  .aboutpos{
+  .about{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1704,7 +1678,7 @@
     left: 40px;
     color: #d8d8d8;
   }
-  .contpos{
+  .cont{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1712,7 +1686,7 @@
     left: 60px;
     color: #d8d8d8;
   }
-  .dportpos{
+  .dproj{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1720,7 +1694,7 @@
     left: 40px;
     color: #c1ccff;
   }
-  .daboutpos{
+  .dabout{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;
@@ -1728,7 +1702,7 @@
     left: 40px;
     color: #c1ccff;
   }
-  .dcontpos{
+  .dcont{
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     transition: 100ms ease-in-out 100ms;
     position: relative;

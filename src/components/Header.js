@@ -8,7 +8,7 @@ import darkimg from '../Assets/Images/dark.png'
 
 const Header = ({ title }) => {
 
-  const { dark, setdark, navigate, aboutClassname } = useContext(DataContext)
+  const { dark, setdark, aboutClassname } = useContext(DataContext)
   const[slider, setslider] = useState(false)
 
   const handleslider = () =>{
@@ -48,18 +48,13 @@ const Header = ({ title }) => {
     headstate = 'TopbarOrange'
   }
 
-  const navhome = (e) =>{            
-      navigate('/')
-      setslider(false)
-  }
-
   const linkstyle = {
       textDecoration:"none"
   }
 
   return (     
     <> 
-      <header className={!dark ? 'Header' : 'dHeader'}>
+      <header className='Header'>
           <div className={
           !aboutClassname 
           ? 
@@ -67,22 +62,29 @@ const Header = ({ title }) => {
           :
             headstate
           }>
-              <div onClick={(e) => {navhome(e)}} className='appbtn'>
-                <img src={logo} className="App-logo2" alt="logo"/>
-              </div>              
-              <p className={!dark ? 'headbtnlinetwo' : 'dheadbtnlinetwo'}>J.M_TheLoner</p>  
+              {/* <div onClick={(e) => {navhome(e)}} className='appbtn'> */}
+              <div className='applogo'>
+                <img src={logo} className="logoimg" alt="logo"/>
+                <div className='headtxt'>
+                    <p className={!dark ? 'lheadtxt' : 'dheadtxt'}>The Loner</p>
+                </div>
+              </div>      
+                
               <div className='listicle'>                     
                 <div className='linklist1'>
-                    <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
+                    <Link to={'/'} style={linkstyle} className={!dark ? 'home' : 'dhome'}>Home</Link>
                 </div>
                 <div className='linklist2'>
-                    <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>About</Link>
+                    <Link to={'/about'} style={linkstyle} className={!dark ? 'about' : 'dabout'}>About</Link>
                 </div>
                 <div className='linklist3'>
-                    <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
+                    <Link to={'/skills'} style={linkstyle} className={!dark ? 'skills' : 'dskills'}>Skills</Link>
+                </div>
+                <div className='linklist4'>
+                    <Link to={'/contact'} style={linkstyle} className={!dark ? 'cont' : 'dcont'}>Contact</Link>
                 </div>
                 <div className='linklist5'>
-                    <Link to={'/portfolio'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
+                    <Link to={'/projects'} style={linkstyle} className={!dark ? 'proj' : 'dproj'}>Projects</Link>
                 </div>
               </div>
               <div className='lightndark' onClick={(e) => {darkmode(e)}}>
@@ -98,7 +100,7 @@ const Header = ({ title }) => {
               </div>     
           </div>    
       </header>
-      <header className={!dark ? 'smallHead' : 'dsmallHead'}>
+      <header className='smallHead'>
           <div className={!dark ? 'smallTopbar' : 'dsmallTopbar'}>
               <button  className='menubtn' onClick={(e)=>handleslider(e)}>
                   <div className='headbtnline'>
@@ -125,7 +127,7 @@ const Header = ({ title }) => {
                       <p className='headbtnlineone'>=</p>
                   </div>
               </button>   
-              <img src={logo} className="App-logo2" alt="logo"/>             
+              <img src={logo} className="logoimg" alt="logo"/>             
               <div className='smalllinklist'>
                   <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
               </div>

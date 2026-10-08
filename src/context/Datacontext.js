@@ -8,6 +8,7 @@ export const DataProvider = ({ children }) => {
     const navigate = useNavigate()
     const [dark, setdark] = useState(true)
     const [aboutClassname, setaboutClassname] = useState('')
+    const [decrypted, setDecrypted] = useState(false)
 
     useEffect(()=>{
       setdark(JSON.parse(localStorage.getItem('JMTL_Portfolio_DarkMode')) || true) 
@@ -33,9 +34,11 @@ export const DataProvider = ({ children }) => {
         }
       }, [delay]);
     }
+
+
   
     return (
-        <DataContext.Provider value={{ dark, setdark, navigate, aboutClassname, setaboutClassname, useInterval }}>
+        <DataContext.Provider value={{ dark, setdark, navigate, aboutClassname, setaboutClassname, useInterval, decrypted, setDecrypted}}>
         {children}
         </DataContext.Provider>
     )

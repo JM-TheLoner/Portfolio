@@ -1,0 +1,756 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+.variable-proximity {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+.About{
+  background-color: #3272a0;
+  flex-grow: 1;
+  padding: 3px 3px 3px 3px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  min-height: 90%;
+  transition: 100ms ease-in-out 100ms;
+}
+.dAbout{
+  background-color: #010327;
+  flex-grow: 1;
+  padding: 3px 3px 3px 3px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  min-height: 90%;
+  transition: 100ms ease-in-out 100ms;
+}
+.AboutYellow{
+  background: linear-gradient(to bottom, #fff12f,#8f7500);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutBlue{
+  background: linear-gradient(to bottom, #188bff, #0018a0);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutLightGreen{
+  background: linear-gradient(to bottom, #65ff0c, #047700);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutYellowExpress{
+  background: linear-gradient(to bottom, #fff133, #7a6e00);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutDarkGreen{
+  background: linear-gradient(to bottom, #6aff25, #00ac1d);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutBlueYellow{
+  background: linear-gradient(to bottom, #0029df, #ffc800);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutDeepBlue{
+  background: linear-gradient(to bottom, #0f00dd, #0A054D);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.AboutOrange{
+  background: linear-gradient(to bottom, #fa6c2e, #d8621d);
+  flex-grow: 1;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  height: 95%;
+  transition: 100ms ease-in-out 100ms;
+  animation: appear 200ms linear 0s 1;
+}
+.topbox{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -35px;
+  margin-bottom: -50px;
+}
+.aboutimage{
+  position: relative;
+  height: 15em;
+  pointer-events: none;
+  filter: grayscale(30%)
+  /* transform: rotate(90deg); */
+}
+
+.bottombox{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bold{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.accordion{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+  transition: 100ms ease-in-out 100ms;
+}
+
+.accordion:hover{
+  /* gap: 2px; */
+  /* if no background */
+  gap: 8px;
+  /* if background*/
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 30px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit: contain; */
+  filter: grayscale(0.5);
+  background: #d8d8d877;
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span{
+  transition: 100ms ease-in-out 100ms;
+  width: 100%;
+}
+
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 5px;
+  background: #02022e;
+  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50px;
+  translate: -300px 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion li:hover{
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+
+.accordion li:hover .content{
+  opacity: 1;
+  visibility: visible;
+  width: 100%
+}
+.accordion li:hover img{
+  filter: grayscale(0);
+  background: #d8d8d8;
+}
+
+.accordion li:hover span {
+  translate: -50% 0;  
+  opacity: 1;
+  visibility: visible;
+}
+.covering{
+  display: none;
+}
+@keyframes appear{
+  0%{
+      opacity: 0.5;
+  }    
+  50%{
+      opacity: 0.5; 
+  }
+  70%{
+      opacity: 0.5; 
+  }
+  100%{
+      opacity: 1; 
+  }
+}
+@keyframes blink{
+  0%{
+      color: #303bff;
+  }    
+  50%{
+      color: #010327; 
+  }
+  70%{
+      color: #303bff;
+  }
+  100%{
+      color: #010327; 
+  }
+}
+
+@media screen and (max-width:560px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }  
+  .bottombox{
+    text-align: center;
+    align-items: normal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .accordion{
+    margin-top: 60px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 3%;
+    transition: 100ms ease-in-out 100ms;
+    margin-left: -10%;
+  }
+  .accordion:hover{
+    /* gap: 2px; */
+    /* if no background */
+    gap: 0;
+    /* if background*/
+    margin-top: 120px;
+  }
+  
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .accordion li:hover,
+  .accordion li:focus{
+    flex: 0 0 50%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .accordion li:hover .content,
+  .accordion li:focus .content{
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li:hover img,
+  .accordion li:focus img{
+    filter: grayscale(0);
+  }
+  
+  .accordion li:hover span ,
+  .accordion li:focus span{
+    translate: 0;  
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li img {
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    filter: grayscale(0); 
+  }
+  .covering{
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 3.5em;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    z-index: 5;
+  }
+}
+@media screen and (max-width:696px) and (min-width:560px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }  
+  .bottombox{
+    text-align: center;
+    align-items: normal;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  .accordion{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 450px;
+    gap: 3%;
+    transition: 100ms ease-in-out 100ms;
+    margin-left: -10%;
+  }
+  .accordion:hover{
+    /* gap: 2px; */
+    /* if no background */
+    gap: 0;
+    /* if background*/
+    margin-top: 120px;
+  }
+  
+  .accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    border-radius: 5px;
+    width: 155px;
+    height: 155px;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .accordion li:hover,
+  .accordion li:focus{
+    flex: 0 0 50%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .accordion li:hover .content,
+  .accordion li:focus .content{
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li:hover img,
+  .accordion li:focus img{
+    filter: grayscale(0);
+  }
+  
+  .accordion li:hover span ,
+  .accordion li:focus span{
+    translate: 0;  
+    opacity: 1;
+    visibility: visible;
+  }
+  .accordion li img {
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    filter: grayscale(0);
+  }
+  .covering{
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 3.5em;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    z-index: 5;
+  }
+}
+@media screen and (max-width:840px) and (min-width:696px) {
+  .About{
+    background-color: #3272a0;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .dAbout{
+    background-color: #010327;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    height: 80vh;
+    transition: 100ms ease-in-out 100ms;
+  }
+  .AboutYellow{
+    background: linear-gradient(to bottom, #fff12f,#8f7500);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlue{
+    background: linear-gradient(to bottom, #188bff, #0018a0);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutLightGreen{ 
+    background: linear-gradient(to bottom, #65ff0c, #047700);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutYellowExpress{
+    background: linear-gradient(to bottom, #fff133, #7a6e00);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDarkGreen{
+    background: linear-gradient(to bottom, #6aff25, #00ac1d);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutBlueYellow{
+    background: linear-gradient(to bottom, #0029df, #ffc800);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .AboutDeepBlue{
+    background: linear-gradient(to bottom, #0f00dd, #0A054D);
+    flex-grow: 1;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 110vh;
+    transition: 100ms ease-in-out 100ms;
+    animation: appear 200ms linear 0s 1;
+  }
+  .bottombox{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: -20px;
+  }
+}

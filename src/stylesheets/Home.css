@@ -3,7 +3,7 @@
 
 .Home{
     background-color: #3272a0;
-    padding: 1rem;
+    padding: 3px 3px 3px 3px;
     max-width: 100%;
     height: 85vh;
     padding-bottom: 0px;
@@ -12,7 +12,7 @@
 }
 .dHome{
     background-color: #010327;
-    padding: 1rem;
+    padding: 3px 3px 3px 3px;
     max-width: 100%;
     height: 85vh;
     padding-bottom: 0px;
@@ -185,8 +185,8 @@
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
-    font-family: 'Merriweather';
-    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 80px;
     color:#fafafaa6;
     animation: swipein 1s linear 0s 1;

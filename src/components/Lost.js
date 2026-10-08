@@ -1,5 +1,6 @@
 import '../stylesheets/Lost.css'
 import '../stylesheets/Background.css'
+import Header from './Header';
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect } from 'react'
 
@@ -18,6 +19,7 @@ const Lost = () => {
 
   return (
       <div className={!dark ? 'Lost' : 'dLost'}>
+        <Header/>
         <div className='backgroundspread'>
           <div className='wave3'>
             <div className='bg3'></div>

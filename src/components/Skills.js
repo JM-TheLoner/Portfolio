@@ -1,11 +1,10 @@
 import Footer from './Footer';
 import Header from './Header';
-import '../stylesheets/About.css'
+import '../stylesheets/Skills.css'
 import '../stylesheets/Background.css'
 import { useEffect, useContext, useState, useRef } from 'react'
 import DataContext from '../context/Datacontext'
 import ClickSpark from './animations/TapSpark'
-import VariableProximity from './animations/variableProximity'
 import draw from '../Assets/Audio/lightsaber-whoosh-03.mp3'
 import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
 
@@ -90,7 +89,13 @@ const About = () => {
 
   return (
     <>
-
+      <ClickSpark
+        sparkColor={color}
+        sparkSize={15}
+        sparkRadius={25}
+        sparkCount={8}
+        duration={400}
+      >
         <Header/>
       
         <div className={
@@ -153,52 +158,34 @@ const About = () => {
 
           <div className='covering'></div>
           <div className='topbox'>
-            <div className={!dark ? 'story' : 'dstory'}>
-              <h1 className='overline'>Who am I</h1>
-              <p className={!dark ? 'bottomstory' : 'dbottomstory'}>
-
-                  <div
-                  ref={containerRef}
-                  style={{position: 'relative'}}
-                  >
-                    <VariableProximity
-                      label={"A FULL-STACK developer with lots of ideas and the power to bring them to life."}
-                      fromFontVariationSettings="'wght' 300, 'opsz' 9"
-                      toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                      containerRef={containerRef}
-                      radius={100}
-                      falloff='linear'
-                    />
-                    <br/>
-                    <VariableProximity
-                      label={"I'm all about Codes, Games, Music and quality meals. A loner with time to perfect his craft. Nothing is true and Everything is permitted when it comes to the fast and highly functional pages, operation or processes you deserve. You only need reach out with force!"}
-                      fromFontVariationSettings="'wght' 300, 'opsz' 9"
-                      toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                      containerRef={containerRef}
-                      radius={100}
-                      falloff='linear'
-                    />
-                    <br/>
-                    <VariableProximity
-                      label={" Hover over a card to see what I can do"}
-                      fromFontVariationSettings="'wght' 300, 'opsz' 9"
-                      toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                      containerRef={containerRef}
-                      radius={100}
-                      falloff='linear'
-                    />
-                  </div>
-
-
-              </p>
-            </div> 
+            <h1>story goes here</h1>
           </div>
 
 
           <div className='bottombox'>
-            <h1>extra goes here</h1>
+            <ul 
+              className='accordion'
+              onMouseEnter={()=>{playSound(draw)}}
+              onMouseLeave={()=>{playSound(retract)}}
+            >
+              {skills.map(
+                (skill)=> (
+                  <li
+                    onMouseEnter={()=>{skill.enter()}}
+                    onMouseLeave={()=>{skill.leave()}}>
+                    <img src={skill.image} alt={skill.alt}/>
+                    <div className='content'>
+                      <span>
+                        <p className='selftaught'><p className='bold'>{skill.bodyName}</p><br/>{skill.bodyDesc}</p>
+                      </span>
+                    </div>
+                  </li>
+                )
+              )}
+            </ul>
           </div>
         </div>        
+      </ClickSpark>
       <div>
         <Footer/>
       </div>
