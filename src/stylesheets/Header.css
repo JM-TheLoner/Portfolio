@@ -21,7 +21,7 @@
   padding: 0px 20px 0px 20px;
   border-bottom: 1px solid rgba(199, 199, 199, 0.925);
   box-shadow: 0 0 2px #f1f1f3;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
 }
@@ -35,7 +35,7 @@
   padding: 0px 20px 0px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.137);
   box-shadow: 0 0px 2px rgba(128, 31, 255, 0.386);
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
 }
@@ -86,7 +86,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .linklist2{
   background-color: transparent;
@@ -99,7 +99,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .linklist3{
   background-color: transparent;
@@ -112,7 +112,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .linklist4{
   background-color: transparent;
@@ -125,7 +125,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .linklist5{
   background-color: transparent;
@@ -138,7 +138,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .linklght:hover{
   background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
@@ -166,7 +166,7 @@
 .contlght{
   background: linear-gradient(25deg, #c552ff 0%, #724bff 50%, #3c26ff 100%);
   box-shadow: 0 4px 20px rgba(226, 118, 250, 0.386);
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .contlght:hover{
   background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
@@ -175,7 +175,7 @@
 .contdrk{
   background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
   box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .contdrk:hover{
   background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
@@ -216,14 +216,14 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .lightbtn{
   background-color: transparent;
   height: 20px;
   width: 20px;
   cursor: pointer;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   border: none;
   display:flex;
   justify-content: center;
@@ -234,7 +234,7 @@
   height: 20px;
   width: 20px;
   cursor: pointer;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   border: none;
   display:flex;
   justify-content: center;
@@ -242,14 +242,14 @@
 }
 .lightimg{
   height:20px;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   background-color: transparent;
   filter: brightness(0) invert(1);
   opacity: 0.65;
 }
 .darkimg{
   height:20px;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
   background-color: transparent;
   filter: brightness(0);
   opacity: 0.65;

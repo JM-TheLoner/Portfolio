@@ -3,20 +3,20 @@
 
 .Home{
     background-color: #F5F4F9;
-    padding: 3px 15px 3px 15px;
+    padding: 3px 10px 3px 10px;
     max-width: 100%;
     height: 100vh;
     padding-bottom: 0px;
-    transition: 100ms ease-in-out 0ms;
+    transition: 150ms ease-in-out 0ms;
     overflow-y: hidden;
 }
 .dHome{
     background-color: #050B1A;
-    padding: 3px 15px 3px 15px;
+    padding: 3px 10px 3px 10px;
     max-width: 100%;
     height: 100vh;
     padding-bottom: 0px;
-    transition: 100ms ease-in-out 0ms;
+    transition: 150ms ease-in-out 0ms;
     overflow-y: hidden;
 }
 .spliting{
@@ -26,14 +26,169 @@
     justify-content: center;
 }
 .leftside{
-    background-color: green;
     width:56%;
     position: relative;
+    padding-top: 7%;
 }
-
-
-
-
+.headLineContainer{
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 26%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.headWrap{
+    background: #e0e0e082;
+    padding-top:8px;
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.dheadWrap{
+    background: #09004a71;
+    padding-top:8px;
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.headLine{
+    transition: 150ms ease-in-out 0ms;
+    animation: fadeUp 150ms ease-in-out;
+    font-size: 13px;
+    text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+    background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+    /* background: #ea48ff; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.dheadLine{
+    transition: 150ms ease-in-out 0ms;
+    animation: fadeUp 150ms ease-in-out;
+    font-size: 13px;
+    text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+    background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.TopLine{
+    font-weight: 600;
+    font-size: 74px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 90px;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    transition: 150ms ease-in-out 0ms;
+    color: #050B1A;
+    /* text-shadow: 0 3px 10px rgba(226, 118, 250, 0.386); */
+}
+.dTopLine{
+    font-weight: 600;
+    font-size: 74px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 90px;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    transition: 150ms ease-in-out 0ms;
+    color:#F5F4F9;
+    text-shadow: 0 4px 10px rgba(108, 63, 245, 0.386);
+}
+.LineThree{
+    width: 105%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
+    position: relative;
+    text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+    background: linear-gradient(25deg, #db05f7 0%, #a024ff 50%,#9122ff  100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.dLineThree{
+    width: 105%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
+    position: relative;
+    text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+    background: linear-gradient(25deg, #c552ff 0%, #833cfe 50%, #7221ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.LineFour{
+    background: red;
+    font-weight: 400;
+    font-size: 16px;
+    width: 85%;
+    height: 83px;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
+    position: relative;
+    padding-top: 10px;
+    color: #050b1ad4; /* Adjust this color to change intensity/style */
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.911) 40%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.911) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+}
+.dLineFour{
+    background: red;
+    font-weight: 400;
+    font-size: 16px;
+    width: 85%;
+    height: 83px;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
+    position: relative;
+    padding-top: 10px;    
+    color: #F5F4F9a4; /* Adjust this color to change intensity/style */
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+}
 
 .sidebuttons{
     display: flex;
@@ -47,8 +202,7 @@
   height: 15px;
   pointer-events: none;
   position: relative;
-  animation: fadein 300ms linear 0s 1;
-  transition: 100ms ease-in-out 0ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .donbtnhome{
     position: relative;
@@ -73,10 +227,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation: shine 3s linear infinite;
     font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms ease-in-out 0ms;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
 }
 .dHome .donbtnhome{
     position: relative;
@@ -88,7 +242,7 @@
     border: 2px solid rgb(155, 155, 155);
     backdrop-filter: blur(50px);
     cursor: pointer;
-    color: #d8d8d8a4; /* Adjust this color to change intensity/style */
+    color: #f5f4f9c5; /* Adjust this color to change intensity/style */
     background: linear-gradient(
         120deg,
         rgba(255, 255, 255, 0) 40%,
@@ -101,22 +255,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation: shine 3s linear infinite;
     font-size:15px;
-    /* font-family:'Times New Roman', Times, serif; */
-    transition: 100ms ease-in-out 0ms;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 150ms ease-in-out 0ms;
 }
 .Home .donbtnhome:hover,
 .Home .donbtnhome:focus{
     color: #14005e;
     background: #d9cfff;
-    transition: 100ms ease-in-out 0ms; 
+    transform: translateY(-2px);
 }
 .dHome .donbtnhome:hover,
 .dHome .donbtnhome:focus{
     background: #d9cfff;
     color: #000620;
-    transition: 100ms ease-in-out 0ms;
+    transform: translateY(-2px);
 }
 .donbtnhome1{
     width: 180px;
@@ -130,11 +284,12 @@
     box-shadow: 0 4px 20px rgba(226, 118, 250, 0.386);
     border: 1px solid rgb(155, 155, 155);
     cursor: pointer;
-    transition: 100ms ease-in-out 0ms;
+    transition: 150ms ease-in-out 0ms;
 }
 .Home .donbtnhome1:hover{
-  background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
-  box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+    background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+    box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+    transform: translateY(-2px);
 }
 
 .dHome .donbtnhome1{
@@ -149,11 +304,12 @@
     box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
     border: 1px solid rgb(155, 155, 155);
     cursor: pointer;
-    transition: 100ms ease-in-out 0ms;
+    transition: 150ms ease-in-out 0ms;
 }
 .dHome .donbtnhome1:hover{
-  background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
-  box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+    background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
+    box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+    transform: translateY(-2px);
 }
 .seeWork{
   color: #F9F9F9;
@@ -179,32 +335,33 @@
   justify-content: center;
   font-weight: 600;
 }
-
-
-
 .rightside{
-    background-color: red;
     width: 41%;
     justify-self: flex-end;
     position: relative;
 }
 .backer{
-    width: 390px;
+    width: 385px;
     height: 430px;
-    background: linear-gradient(25deg, #c552ffbd 0%, #724bffbd 50%, #3c26ffbd 100%);
-    border: 2px solid rgba(148, 148, 148, 0.496);
+    background: linear-gradient(25deg, #df52ffcd 0%, #8548ffca 50%, #6e26ffc9 100%);
+    border: 2px solid rgba(243, 243, 243, 0.861);
     box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
     border-radius: 30% 18% 70% 18% / 30% 18% 70% 18%;
     backdrop-filter: blur(10px);
     transform: rotate(2deg);
-    transition: 100ms ease-in-out 0ms;
-    overflow-y: visible;
+    transition: 150ms ease-in-out 0ms;
+    overflow: hidden;
     position: absolute;
     justify-self: center;
     bottom: 0;
+    Z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-right: 3px;
 }
 .dbacker{
-    width: 390px;
+    width: 385px;
     height: 430px;
     background: linear-gradient(35deg, #c552ff77 0%, #a24bff7b 50%, #3c26ffca 100%);
     border: 2px solid rgba(240, 240, 240, 0.76);
@@ -212,11 +369,44 @@
     border-radius: 30% 18% 70% 18% / 30% 18% 70% 18%;
     backdrop-filter: blur(10px);
     transform: rotate(2deg);
-    transition: 100ms ease-in-out 0ms;
-    overflow-y: visible;
+    transition: 150ms ease-in-out 0ms;
+    overflow: hidden;
     position: absolute;
     justify-self: center;
     bottom: 0;   
+    Z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-right: 3px;
+}
+.homeImg{
+    display: block;
+    position: relative;
+    width: 390px;
+    height: auto;
+    transform: rotate(-2deg);
+    /* opacity: 0.4; */
+}
+.homeImgCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    align-items: end;
+    padding-bottom: 3px;
+
+}
+
+.homeImgOut{
+    display: block;
+    position: relative;
+    width: 390px;
+    height: auto;
+    opacity: 1;
+    mask-image: linear-gradient(to top, transparent 0%, black 15%);
 }
 
 
@@ -224,284 +414,25 @@
 
 
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
 
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 /* Haven't worked on code past this line */
 
 
-
-
-
-
-
-
-
-.imager{
-    width: 70%;
-}
-
-.overflower{
-    overflow-y: visible;
-}
-  .image_actual_one{
-    bottom: 5px;
-    filter: drop-shadow(16px 7px 8px #000108);
-    transition: 350ms ease-in-out 100ms; 
-  }
-  .image_actual{
-    bottom: 30px;
-    filter: drop-shadow(16px 7px 8px #000108);
-    transition: 350ms ease-in-out 100ms;    
-  }
-  .great-positioner{
-    left: 20%;
-    overflow-x: hidden;
-  }
-.TopLine{
-    text-shadow: 0 0 3px #697ff8;
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 20px;
-    font-family: 'Merriweather';
-    font-weight: 900;
-    font-size: 80px;
-    color: #d8d8d8da;
-    /* animation: fadein 300ms linear 0s 1; */
-    width:130%;
-
-        background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-.LineThree{
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    /* font-family: ''; */
-    font-weight: 400;
-    font-size: 20px;
-    /* color: #d8d8d8; */
-    /* animation: fadein 300ms linear 0s 1; */
-    width:130%;
-
-        color: #d8d8d8a4; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-.LineFour{
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 5px;
-    left: 15px;
-    /* font-family: ''; */
-    font-weight: 400;
-    font-size: 20px;
-    /* color: #d8d8d8; */
-    /* animation: fadein 300ms linear 0s 1; */
-    width:130%;
-
-    color: #d8d8d8a4; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.911) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-  .dTopLine{
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    color:#fafafaa6;
-    animation: swipein 1s linear 0s 1;
-    width:130%;
-    text-shadow: 0 0 3px #adb9ffc7;
-
-      background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-
-.writer{
-    font-weight: 900;
-    font-size: 20px;
-    color: green;
-    position: absolute;
-}
-
-.dLineThree{
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    /* font-family: ''; */
-    font-weight: 400;
-    font-size: 20px;
-    /* color: #9caeff; */
-    /* animation: fadein 300ms linear 0s 1; */
-    width:130%;
-
-    color: #fafafaa4; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-.dLineFour{
-    transition: 100ms ease-in-out 0ms;
-    position: relative;
-    top: 5px;
-    left: 15px;
-    /* font-family: ''; */
-    font-weight: 400;
-    font-size: 20px;
-    /* color: #9caeff; */
-    /* animation: fadein 300ms linear 0s 1; */
-    width:130%;
-
-    color: #fafafaa4; /* Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-
-
-.LineFour .levlink{
-    color: #d8d8d8;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 100ms ease-in-out 0ms;
-}
-.dLineFour .levlink{
-    color: #c1ccff;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 100ms ease-in-out 0ms;
-}
-.dLineFour .levlink:hover{
-  color: #734cff;
-} 
-.LineFour .levlink:hover{
-    color: #2f05ca;  
-}
   
 
 
-.whatsappimg{
-    height: 3vmin;
-    pointer-events: none;
-    position: relative;
-    top:-10px;
-    left:10px;
-    margin-bottom: -15px;
-    animation: fadein 300ms linear 0s 1;
-    transition: 100ms ease-in-out 0ms;
-}
-@keyframes shine {
-    0% {
-      background-position: 100%;
-    }
-    100% {
-      background-position: -100%;
-    }
-  }
-
-  @keyframes  swipein {
-    0%{       
-        text-shadow:  0 0 5px #adb9ff15, 0 0 6px #adb9ff15, 0 0 7px #adb9ff15, 0 0 8px #adb9ff15, 0 0 9px #adb9ff15;
-        background: #010327;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    15%{
-        text-shadow:   0 0 5px #adb9ff44, 0 0 6px #adb9ff44, 0 0 7px #adb9ff44, 0 0 8px #adb9ff44, 0 0 9px #adb9ff44;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 15%, white calc(15% + 1px), white calc(15% + 10px), #010327 calc(15% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    30%{
-        text-shadow:   0 0 5px #adb9ff79, 0 0 6px #adb9ff79, 0 0 7px #adb9ff79, 0 0 8px #adb9ff79, 0 0 9px #adb9ff79;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 30%, white calc(30% + 1px), white calc(30% + 10px), #010327 calc(30% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    45%{
-        text-shadow:   0 0 5px #adb9ff94, 0 0 6px #adb9ff94, 0 0 7px #adb9ff94, 0 0 8px #adb9ff94, 0 0 9px #adb9ff94;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 45%, white calc(45% + 1px), white calc(45% + 10px), #010327 calc(45% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    60%{
-        text-shadow:   0 0 5px #adb9ffaf, 0 0 6px #adb9ffaf, 0 0 7px #adb9ffaf, 0 0 8px #adb9ffaf, 0 0 9px #adb9ffaf;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 60%, white calc(60% + 1px), white calc(60% + 10px), #010327 calc(60% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    75%{
-        text-shadow:   0 0 5px #adb9ffb2, 0 0 6px #adb9ffb2, 0 0 7px #adb9ffb2, 0 0 8px #adb9ffb2, 0 0 9px #adb9ffb2;          
-        background: linear-gradient(to right, #2d54ff, #2d54ff 75%, white calc(75% + 1px), white calc(75% + 10px), #010327 calc(75% + 10px), #010327 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    90%{       
-        color: #2d54ff;
-        text-shadow: 0 0 5px #adb9ffbe, 0 0 6px #adb9ffbe, 0 0 7px #adb9ffbe, 0 0 8px #adb9ffbe, 0 0 9px #adb9ffbe;
-    }
-    100%{
-        text-shadow: inherit;
-    }
-  }
 @keyframes fadein {
     from{
         position: inherit;
@@ -520,7 +451,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -530,7 +461,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -560,7 +491,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -578,53 +509,50 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
         color: #d8d8d8;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight:6400;
         font-size:5px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
@@ -636,43 +564,41 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -694,8 +620,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -710,8 +636,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:20px;
@@ -729,8 +655,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -745,8 +671,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -755,7 +681,6 @@
         position: relative;
         top:1px;
         left:10px;
-        animation: fadein 300ms linear 0s 1;
     }
     .whatsappimg{
         height: 5vmin;
@@ -764,7 +689,6 @@
         top:-10px;
         left:10px;
         margin-bottom: -15px;
-        animation: fadein 300ms linear 0s 1;
     }
     .lonerlogo{
         height: 170vmin;
@@ -776,7 +700,7 @@
         margin-right: -190px;
         overflow-x:hidden;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 170vmin;
@@ -788,7 +712,7 @@
         margin-right: -190px;
         overflow-x:hidden;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
 
       }
 }
@@ -799,7 +723,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -809,7 +733,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -839,7 +763,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -857,53 +781,50 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
         color: #d8d8d8;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight:6400;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
@@ -915,43 +836,41 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -974,8 +893,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -990,8 +909,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1009,8 +928,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1025,8 +944,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1035,7 +954,6 @@
         position: relative;
         top:1px;
         left:10px;
-        animation: fadein 300ms linear 0s 1;
     }
     .whatsappimg{
         height: 25px;
@@ -1044,7 +962,6 @@
         top:-10px;
         left:10px;
         margin-bottom: -15px;
-        animation: fadein 300ms linear 0s 1;
     }
     .lonerlogo{
         height: 150vmin;
@@ -1053,7 +970,7 @@
         top:-130px;
         right: -170px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 150vmin;
@@ -1062,7 +979,7 @@
         top:-130px;
         right: -170px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
 
       }
 }
@@ -1073,7 +990,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1083,7 +1000,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1113,7 +1030,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -1131,53 +1048,50 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
         color: #d8d8d8;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight:6400;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
@@ -1189,43 +1103,41 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -1248,8 +1160,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -1264,8 +1176,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1283,8 +1195,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1299,8 +1211,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1309,7 +1221,6 @@
         position: relative;
         top:1px;
         left:10px;
-        animation: fadein 300ms linear 0s 1;
     }
     .whatsappimg{
         height: 25px;
@@ -1318,7 +1229,6 @@
         top:-10px;
         left:10px;
         margin-bottom: -15px;
-        animation: fadein 300ms linear 0s 1;
     }
     .lonerlogo{
         height: 110vmin;
@@ -1327,7 +1237,7 @@
         top:-130px;
         right: -90px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 110vmin;
@@ -1336,7 +1246,7 @@
         top:-130px;
         right: -90px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
 
       }
 }
@@ -1347,7 +1257,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1357,7 +1267,7 @@
         max-width: 100%;
         height: 85vh;
         padding-bottom: 0px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         overflow-y: hidden;
         overflow-x: hidden;
     }
@@ -1387,7 +1297,7 @@
         border-bottom-left-radius: 5px; 
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         backdrop-filter: blur(1px);
     }
    .drightside{
@@ -1405,53 +1315,50 @@
         border-bottom-left-radius: 5px;
         padding: 0px 10px 10px 10px;
         overflow-y: visible;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         background-color: rgba(1, 0, 7, 0.514);
         backdrop-filter: blur(1px);
     }
     .TopLine{
         text-shadow: 0 0 5px #001488, 0 0 10px #102abd, 0 0 15px #233fdf, 0 0 20px #697ff8, 0 0 25px #b2bcf7, 0 0 30px #d2d8f7;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
         color: #d8d8d8;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineThree{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight:6400;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
       .dTopLine{
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 70px;
-        font-family: 'Merriweather';
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 70px;
         text-align: center;
@@ -1463,43 +1370,41 @@
     
     .dLineThree{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 15px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 900;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .dLineFour{
         text-shadow: 0 0 5px #adb9ff, 0 0 6px #adb9ff, 0 0 7px #adb9ff, 0 0 8px #adb9ff, 0 0 9px #adb9ff, 0 0 10px #adb9ff;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
         position: relative;
         top: 5px;
         left: 5px;
-        /* font-family: ''; */
+        font-family:Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
         margin-top: 15px;
         color: #00011e;
-        /* animation: fadein 300ms linear 0s 1; */
     }
     .LineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .dLineFour .levlink{
         color: #2f1ddf;
         margin-left: 10px;
         margin-right: 10px;
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
     }
     .sidebuttons{
         display: flex;
@@ -1522,8 +1427,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome{
         position: relative; top:-10px; left:0px;
@@ -1538,8 +1443,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .whatlink{
         position: relative; top:-10px; left:50px;
@@ -1557,8 +1462,8 @@
         cursor: pointer;
         color: #ffffff;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     .dHome .donbtnhome1{
         position: relative; top:0px; left:0px;
@@ -1573,8 +1478,8 @@
         cursor: pointer;
         color: #000133;
         font-size:15px;
-        /* font-family:'Times New Roman', Times, serif; */
-        transition: 100ms ease-in-out 0ms;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 150ms ease-in-out 0ms;
     }
     
     .downloadimg{    
@@ -1583,7 +1488,6 @@
         position: relative;
         top:1px;
         left:10px;
-        animation: fadein 300ms linear 0s 1;
     }
     .whatsappimg{
         height: 25px;
@@ -1592,7 +1496,6 @@
         top:-10px;
         left:10px;
         margin-bottom: -15px;
-        animation: fadein 300ms linear 0s 1;
     }
     .lonerlogo{
         height: 120vmin;
@@ -1601,7 +1504,7 @@
         top:-130px;
         right: -20px;
         filter: drop-shadow(16px 7px 8px #020061);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
       }
     .dlonerlogo{
         height: 120vmin;
@@ -1610,7 +1513,7 @@
         top:-130px;
         right: -20px;
         filter: drop-shadow(26px 7px 8px #000108);
-        transition: 100ms ease-in-out 0ms;
+        transition: 150ms ease-in-out 0ms;
 
       }
 }

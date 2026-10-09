@@ -3,8 +3,9 @@ import '../stylesheets/Background.css'
 import Header from './Header';
 import DataContext from '../context/Datacontext'
 import { Link } from 'react-router-dom';
-import { useContext, useEffect } from 'react'
-import imageone from '../Assets/Images/homeimageone.png'
+import { useContext, useEffect, useState } from 'react'
+import homeImage from '../Assets/Images/homeimage.png'
+import homeImageTop from '../Assets/Images/homeimagetop.png'
 import dondark from '../Assets/Images/downloadblack.png'
 import donlight from '../Assets/Images/downloadwhite.png'
 import pdfurl from '../Assets/Documents/MERN CV.pdf'
@@ -12,9 +13,23 @@ import DecryptedText from './animations/decryptedText'
 
 const Home = () => {
 
+  const [index, setIndex] = useState(0)
   const { dark } = useContext(DataContext)
-  // const { navigate, dark, useInterval, decrypted, setDecrypted } = useContext(DataContext)
-  const displayImage = {image: imageone, alt: 'Image One', class: "carousel-item active w-100 image_actual"}
+
+
+  const phrases = [
+    "HELLO, MY NAME IS",
+    "FULL-STACK DEVELOPER",
+    "ELECTRICAL ENGINEER"
+  ]  
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, [phrases.length]);
 
 
   const download = () =>{
@@ -33,47 +48,13 @@ const Home = () => {
   const linkstyle = {
     textDecoration:"none"
   }
-  
-  // const decryptOnce = (text) => {
-  //   if (decrypted === false) {
-  //     setDecrypted(true)
-  //     return (
-  //       <DecryptedText            
-  //         speed={80}
-  //         maxIterations={20}
-  //         text={text}
-  //         animateOn="view"
-  //         revealDirection="start"
-  //       />
-  //     )
-  //   } else {
-  //     return (
-  //       <h1>{text}</h1>
-  //     )
-  //   }
-  // }
+
 
 
   return (
     <>
       <div className={!dark ? 'Home' : 'dHome'}>
         <Header/>
-          <div className='backgroundspread'>
-            <div className='wave3'>
-              <div className='bg3'></div>
-            </div>
-          </div>
-          <div className='backgroundspread'>
-            <div className='wave2'>
-              <div className='bg2'></div>
-            </div>
-          </div>
-          <div className='backgroundspread'>
-            <div className='wave1'>
-              <div className='bg1'></div>
-            </div>
-          </div> 
-
           <div className='backgroundspread'>
             <div className='bubbleone'></div>
         </div>
@@ -95,40 +76,27 @@ const Home = () => {
 
           <div className='spliting'>
             <div className='leftside'>
-
-              <div className={!dark ? "TopLine" : "dTopLine"}>
-                {/* {decryptOnce("hellooooooooooo")} */}
-                <DecryptedText            
-                  speed={80}
-                  maxIterations={20}
-                  text="Olaitan"
-                  animateOn="view"
-                  revealDirection="start"
-                />
+              <div className='headLineContainer'>
+                <div className={!dark ? "headWrap" : "dheadWrap"}>
+                  <h1 key={index} className={!dark ? "headLine" : "dheadLine"}>{phrases[index]}</h1> 
+                </div>
               </div>
               <div className={!dark ? "TopLine" : "dTopLine"}>
                 <DecryptedText            
-                  speed={80}
+                  speed={100}
                   maxIterations={20}
-                  text="Oluwaseun . N"
+                  text="Oluwaseun Olaitan"
                   animateOn="view"
                   revealDirection="start"
                 />
-              </div>        
-              
-              <h1 className={!dark ? "LineThree" : "dLineThree"}>Full-stack Developer || Software Engineer || Electrical Engineer</h1>          
-              <h1 className={!dark ? "LineFour" : "dLineFour"}>
-                Co-founder of 
-                <a
-                  className="levlink"
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                > 
-                  I-Leverage
-                </a>
-                Agency
-                </h1>
+              </div>                
+              <div>
+                <h1 className={!dark ? "LineThree" : "dLineThree"}>FULL-STACK DEV • ELECTRICAL ENGINEER</h1>          
+              </div>
+              <div className={!dark ? "LineFour" : "dLineFour"}>
+                <p>I build purposeful web experiences by combining full-stack development with an engineering mindset to turn complex ideas into practical solutions.</p>                
+              </div>
+
               <div className='sidebuttons'>
                 <Link to={'/projects'} style={linkstyle}>
                   <button className='donbtnhome1'>
@@ -152,17 +120,28 @@ const Home = () => {
 
         
             <div className="rightside" id='imgone'>
-              <div className={!dark ? "backer" : "dbacker"}></div> 
-              <div className='imager'>
-                <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-                  <div className="carousel-inner great-positioner">
-                      <div className={displayImage.class}>
-                        <img src={displayImage.image} className="d-block" height='650' alt={displayImage.alt}/>
-                      </div>
-                  </div>
+              <div className="clip-wrapper">
+                <div className={!dark ? "backer" : "dbacker"}>
+                  <img src={homeImage} className="homeImg" alt={'backing'}/>
+                </div> 
+                <div className='homeImgCont'>
+                  <img src={homeImageTop} className="homeImgOut" alt={'Self Portrait'}/>                    
                 </div>
               </div>
             </div> 
+
+            {/* <div className="avatar-container"> */}
+              {/* <!-- The Bottom Layer: Handles the sharp cut-off --> */}
+              {/* <div className="clip-wrapper"> */}
+                {/* <div className={!dark ? "blob-background" : "dblob-background"}></div> */}
+                {/* <img src={homeImage} alt="Person" className="avatar-img image-bottom"></img> */}
+              {/* </div> */}
+              
+              {/* <!-- The Top Layer: Handles the head popping out --> */}
+              {/* <img src={homeImage} alt="Person" className="avatar-img1 image-top"></img> */}
+            {/* </div> */}
+
+
 
           </div>
 
