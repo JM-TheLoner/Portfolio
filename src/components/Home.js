@@ -94,7 +94,7 @@ const Home = () => {
                 <h1 className={!dark ? "LineThree" : "dLineThree"}>FULL-STACK DEV • ELECTRICAL ENGINEER</h1>          
               </div>
               <div className={!dark ? "LineFour" : "dLineFour"}>
-                <p>I build purposeful web experiences by combining full-stack development with an engineering mindset to turn complex ideas into practical solutions.</p>                
+                <p>I build purposeful web and mobile experiences by combining full-stack development with an engineering mindset to turn complex ideas into practical solutions.</p>                
               </div>
 
               <div className='sidebuttons'>
