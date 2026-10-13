@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 .Header {
   height: 60px;
@@ -52,7 +51,7 @@
   width: 150px;
   font-size: 25px;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   display: flex;
   align-items: center;
@@ -67,9 +66,9 @@
 }
 .listicle{
   width: 35%;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', sans-serif;
   justify-self: center;
   display: flex;
   justify-content: space-around;
@@ -498,7 +497,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:30%;
     color: #d8d8d8;
     transition: 100ms ease-in-out 100ms;
@@ -509,7 +508,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:30%;
     color: #c1ccff;
     transition: 100ms ease-in-out 100ms;
@@ -600,7 +599,7 @@
   cursor: pointer;
 }
 .home{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -608,7 +607,7 @@
   color: #d8d8d8;
 }
 .proj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -616,7 +615,7 @@
   color: #d8d8d8;
 }
 .about{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -624,7 +623,7 @@
   color: #d8d8d8;
 }
 .cont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -632,7 +631,7 @@
   color: #d8d8d8;
 }
 .dhome{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -640,7 +639,7 @@
   color: #c1ccff;
 }
 .dproj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -648,7 +647,7 @@
   color: #c1ccff;
 }
 .dabout{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -656,7 +655,7 @@
   color: #c1ccff;
 }
 .dcont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -774,7 +773,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:30%;
     color: #d8d8d8;
     transition: 100ms ease-in-out 100ms;
@@ -785,7 +784,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:30%;
     color: #c1ccff;
     transition: 100ms ease-in-out 100ms;
@@ -877,7 +876,7 @@
   cursor: pointer;
 }
 .home{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -885,7 +884,7 @@
   color: #d8d8d8;
 }
 .proj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -893,7 +892,7 @@
   color: #d8d8d8;
 }
 .about{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -901,7 +900,7 @@
   color: #d8d8d8;
 }
 .cont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -909,7 +908,7 @@
   color: #d8d8d8;
 }
 .dhome{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -917,7 +916,7 @@
   color: #c1ccff;
 }
 .dproj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -925,7 +924,7 @@
   color: #c1ccff;
 }
 .dabout{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -933,7 +932,7 @@
   color: #c1ccff;
 }
 .dcont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1051,7 +1050,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:33%;
     color: #d8d8d8;
     transition: 100ms ease-in-out 100ms;
@@ -1062,7 +1061,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:33%;
     color: #c1ccff;
     transition: 100ms ease-in-out 100ms;
@@ -1154,7 +1153,7 @@
   cursor: pointer;
 }
 .home{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1162,7 +1161,7 @@
   color: #d8d8d8;
 }
 .proj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1170,7 +1169,7 @@
   color: #d8d8d8;
 }
 .about{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1178,7 +1177,7 @@
   color: #d8d8d8;
 }
 .cont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1186,7 +1185,7 @@
   color: #d8d8d8;
 }
 .dhome{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1194,7 +1193,7 @@
   color: #c1ccff;
 }
 .dproj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1202,7 +1201,7 @@
   color: #c1ccff;
 }
 .dabout{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1210,7 +1209,7 @@
   color: #c1ccff;
 }
 .dcont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1328,7 +1327,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:36%;
     color: #d8d8d8;
     transition: 100ms ease-in-out 100ms;
@@ -1339,7 +1338,7 @@
     font-weight: 500;
     position: relative;
     bottom:10px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     left:36%;
     color: #c1ccff;
     transition: 100ms ease-in-out 100ms;
@@ -1431,7 +1430,7 @@
   cursor: pointer;
 }
 .home{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1439,7 +1438,7 @@
   color: #d8d8d8;
 }
 .proj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1447,7 +1446,7 @@
   color: #d8d8d8;
 }
 .about{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1455,7 +1454,7 @@
   color: #d8d8d8;
 }
 .cont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1463,7 +1462,7 @@
   color: #d8d8d8;
 }
 .dhome{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1471,7 +1470,7 @@
   color: #c1ccff;
 }
 .dproj{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1479,7 +1478,7 @@
   color: #c1ccff;
 }
 .dabout{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1487,7 +1486,7 @@
   color: #c1ccff;
 }
 .dcont{
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   position: relative;
   top: 20px;
@@ -1598,7 +1597,7 @@
     left: 60px;
   }
   .home{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1606,7 +1605,7 @@
     color: #d8d8d8;
   }
   .dhome{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1647,7 +1646,7 @@
     left: 190px;
   }
   .proj{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1655,7 +1654,7 @@
     color: #d8d8d8;
   }
   .about{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1663,7 +1662,7 @@
     color: #d8d8d8;
   }
   .cont{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1671,7 +1670,7 @@
     color: #d8d8d8;
   }
   .dproj{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1679,7 +1678,7 @@
     color: #c1ccff;
   }
   .dabout{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;
@@ -1687,7 +1686,7 @@
     color: #c1ccff;
   }
   .dcont{
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Manrope', sans-serif;
     transition: 100ms ease-in-out 100ms;
     position: relative;
     top: 20px;

@@ -1,105 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 .Portfolio{
-    background-color: #3272a0;
-    flex-grow: 1;
-    padding: 3px 3px 3px 3px;
-    width: 100%;
-    min-height: 85vh;
-    transition: 100ms ease-in-out 100ms;
-    overflow-y: hidden;
+  background-color: #F5F4F9;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
   }
 .dPortfolio{
-    background-color: #010327;
-    flex-grow: 1;
-    padding: 3px 3px 3px 3px;
-    width: 100%;
-    min-height: 85vh;
-    transition: 100ms ease-in-out 100ms;
-    overflow-y: hidden;
+  background-color: #050B1A;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+}
+.portfolioContent{
+  margin-top: 70px;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 5px 20px;
 }
 .projTitle{
-  width: 100%;
+  width: 28%;
+  height: 65px;
+  padding: 7px 0px 0px 0px;
+  border-radius: 15px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 20px;
-  transition: 100ms ease-in-out 100ms;
+  margin-bottom: 10px;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightWrap{
+  background: #e0e0e040;
+  box-shadow: 0 1px 2px rgba(226, 118, 250, 0.350);
+  transition: 150ms ease-in-out 0ms;
+  border-bottom: 1px solid rgba(226, 118, 250, 0.592);
+}
+.darkWrap{
+  background: #09004a40;
+  box-shadow:  0 1px 2px rgba(108, 63, 245, 0.350);
+  transition: 150ms ease-in-out 0ms;
+  border-bottom: 1px solid rgba(108, 63, 245, 0.592);
+}
+.featured{
+  font-size:15px;
+  margin: 0px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.recent{
+  font-size:23px;
+  margin: 0px;
+  font-weight: 600;
+}
+.lightFeat{
+  text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkFeat{
+  text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
 }
 .lightWords{
-  /* font-family: 'Merriweather'; */
-  color:#d8d8d8;
-  transition: 100ms ease-in-out 100ms;
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
 }
 .darkWords{
-  color:#ccd5ff;
-  transition: 100ms ease-in-out 100ms;
+  color:#F5F4F9;
+  transition: 150ms ease-in-out 0ms;
+}
+.projectlister{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 150ms ease-in-out 0ms;
+  gap: 20px;
+  padding: 3px 0px;
 }
 a{
   text-decoration: none;
 }
-.projectlister{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transition: 100ms ease-in-out 100ms;
-    gap: 15px;
-    padding: 3px 6%;
-}
 .dproject{
   font-variant: small-caps;
-  background-color: #04003b5d;
+  font-family: 'Manrope', sans-serif;
   backdrop-filter: blur(10px);
   overflow-wrap: break-word;
-  height: 300px;
-  width: 300px;
-  border: 1px solid #a9a3ffdc;
-  border-radius: 10px; 
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   text-align: left;
   overflow: hidden;
-  padding: 0.5px 0.5px 3px 1px;
   cursor: pointer;
+  height: 270px;
+  width: 370px;
+  border-radius: 10px; 
+  padding: 0px 0px 10px 0px;
+  background-color: #04051964;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.dproject:hover {
+  transform: translateY(-4px);
+  background-color: #040519a7;
+  border-color: #B8A4FF;
+  box-shadow:
+    0 8px 22px rgba(108, 63, 245, 0.20),
+    0 0 12px rgba(169, 163, 255, 0.15);
+  animation: wipe 200ms ease-in-out 100ms 1;
 }
 .project{
   font-variant: small-caps;
+  font-family: 'Manrope', sans-serif;
   backdrop-filter: blur(10px);
   overflow-wrap: break-word;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px; 
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   text-align: left;
   overflow: hidden;
-  padding: 0.5px 0.5px 3px 1px;
-  background-color: #3a24ff38;
-  border: 1px solid #040042dc;
   cursor: pointer;
+  height: 270px;
+  width: 370px;
+  border-radius: 10px; 
+  padding: 0px 0px 10px 0px;
+  cursor: pointer;
+  background-color: #c6c6c61b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.661);
 }
-
-.dproject:hover,
-.dproject:focus{
-  background-color: #09008b;
-  border-radius: 5px;
-  box-shadow: 0px, 0px, 15px, 0px;
-  transition: 150ms ease-in-out 150ms;
-  animation: wipe 200ms ease-in-out 100ms 1;
-}
-.project:hover,
-.project:focus{
-  background-color: #000983;
-  border-radius: 5px;
-  box-shadow: 0px, 0px, 15px, 0px;
-  transition: 150ms ease-in-out 150ms;
+.project:hover {
+  transform: translateY(-4px);
+  background-color: #ededed65;
+  border-color: #C45BEE;
+  box-shadow:
+    0 8px 22px rgba(160, 75, 210, 0.16),
+    0 0 12px rgba(226, 118, 250, 0.12);
   animation: wipelight 200ms ease-in-out 100ms 1;
 }
+.dproject,
+.project {
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    border-color 250ms ease,
+    background-color 250ms ease;
+}
+
+
+
+
+@keyframes wipe{
+  0%{
+      background: linear-gradient(to top right, #b3b1cfec, #06005e00, #06005e00, #06005e00, #06005e00);
+  } 
+  25%{
+      background: linear-gradient(to top right, #06005e00, #b3b1cfec, #06005e00, #06005e00, #06005e00);
+  }
+  50%{
+      background: linear-gradient(to top right, #06005e00, #06005e00, #b3b1cfec, #06005e00, #06005e00);
+  }
+  75%{
+      background: linear-gradient(to top right, #06005e00, #06005e00, #06005e00, #b3b1cfec, #06005e00);
+  }
+  100%{
+      background: linear-gradient(to top right, #06005e00, #06005e00, #06005e00, #06005e00, #b3b1cfec);
+  }
+}
+@keyframes wipelight{
+  0%{
+      background: linear-gradient(to top right, #b3b1cfec, #473aff00, #473aff00, #473aff00, #473aff00);
+  } 
+  25%{
+      background: linear-gradient(to top right, #473aff00, #b3b1cfec, #473aff00, #473aff00, #473aff00);
+  }
+  50%{
+      background: linear-gradient(to top right, #473aff00, #473aff00, #b3b1cfec, #473aff00, #473aff00);
+  }
+  75%{
+      background: linear-gradient(to top right, #473aff00, #473aff00, #473aff00, #b3b1cfec, #473aff00);
+  }
+  100%{
+      background: linear-gradient(to top right, #473aff00, #473aff00, #473aff00, #473aff00, #b3b1cfec);
+  }
+}
+/* Haven't worked on code past this line */
+
+
+
+
+
+
 .image{
   margin: 0px 0.5%;
   height: 63%;
   width: 99%;
   object-fit: cover;
   border-radius: 7px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
 }
 .projectname{
@@ -119,99 +227,14 @@ a{
   width: 100%;
   margin-bottom: 15px;
 }
-.complist{
-  gap: 10px;
-  justify-content: center;
-  margin-left: 5px;
-}
-.comp{
-  background-color: rgb(150, 150, 150);
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.884) 50%,
-    rgba(204, 204, 204, 0.87) 60%,
-    rgba(255, 255, 255, 0.884) 50%
-  );
-  
-  background-size: 200% 100%;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-.siteComponent{
-  color: rgb(48, 48, 48);
-  font-size: 13px;
-  font-weight: 600;
-  padding: 3px 5px;
-  border-radius: 3px;
-}
 
-@keyframes shine {
-    0% {
-      background-position: 100%;
-    }
-    100% {
-      background-position: -100%;
-    }
-  }
-
-@keyframes fadein {
-    0%{
-      opacity: 0;
-  } 
-  25%{
-      opacity: 0.25;
-  }
-  50%{
-      opacity: 0.5;
-  }
-  75%{
-      opacity: 0.75;
-  }
-  100%{
-      opacity: 1;
-  }
-}
-@keyframes wipe{
-  0%{
-      background: linear-gradient(to top right, #b3b1cfec, #06005e, #06005e, #06005e, #06005e);
-  } 
-  25%{
-      background: linear-gradient(to top right, #06005e, #b3b1cfec, #06005e, #06005e, #06005e);
-  }
-  50%{
-      background: linear-gradient(to top right, #06005e, #06005e, #b3b1cfec, #06005e, #06005e);
-  }
-  75%{
-      background: linear-gradient(to top right, #06005e, #06005e, #06005e, #b3b1cfec, #06005e);
-  }
-  100%{
-      background: linear-gradient(to top right, #06005e, #06005e, #06005e, #06005e, #b3b1cfec);
-  }
-}
-@keyframes wipelight{
-  0%{
-      background: linear-gradient(to top right, #b3b1cfec, #473aff, #473aff, #473aff, #473aff);
-  } 
-  25%{
-      background: linear-gradient(to top right, #473aff, #b3b1cfec, #473aff, #473aff, #473aff);
-  }
-  50%{
-      background: linear-gradient(to top right, #473aff, #473aff, #b3b1cfec, #473aff, #473aff);
-  }
-  75%{
-      background: linear-gradient(to top right, #473aff, #473aff, #473aff, #b3b1cfec, #473aff);
-  }
-  100%{
-      background: linear-gradient(to top right, #473aff, #473aff, #473aff, #473aff, #b3b1cfec);
-  }
-}
 
 @media screen and (max-width:526px) {
   .projectlister{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     padding-left: 20px;
 }
   .dproject{
@@ -225,7 +248,7 @@ a{
     width: 45%;
     border: 2px solid #473aff80;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -244,7 +267,7 @@ a{
     width: 45%;
     border: 2px solid #04003b;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -262,21 +285,23 @@ a{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#010327;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dprojectname{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#d8d8d8;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dproject:hover,
   .dproject:focus{
@@ -284,7 +309,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipe 200ms ease-in-out 150ms 1;
 }
 .project:hover,
@@ -293,7 +318,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipelight 200ms ease-in-out 150ms 1;
 }
 .image{
@@ -303,7 +328,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
 }
 .image:hover{
@@ -313,7 +338,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
   margin-bottom: 0px;
 }
@@ -323,7 +348,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     padding-left: 20px;
 }
   .dproject{
@@ -337,7 +362,7 @@ a{
     width: 45%;
     border: 2px solid #473aff80;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -356,7 +381,7 @@ a{
     width: 45%;
     border: 2px solid #04003b;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -374,21 +399,23 @@ a{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#010327;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dprojectname{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#d8d8d8;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dproject:hover,
   .dproject:focus{
@@ -396,7 +423,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipe 200ms ease-in-out 150ms 1;
 }
 .project:hover,
@@ -405,7 +432,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipelight 200ms ease-in-out 150ms 1;
 }
 .image{
@@ -415,7 +442,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
 }
 .image:hover{
@@ -425,7 +452,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
   margin-bottom: 0px;
 }
@@ -435,7 +462,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     padding-left: 20px;
 }
   .dproject{
@@ -449,7 +476,7 @@ a{
     width: 30%;
     border: 2px solid #473aff80;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -468,7 +495,7 @@ a{
     width: 30%;
     border: 2px solid #04003b;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -486,21 +513,23 @@ a{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#010327;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dprojectname{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#d8d8d8;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dproject:hover,
   .dproject:focus{
@@ -508,7 +537,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipe 200ms ease-in-out 150ms 1;
 }
 .project:hover,
@@ -517,7 +546,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipelight 200ms ease-in-out 150ms 1;
 }
 .image{
@@ -527,7 +556,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
 }
 .image:hover{
@@ -537,7 +566,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
   margin-bottom: 0px;
 }
@@ -547,7 +576,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     padding-left: 20px;
 }
   .dproject{
@@ -561,7 +590,7 @@ a{
     width: 30%;
     border: 2px solid #473aff80;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -580,7 +609,7 @@ a{
     width: 30%;
     border: 2px solid #04003b;
     border-radius: 5px; 
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     text-align: left;
     align-items: center;
     overflow-y: hidden;
@@ -598,21 +627,23 @@ a{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#010327;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dprojectname{
     cursor: pointer;
     font-size: 15px;
     margin-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
+
     color:#d8d8d8;
     text-align: left;
     height: 15px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   }
   .dproject:hover,
   .dproject:focus{
@@ -620,7 +651,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipe 200ms ease-in-out 150ms 1;
 }
 .project:hover,
@@ -629,7 +660,7 @@ a{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0px, 0px, 15px, 0px;
-    transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
     animation: wipelight 200ms ease-in-out 150ms 1;
 }
 .image{
@@ -639,7 +670,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
 }
 .image:hover{
@@ -649,7 +680,7 @@ a{
   margin-top: -5px;
   border: #d8d8d8; 
   border-radius: 5px;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   cursor: pointer;
   margin-bottom: 0px;
 }

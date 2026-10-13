@@ -1,6 +1,5 @@
 import '../stylesheets/Portfolio.css'
 import Header from './Header';
-import '../stylesheets/Background.css'
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
 import image from '../Assets/Images/image.png'
@@ -17,12 +16,12 @@ const Portfolio = () => {
   }
 
   let projectList = [
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"], projectDate:"JULY 2025"}, 
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"], projectDate:"JULY 2025"}, 
-    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"], projectDate:"JULY 2025"},
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"], projectDate:"JULY 2025"}, 
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"], projectDate:"JULY 2025"}, 
-    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"], projectDate:"JULY 2025"}
+    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
+    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
+    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]},
+    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
+    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
+    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}
   ]
 
   useEffect(()=>{
@@ -32,62 +31,23 @@ const Portfolio = () => {
   return (
     <div className={!dark ? 'Portfolio' : 'dPortfolio'}>
       <Header/> 
-      <div className='backgroundspread'>
-        <div className='wave3'>
-          <div className='bg3'></div>
+      
+      <div className='portfolioContent'>
+        <div className={!dark ? 'projTitle lightWrap' : 'projTitle darkWrap'}>
+          <h1 className={!dark ? 'featured lightFeat' : 'featured darkFeat'}>Featured Projects</h1>  
+          <h1 className={!dark ? 'recent lightWords' : 'recent darkWords'}>Some Of My Recent Work</h1>  
         </div>
-      </div>
-      <div className='backgroundspread'>
-        <div className='wave2'>
-          <div className='bg2'></div>
-        </div>
-      </div>
-      <div className='backgroundspread'>
-        <div className='wave1'>
-          <div className='bg1'></div>
-        </div>
-      </div>
-
-      <div className='backgroundspread'>
-          <div className='bubbleone'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubbletwo'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblethree'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblefour'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblefive'></div>
-      </div>
-      <div className='backgroundspread'>
-          <div className='bubblesix'></div>
-      </div>
-      <div>
-        <h1 className={!dark ? 'projTitle lightWords' : 'projTitle darkWords'}>My Projects</h1>
         <div className='projectlister'
-          onMouseEnter={()=>{playSound(whoosh1)}}
-          onMouseLeave={()=>{playSound(whoosh2)}}
         >  
           {projectList.map((project)=>(
-            <a    href={project.projectLink}>
+            <a href={project.projectLink}
+            // onMouseEnter={()=>{playSound(whoosh1)}}
+            // onMouseLeave={()=>{playSound(whoosh2)}}
+            >
               <div className={!dark ? 'project' : 'dproject'}> 
-                <img className='image' src={project.projectImg || image} alt=''/>
+                {/* <img className='image' src={project.projectImg || image} alt=''/>
                 <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>
-                <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p>
-              
-                <div className='d-flex complist'>
-                  {project.projectComponents.map((component)=>(
-                    <div className='comp'>
-                      <div className='siteComponent'>
-                        {component}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p> */}
 
               </div>
             </a>
