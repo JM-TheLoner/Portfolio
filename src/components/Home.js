@@ -123,24 +123,13 @@ const Home = () => {
             <div className="rightside" id='imgone'>
               <div className="clip-wrapper">
                 <div className={!dark ? "backer" : "dbacker"}>
-                  <img src={homeImage} className="homeImg" alt={'backing'}/>
+                  <img src={homeImage} className="homeImg" alt={'back img'}/>
                 </div> 
                 <div className='homeImgCont'>
                   <img src={homeImageTop} className="homeImgOut" alt={'Self Portrait'}/>                    
                 </div>
               </div>
             </div> 
-
-            {/* <div className="avatar-container"> */}
-              {/* <!-- The Bottom Layer: Handles the sharp cut-off --> */}
-              {/* <div className="clip-wrapper"> */}
-                {/* <div className={!dark ? "blob-background" : "dblob-background"}></div> */}
-                {/* <img src={homeImage} alt="Person" className="avatar-img image-bottom"></img> */}
-              {/* </div> */}
-              
-              {/* <!-- The Top Layer: Handles the head popping out --> */}
-              {/* <img src={homeImage} alt="Person" className="avatar-img1 image-top"></img> */}
-            {/* </div> */}
 
 
 
