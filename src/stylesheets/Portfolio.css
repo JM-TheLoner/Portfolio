@@ -3,7 +3,6 @@
 .Portfolio{
   background-color: #F5F4F9;
   padding: 3px 10px 3px 10px;
-  width: 100%;
   min-height: 100vh;
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
@@ -11,7 +10,6 @@
 .dPortfolio{
   background-color: #050B1A;
   padding: 3px 10px 3px 10px;
-  width: 100%;
   min-height: 100vh;
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
@@ -33,7 +31,7 @@
   font-family: 'Manrope', sans-serif;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   transition: 150ms ease-in-out 0ms;
 }
 .lightWrap{
@@ -96,12 +94,9 @@ a{
   text-decoration: none;
 }
 .dproject{
-  font-variant: small-caps;
-  font-family: 'Manrope', sans-serif;
   backdrop-filter: blur(10px);
   overflow-wrap: break-word;
   transition: 150ms ease-in-out 0ms;
-  text-align: left;
   overflow: hidden;
   cursor: pointer;
   height: 270px;
@@ -113,7 +108,7 @@ a{
   border: 1px solid #a9a3ff67;
 }
 .dproject:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   background-color: #040519a7;
   border-color: #B8A4FF;
   box-shadow:
@@ -122,12 +117,9 @@ a{
   animation: wipe 200ms ease-in-out 100ms 1;
 }
 .project{
-  font-variant: small-caps;
-  font-family: 'Manrope', sans-serif;
   backdrop-filter: blur(10px);
   overflow-wrap: break-word;
   transition: 150ms ease-in-out 0ms;
-  text-align: left;
   overflow: hidden;
   cursor: pointer;
   height: 270px;
@@ -137,10 +129,10 @@ a{
   cursor: pointer;
   background-color: #c6c6c61b;
   box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
-  border: 1px solid rgba(226, 118, 250, 0.661);
+  border: 1px solid rgba(226, 118, 250, 0.501);
 }
 .project:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   background-color: #ededed65;
   border-color: #C45BEE;
   box-shadow:
@@ -155,6 +147,76 @@ a{
     box-shadow 250ms ease,
     border-color 250ms ease,
     background-color 250ms ease;
+}
+.gitImageContainer{
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  transition: 150ms ease-in-out 0ms;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.imageContainer{
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  transition: 150ms ease-in-out 0ms;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.dproject .gitImageContainer{
+  background: linear-gradient(180deg, #d277ff6f 0%, #8563ff6f 95%, #5846ff6f 100%);
+  border-bottom: 1px solid #a9a3ff67;
+}
+.project .gitImageContainer{
+  background: linear-gradient(180deg, #c552ff5f 0%, #724bff5f 95%, #3c26ff5f 100%);
+  border: 1px solid rgba(226, 118, 250, 0.279);
+}
+.dproject .imageContainer{
+  background: linear-gradient(0deg, #d277ff39 0%, #8563ff39 95%, #5846ff39 100%);
+  border-bottom: 1px solid #a9a3ff67;
+}
+.project .imageContainer{
+  background: linear-gradient(0deg, #c552ff29 0%, #724bff29 95%, #3c26ff29 100%);
+  border: 1px solid rgba(226, 118, 250, 0.279);
+}
+.image{
+  height: 90%;
+  width: 90%;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  object-fit: cover;
+  transition: 100ms ease-in-out 0ms;
+  cursor: pointer;
+  background: white;
+}
+.project:hover .image,
+.dproject:hover .image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectWords{
+  font-family: 'Manrope', sans-serif;
+  width: 100%;
+  height:30%;
+  text-align: left;
+  padding: 10px 15px 5px 15px;
+  transition: 150ms ease-in-out 0ms;
+  /* background-color: red; */
+}
+.projectname{
+  font-size: 18px;
+  /* background-color: rgb(100, 40, 0); */
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.projectdesc{
+  /* background-color: green; */
+  font-size: 13px;
+  font-weight: 400;
 }
 
 
@@ -201,32 +263,6 @@ a{
 
 
 
-.image{
-  margin: 0px 0.5%;
-  height: 63%;
-  width: 99%;
-  object-fit: cover;
-  border-radius: 7px;
-  transition: 150ms ease-in-out 0ms;
-  cursor: pointer;
-}
-.projectname{
-  text-align: left;
-  margin-left: 7.5px;
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 5px;
-  width: 100%;
-  margin-bottom: 0px;
-}
-.projectdesc{
-  margin-top: -2px;
-  text-align: left;
-  margin-left: 7.5px;
-  font-size: 13px;
-  width: 100%;
-  margin-bottom: 15px;
-}
 
 
 @media screen and (max-width:526px) {

@@ -2,25 +2,26 @@ import '../stylesheets/Portfolio.css'
 import Header from './Header';
 import { useEffect, useContext } from 'react'
 import DataContext from '../context/Datacontext'
-import image from '../Assets/Images/image.png'
-import whoosh1 from '../Assets/Audio/hidden-blade-draw.mp3'
-import whoosh2 from '../Assets/Audio/hidden-blade-retract.mp3'
+import defaultImage from '../Assets/Images/image.png'
+import githubImage from '../Assets/Images/GitHub-Logo.png'
+// import whoosh1 from '../Assets/Audio/hidden-blade-draw.mp3'
+// import whoosh2 from '../Assets/Audio/hidden-blade-retract.mp3'
 
 const Portfolio = () => {
 
   const { dark } = useContext(DataContext)
 
-  const playSound = (sound)=>{
-    var audio = new Audio(sound)
-    audio.play()
-  }
+  // const playSound = (sound)=>{
+  //   var audio = new Audio(sound)
+  //   audio.play()
+  // }
 
   let projectList = [
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
+    {projectImg: githubImage, projectName:"Explore My GitHub Profile", projectLink:"https://github.com/JM-TheLoner", projectDescription:"Browse my repositories, code, and experiments.", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
+    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
     {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]},
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
-    {projectImg:"", projectName:"Opacon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
+    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
+    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
     {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}
   ]
 
@@ -45,10 +46,13 @@ const Portfolio = () => {
             // onMouseLeave={()=>{playSound(whoosh2)}}
             >
               <div className={!dark ? 'project' : 'dproject'}> 
-                {/* <img className='image' src={project.projectImg || image} alt=''/>
-                <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>
-                <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p> */}
-
+                <div className={project===projectList[0] ? 'gitImageContainer' : 'imageContainer'}>
+                  <img className='image' src={project.projectImg || defaultImage} alt=''/>
+                </div>
+                <div className='projectWords'>
+                  <p className={!dark ? 'projectname lightWords' : 'projectname darkWords'}>{project.projectName}</p>
+                  <p className={!dark ? 'projectdesc lightWords' : 'projectdesc darkWords'}>{project.projectDescription}</p>
+                </div>
               </div>
             </a>
           ))}

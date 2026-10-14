@@ -1,210 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 .Contact{
-  background-color: #3272a0;
-    max-width: 100%;
-    flex-grow: 1; 
-    padding: 3px 3px 3px 3px;
-    overflow-y: auto;
-    min-height: 90vh;
-    display: flex;
-    transition: 100ms, ease-in-out, 100ms;
+  background-color: #F5F4F9;
+  padding: 3px 10px 3px 10px;
+  min-height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+  transition: 100ms, ease-in-out, 100ms;
 }
 .dContact{
-  background-color: #010327;
-    max-width: 100%;
-    flex-grow: 1; 
-    padding: 3px 3px 3px 3px;
-    overflow-y: auto;
-    min-height: 90vh;
-    display: flex;
-    transition: 100ms, ease-in-out, 100ms;
+  background-color: #050B1A;
+  padding: 3px 10px 3px 10px;
+  min-height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.contactPageCont{  
+  margin-top: 70px;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 5px 20px;
+
+}
+.testimonialSection{
+  /* background-color: red; */
+}
+.contactSection{
+  /* background-color: green; */
+  display: flex;
 }
 .contactleft{
+  /* background-color: yellow; */
   justify-content: center;
-  margin-top: 8%;
   width: 40%;
-  margin-left: 0px;
 }
 .contacttext{
   width: 100%;
   text-align: center;
 }
+.lightTextColor{
+  text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColor{  
+  text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightText{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkText{
+  color:#F5F4F9;
+  transition: 150ms ease-in-out 0ms;
+}
+.contHeadWrap{
+  height: 25px;
+  width: 40%;
+}
 .contacthead{
-  text-align: center;
-  font-family: 'Merriweather';
-  font-weight: 100;
-  font-size: 3.3em;
-  color:#d8d8d8;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
   cursor: default;
   margin-bottom: -10px;
   transition: 100ms, ease-in-out, 100ms;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
 }
 .contactbody{  
-  text-align: center;
-  /* font-family:Arial, Helvetica, sans-serif; */
-  font-weight: 100;
-  font-size: 20px;
-  color:#d8d8d8da;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
   cursor: default;
   transition: 100ms, ease-in-out, 100ms;
-    background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
+  /* background-color: red; */
+  margin-bottom: 10px;
 }
-.dcontacthead{
-  text-align: center;
-  font-family: 'Merriweather';
-  font-weight: 100;
-  font-size: 3.3em;
-  color:#d8d8d8;
-  cursor: default;
-  margin-bottom: -10px;
-  transition: 100ms, ease-in-out, 100ms;
-
-      /* color: #fafafaa4; Adjust this color to change intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-}
-
-.dcontactbody{  
-  text-align: center;
-  /* font-family:Arial, Helvetica, sans-serif; */
-  font-weight: 100;
-  font-size: 20px;
-  color:#d8d8d8;
+.contactbodylow{  
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.7;
   cursor: default;
   transition: 100ms, ease-in-out, 100ms;
-    background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
+  margin-bottom: 10px;
 }
-.line1{
-  margin-left:10px;
-  /* font-family: 'Merriweather'; */
-  cursor: pointer;
-}
-.holes{
-  text-align: center;
-  color:#000000;
-  font-size: 15px;
-  color:#d8d8d8;  
-  /* font-family: 'Merriweather'; */
-  position: relative;
-  margin-top: 20px;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.dholes{
-  text-align: center;
-  font-size: 15px;
-  color:#d8d8d8;
-  /* font-family: 'Merriweather'; */
-  position: relative;
-  margin-top: 20px;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.contactsameline{
+.contFollowWrap{
+  height: 40px;
+  width: 40%;
   display: flex;
-}
-
-.phone1{
-  /* font-family: 'Merriweather';   */
-  position: relative;
-  bottom: 10px;
-  text-align: center;
-  font-size: 15px;
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.dphone1{
-  /* font-family: 'Merriweather';   */
-  position: relative;
-  bottom: 10px;
-  text-align: center;
-  font-size: 15px;
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.email{
-  /* font-family:'Merriweather'; */
-  font-size: 15px;
-  color:#d8d8d8;
-  position: relative;
-  bottom: 15px;
-  text-align: center;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.demail{
-  /* font-family:'Merriweather'; */
-  font-size: 15px;
-  color:#d8d8d8;
-  position: relative;
-  bottom: 15px;
-  text-align: center;
-  transition: 100ms, ease-in-out, 100ms;
-}
-.demail:hover,
-.dfirstPhoneNum:hover,
-.dsecondPhoneNum:hover{
-  color: #9caeff;
-  text-decoration: underline;
-}
-.email:hover,
-.firstPhoneNum:hover,
-.secondPhoneNum:hover{
-  color: #130069;
-  text-decoration: underline;
-}
-.fromAbove{
-  color: inherit;
+  align-items: center;
+  margin-bottom: 5px;
 }
 .contactsamelinesocs{
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: left;
+  width:100%;
 }
 .smlogo{
   height: 4.5vmin;
   pointer-events: none;
-  margin: 0 10px;
+  margin: 3px 30px 3px 0px;
+  transition: 150ms ease-in-out 0ms;
+  background-color: transparent;
 }
+.locwhat{
+  cursor: pointer;
+  transition: 150ms ease-in-out 0ms;
+}
+.locwhat:hover{
+  transform: translateY(-4px);
+}
+.locinsta{
+  transition: 150ms ease-in-out 0ms;
+}
+.locinsta:hover{
+  transform: translateY(-4px);
+}
+.loctwitter{
+  transition: 150ms ease-in-out 0ms;
+}
+.loctwitter:hover{
+  transform: translateY(-4px);
+}
+.loclinkedin{
+  transition: 150ms ease-in-out 0ms;
+}
+.loclinkedin:hover{
+  transform: translateY(-4px);
+}
+.locgithub{
+  transition: 150ms ease-in-out 0ms;
+}
+.locgithub:hover{
+  transform: translateY(-4px);
+}
+
+.Contact .locwhat:hover .smlogo,
+.Contact .locinsta:hover .smlogo,
+.Contact .loctwitter:hover .smlogo,
+.Contact .loclinkedin:hover .smlogo,
+.Contact .locgithub:hover .smlogo{
+  box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+}
+.dContact .locwhat:hover .smlogo,
+.dContact .locinsta:hover .smlogo,
+.dContact .loctwitter:hover .smlogo,
+.dContact .loclinkedin:hover .smlogo,
+.dContact .locgithub:hover .smlogo{
+  box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+}
+
+
+.emailImg{
+  color: red;
+  height: 50px;
+}
+.demailImg{
+  color: green;
+  height: 50px;
+}
+.phoneImg{
+  color: red;
+  height: 50px;
+}
+.dphoneImg{
+  color: green;
+  height: 50px;
+}
+.phoneNum{
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  position: relative;
+  text-align: left;
+  display: flex;
+}
+.emailText{
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  position: relative;
+  text-align: left;
+  display: flex;
+}
+
+
+
+
+
+/* I haven't worked past this point */
+
+
+
+
+
+
+.contactsameline{
+  display: flex;
+}
+
 .contactwrapper{  
   margin-top: 1em;
   width: 55em;
@@ -238,7 +246,7 @@
   color:#d8d8d8;
   transition: 100ms, ease-in-out, 100ms;
   text-align: left;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   font-size: 3.5em;
   cursor: default;
 }
@@ -246,13 +254,13 @@
   color:#d8d8d8;
   transition: 100ms, ease-in-out, 100ms;
   text-align: left;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   font-size: 3.5em;
   cursor: default;
 }
 .right2{
   text-align: left;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   font-size: 3.5em;
   color:#080052;
   transition: 100ms, ease-in-out, 100ms;
@@ -265,7 +273,7 @@
   color:#002efc;
   transition: 100ms, ease-in-out, 100ms;
   text-align: left;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   font-size: 3.5em;
   cursor: default;
   position: absolute;
@@ -274,7 +282,7 @@
 }
 .right3{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 1.5em;
   color:#d8d8d8;
   transition: 100ms, ease-in-out, 100ms;
@@ -286,7 +294,7 @@
 }
 .dright3{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 1.5em;
   color:#d8d8d8;
   transition: 100ms, ease-in-out, 100ms;
@@ -302,7 +310,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactemailText{
   color: #d8d8d8;
@@ -310,7 +318,7 @@
   margin-left: 290px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactaddressText{
   color: #d8d8d8;
@@ -318,7 +326,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageText{
   color: #d8d8d8;
@@ -326,7 +334,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .dfullnameText{
   color: #d8d8d8;
@@ -334,7 +342,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .dcontactemailText{
   color: #d8d8d8;
@@ -342,7 +350,7 @@
   margin-left: 290px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .dcontactaddressText{
   color: #d8d8d8;
@@ -350,7 +358,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .dmessageText{
   color: #d8d8d8;
@@ -358,7 +366,7 @@
   margin-left: 15px;
   font-size:1.3em;
   font-weight: 100;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
 .fullnameinputBox{
   width: 46.5%;
@@ -378,7 +386,7 @@
   font-size: 18px;
   font-weight: 400;
   background: #dddddd5e ;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
   
 .fullnameinputBox input::placeholder{
@@ -403,7 +411,7 @@
   font-size: 18px;
   font-weight: 400;
   background: #dddddd5e ;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
   box-shadow: 0 0 10px #4d0000;
 }
 .fullnameinputBox input:hover,
@@ -436,7 +444,7 @@
   font-size: 18px;
   font-weight: 400;
   background: #dddddd5e ;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 
 .contactemailinputBox input::placeholder{
@@ -462,7 +470,7 @@
   font-weight: 400;
   background: #dddddd5e ;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactemailinputBox input:hover,
 .contactemailinputBox input:focus{
@@ -494,7 +502,7 @@
   font-size: 18px;
   font-weight: 400;
   background: #dddddd5e;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 
 .contactaddressinputBox input::placeholder{
@@ -520,7 +528,7 @@
   font-weight: 400;
   background: #dddddd5e ;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactaddressinputBox input:hover,
 .contactaddressinputBox input:focus{
@@ -553,7 +561,7 @@
   background: #dddddd5e;
   overflow-wrap: break-word;
   resize: none;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 
 .messageinputBox textarea::placeholder{
@@ -581,7 +589,7 @@
   background: #dddddd5e ;
   resize: none;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageinputBox textarea:hover,
 .messageinputBox textarea:focus{
@@ -594,86 +602,7 @@
   .messageinputBoxred textarea::placeholder{
   color:rgb(170, 170, 170);
   }
-.loc{
-  margin-left: 0.6em;
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  font-size: 12px;
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  left: 10px;
-}
-.locwhat{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  filter: grayscale(100%);
-  transition: ease-in-out 100ms;
-}
-.locwhat:hover{
-  filter: grayscale(0%);
-  transform:scale(1.2);
-  transform: translateY(-5px);
-  margin: 0px 3px;
-}
-.locinsta{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  filter: grayscale(100%);
-  transition: ease-in-out 100ms;
-}
-.locinsta:hover{
-  filter: grayscale(0%);
-  transform:scale(1.2);
-  transform: translateY(-5px);
-  margin: 0px 3px;
-}
-.loctwitter{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  filter: grayscale(100%);
-  transition: ease-in-out 100ms;
-}
-.loctwitter:hover{
-  filter: grayscale(0%);
-  transform:scale(1.2);
-  transform: translateY(-5px);
-  margin: 0px 3px;
-}
-.loclinkedin{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  filter: grayscale(100%);
-  transition: ease-in-out 100ms;
-}
-.loclinkedin:hover{
-  filter: grayscale(0%);
-  transform:scale(1.2);
-  transform: translateY(-5px);
-  margin: 0px 3px;
-}
-.locgithub{
-  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  color:#000000;
-  cursor: pointer;
-  text-decoration: none;
-  filter: grayscale(100%);
-  transition: ease-in-out 100ms;
-}
-.locgithub:hover{
-  filter: grayscale(0%);
-  transform:scale(1.2);
-  transform: translateY(-5px);
-  margin: 0px 3px;
-}
+
 .contactbutton{
   margin-left: 35%;
   width: 25%;
@@ -685,7 +614,7 @@
   /* color: #000000; */
   font-weight: 500;
   font-size:30px;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
   color: #ffffffb9;
 }
@@ -707,7 +636,7 @@
   color: #d8d8d8;
   font-weight: 500;
   font-size:30px;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
     
@@ -816,7 +745,7 @@
   }
   .contacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -829,7 +758,7 @@
   }
   .dcontacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -875,7 +804,7 @@
   .holes{
     font-size: 15px;
     color:#050149;  
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     transition: 100ms, ease-in-out, 100ms;
@@ -884,7 +813,7 @@
   .dholes{
     color:#050149;
     font-size: 15px;
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     transition: 100ms, ease-in-out, 100ms;
@@ -892,7 +821,7 @@
   }
   .phone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -904,7 +833,7 @@
   }
   .dphone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -916,7 +845,7 @@
   }
   .email{
     top: 335px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:#d8d8d8;
     position: relative;
@@ -926,7 +855,7 @@
   }
   .demail{
     top: 335px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:#d8d8d8;
     position: relative;
@@ -951,7 +880,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .fullnameinputBoxred{
     width: 46%;
@@ -970,7 +899,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
     box-shadow: 0 0 10px #4d0000;
   }
   .contactemailinputBox{
@@ -990,7 +919,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactemailinputBoxred{
     width: 46%;
@@ -1011,7 +940,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactaddressinputBox{
     width: 98%;
@@ -1031,7 +960,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
     .contactaddressinputBoxred{
     width: 98%;
@@ -1052,7 +981,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .messageinputBox{
   width: 98.5%;
@@ -1073,7 +1002,7 @@
   background: #dddddd5e;
   overflow-wrap: break-word;
   resize: none;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageinputBoxred{
   width: 98.5%;
@@ -1095,7 +1024,7 @@
   background: #dddddd5e ;
   resize: none;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactbutton{
   padding-top: 5px;
@@ -1109,7 +1038,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .dcontactbutton{
@@ -1124,7 +1053,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .contacted{  
@@ -1156,7 +1085,7 @@
 }
 .contactedline{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1165,7 +1094,7 @@
 }
 .contactedlineone{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1174,7 +1103,7 @@
 }
 .contactedlinetwo{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1273,7 +1202,7 @@
   }
   .contacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -1286,7 +1215,7 @@
   }
   .dcontacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -1332,7 +1261,7 @@
   .holes{
     font-size: 15px;
     color:#050149;  
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     left: -5%;
@@ -1342,7 +1271,7 @@
   .dholes{
     color:#050149;
     font-size: 15px;
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     left: -5%;
@@ -1351,7 +1280,7 @@
   }
   .phone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -1363,7 +1292,7 @@
   }
   .dphone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -1375,7 +1304,7 @@
   }
   .email{
     top: 355px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:#d8d8d8;
     position: relative;
@@ -1385,7 +1314,7 @@
   }
   .demail{
     top: 355px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     color:#d8d8d8;
     position: relative;
@@ -1410,7 +1339,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .fullnameinputBoxred{
     width: 46.5%;
@@ -1429,7 +1358,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
     box-shadow: 0 0 10px #4d0000;
   }
   .contactemailinputBox{
@@ -1449,7 +1378,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactemailinputBoxred{
     width: 46.5%;
@@ -1470,7 +1399,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactaddressinputBox{
     width: 98%;
@@ -1490,7 +1419,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
     .contactaddressinputBoxred{
     width: 98%;
@@ -1511,7 +1440,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .messageinputBox{
   width: 98.5%;
@@ -1532,7 +1461,7 @@
   background: #dddddd5e;
   overflow-wrap: break-word;
   resize: none;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageinputBoxred{
   width: 98.5%;
@@ -1554,7 +1483,7 @@
   background: #dddddd5e ;
   resize: none;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactbutton{
   padding-top: 5px;
@@ -1568,7 +1497,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .dcontactbutton{
@@ -1583,7 +1512,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .contacted{  
@@ -1615,7 +1544,7 @@
 }
 .contactedline{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1624,7 +1553,7 @@
 }
 .contactedlineone{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1633,7 +1562,7 @@
 }
 .contactedlinetwo{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -1732,7 +1661,7 @@
   }
   .contacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -1745,7 +1674,7 @@
   }
   .dcontacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -1791,7 +1720,7 @@
   .holes{
     font-size: 16px;
     color:#050149;  
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     left: -2%;
@@ -1801,7 +1730,7 @@
   .dholes{
     color:#050149;
     font-size: 16px;
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 455px;
     left: -2%;
@@ -1810,7 +1739,7 @@
   }
   .phone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -1822,7 +1751,7 @@
   }
   .dphone1{
     top: 435px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     bottom: 20px;
     left: 10px;
@@ -1834,7 +1763,7 @@
   }
   .email{
     top: 355px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     color:#d8d8d8;
     position: relative;
@@ -1844,7 +1773,7 @@
   }
   .demail{
     top: 355px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     color:#d8d8d8;
     position: relative;
@@ -1869,7 +1798,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .fullnameinputBoxred{
     width: 47.2%;
@@ -1888,7 +1817,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
     box-shadow: 0 0 10px #4d0000;
   }
   .contactemailinputBox{
@@ -1908,7 +1837,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactemailinputBoxred{
     width: 47.2%;
@@ -1929,7 +1858,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactaddressinputBox{
     width: 98%;
@@ -1949,7 +1878,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
     .contactaddressinputBoxred{
     width: 98%;
@@ -1970,7 +1899,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .messageinputBox{
   width: 98.5%;
@@ -1991,7 +1920,7 @@
   background: #dddddd5e;
   overflow-wrap: break-word;
   resize: none;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageinputBoxred{
   width: 98.5%;
@@ -2013,7 +1942,7 @@
   background: #dddddd5e ;
   resize: none;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactbutton{
   padding-top: 5px;
@@ -2027,7 +1956,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .dcontactbutton{
@@ -2042,7 +1971,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .contacted{  
@@ -2074,7 +2003,7 @@
 }
 .contactedline{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -2083,7 +2012,7 @@
 }
 .contactedlineone{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -2092,7 +2021,7 @@
 }
 .contactedlinetwo{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -2145,7 +2074,7 @@
 .contactbody{  
   position: relative;
   text-align: center;
-  /* font-family:Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   font-weight: 100;
   font-size: 20px;
   color:#d8d8d8;
@@ -2157,7 +2086,7 @@
 .dcontactbody{  
   position: relative;
   text-align: center;
-  /* font-family:Arial, Helvetica, sans-serif; */
+  font-family: 'Manrope', sans-serif;
   font-weight: 100;
   font-size: 20px;
   color:#d8d8d8;
@@ -2210,7 +2139,7 @@
   }
   .contacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -2223,7 +2152,7 @@
   }
   .dcontacthead{
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Manrope', sans-serif;
     font-weight: 100;
     font-size:40px;
     color:#d8d8d8;
@@ -2267,7 +2196,7 @@
     left: 50px;
   }
   .locwhat{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Manrope', sans-serif;
     color:#000000;
     cursor: pointer;
     text-decoration: none;
@@ -2276,7 +2205,7 @@
     top:10px;
   }
   .locinsta{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Manrope', sans-serif;
     color:#000000;
     cursor: pointer;
     text-decoration: none;
@@ -2285,7 +2214,7 @@
     top:10px;
   }
   .loctwitter{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Manrope', sans-serif;
     color:#000000;
     cursor: pointer;
     text-decoration: none;
@@ -2294,7 +2223,7 @@
     top:10px;
   }
   .loclinkedin{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Manrope', sans-serif;
     color:#000000;
     cursor: pointer;
     text-decoration: none;
@@ -2303,7 +2232,7 @@
     top:10px;
   }
   .locgithub{
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Manrope', sans-serif;
     color:#000000;
     cursor: pointer;
     text-decoration: none;
@@ -2349,7 +2278,7 @@
   .holes{
     font-size: 16px;
     color:#050149;  
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 75px;
     left: -30px;
@@ -2360,7 +2289,7 @@
   .dholes{
     color:#050149;
     font-size: 16px;
-    /* font-family: 'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     top: 75px;
     left: -30px;
@@ -2370,7 +2299,7 @@
   }
   .phone1{
     top: -145px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     left: 80px;
     font-size: 15px;
@@ -2381,7 +2310,7 @@
   }
   .dphone1{
     top: -145px;
-    /* font-family: 'Merriweather';   */
+    font-family: 'Manrope', sans-serif;
     position: relative;
     left: 80px;
     font-size: 15px;
@@ -2392,7 +2321,7 @@
   }
   .email{
     top: -145px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     color:#d8d8d8;
     position: relative;
@@ -2402,7 +2331,7 @@
   }
   .demail{
     top: -145px;
-    /* font-family:'Merriweather'; */
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     color:#d8d8d8;
     position: relative;
@@ -2427,7 +2356,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .fullnameinputBoxred{
     width: 46.5%;
@@ -2446,7 +2375,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
     box-shadow: 0 0 10px #4d0000;
   }
   .contactemailinputBox{
@@ -2466,7 +2395,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e ;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactemailinputBoxred{
     width: 46.5%;
@@ -2487,7 +2416,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .contactaddressinputBox{
     width: 98%;
@@ -2507,7 +2436,7 @@
     font-size: 15px;
     font-weight: 400;
     background: #dddddd5e;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
     .contactaddressinputBoxred{
     width: 98%;
@@ -2528,7 +2457,7 @@
     font-weight: 400;
     background: #dddddd5e ;
     box-shadow: 0 0 10px #4d0000;
-    /* font-family:''; */
+    font-family: 'Manrope', sans-serif;
   }
   .messageinputBox{
   width: 98.5%;
@@ -2549,7 +2478,7 @@
   background: #dddddd5e;
   overflow-wrap: break-word;
   resize: none;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .messageinputBoxred{
   width: 98.5%;
@@ -2571,7 +2500,7 @@
   background: #dddddd5e ;
   resize: none;
   box-shadow: 0 0 10px #4d0000;
-  /* font-family:''; */
+  font-family: 'Manrope', sans-serif;
 }
 .contactbutton{
   padding-top: 5px;
@@ -2585,7 +2514,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .dcontactbutton{
@@ -2600,7 +2529,7 @@
   color: #000000;
   font-weight: 700;
   font-size:25px;
-  font-family:'Merriweather';
+  font-family: 'Manrope', sans-serif;
   transition: 100ms ease-in-out 100ms;
 }
 .contacted{  
@@ -2632,7 +2561,7 @@
 }
 .contactedline{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -2641,7 +2570,7 @@
 }
 .contactedlineone{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -2650,7 +2579,7 @@
 }
 .contactedlinetwo{
   text-align: left;
-  /* font-family:'Merriweather'; */
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 500;
   position: relative;

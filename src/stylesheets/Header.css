@@ -19,7 +19,7 @@
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   border-bottom: 1px solid rgba(199, 199, 199, 0.925);
-  box-shadow: 0 0 2px #f1f1f3;
+  box-shadow: 0 0.5px 2px #7e7e7faa;
   transition: 150ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
@@ -33,7 +33,7 @@
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.137);
-  box-shadow: 0 0px 2px rgba(128, 31, 255, 0.386);
+  box-shadow: 0 0.5px 2px rgba(128, 31, 255, 0.451);
   transition: 150ms ease-in-out 0ms;
   border-radius: 10px;
   margin-top: 3px;
@@ -76,7 +76,6 @@
 }
 .linklist1{
   background-color: transparent;
-  animation: slideopennav 175ms linear 0ms 1;
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -88,8 +87,7 @@
   transition: 150ms ease-in-out 0ms;
 }
 .linklist2{
-  background-color: transparent;
-  animation: slideopennav 175ms linear 0ms 1;
+  background-color: transparent;  
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -101,8 +99,7 @@
   transition: 150ms ease-in-out 0ms;
 }
 .linklist3{
-  background-color: transparent;
-  animation: slideopennav 175ms linear 0ms 1;
+  background-color: transparent;  
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -114,8 +111,7 @@
   transition: 150ms ease-in-out 0ms;
 }
 .linklist4{
-  background-color: transparent;
-  animation: slideopennav 175ms linear 0ms 1;
+  background-color: transparent;  
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -127,8 +123,7 @@
   transition: 150ms ease-in-out 0ms;
 }
 .linklist5{
-  background-color: transparent;
-  animation: slideopennav 175ms linear 0ms 1;
+  background-color: transparent;  
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -205,8 +200,7 @@
   justify-content: center;
   font-weight: 600;
 }
-.talkbtn{
-  animation: slideopennav 175ms linear 0ms 1;
+.talkbtn{  
   text-decoration: none;
   cursor: pointer;
   width: 110px;
@@ -426,8 +420,7 @@
     cursor: pointer;
     position:relative;
     right: 10%;
-    bottom: 1px;
-    animation: spinleft 100ms linear 0s 1;
+    bottom: 1px;    
     transition: 100ms ease-in-out 100ms;
     border: none;
   }
