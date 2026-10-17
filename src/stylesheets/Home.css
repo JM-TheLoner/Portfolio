@@ -310,16 +310,7 @@
   width: 140px;
   height: 35px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-}
-.dseeWork{
-  color: #F9F9F9;
-  width: 140px;
-  height: 35px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-size: 16px;
 }

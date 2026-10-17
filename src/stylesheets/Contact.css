@@ -17,7 +17,7 @@
   transition: 100ms, ease-in-out, 100ms;
 }
 .contactPageCont{  
-  margin-top: 70px;
+  margin-top: 75px;
   height: calc(100% - 70px);
   display: flex;
   flex-direction: column;
@@ -28,15 +28,108 @@
 }
 .testimonialSection{
   /* background-color: red; */
+  height: 47vh;
+  width: 100%;
+}
+.testimonialTxt{
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+.testimonialhead{
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  cursor: default;
+  margin-bottom: 5px;
+  transition: 100ms, ease-in-out, 100ms;
+}
+.dreview{
+  backdrop-filter: blur(10px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  height: 170px;
+  width: 370px;
+  border-radius: 10px; 
+  padding: 10px 15px 10px 15px;
+  background-color: #04051964;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.review{
+  backdrop-filter: blur(10px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  height: 170px;
+  width: 370px;
+  border-radius: 10px; 
+  padding: 10px 15px 10px 15px;
+  background-color: #c6c6c61b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.reviewWords{
+  height: 67%;
+}
+.reviewText{
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+.reviewIdentity{
+  height: 33%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  padding: 10px 0px 0px 0px;
+}
+.profImage{  
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    margin-right: 20px;
+}
+.profId{
+  height: 35px;
+  text-transform: capitalize;
+}
+.reviewName{
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.reviewPos{
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
 }
 .contactSection{
-  /* background-color: green; */
   display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65vh;
 }
 .contactleft{
-  /* background-color: yellow; */
   justify-content: center;
-  width: 40%;
+  width: 30%;
+  height: 100%;
+}
+.contactRight{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
 }
 .contacttext{
   width: 100%;
@@ -68,7 +161,7 @@
 }
 .contHeadWrap{
   height: 25px;
-  width: 40%;
+  width: 60%;
 }
 .contacthead{
   text-align: left;
@@ -86,7 +179,6 @@
   font-size: 23px;
   cursor: default;
   transition: 100ms, ease-in-out, 100ms;
-  /* background-color: red; */
   margin-bottom: 10px;
 }
 .contactbodylow{  
@@ -165,41 +257,212 @@
 .dContact .locgithub:hover .smlogo{
   box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
 }
-
-
-.emailImg{
-  color: red;
-  height: 50px;
+.phoneNumSection{
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  height: 20px;
+  margin-top: 25px;
+  transition: 150ms ease-in-out 0ms;
 }
-.demailImg{
-  color: green;
-  height: 50px;
-}
-.phoneImg{
-  color: red;
-  height: 50px;
-}
-.dphoneImg{
-  color: green;
-  height: 50px;
+.emailSection{
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  height: 20px;
+  margin-top: 25px;
+  transition: 150ms ease-in-out 0ms;
 }
 .phoneNum{
   font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  position: relative;
+  font-size: 13px;
   text-align: left;
-  display: flex;
+  margin-left: 20px;
+  transition: 150ms ease-in-out 0ms;
 }
 .emailText{
   font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  position: relative;
+  font-size: 13px;
   text-align: left;
-  display: flex;
+  margin-left: 20px;
+  transition: 150ms ease-in-out 0ms;
 }
-
-
-
+.contactsameline{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.contactwrapper{  
+  width: 90%;
+  background: #c6c6c61b;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+  border-radius: 13px;
+  padding: 15px 20px;
+  height: 95%;
+}
+.dcontactwrapper{  
+  width: 90%;
+  background: #04051964;
+  backdrop-filter: blur(20px);
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;  
+  border-radius: 13px;
+  padding: 15px 20px;
+  height: 95%;
+}
+.Contact .regularBox{
+  border: 1px solid rgba(226, 118, 250, 0.501);
+  background-color: #F5F4F9;
+  color:#050B1A;
+}
+.Contact .errorBox{
+  border: 1px solid red;
+  background-color: #F5F4F9;
+  color:#050B1A;
+}
+.Contact .regularBox:hover,
+.Contact .errorBox:hover{
+  background-color: #e9e8ee61;
+}
+.dContact .regularBox{
+  border: 1px solid #a9a3ff67;
+  background-color: #00030a;
+  color:#F5F4F9;
+}
+.dContact .errorBox{
+  border: 1px solid red;
+  background-color: #00030a;
+  color:#F5F4F9;
+}
+.dContact .regularBox:hover,
+.dContact .errorBox:hover{
+  background-color: #0d025534;
+}
+.Contact .regularBox::placeholder,
+.Contact .errorBox::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+  color:#050B1A;
+}
+.dContact .regularBox::placeholder,
+.dContact .errorBox::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+  color:#F5F4F9;
+}
+.fullnameinputBox{
+  width: 50%;
+  height: 45px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+}  
+.fullnameinputBox input{
+  width: 97%;
+  height: 95%;
+  border-radius: 7px;
+  padding: 10px 7px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+}    
+.contactemailinputBox{
+  width: 50%;
+  height: 45px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.contactemailinputBox input{
+  width: 97%;
+  height: 95%;
+  border-radius: 7px;
+  padding: 10px 7px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+}  
+.contactaddressinputBox{
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+.contactaddressinputBox input{
+  width: 100%;
+  height: 95%;
+  border-radius: 7px;
+  padding: 10px 7px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+}  
+.messageinputBox{
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+.messageinputBox textarea{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  padding: 10px 7px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+  overflow-wrap: break-word;
+  resize: none;
+}
+.contactbutton{
+  position: relative; 
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(25deg, #c552ff 0%, #724bff 50%, #3c26ff 100%);
+  box-shadow: 0 1px 4px rgba(226, 118, 250, 0.386);
+  border: 1px solid rgb(155, 155, 155);
+  cursor: pointer;
+  transition: 150ms ease-in-out 0ms;  
+  width: 210px;
+  height: 40px;
+}
+.contactbutton:hover{
+    background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+    box-shadow: 0 2px 8px rgba(226, 118, 250, 0.666);
+}
+.dcontactbutton{
+  position: relative; 
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
+  box-shadow: 0 2px 6px rgba(108, 63, 245, 0.386);
+  border: 1px solid rgb(155, 155, 155);
+  cursor: pointer;
+  transition: 150ms ease-in-out 0ms;  
+  width: 210px;
+  height: 40px;
+}
+.dcontactbutton:hover{
+    background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
+    box-shadow: 0 4px 10px rgba(108, 63, 245, 0.558);
+}
+.contactBtnTxt{
+  font-weight: 500;
+  font-size:15px;
+  font-family: 'Manrope', sans-serif;
+  transition: 100ms ease-in-out 100ms;
+}
 
 
 /* I haven't worked past this point */
@@ -209,442 +472,15 @@
 
 
 
-.contactsameline{
-  display: flex;
-}
 
-.contactwrapper{  
-  margin-top: 1em;
-  width: 55em;
-  background-image: transparent;
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(107, 107, 107, 0.76);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.685); 
-  border-radius: 15px;
-  padding:  10px;
-  padding-bottom:  20px;
-  height: fit-content;
-}
-.dcontactwrapper{  
-  margin-top: 1em;
-  width: 55em;
-  background-image: transparent;
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(194, 194, 194, 0.76);
-  box-shadow: 0 0 1px #adadadcb; 
-  border-radius: 15px;
-  padding:  10px;
-  padding-bottom:  20px;
-  height: fit-content;
-}
-.getin{
-  display: flex;
-  margin-left: 20px;
-  margin-top: -35px;
-}
-.right1{
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.5em;
-  cursor: default;
-}
-.dright1{
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.5em;
-  cursor: default;
-}
-.right2{
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.5em;
-  color:#080052;
-  transition: 100ms, ease-in-out, 100ms;
-  cursor: default;
-  position: absolute;
-  left: 235px;
-  top: -34px;
-}
-.dright2{
-  color:#002efc;
-  transition: 100ms, ease-in-out, 100ms;
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 3.5em;
-  cursor: default;
-  position: absolute;
-  left: 235px;
-  top: -34px;
-}
-.right3{
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.5em;
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  cursor: default;
-  position: absolute;  
-  left: 30px;
-  top: 60px;
-  font-weight: 300;
-}
-.dright3{
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.5em;
-  color:#d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  cursor: default;
-  position: absolute;  
-  left: 30px;
-  top: 60px;
-  font-weight: 300;
-}
-.fullnameText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.contactemailText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 290px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.contactaddressText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.messageText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.dfullnameText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.dcontactemailText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 290px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.dcontactaddressText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.dmessageText{
-  color: #d8d8d8;
-  transition: 100ms, ease-in-out, 100ms;
-  margin-left: 15px;
-  font-size:1.3em;
-  font-weight: 100;
-  font-family: 'Manrope', sans-serif;
-}
-.fullnameinputBox{
-  width: 46.5%;
-  height: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  position: relative;
-  margin-left: 10px;
-}
+
+
   
-.fullnameinputBox input{
-  width: 97%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e ;
-  font-family: 'Manrope', sans-serif;
-}
-  
-.fullnameinputBox input::placeholder{
-  color:rgb(170, 170, 170);
-}
-  
-.fullnameinputBoxred{
-  width: 46.5%;
-  height: 60px;
-  margin-top: 0px;
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-  
-.fullnameinputBoxred input{
-  width: 97%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e ;
-  font-family: 'Manrope', sans-serif;
-  box-shadow: 0 0 10px #4d0000;
-}
-.fullnameinputBox input:hover,
-.fullnameinputBox input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.fullnameinputBoxred input:hover,
-.fullnameinputBoxred input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.fullnameinputBoxred input::placeholder{
-  color:rgb(170, 170, 170);
-  }
-  
-.contactemailinputBox{
-  width: 46.5%;
-  height: 60px;
-  margin-top: 0px;
-  position: relative;
-  margin-bottom: 10px;
-  margin-left: 25px;
-}
 
-.contactemailinputBox input{
-  width: 97%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e ;
-  font-family: 'Manrope', sans-serif;
-}
 
-.contactemailinputBox input::placeholder{
-  color:rgb(170, 170, 170);
-}
-  
-.contactemailinputBoxred{
-  width: 46.5%;
-  height: 60px;
-  margin-top: 0px;
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
 
-.contactemailinputBoxred input{
-  width: 97%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e ;
-  box-shadow: 0 0 10px #4d0000;
-  font-family: 'Manrope', sans-serif;
-}
-.contactemailinputBox input:hover,
-.contactemailinputBox input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.contactemailinputBoxred input:hover,
-.contactemailinputBoxred input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.contactemailinputBoxred input::placeholder{
-  color:rgb(170, 170, 170);
-}
-  
-.contactaddressinputBox{
-  width: 96.5%;
-  height: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  position: relative;
-  margin-left: 10px;
-}
 
-.contactaddressinputBox input{
-  width: 98.5%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e;
-  font-family: 'Manrope', sans-serif;
-}
 
-.contactaddressinputBox input::placeholder{
-  color:rgb(170, 170, 170);
-}
-
-.contactaddressinputBoxred{
-  width: 95%;
-  height: 60px;
-  margin-top: 0px;
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.contactaddressinputBoxred input{
-  width: 98.5%;
-  height: 45px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 18px;
-  font-weight: 400;
-  background: #dddddd5e ;
-  box-shadow: 0 0 10px #4d0000;
-  font-family: 'Manrope', sans-serif;
-}
-.contactaddressinputBox input:hover,
-.contactaddressinputBox input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.contactaddressinputBoxred input:hover,
-.contactaddressinputBoxred input:focus{
-  background-color: rgb(153, 153, 153);
-}
-.contactaddressinputBoxred input::placeholder{
-  color:rgb(170, 170, 170);
-}
-
-.messageinputBox{
-  width: 96.5%;
-  margin-top: 0px;
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.messageinputBox textarea{
-  width: 98.5%;
-  height: 280px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 20px;
-  font-weight: 400;
-  background: #dddddd5e;
-  overflow-wrap: break-word;
-  resize: none;
-  font-family: 'Manrope', sans-serif;
-}
-
-.messageinputBox textarea::placeholder{
-  color:rgb(170, 170, 170);
-  font-size: 20px;
-}
-  
-.messageinputBoxred{
-  width: 96.5%;
-  margin-top: 0px;
-  position: relative;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.messageinputBoxred textarea{
-  width: 100%;
-  height: 280px;
-  border: 3px solid rgba(128, 128, 128, 0.438);
-  border-radius: 05px;
-  padding: 5px 5px 5px 5px;
-  font-size: 20px;
-  font-weight: 400;
-  overflow-wrap: break-word;
-  background: #dddddd5e ;
-  resize: none;
-  box-shadow: 0 0 10px #4d0000;
-  font-family: 'Manrope', sans-serif;
-}
-.messageinputBox textarea:hover,
-.messageinputBox textarea:focus{
-  background-color: rgb(153, 153, 153);
-}
-  .messageinputBoxred textarea:hover,
-  .messageinputBoxred textarea:focus{
-  background-color: rgb(153, 153, 153);
-}
-  .messageinputBoxred textarea::placeholder{
-  color:rgb(170, 170, 170);
-  }
-
-.contactbutton{
-  margin-left: 35%;
-  width: 25%;
-  height: 50px;
-  background: #4c1cfa2a;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgb(29, 29, 29);
-  cursor: pointer;
-  /* color: #000000; */
-  font-weight: 500;
-  font-size:30px;
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  color: #ffffffb9;
-}
-    
-.contactbutton:hover{
-    /* background: #5869ff; */
-    color: #0a002e;
-    background: #d9cfff;
-    transition: 100ms, ease-in-out, 100ms;
-}
-.dcontactbutton{
-  margin-left: 35%;
-  width: 25%;
-  height: 50px;
-  background: #4c1cfa59;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgb(29, 29, 29);
-  cursor: pointer;
-  color: #d8d8d8;
-  font-weight: 500;
-  font-size:30px;
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-}
-    
-.dcontactbutton:hover{
-    background: #d9cfff;
-    color: #000620;
-    transition: 100ms, ease-in-out, 100ms;
-}
 
 @keyframes shine {
     0% {

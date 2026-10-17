@@ -2,10 +2,10 @@ import '../stylesheets/Contact.css'
 import Header from './Header';
 import { useEffect, useState, useContext, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { FaEnvelope } from 'react-icons/fa'; 
-import { FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaPaperPlane, FaPhone, FaQuoteLeft  } from 'react-icons/fa';
 import DataContext from '../context/Datacontext' 
 import whatlight from '../Assets/Images/whatsapplight.png'
+import defProfPic from '../Assets/Images/default_profile.jpg'
 import insta from '../Assets/Images/insta.png'
 import twitter from '../Assets/Images/twitter.png'
 import github from '../Assets/Images/github.png'
@@ -26,6 +26,11 @@ const Contact = () => {
   const[nocontactaddress, setnocontactaddress] = useState(false)
   const[nomessage, setnomessage] = useState(false)
 
+  const reviews =[
+    {id: 1, name: "Client Name", descriptor: "position", profilePic: "", review: "Working with him was a great experience. He understood the requirements and delivered a solution that met our needs."},
+    {id: 2, name: "Another Client", descriptor: "position", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."},
+    {id: 2, name: "Third Client", descriptor: "position", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."}
+  ]
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -101,26 +106,46 @@ const Contact = () => {
         <Header/>
 
         <div className='contactPageCont'>
-        <div className='testimonialSection'>
-          hello
-        </div>
-
-        <div className='contactSection'>
-
-          <div className='contactleft'>
-            <div className='contacttext'>
-              <div className='contHeadWrap'>
-                <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>LET'S WORK TOGETHER</p>
-              </div>              
-              <p className={!dark ? 'contactbody lightText' : 'contactbody darkText'}>Have a project in mind?</p>
-              <p className={!dark ? 'contactbodylow lightText' : 'contactbodylow darkText'}>I'm always open to discussing new projects and<br/>opportunities. Let's create something amazing together!</p>
+          <div className='testimonialSection'>
+            <p className={!dark ? 'testimonialhead lightTextColor' : 'testimonialhead darkTextColor'}>Testimonials</p>
+            <h1 className={!dark ? 'testimonialTxt lightWords' : 'testimonialTxt darkWords'}>What Clients Say</h1>
+            <div style={{display:"flex", justifyContent:"space-between"}}>
+              {reviews.map((review)=>(
+                <div className={!dark ? 'review' : 'dreview'}>   
+                  <div className='reviewWords'>
+                    <FaQuoteLeft size={24} color={!dark ? '#e213fd' : '#7f58ff'} />
+                    <p className={!dark ? 'reviewText lightWords' : 'reviewText darkWords'}>{review.review}</p>
+                  </div>
+                  <div className='reviewIdentity'>
+                    <img className='profImage' src={review.profilePic || defProfPic} alt='Profile Img'/>
+                    <div className='profId'>
+                      <p className={!dark ? 'reviewName lightWords' : 'reviewName darkWords'}>{review.name}</p>
+                      <p className={!dark ? 'reviewPos lightWords' : 'reviewPos darkWords'}>{review.descriptor}</p>
+                    </div>
+                  </div>                
+                </div>
+              ))}
             </div>
-            <div className='contFollowWrap'>
-              <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>FOLLOW ME</p>
-            </div>              
+            
+          </div>
 
-            <div className='contLinks'>
-              <div className='contactsamelinesocs'>
+
+
+          <div className='contactSection'>
+
+            <div className='contactleft'>
+              <div className='contacttext'>
+                <div className='contHeadWrap'>
+                  <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>LET'S WORK TOGETHER</p>
+                </div>              
+                <p className={!dark ? 'contactbody lightText' : 'contactbody darkText'}>Have a project in mind?</p>
+                <p className={!dark ? 'contactbodylow lightText' : 'contactbodylow darkText'}>I'm always open to discussing new projects and<br/>opportunities. Let's create something amazing together!</p>
+              </div>
+              <div className='contFollowWrap'>
+                <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>FOLLOW ME</p>
+              </div>              
+
+              <div className='contLinks'>
                 <a
                     className="locwhat"
                     href="https://wa.me/qr/7K2XV7UM75H4N1"
@@ -161,89 +186,86 @@ const Contact = () => {
                   >
                       <img src={github} className="smlogo" alt="github"/>
                   </a>
-              </div> 
+                <div className='phoneNumSection'>
+                  <FaPhone size={18} color={!dark ? '#e213fd' : '#7f58ff'} style={{rotate:'90deg'}}/>
+                  <p className='phoneNum'>
+                    <a className={!dark ? 'lightText' : 'darkText'} href='tel:+234-902-328-2736'>+234 902 328 2736</a>            
+                  </p>
+                </div>
 
-
-
-
-
-
+                <div className='emailSection'>              
+                  <FaEnvelope size={18} color={!dark ? '#e213fd' : '#7f58ff'} />
+                  <p className='emailText'>
+                    <a className={!dark ? 'lightText' : 'darkText'} href='mailto:oolaitan13@gmail.com'>Oolaitan13@gmail.com</a>
+                  </p>                      
+                </div>
+              </div>   
             </div>
-          
-            <div className={!dark ? 'phoneNum' : 'phoneNum'}>
-              <FaPhone size={24} className={!dark ? 'phoneImg' : 'dphoneImg'}/>
-              <p>
-                <a className={!dark ? 'lightText' : 'darkText'} href='tel:+234-902-328-2736'>+234 902 328 2736</a>            
-              </p>
-            </div>
 
-            <div className={!dark ? 'emailText lightText' : 'emailText darkText'}>              
-              <FaEnvelope size={24}  className={!dark ? 'emailImg' : 'demailImg'} />
-              <p>
-                <a className={!dark ? 'lightText' : 'darkText'} href='mailto:oolaitan13@gmail.com'>Oolaitan13@gmail.com</a>
-              </p>                      
-      
-            </div>
-       
+            <div className='contactRight'>
+              <div className={!dark ? 'contactwrapper' : 'dcontactwrapper'}>
+                <form ref={form}>
+                  <div className='contactsameline'>
+                    <div className='fullnameinputBox'>
+                      <input
+                      type='text'
+                      placeholder='Your Name'
+                      required
+                      className={!nofullname ? 'regularBox' : 'errorBox'}
+                      value={fullname}
+                      name='user_name'
+                      onChange={(e)=>{setfullname(e.target.value)}}/>
+                    </div>
+
+                    <div className='contactemailinputBox'>
+                      <input
+                      type='email'
+                      placeholder='Your Email'
+                      required
+                      className={!nocontactemail ? 'regularBox' : 'errorBox'}
+                      value={contactemail}
+                      name='user_email'
+                      onChange={(e)=>{setcontactemail(e.target.value)}}/>
+                    </div>
+                  </div>
+                  <div className='contactsameline'>
+                    <div className='contactaddressinputBox'>
+                      <input
+                      type='text'
+                      placeholder='Your Project'
+                      required
+                      className={!nocontactaddress ? 'regularBox' : 'errorBox'}
+                      value={contactaddress}
+                      name='user_address'
+                      onChange={(e)=>{setcontactaddress(e.target.value)}}/>
+                    </div>
+                  </div>
+                  <div className='contactsameline'>
+                    <div className='messageinputBox'>
+                      <textarea
+                      type='text'
+                      placeholder='Your Message'
+                      required
+                      className={!nomessage ? 'regularBox' : 'errorBox'}
+                      value={message}
+                      name='message'
+                      onChange={(e)=>{setmessage(e.target.value)}}/>
+                    </div>
+                  </div>
+                  <div className='contactsameline'>
+                    <button type='submit' value='Send' className={!dark ? 'contactbutton' : 'dcontactbutton'} onClick={(e)=>{handleContact(e)}}>
+                      <div className='contactBtnTxt darkText'>
+                        Send Message
+                        <FaPaperPlane  size={16} color='#F5F4F9' style={{marginLeft:"10px"}} />                        
+                      </div>  
+                    </button>   
+                  </div>           
+                </form>
+              </div>      
+            </div>      
+
           </div>
-
-          <div className={!dark ? 'contactwrapper' : 'dcontactwrapper'}>
-            <div className='contactsameline'>
-              <h1 className={!dark ? 'fullnameText' : 'dfullnameText'}>Full Name</h1>
-              <h1 className={!dark ? 'contactemailText' : 'dcontactemailText'}>Email</h1>
-            </div>
-            <form ref={form}>
-              <div className='contactsameline'>
-                <div className={!nofullname ? 'fullnameinputBox' : 'fullnameinputBoxred'}>
-                  <input
-                  type='text'
-                  placeholder='Fullname'
-                  required
-                  value={fullname}
-                  name='user_name'
-                  onChange={(e)=>{setfullname(e.target.value)}}/>
-                </div>
-
-                <div className={!nocontactemail ? 'contactemailinputBox' : 'contactemailinputBoxred'}>
-                  <input
-                  type='email'
-                  placeholder='example@untitled.com'
-                  required
-                  value={contactemail}
-                  name='user_email'
-                  onChange={(e)=>{setcontactemail(e.target.value)}}/>
-                </div>
-              </div>
-              <h1 className={!dark ? 'contactaddressText' : 'dcontactaddressText'}>Subject</h1>
-              <div className={!nocontactaddress ? 'contactaddressinputBox' : 'contactaddressinputBoxred'}>
-                  <input
-                  type='text'
-                  placeholder='State, Country'
-                  required
-                  value={contactaddress}
-                  name='user_address'
-                  onChange={(e)=>{setcontactaddress(e.target.value)}}/>
-              </div>
-
-              <h1 className={!dark ? 'messageText' : 'dmessageText'}>Message</h1>
-              <div className={!nomessage ? 'messageinputBox' : 'messageinputBoxred'}>
-                  <textarea
-                  type='text'
-                  placeholder='Type Your Message Here'
-                  required
-                  value={message}
-                  name='message'
-                  onChange={(e)=>{setmessage(e.target.value)}}/>
-              </div>
-              <button type='submit' value='Send' className={!dark ? 'contactbutton' : 'dcontactbutton'} onClick={(e)=>{handleContact(e)}}>Send</button>   
-            </form>
-          </div>          
-
         </div>
-
-        </div>
-
-
       </div>
     </>
   )

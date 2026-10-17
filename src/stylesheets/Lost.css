@@ -2,102 +2,196 @@
 @import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
 
 .Lost{
-    background-color: #3272a0;
-    padding: 3px 3px 3px 3px;
-    max-width: 100%;
-    height: 79.7vh;
-    padding-bottom: 0px;
-    transition: 100ms ease-in-out 100ms;
+    padding: 3px 10px 3px 10px;
+    width: 100%;
+    height: 100vh;
+    transition: 150ms ease-in-out 0ms;
     overflow-y: hidden;
-    transition: 100ms, ease-in-out, 100ms;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .dLost{
-    background-color: #010327;
-    padding: 3px 3px 3px 3px;
-    max-width: 100%;
-    height: 79.7vh;
-    padding-bottom: 0px;
-    transition: 100ms ease-in-out 100ms;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3px 10px 3px 10px;
+    width: 100%;
+    height: 100vh;
+    transition: 150ms ease-in-out 0ms;
     overflow-y: hidden;
-    transition: 100ms, ease-in-out, 100ms;
 }
-
+.lostDiv{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+.lostLeft{
+    /* background-color: yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
 .topline{
-    padding-top: 8em;
-    text-align: center;
+    text-align: left;
 }
-
-.first{
-    position: relative;
-    right: 30px;
-    font-size: 60px;
-    font-weight: 900;
+.losthead{
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     font-style: normal;
-    font-family: 'Merriweather';
-    color: #d8d8d8;
     transition: 100ms, ease-in-out, 100ms;
 }
-.dfirst{
-    position: relative;
-    right: 30px;
-    font-size: 60px;
-    font-weight: 900;
+.firstLine{
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
     font-style: normal;
-    font-family: 'Merriweather';
-    color: #9caeff;
     transition: 100ms, ease-in-out, 100ms;
-    text-shadow: 0 0 0.5px #adb9ff, 0 0 1px #adb9ff, 0 0 1.5px #adb9ff, 0 0 2px #adb9ff, 0 0 3px #adb9ff;
 }
-
-
+.secondLine{
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    transition: 100ms, ease-in-out, 100ms;
+}
+.thirdLine{
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    transition: 100ms, ease-in-out, 100ms;
+}
+.lightTextColor{
+  text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColor{  
+  text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightTextColor1{
+  /* text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718); */
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColor1{  
+  /* text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729); */
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightText{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkText{
+  color:#F5F4F9;
+  transition: 150ms ease-in-out 0ms;
+}
+.lostWork{
+  color: #F9F9F9;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+.lostbtnswarrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
 .Lost .bottomline{
+    width: 170px;
+    height: 45px;
     position: relative; 
-    top:10px; 
-    left:555px;
-    margin-top: 10px;
-    width: 300px;
-    height: 70px;
-    font-size:22px;
-    font-weight: 500;
-    background: rgba(196, 196, 196, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #01003a;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(25deg, #c552ff 0%, #724bff 50%, #3c26ff 100%);
+    box-shadow: 0 4px 20px rgba(226, 118, 250, 0.386);
+    border: 1px solid rgb(155, 155, 155);
     cursor: pointer;
-    color: #ffffff;
-    transition: 100ms, ease-in-out, 100ms;
+    transition: 150ms ease-in-out 0ms;
 }
-
-.Lost .bottomline:hover,
-.Lost .bottomline:focus{
-    background-color: #14005e;
+.Lost .bottomline:hover{
+    background: linear-gradient(25deg, #d277ff 0%, #8563ff 50%, #5846ff 100%);
+    box-shadow: 0 6px 28px rgba(226, 118, 250, 0.666);
+    transform: translateY(-2px);
 }
-
 .dLost .bottomline{
+    width: 170px;
+    height: 45px;
     position: relative; 
-    top:10px; 
-    left:555px;
-    margin-top: 10px;
-    width: 300px;
-    height: 70px;
-    font-size:22px;
-    font-weight: 500;
-    background: rgba(146, 146, 146, 0.071);
-    border-radius: 30px;
-    box-shadow: 0 0 0px #d8d8d8;
-    border: 2px solid rgb(155, 155, 155);
-    backdrop-filter: blur(50px);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(25deg, #5d31ff 0%, #8929ff 50%, #9b06ec 100%);
+    box-shadow: 0 4px 20px rgba(108, 63, 245, 0.386);
+    border: 1px solid rgb(155, 155, 155);
     cursor: pointer;
-    color: #9caeff;
-    transition: 100ms, ease-in-out, 100ms;
+    transition: 150ms ease-in-out 0ms;
+}
+.dLost .bottomline:hover{
+    background: linear-gradient(25deg, #693fff 0%, #943dff 50%, #a720f0 100%);
+    box-shadow: 0 6px 28px rgba(108, 63, 245, 0.558);
+    transform: translateY(-2px);
+}
+.lostRight{    
+    /* background-color: green; */
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.lostImg{
+    height: 400px;
+    mask-image: linear-gradient(to top, transparent 0%, black 35%);
+    transition: 150ms ease-in-out 0ms;
+}
+.dlostImg{
+    height: 400px;
+    mask-image: linear-gradient(to top, transparent 0%, black 15%);
+    transition: 150ms ease-in-out 0ms;
 }
 
-.dLost .bottomline:hover,
-.dLost .bottomline:focus{
-    background-color: #d9cfff;
-    color: #000620;
-}
+/* havent worked past here */
+
+
+
+
+
+
+
 
 @media screen and (max-width:612px) {
     .Lost{

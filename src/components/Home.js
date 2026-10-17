@@ -11,11 +11,18 @@ import donlight from '../Assets/Images/downloadwhite.png'
 import pdfurl from '../Assets/Documents/MERN CV.pdf'
 import DecryptedText from './animations/decryptedText'
 
-const Home = () => {
+const Home = ({ hasPlayedDecrypt, setHasPlayedDecrypt }) => {
 
   const [index, setIndex] = useState(0)
   const { dark } = useContext(DataContext)
+  const [playAnimation, setPlayAnimation] = useState(false);
 
+  useEffect(() => {
+    if (!hasPlayedDecrypt) {
+      setPlayAnimation(true);
+      setHasPlayedDecrypt(true);
+    }
+  }, [hasPlayedDecrypt, setHasPlayedDecrypt]);
 
   const phrases = [
     "HELLO, MY NAME IS",
@@ -81,14 +88,18 @@ const Home = () => {
                   <h1 key={index} className={!dark ? "headLine" : "dheadLine"}>{phrases[index]}</h1> 
                 </div>
               </div>
-              <div className={!dark ? "TopLine" : "dTopLine"}>
-                <DecryptedText            
-                  speed={100}
-                  maxIterations={20}
-                  text="Oluwaseun Olaitan"
-                  animateOn="view"
-                  revealDirection="start"
-                />
+              <div>
+                <h1 className={!dark ? "TopLine" : "dTopLine"}>
+                  {playAnimation
+                    ? <DecryptedText            
+                        speed={100}
+                        maxIterations={20}
+                        text="Oluwaseun Olaitan"
+                        animateOn="view"
+                        revealDirection="start"
+                      />
+                    : "Oluwaseun Olaitan"}
+                </h1>
               </div>                
               <div>
                 <h1 className={!dark ? "LineThree" : "dLineThree"}>FULL-STACK DEV • ELECTRICAL ENGINEER</h1>          
@@ -101,7 +112,7 @@ const Home = () => {
               <div className='sidebuttons'>
                 <Link to={'/projects'} style={linkstyle}>
                   <button className='donbtnhome1'>
-                    <div className={!dark ? 'seeWork' : 'dseeWork'}>
+                    <div className='seeWork'>
                         <div className='btnswarrow' style={{fontSize: '15px'}}>View My Work</div>
                         <div className='btnswarrow' style={{fontSize: '25px'}}>&#x2192;</div>
                     </div>                      
