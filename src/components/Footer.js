@@ -4,46 +4,13 @@ import '../stylesheets/Footer.css'
 
 const Footer = () => {
 
-  const { dark, aboutClassname } = useContext(DataContext)
-
-  var footstate
-
-  if (aboutClassname === 'AboutYellow'){
-    footstate = 'FooterYellow'
-  }
-  if (aboutClassname === 'AboutBlue'){
-    footstate = 'FooterBlue'
-  }
-  if (aboutClassname === 'AboutLightGreen'){
-    footstate = 'FooterLightGreen'
-  }
-  if (aboutClassname === 'AboutYellowExpress'){
-    footstate = 'FooterYellowExpress'
-  }
-  if (aboutClassname === 'AboutDarkGreen'){
-    footstate = 'FooterDarkGreen'
-  }
-  if (aboutClassname === 'AboutBlueYellow'){
-    footstate = 'FooterBlueYellow'
-  }
-  if (aboutClassname === 'AboutDeepBlue'){
-    footstate = 'FooterDeepBlue'
-  }
-  if (aboutClassname === 'AboutOrange'){
-    footstate = 'FooterOrange'
-  }
+  const { dark } = useContext(DataContext)
 
   return (  
     <>
-      <footer className={
-        !aboutClassname 
-        ? 
-          !dark ? 'Footer' : 'dFooter'
-        :
-          footstate
-        }>
-        <div className='Footertext'>
-          <h5 className={!dark ? 'FooterCopyright' : 'dFooterCopyright'}>&copy; 2023 - All Rights Reserved by J.M_TheLoner</h5>
+      <footer className={ !dark ? 'Footer' : 'dFooter' }>
+        <div className='Footerwords'>
+          <h5 className={!dark ? 'footText lightText' : 'footText darkText'}>&copy; 2023 - All Rights Reserved by J.M_TheLoner</h5>
         </div>
       </footer>
     </>

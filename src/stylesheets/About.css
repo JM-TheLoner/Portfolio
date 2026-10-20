@@ -1,522 +1,287 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
-
-.variable-proximity {
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 20px;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 .About{
-  background-color: #3272a0;
-  flex-grow: 1;
-  padding: 3px 3px 3px 3px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-  min-height: 90%;
-  transition: 100ms ease-in-out 100ms;
+  background-color: #F5F4F9;
+  padding: 3px 10px 3px 10px;
+  height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
 }
 .dAbout{
-  background-color: #010327;
-  flex-grow: 1;
-  padding: 3px 3px 3px 3px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-  min-height: 90%;
-  transition: 100ms ease-in-out 100ms;
+  background-color: #050B1A;
+  padding: 3px 10px 3px 10px;
+  height: 100vh;
+  padding-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
 }
-.AboutYellow{
-  background: linear-gradient(to bottom, #fff12f,#8f7500);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutBlue{
-  background: linear-gradient(to bottom, #188bff, #0018a0);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutLightGreen{
-  background: linear-gradient(to bottom, #65ff0c, #047700);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutYellowExpress{
-  background: linear-gradient(to bottom, #fff133, #7a6e00);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutDarkGreen{
-  background: linear-gradient(to bottom, #6aff25, #00ac1d);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutBlueYellow{
-  background: linear-gradient(to bottom, #0029df, #ffc800);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutDeepBlue{
-  background: linear-gradient(to bottom, #0f00dd, #0A054D);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.AboutOrange{
-  background: linear-gradient(to bottom, #fa6c2e, #d8621d);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.topbox{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -35px;
-  margin-bottom: -50px;
-}
-
-.story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#d8d8d8;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#9caeff;
-  transition: 100ms ease-in-out 100ms;
-}  
-.bottomstory{
-  font-size: 20px;
-  font-weight: 300;
-  /* font-family: 'Merriweather'; */
-  color:#d8d8d8;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 10px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.dbottomstory{
-  font-size: 20px;
-  font-weight: 300;
-  /* font-family: 'Merriweather'; */
-  color:#9caeff;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 10px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutYellow .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutYellow .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutBlue .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutBlue .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutBlueYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutBlueYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutBlueYellow .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  /* display: flex; */
-  margin-top: -35px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutBlueYellow .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutDarkGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutDarkGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutDarkGreen .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutDarkGreen .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutDeepBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutDeepBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutDeepBlue .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutDeepBlue .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#d8daff;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutLightGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutLightGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutLightGreen .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutLightGreen .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutYellowExpress .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutYellowExpress .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutYellowExpress .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutYellowExpress .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutOrange .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-.AboutOrange .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  transition: 100ms ease-in-out 100ms;
-}  
-.AboutOrange .bottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.AboutOrange .dbottomstory{
-  font-size: 20px;
-  font-weight: 100;
-  /* font-family: 'Merriweather'; */
-  color:#010327;
-  /* display: flex; */
-  margin-top: -30px;
-  margin-bottom: 35px;
-  transition: 100ms ease-in-out 100ms;
-}  
-
-
-.overline{
-  font-family: "times new roman";
-  font-weight: 400;
-  font-size: 60px;
-  margin-bottom: 25px;
-}
-.aboutimage{
-  position: relative;
-  height: 15em;
-  pointer-events: none;
-  filter: grayscale(30%)
-  /* transform: rotate(90deg); */
-}
-
-.bottombox{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.aboutContainer{
+  margin-top: 70px;
+  height: calc(100% - 95px);
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 0px 20px;
 }
-.covering{
-  display: none;
+.lightTextColor{
+  text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 15%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
 }
+.darkTextColor{  
+  text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 15%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightTextColorA{
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 15%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColorA{  
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 15%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightText{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkText{
+  color:#F5F4F9;
+  transition: 150ms ease-in-out 0ms;
+}
+.aboutTopBox{
+  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutBottomBox{
+  height: 60%;
+  width: 100%;
+  padding: 15px 0px 10px 0px;
+}
+.aboutTopLeft{
+  width: 55%;
+  height: 98%;
+  transition: 150ms ease-in-out 0ms;
+}
+.aboutTopRight{
+  width: 41%;
+  height: 98%;
+  backdrop-filter: blur(10px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  border-radius: 12px; 
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lightAboutBorder{
+  background-color: #c6c6c61b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkAboutBorder{
+  background-color: #0405192b;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.aboutTitle{
+  width: 100%;
+  height: 11%;
+}
+.story{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  transition: 150ms ease-in-out 0ms;
+}  
+.aboutDesc{
+  width: 100%;
+  height: 34%;
+}
+.storyDesc{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  transition: 150ms ease-in-out 0ms;
+}  
+.aboutItems{
+  width: 100%;
+  height: 55%;
+  backdrop-filter: blur(10px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  border-radius: 12px; 
+  padding: 10px 15px 10px 15px;
+}
+.highlightList{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0px 0px 0px 0px;
+}
+.highlightItem{  
+  height: 100%;
+  width: 23%;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  padding: 3px 3px 3px 3px;
+}
+.highlightSymbol{
+  width: 35px;
+  height: 35px;
+  border-radius: 7px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lightHighlightSymbol{
+  background-color: #dbd8d88b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkHighlightSymbol{
+  background-color: #13006686;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.highlightName{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+}
+.highlightDesc{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  transition: 150ms ease-in-out 0ms;
+}
+.topRightHead{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  transition: 150ms ease-in-out 0ms;
+  cursor: default;
+  height: 22px;
+}
+.variable-proximity{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  cursor: default;
+}
+.aboutBottom{
+  height: 100%;
+  width: 100%;
+  transition: 150ms ease-in-out 0ms;
+}
+.aboutBottomTitle{
+  width: 100%;
+  height: 10%;
+  padding-top: 5px;
+}
+.aboutBottomDesc{
+  width: 100%;
+  height: 16%;
+  padding-top: 3px;
+}
+.serviceList{
+  display: flex;
+  height: 73%;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+.serviceItem{  
+  height: 100%;
+  width: 18%;
+  backdrop-filter: blur(10px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  border-radius: 12px; 
+  padding: 15px 15px 15px 15px;
+  transition: 150ms ease-in-out 0ms;
+}
+.serviceSymbol{
+  width: 70px;
+  height: 70px;
+  border-radius: 7px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lightserviceSymbol{
+  background-color: #dbd8d88b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkserviceSymbol{
+  background-color: #13006686;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.serviceImage{
+  height: 66px;
+  background-color: transparent;
+  background: transparent;
+  border-radius: 7px; 
+}
+.serviceName{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.serviceDesc{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+}
+
+
+/* I haven't worked on code past this point */
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 @keyframes appear{
   0%{
       opacity: 0.5;
@@ -567,374 +332,6 @@
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
-  .AboutYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutLightGreen{
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-
-  .AboutYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }    
-  .AboutBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlueYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlueYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlueYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlueYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDarkGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDarkGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDeepBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDeepBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-
-  .AboutLightGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutLightGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutLightGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellowExpress .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutYellowExpress .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
   .overline{
     font-family: "times new roman";
     font-weight: 400;
@@ -954,16 +351,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-  }
-  .covering{
-    display: block;
-    background-color: transparent;
-    position: absolute;
-    top: 3.5em;
-    left: 0px;
-    width: 100%;
-    height: 80vh;
-    z-index: 5;
   }
 }
 @media screen and (max-width:696px) and (min-width:560px) {
@@ -987,372 +374,6 @@
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
-  .AboutYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutLightGreen{
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-
-  .AboutYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }    
-  .AboutBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlueYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlueYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlueYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlueYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDarkGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDarkGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDeepBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDeepBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutLightGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutLightGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellowExpress .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutYellowExpress .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
   .overline{
     font-family: "times new roman";
     font-weight: 400;
@@ -1372,16 +393,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-  }
-  .covering{
-    display: block;
-    background-color: transparent;
-    position: absolute;
-    top: 3.5em;
-    left: 0px;
-    width: 100%;
-    height: 80vh;
-    z-index: 5;
   }
 }
 @media screen and (max-width:840px) and (min-width:696px) {
@@ -1405,370 +416,6 @@
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
-  .AboutYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutLightGreen{
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .AboutDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-
-  .AboutYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }    
-  .AboutBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlueYellow .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutBlueYellow .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutBlueYellow .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutBlueYellow .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDarkGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDarkGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDarkGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutDeepBlue .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutDeepBlue .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutDeepBlue .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#d8daff;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutLightGreen .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutLightGreen .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .story{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  .AboutYellowExpress .dstory{
-  justify-self: center;
-  margin-bottom: 25px;
-  width: 85%;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  .AboutYellowExpress .bottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
-  
-  
-  .AboutYellowExpress .dbottomstory{
-    font-size: 20px;
-    display: none;
-    font-weight: 100;
-    /* font-family: 'Merriweather'; */
-    color:#010327;
-    /* display: flex; */
-    margin-top: -35px;
-    margin-bottom: 20px;
-    transition: 100ms ease-in-out 100ms;
-  }  
   .overline{
     font-family: "times new roman";
     font-weight: 400;
@@ -1788,16 +435,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-  }
-  .covering{
-    display: block;
-    background-color: transparent;
-    position: absolute;
-    top: 3.5em;
-    left: 0px;
-    width: 100%;
-    height: 80vh;
-    z-index: 5;
   }
 }
 @media screen and (max-width:992px) and (min-width:840px) {

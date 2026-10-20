@@ -88,7 +88,6 @@
   transition: 150ms ease-in-out 0ms;
 }
 .lightTextColor1{
-  /* text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718); */
   background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -96,7 +95,6 @@
   transition: 150ms ease-in-out 0ms;
 }
 .darkTextColor1{  
-  /* text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729); */
   background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -119,6 +117,7 @@
   justify-content: space-around;
   align-items: center;
   font-size: 16px;
+  transition: 150ms ease-in-out 0ms;
 }
 .lostbtnswarrow{
   display: flex;

@@ -258,14 +258,6 @@
   box-shadow: 0 4px 20px rgba(241, 240, 241, 0.386);
 }
 
-@keyframes fadein {
-  from{
-    display: none;
-  }
-  to{
-    display: contents;
-  }
-}
 @keyframes slideinnav {
   from{
       background-color: transparent;

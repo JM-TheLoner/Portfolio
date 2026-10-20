@@ -321,11 +321,13 @@
   border: 1px solid rgba(226, 118, 250, 0.501);
   background-color: #F5F4F9;
   color:#050B1A;
+  transition: 100ms ease-in-out 0ms;
 }
 .Contact .errorBox{
   border: 1px solid red;
   background-color: #F5F4F9;
   color:#050B1A;
+  transition: 100ms ease-in-out 0ms;
 }
 .Contact .regularBox:hover,
 .Contact .errorBox:hover{
@@ -335,11 +337,13 @@
   border: 1px solid #a9a3ff67;
   background-color: #00030a;
   color:#F5F4F9;
+  transition: 100ms ease-in-out 0ms;
 }
 .dContact .errorBox{
   border: 1px solid red;
   background-color: #00030a;
   color:#F5F4F9;
+  transition: 100ms ease-in-out 0ms;
 }
 .dContact .regularBox:hover,
 .dContact .errorBox:hover{

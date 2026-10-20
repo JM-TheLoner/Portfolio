@@ -8,13 +8,13 @@ import darkimg from '../Assets/Images/dark.png'
 
 const Header = ({ title }) => {
 
-  const { dark, setdark, aboutClassname} = useContext(DataContext)
+  const { dark, setdark, aboutClassname } = useContext(DataContext)
   const[slider, setslider] = useState(false)
 
   const handleslider = () =>{
     setslider(!slider)
   }
-
+  
   const darkmode = async (e) => {
     e.preventDefault()
     await localStorage.setItem('darkMode', !dark)
@@ -62,9 +62,10 @@ const Header = ({ title }) => {
           :
             headstate
           }>
-              {/* <div onClick={(e) => {navhome(e)}} className='appbtn'> */}
               <div className='applogo'>
-                <img src={logo} className="logoimg" alt="logo"/>
+                <Link to={'/'}>
+                    <img src={logo} className="logoimg" alt="logo"/>
+                </Link>
                 <div className='headtxt'>
                     <p className={!dark ? 'lheadtxt' : 'dheadtxt'}>The Loner</p>
                 </div>
