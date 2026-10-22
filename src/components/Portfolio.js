@@ -7,6 +7,10 @@ import githubImage from '../Assets/Images/GitHub-Logo.png'
 // import whoosh1 from '../Assets/Audio/hidden-blade-draw.mp3'
 // import whoosh2 from '../Assets/Audio/hidden-blade-retract.mp3'
 
+
+//to play sound on entering portfolio item, uncomment lines 7-8 (import of sounds), 18-21 (defining sound playing function) and 49-50 (calling functions on entering item)
+
+
 const Portfolio = () => {
 
   const { dark } = useContext(DataContext)

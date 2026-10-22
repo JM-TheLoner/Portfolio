@@ -1,86 +1,79 @@
-import Footer from './Footer';
 import Header from './Header';
 import '../stylesheets/Skills.css'
-import '../stylesheets/Background.css'
-import { useEffect, useContext, useState, useRef } from 'react'
+import ProgressBar from './animations/ProgressBar'
+import { useEffect, useContext, useState } from 'react'
 import DataContext from '../context/Datacontext'
 import ClickSpark from './animations/TapSpark'
-import draw from '../Assets/Audio/lightsaber-whoosh-03.mp3'
-import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
+import { FaSearch, FaPenNib, FaCode, FaBug } from 'react-icons/fa';
+import { IoRocket } from 'react-icons/io5' ;
+import htmlLogo from '../Assets/Images/html-1.svg'
+import cssLogo from '../Assets/Images/css-3.svg'
+import javascriptLogo from '../Assets/Images/javascript-1.svg'
+import reactLogo from '../Assets/Images/react-2.svg'
+import nodeLogo from '../Assets/Images/nodejs-3.svg'
+import mongoLogo from '../Assets/Images/mongodb-icon-1.svg'
+import postgresLogo from '../Assets/Images/postgresql.svg'
+import pythonLogo from '../Assets/Images/python-5.svg'
+import pandasLogo from '../Assets/Images/pandas-2.svg'
+import gitLogo from '../Assets/Images/git-icon.svg';
+import { FiCornerLeftDown } from "react-icons/fi";
+// import draw from '../Assets/Audio/lightsaber-whoosh-03.mp3'
+// import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
+
+
+//to play sound on entering portfolio item, uncomment lines 8-9 (import of sounds), _______ (defining sound playing function) and ________ (calling functions on entering item)
 
 
 const About = () => { 
 
-  const colorList = ['#ff0000', '#3648ff', '#2ff924', '#9734d1ff', '#ffe600ff', '#fff']
+  const [progress, setProgress] = useState(null);
 
-  const [color, setColor] = useState(colorList[2])
+  const { dark } = useContext(DataContext)
 
+  const colorList = ['#ff0000', '#3648ff', '#2ff924', '#ffe600ff', '#00cfdd', '#f57200', '#00f9c7', '#8c00ff', '#ff00e6', '#fd0585']
 
-  const selectcol = () =>{
-    let num = (Math.random() * 6)
+  const [color, setColor] = useState(colorList[8])
+  const [size, setSize] = useState(15)
+  const [rad, setRad] = useState(15)
+
+  const selectColandSize = () =>{
+    let num = (Math.random() * 10)
     let choice = Math.floor(num)
     setColor(colorList[choice])
+
+    let num1 = (Math.random() * 5)
+    let choice1 = Math.floor(num1)
+    setSize((choice1 + 1) * 3)
+
+    let num2 = (Math.random() * 3)
+    let choice2 = Math.floor(num2)
+    setRad((choice2 + 3)* 5)
   }
 
-
-  const playSound = (sound)=>{
-    var audio = new Audio(sound)
-    audio.play()
-  }
-
-  const containerRef = useRef(null);
-
-  const { dark, aboutClassname, setaboutClassname } = useContext(DataContext)
-  const [backState, setbackState] = useState(false)
+  // const playSound = (sound)=>{
+  //   var audio = new Audio(sound)
+  //   audio.play()
+  // }
     
-  const backStaterTruejs = () =>{
-    setbackState(true)
-    setaboutClassname('AboutYellow')
-  }
-  const backStaterTruereact = () =>{
-    setbackState(true)
-    setaboutClassname('AboutBlue')
-  }
-  const backStaterTruemongo = () =>{
-    setbackState(true)
-    setaboutClassname('AboutLightGreen')
-  }
-  const backStaterTrueexpress = () =>{
-    setbackState(true)
-    setaboutClassname('AboutYellowExpress')
-  }
-  const backStaterTruenode = () =>{
-    setbackState(true)
-    setaboutClassname('AboutDarkGreen')
-  }
-  const backStaterTruepython = () =>{
-    setbackState(true)
-    setaboutClassname('AboutBlueYellow')
-  }
-  const backStaterTruepandas = () =>{
-    setbackState(true)
-    setaboutClassname('AboutDeepBlue')
-  }
-  const backStaterTrueHTML = () =>{
-    setbackState(true)
-    setaboutClassname('AboutOrange')
-  }
-  const backStaterFalse = () =>{
-    setbackState(false)
-    setaboutClassname(null)
-  }
-  
+  const process = [
+    {key:'01', symbol:<FaSearch size={30} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, title:'Discover', description: 'Understand the user needs, project goals, and the problem to solve.'},
+    {key:'02', symbol:<FaPenNib size={30} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, title:'Design', description: 'Plan the structure, user experience, and visual direction of the solution.'},
+    {key:'03', symbol:<FaCode size={30} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, title:'Develop', description: 'Turn the concepts and designs into functional, reliable digital solutions.'},
+    {key:'04', symbol:<FaBug size={30} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, title:'Debug', description: 'Identify issues, evaluate performance, and improve usability and quality.'},
+    {key:'05', symbol:<IoRocket size={30} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, title:'Deliver', description: 'Launch the finished solution and identify opportunities for future improvements.'}
+  ]
+
   const skills = [    
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz6r1F9YOKVCFabSLGAVu09xlfuRnG0-bwM3G-HNRVKAAbuz9MUZgzbM&s=10', alt:'Node Logo', enter:backStaterTruenode, leave:backStaterFalse, bodyName:'Node JS', bodyDesc:'JavaScript Runtime Environment'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqfWA9TQWsAMSNiNAYW8kMIV_M4ndF7reB96ncgwmY1gxtbPJ0yDdxCJL&s=10', alt:'Mongo Logo', enter:backStaterTruemongo, leave:backStaterFalse, bodyName:'Mongo DB', bodyDesc:'No-SQL DataBase Service'},
-    {image:'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png', alt:'Express Logo', enter:backStaterTrueexpress, leave:backStaterFalse, bodyName:'Express JS', bodyDesc:'Node.JS Backend Framework'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgikH7si7qUep3b3vOkjx6WvjbeeqmhDz7Db62yLJ8nhqDBAVANIU9SjQ7&s=10', alt:'Javascript Logo', enter:backStaterTruejs, leave:backStaterFalse, bodyName:'JavaScript', bodyDesc:'High Level Programming Language (Web Development, Web Interactivity, UI Creation)'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsa41CKUdb9nU53feUGsHtjVpd80nfJiAm7zQJR6vEXqZPKMzJglZHrs&s=10', alt:'Python Logo', enter:backStaterTruepython, leave:backStaterFalse, bodyName:'Python', bodyDesc:'High Level Programming Language (Scripting, Automation, Machine Learning)'},
-    {image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNv3-8YNVbRW1uEb3XmofbmWWneY5Vi4jNupsjc4pxBJAzqHdaCxaj-go&s=10', alt:'Pandas Logo', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'Pandas*', bodyDesc:'Machine Learning, Data Manipulation & Analysis using Python'},
-    {image:'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png', alt:'React Logo', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'React', bodyDesc:'JavaScript Library for building User Interfaces'},
-    {image:'https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png', alt:'PostgreSQL Logo', enter:backStaterTruepandas, leave:backStaterFalse, bodyName:'PostgreSQL', bodyDesc:'SQL Database Service'},
-    {image:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png', alt:'CSS Logo', enter:backStaterTruereact, leave:backStaterFalse, bodyName:'CSS', bodyDesc:'Cascading Style Sheet. (Web Styling)'},
-    {image:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png', alt:'HTML Logo', enter:backStaterTrueHTML, leave:backStaterFalse, bodyName:'HTML', bodyDesc:'HyperText Markup Language. (Web Structuring)'}
+    {key: '0', image:htmlLogo, alt:'HTML Logo', name:'HTML', progress:65},
+    {key: '1', image:cssLogo, alt:'CSS Logo', name:'CSS', progress:70},
+    {key: '2', image:javascriptLogo, alt:'Javascript Logo', name:'JavaScript', progress:75},
+    {key: '3', image:reactLogo, alt:'React Logo', name:'React', progress:70},
+    {key: '4', image:nodeLogo, alt:'Node Logo', name:'Node JS', progress:70},
+    {key: '5', image:mongoLogo, alt:'Mongo Logo', name:'Mongo DB', progress:60},
+    {key: '7', image:postgresLogo, alt:'PostgreSQL Logo', name:'PostgreSQL', progress:50},
+    {key: '7', image:pythonLogo, alt:'Python Logo', name:'Python', progress:70},
+    {key: '8', image:pandasLogo, alt:'Pandas Logo', name:'Pandas', progress:40},
+    {key: '9', image:gitLogo, alt:'Git Logo', name:'Git', progress:50}
   ]
 
   useEffect(()=>{
@@ -88,108 +81,84 @@ const About = () => {
   }, [])
 
   return (
-    <>
-      <ClickSpark
-        sparkColor={color}
-        sparkSize={15}
-        sparkRadius={25}
-        sparkCount={8}
-        duration={400}
-      >
+    <ClickSpark sparkColor={color} sparkSize={size} sparkRadius={rad} sparkCount={8} duration={400}>      
+      <div className={ !dark ? 'skills' : 'dskills' } onClick={()=>{selectColandSize()}}> 
         <Header/>
-      
-        <div className={
-          !backState 
-          ? 
-            !dark ? 'About' : 'dAbout'
-          :
-            aboutClassname
-          }
-          onClick={()=>{selectcol()}}
-        > 
+        <div className='skillsContainer'>
 
-          { !backState 
-          ?
-            <>
-              <div className='backgroundspread'>
-                <div className='wave3'>
-                  <div className='bg3'></div>
-                </div>
-              </div>
-              <div className='backgroundspread'>
-                <div className='wave2'>
-                  <div className='bg2'></div>
-                </div>
-              </div>
-              <div className='backgroundspread'>
-                <div className='wave1'>
-                  <div className='bg1'></div>
-                </div>
-              </div>
-            </>
-          :
-            <></>
-          }
-
-          { backState ?
-            <>
-              <div className='backgroundspread'>
-                  <div className='jsbubbleone'></div>
-              </div>
-              <div className='backgroundspread'>
-                  <div className='jsbubbletwo'></div>
-              </div>
-              <div className='backgroundspread'>
-                  <div className='jsbubblethree'></div>
-              </div>
-              <div className='backgroundspread'>
-                  <div className='jsbubblefour'></div>
-              </div>
-              <div className='backgroundspread'>
-                  <div className='jsbubblefive'></div>
-              </div>
-              <div className='backgroundspread'>
-                  <div className='jsbubblesix'></div> 
-              </div>
-            </>
-          :
-          <></>    
-        }
-
-          <div className='covering'></div>
-          <div className='topbox'>
-            <h1>story goes here</h1>
-          </div>
-
-
-          <div className='bottombox'>
-            <ul 
-              className='accordion'
-              onMouseEnter={()=>{playSound(draw)}}
-              onMouseLeave={()=>{playSound(retract)}}
-            >
-              {skills.map(
-                (skill)=> (
-                  <li
-                    onMouseEnter={()=>{skill.enter()}}
-                    onMouseLeave={()=>{skill.leave()}}>
-                    <img src={skill.image} alt={skill.alt}/>
-                    <div className='content'>
-                      <span>
-                        <p className='selftaught'><p className='bold'>{skill.bodyName}</p><br/>{skill.bodyDesc}</p>
-                      </span>
+          {/* <div className='covering'></div> */}
+          <div className='skillsTopBox'>
+            <div className='processTitle'>
+              <h1 className={!dark ? 'processStory lightTextColor' : 'processStory darkTextColor'}>MY PROCESS FLOW</h1>            
+            </div>
+            <div className='processDesc'>
+              <h1 className={!dark ? 'processStoryDesc lightText' : 'processStoryDesc darkText'}>Logic Meets Creativity</h1>            
+            </div>
+            <div className='processList'>                
+              {process.map((step)=>(
+                <div className={!dark ? 'stepItem lightStepBorder' : 'stepItem darkStepBorder'} key={step.key}>  
+                  <div style={{display:'flex', justifyContent:'space-between'}}>
+                    <div className={!dark ? 'stepSymbol lightStepSymbol' : 'stepSymbol darkStepSymbol'}>
+                      {step.symbol}
                     </div>
-                  </li>
-                )
-              )}
-            </ul>
+                    <div className={!dark ? 'stepNum lightText lightNumBG' : 'stepNum darkText darkNumBG'}>
+                      {step.key}
+                    </div>
+                  </div>
+                  <div className={!dark ? 'stepName lightTextColorA' : 'stepName darkTextColorA'}>
+                    {step.title}
+                  </div>
+                  <div className={!dark ? 'stepDesc lightText' : 'stepDesc darkText'}>
+                    {step.description}
+                  </div>
+                </div>
+                
+              ))}
+            </div>      
           </div>
-        </div>        
-      </ClickSpark>
-      <div>
-        <Footer/>
-      </div>
-    </>
+
+          <div className='skillsBottomBox' style={{width:'100%'}}>
+            <div className='processTitle'>
+              <h1 className={!dark ? 'processStory lightTextColor' : 'processStory darkTextColor'}>MY TECH STACK</h1>            
+            </div>
+            <div className='processDesc'>
+              <h1 className={!dark ? 'processStoryDesc lightText' : 'processStoryDesc darkText'}>Technologies I Work With</h1> 
+              <div style={{display:'flex'}}>
+                <FiCornerLeftDown  size={15} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'5px', marginTop:'5px'}} />
+                <h1 className={!dark ? 'techStoryLead lightTextColorB' : 'techStoryLead darkTextColorB'}>Hover to explore</h1> 
+              </div>              
+            </div>
+            <div className='accordion'>
+            {skills.map(
+              (skill)=> (
+                <div className={!dark ? 'skillItem lightTechBorder' : 'skillItem darkTechBorder'} key={skill.key} onMouseEnter={()=>{setProgress(skill.progress)}}
+                 // onMouseEnter={()=>{playSound(draw)}} // onMouseLeave={()=>{playSound(retract)}}
+                > 
+                  <div className='SkillItemImgCont' >
+                    <div className={!dark ? 'lightTechSymbol' : 'darkTechSymbol'}>
+                      <img className='skillItemImg' src={skill.image} alt={skill.alt}/>
+                    </div>                    
+                  </div>                  
+                  <div className='content'>
+                    <div className='skillText'>
+                      <p className={!dark ? 'skillName lightTextColorB' : 'skillName darkTextColorB'}>{skill.name}</p>
+                      <p className={!dark ? 'skillPro lightText' : 'skillPro darkText'}>{skill.progress}%</p>
+                    </div>
+                    <div className='progressBar'>
+                      <ProgressBar percentage={progress} />
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+          </div>
+          
+
+
+        </div>
+      </div>     
+    </ClickSpark>
   )
 }
 

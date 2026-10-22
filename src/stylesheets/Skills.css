@@ -1,243 +1,318 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
-@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300'); */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.skills{
+  background-color: #F5F4F9;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+  height: 100vh;
+  transition: 150ms ease-in-out 0ms;
+  overflow-y: hidden;
 }
-
-
-.skilld{
-  background-color: #3272a0;
-  flex-grow: 1;
-  padding: 3px 3px 3px 3px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-  min-height: 90%;
-  transition: 100ms ease-in-out 100ms;
+.dskills{
+  background-color: #050B1A;
+  padding: 3px 10px 3px 10px;
+  width: 100%;
+  height: 100vh;
+  transition: 150ms ease-in-out 0ms;
+  overflow-y: hidden;
 }
-.dskilld{
-  background-color: #010327;
-  flex-grow: 1;
-  padding: 3px 3px 3px 3px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-  min-height: 90%;
-  transition: 100ms ease-in-out 100ms;
-}
-.skilldYellow{
-  background: linear-gradient(to bottom, #fff12f,#8f7500);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldBlue{
-  background: linear-gradient(to bottom, #188bff, #0018a0);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldLightGreen{
-  background: linear-gradient(to bottom, #65ff0c, #047700);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldYellowExpress{
-  background: linear-gradient(to bottom, #fff133, #7a6e00);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldDarkGreen{
-  background: linear-gradient(to bottom, #6aff25, #00ac1d);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldBlueYellow{
-  background: linear-gradient(to bottom, #0029df, #ffc800);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldDeepBlue{
-  background: linear-gradient(to bottom, #0f00dd, #0A054D);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldOrange{
-  background: linear-gradient(to bottom, #fa6c2e, #d8621d);
-  flex-grow: 1;
-  padding-top: 25px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  height: 95%;
-  transition: 100ms ease-in-out 100ms;
-  animation: appear 200ms linear 0s 1;
-}
-.skilldimage{
-  position: relative;
-  height: 15em;
-  pointer-events: none;
-  filter: grayscale(30%)
-  /* transform: rotate(90deg); */
-}
-
-.bottombox{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.skillsContainer{
+  margin-top: 70px;
+  height: calc(100% - 70px);
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 10px 20px;
 }
-
-.bold{
-  font-size: 25px;
+.lightTextColor{
+  text-shadow: 0 3px 15px rgba(226, 118, 250, 0.718);
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 15%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColor{  
+  text-shadow:  0 3px 15px rgba(108, 63, 245, 0.729);
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 15%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightTextColorA{
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 35%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColorA{  
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 35%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightTextColorB{
+  background: linear-gradient(25deg, #e213fd 0%, #a024ff 50%, #870fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkTextColorB{  
+  background: linear-gradient(25deg, #da90ff 0%, #8e4cff 50%, #7f58ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.lightText{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+.darkText{
+  color:#F5F4F9;
+  transition: 150ms ease-in-out 0ms;
+}
+.skillsTopBox{
+  position: relative;
+  height: 45%;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  transition: 150ms ease-in-out 0ms;
+  display: flex;
+  flex-direction: column;
+}
+.skillsBottomBox{
+  position: relative;
+  height: 55%;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+  transition: 150ms ease-in-out 0ms;
+}
+.processTitle{
+  width: 100%;
+  height: 11%;
+  padding: 0px 0px 0px 0px;
+}
+.processStory{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  transition: 150ms ease-in-out 0ms;
+}  
+.processDesc{
+  width: 100%;
+  height: 13%;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.processStoryDesc{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  transition: 150ms ease-in-out 0ms;
+}  
+.processList{
+  display: flex;
+  height: 75%;
+  justify-content: space-between;
+  padding: 10px 0px 0px 0px;
+  transition: 150ms ease-in-out 0ms;
+}
+.stepItem{  
+  height: 100%;
+  width: 18%;
+  backdrop-filter: blur(2px);
+  overflow-wrap: break-word;
+  transition: 150ms ease-in-out 0ms;
+  overflow: hidden;
+  border-radius: 12px; 
+  padding: 12px 15px 12px 15px;
+  transition: 150ms ease-in-out 0ms;
+}
+.stepSymbol{
+  width: 45px;
+  height: 45px;
+  border-radius: 7px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lightStepSymbol{
+  background-color: #dbd8d88b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkStepSymbol{
+  background-color: #1300662c;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.stepNum{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+.lightNumBG{  
+  background-color: #ea4fff52;
+  height: 19px;
+  width: 21px;
+  border-radius: 7px;
+}
+.darkNumBG{
+  background-color: #7f58ff52;
+  height: 19px;
+  width: 21px;
+  border-radius: 7px;
+}
+.stepName{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.stepDesc{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  transition: 150ms ease-in-out 0ms;
+  line-height: 1.2;
+}
+.lightStepBorder{
+  background-color: #c6c6c61b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkStepBorder{
+  background-color: #0405192b;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.techStoryLead{
+  font-family: 'Manrope', sans-serif;
   font-weight: 500;
-}
-
+  font-size: 13px;
+  transition: 150ms ease-in-out 0ms;
+}  
 .accordion{
   width: 100%;
   display: flex;
-  justify-content: center;
-  height: 400px;
-  gap: 16px;
-  transition: 100ms ease-in-out 100ms;
+  justify-content: space-between;
+  height: 76%;
+  transition: 150ms ease-in-out 0ms;
+  padding: 10px 0px 0px 0px;
 }
-
-.accordion:hover{
-  /* gap: 2px; */
-  /* if no background */
-  gap: 8px;
-  /* if background*/
-}
-
-.accordion li {
+.skillItem{
+  backdrop-filter: blur(2px);
   position: relative;
   overflow: hidden;
-  flex: 0 0 80px;
-  border-radius: 30px;
-  opacity: 0.75;
-  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 9px;
+  padding: 2px 5px 2px 5px;
+  transition: 150ms ease-in-out 0ms;
 }
-
-.accordion li img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
+.lightTechBorder{
+  background-color: #c6c6c61b;
+  box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
+  border: 1px solid rgba(226, 118, 250, 0.501);
+}
+.darkTechBorder{
+  background-color: #0405192b;
+  box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
+  border: 1px solid #a9a3ff67;
+}
+.SkillItemImgCont{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.skillItemImg{
+  position: relative;
+  height: 75px;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: 150ms ease-in-out 0ms;
+}
+.content{
+  visibility: hidden;
+}
+.skillItem:hover{
+  width: 20%;
   height: 100%;
-  object-fit: cover;
-  /* object-fit: contain; */
-  filter: grayscale(0.5);
-  background: #d8d8d877;
-}
-
-.accordion li,
-.accordion li img,
-.accordion li .content,
-.accordion li .content span{
-  transition: 100ms ease-in-out 100ms;
-  width: 100%;
-}
-
-
-.accordion li .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  color: #fff;
-  padding: 5px;
-  background: #02022e;
-  background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 255 / 0%) 100%);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.accordion li .content span {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 50px;
-  translate: -300px 0;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.accordion li:hover{
-  flex: 0 1 260px;
-  scale: 1.1;
   z-index: 10;
-  opacity: 1;
+  padding: 10px 10px 10px 10px;
+  border-radius: 12px;
+}
+.skillItem:hover .lightTechSymbol{
+  height: 95px;
+  border-bottom: 2px solid #870fff;
+}
+.skillItem:hover .darkTechSymbol{
+  height: 95px;
+  border-bottom: 2px solid #7f58ff;
+}
+.skillItem:hover .skillItemImg{
+  position: relative;
+  height: 90px;
+  border-radius: 7px;
+  pointer-events: none;
+  transition: 150ms ease-in-out 0ms;
+  transform: translateY(-5px)
+}
+.skillItem:hover .content{
+  visibility: visible;
+}
+.skillText{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.skillName{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 150ms ease-in-out 0ms;
+  height: 100%;
+}
+.skillPro{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  transition: 150ms ease-in-out 0ms;
+  height: 100%;
+}
+.progressBar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.accordion li:hover .content{
-  opacity: 1;
-  visibility: visible;
-  width: 100%
-}
-.accordion li:hover img{
-  filter: grayscale(0);
-  background: #d8d8d8;
-}
 
-.accordion li:hover span {
-  translate: -50% 0;  
-  opacity: 1;
-  visibility: visible;
-}
+
+
+/* haven't worked part this line */
+
+
+
+
+
+
+
 .covering{
   display: none;
 }
@@ -291,83 +366,6 @@
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
   }
-  .skilldYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldLightGreen{
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }  
   .bottombox{
     text-align: center;
     align-items: normal;
@@ -472,83 +470,6 @@
     padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
-  }
-  .skilldYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldLightGreen{
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
   }  
   .bottombox{
     text-align: center;
@@ -654,83 +575,6 @@
     padding-bottom: 35px;
     height: 80vh;
     transition: 100ms ease-in-out 100ms;
-  }
-  .skilldYellow{
-    background: linear-gradient(to bottom, #fff12f,#8f7500);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlue{
-    background: linear-gradient(to bottom, #188bff, #0018a0);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldLightGreen{ 
-    background: linear-gradient(to bottom, #65ff0c, #047700);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldYellowExpress{
-    background: linear-gradient(to bottom, #fff133, #7a6e00);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDarkGreen{
-    background: linear-gradient(to bottom, #6aff25, #00ac1d);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldBlueYellow{
-    background: linear-gradient(to bottom, #0029df, #ffc800);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
-  }
-  .skilldDeepBlue{
-    background: linear-gradient(to bottom, #0f00dd, #0A054D);
-    flex-grow: 1;
-    padding: 1px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    height: 110vh;
-    transition: 100ms ease-in-out 100ms;
-    animation: appear 200ms linear 0s 1;
   }
   .bottombox{
     text-align: center;

@@ -88,7 +88,6 @@
     align-items: center;
     transition: 150ms ease-in-out 0ms;
     color: #050B1A;
-    /* text-shadow: 0 3px 10px rgba(226, 118, 250, 0.386); */
 }
 .dTopLine{
     font-weight: 800;
@@ -391,6 +390,30 @@
     opacity: 1;
     mask-image: linear-gradient(to top, transparent 0%, black 15%);
 }
+.codeImages{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+.homeCodeImg{
+    height: 150px;
+    position: absolute;
+    border-radius: 7px;
+    z-index: 2;
+    right: 0%;
+    bottom: 7%;
+    transition: 150ms ease-in-out 0ms;
+    animation: hover 3000ms cubic-bezier(0.45, 0, 0.55, 1) 0s infinite;
+}
+.lightBorder{
+    border: 1px solid rgba(226, 118, 250, 0.501);
+    box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
+}
+.darkBorder{
+    border: 1px solid rgba(240, 240, 240, 0.76);
+    box-shadow: 0 6px 12px rgba(165, 69, 255, 0.386);
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -410,6 +433,17 @@
     to{
         position: inherit;
         opacity: 0;
+    }
+  }
+@keyframes hover {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
     }
   }
 

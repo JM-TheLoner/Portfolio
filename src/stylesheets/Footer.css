@@ -25,7 +25,8 @@
   border-top: 1px solid #a9a3ff36;
 }  
 .Footerwords{
-  align-self: flex-start;
+  height: 100%;
+  padding: 5px 0px;
 }
 .footText{
   font-family: 'Manrope', sans-serif;
@@ -42,6 +43,16 @@
 }  
 
   
+/* Haven't worked on code past this line */
+
+
+
+
+
+
+
+
+
   @media screen and (max-width:552px) {
     .Footer {
       position: relative;

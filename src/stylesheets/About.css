@@ -63,13 +63,13 @@
 }
 .aboutTopBox{
   position: relative;
-  height: 40%;
+  height: 38%;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .aboutBottomBox{
-  height: 60%;
+  height: 62%;
   width: 100%;
   padding: 15px 0px 10px 0px;
 }
@@ -103,7 +103,7 @@
 }
 .aboutTitle{
   width: 100%;
-  height: 11%;
+  height: 15%;
 }
 .story{
   font-family: 'Manrope', sans-serif;
@@ -113,7 +113,7 @@
 }  
 .aboutDesc{
   width: 100%;
-  height: 34%;
+  height: 25%;
 }
 .storyDesc{
   font-family: 'Manrope', sans-serif;
@@ -123,7 +123,7 @@
 }  
 .aboutItems{
   width: 100%;
-  height: 55%;
+  height: 60%;
   backdrop-filter: blur(10px);
   overflow-wrap: break-word;
   transition: 150ms ease-in-out 0ms;
@@ -142,7 +142,7 @@
   width: 23%;
   transition: 150ms ease-in-out 0ms;
   overflow: hidden;
-  padding: 3px 3px 3px 3px;
+  padding: 4px 20px 4px 20px;
 }
 .highlightSymbol{
   width: 35px;
@@ -221,12 +221,12 @@
   transition: 150ms ease-in-out 0ms;
   overflow: hidden;
   border-radius: 12px; 
-  padding: 15px 15px 15px 15px;
+  padding: 13px 15px 13px 15px;
   transition: 150ms ease-in-out 0ms;
 }
 .serviceSymbol{
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 7px; 
   display: flex;
   justify-content: center;
@@ -244,7 +244,7 @@
   border: 1px solid #a9a3ff67;
 }
 .serviceImage{
-  height: 66px;
+  height: 61px;
   background-color: transparent;
   background: transparent;
   border-radius: 7px; 
@@ -265,6 +265,25 @@
   line-height: 1.2;
 }
 
+/* 
+sr-only is because the variable proximity component renders the text twice due to an integrated accessibility feature called sr-only (screen-reader only).
+The component renders the text twice under the hood:
+1. Once as a series of animated <motion.span> elements for visual hover tracking.
+2. A second time inside <span className="sr-only">{label}</span> so screen readers can read the paragraph normally.
+If the attatched CSS configuration does not have the utility class .sr-only defined, that fallback screen-reader text becomes fully visible on the screen right next to or underneath the animated text. 
+*/
+
+.sr-only {                  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 
 /* I haven't worked on code past this point */
 
@@ -274,42 +293,6 @@
 
 
 
-
-
-
-
-
- 
-
-
-@keyframes appear{
-  0%{
-      opacity: 0.5;
-  }    
-  50%{
-      opacity: 0.5; 
-  }
-  70%{
-      opacity: 0.5; 
-  }
-  100%{
-      opacity: 1; 
-  }
-}
-@keyframes blink{
-  0%{
-      color: #303bff;
-  }    
-  50%{
-      color: #010327; 
-  }
-  70%{
-      color: #303bff;
-  }
-  100%{
-      color: #010327; 
-  }
-}
 
 @media screen and (max-width:560px) {
   .About{

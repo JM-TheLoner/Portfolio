@@ -27,7 +27,6 @@
 
 }
 .testimonialSection{
-  /* background-color: red; */
   height: 47vh;
   width: 100%;
 }
@@ -485,15 +484,6 @@
 
 
 
-
-@keyframes shine {
-    0% {
-      background-position: 100%;
-    }
-    100% {
-      background-position: -100%;
-    }
-  }
 @media screen and (max-width:570px) {
   .Contact{
     background-color: #3272a0;

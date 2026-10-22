@@ -21,11 +21,11 @@ const About = () => {
   const { dark } = useContext(DataContext)
 
   const servicesOffered = [
-    {key:'0', image: FSLogo, alt: 'Full-Stack Icon', name:'Full-Stack Development', description:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Excepturi'},
-    {key:'1', image: FELogo, alt: 'Frontend Icon', name:'Frontend Development', description:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Excepturi'},
-    {key:'2', image: BELogo, alt: 'Backend Icon', name:'Backend Development', description:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Excepturi'},
-    {key:'3', image: DBLogo, alt: 'Database Icon', name:'Database Management', description:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Excepturi'},
-    {key:'4', image: EELogo, alt: 'Electrical Engineering Icon', name:'Electrical Engineering', description:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Excepturi'}
+    {key:'0', image: FSLogo, alt: 'Full-Stack Icon', name:'Full-Stack Development', description:'I build complete web applications, from the user interface to the systems that power them behind the scenes.'},
+    {key:'1', image: FELogo, alt: 'Frontend Icon', name:'Frontend Development', description:'I create attractive, responsive websites that are intuitive to use and work smoothly across devices.'},
+    {key:'2', image: BELogo, alt: 'Backend Icon', name:'Backend Development', description:'I build the behind-the-scenes systems that process information, power features, and connect applications.'},
+    {key:'3', image: DBLogo, alt: 'Database Icon', name:'Database Engineering', description:'I organize and manage application data so information can be stored, accessed, and updated reliably.'},
+    {key:'4', image: EELogo, alt: 'Electrical Engineering Icon', name:'Electrical Engineering', description:'I apply engineering principles to electrical systems, technical challenges, and practical problems.'}
   ]
 
   const currentYear = new Date().getFullYear()
@@ -51,7 +51,7 @@ return (
             <h1 className={!dark ? 'story lightTextColorA' : 'story darkTextColorA'}>ABOUT ME</h1>            
           </div>
           <div className='aboutDesc'>
-            <h1 className={!dark ? 'storyDesc lightText' : 'storyDesc darkText'}>Design with Purpose, Build to Elevate<br/>Design. Engineer. Elevate.</h1>            
+            <h1 className={!dark ? 'storyDesc lightText' : 'storyDesc darkText'}>Design with Purpose, Build to Elevate</h1>            
           </div>
           <div className={!dark ? 'aboutItems lightAboutBorder' : 'aboutItems darkAboutBorder'}>
             <div className='highlightList'>
@@ -105,7 +105,7 @@ return (
                 <div className={!dark ? 'serviceSymbol lightserviceSymbol' : 'serviceSymbol darkserviceSymbol'}>
                   <img src={service.image} className='serviceImage' alt={service.alt}/>
                 </div>
-                <div className={!dark ? 'serviceName lightText' : 'serviceName darkText'}>
+                <div className={!dark ? 'serviceName lightTextColorA' : 'serviceName darkTextColor'}>
                   {service.name}
                 </div>
                 <div className={!dark ? 'serviceDesc lightText' : 'serviceDesc darkText'}>

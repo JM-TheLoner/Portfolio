@@ -204,16 +204,13 @@ a{
   text-align: left;
   padding: 10px 15px 5px 15px;
   transition: 150ms ease-in-out 0ms;
-  /* background-color: red; */
 }
 .projectname{
   font-size: 18px;
-  /* background-color: rgb(100, 40, 0); */
   font-weight: 700;
   margin-bottom: 5px;
 }
 .projectdesc{
-  /* background-color: green; */
   font-size: 13px;
   font-weight: 400;
 }

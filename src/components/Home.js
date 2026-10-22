@@ -8,6 +8,8 @@ import homeImage from '../Assets/Images/homeimage.png'
 import homeImageTop from '../Assets/Images/homeimagetop.png'
 import dondark from '../Assets/Images/downloadblack.png'
 import donlight from '../Assets/Images/downloadwhite.png'
+import lightCode from '../Assets/Images/lightHomeCode.png'
+import darkCode from '../Assets/Images/darkHomeCode.png'
 import pdfurl from '../Assets/Documents/MERN CV.pdf'
 import DecryptedText from './animations/decryptedText'
 
@@ -131,14 +133,15 @@ const Home = ({ hasPlayedDecrypt, setHasPlayedDecrypt }) => {
 
         
             <div className="rightside" id='imgone'>
-              <div className="clip-wrapper">
                 <div className={!dark ? "backer" : "dbacker"}>
                   <img src={homeImage} className="homeImg" alt={'back img'}/>
                 </div> 
                 <div className='homeImgCont'>
                   <img src={homeImageTop} className="homeImgOut" alt={'Self Portrait'}/>                    
                 </div>
-              </div>
+                <div className='codeImages'>
+                  <img src={!dark ? lightCode : darkCode } className={!dark ? 'homeCodeImg lightBorder' : 'homeCodeImg darkBorder' } alt={'Description Code'}/>
+                </div>
             </div> 
 
 

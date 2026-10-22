@@ -8,7 +8,7 @@ import darkimg from '../Assets/Images/dark.png'
 
 const Header = ({ title }) => {
 
-  const { dark, setdark, aboutClassname } = useContext(DataContext)
+  const { dark, setdark } = useContext(DataContext)
   const[slider, setslider] = useState(false)
 
   const handleslider = () =>{
@@ -21,33 +21,6 @@ const Header = ({ title }) => {
     await setdark(JSON.parse(localStorage.getItem('darkMode')))
   }
 
-  var headstate
-
-  if (aboutClassname === 'AboutYellow'){
-    headstate = 'TopbarYellow'
-  }
-  if (aboutClassname === 'AboutBlue'){
-    headstate = 'TopbarBlue'
-  }
-  if (aboutClassname === 'AboutLightGreen'){
-    headstate = 'TopbarLightGreen'
-  }
-  if (aboutClassname === 'AboutYellowExpress'){
-    headstate = 'TopbarYellowExpress'
-  }
-  if (aboutClassname === 'AboutDarkGreen'){
-    headstate = 'TopbarDarkGreen'
-  }
-  if (aboutClassname === 'AboutBlueYellow'){
-    headstate = 'TopbarBlueYellow'
-  }
-  if (aboutClassname === 'AboutDeepBlue'){
-    headstate = 'TopbarDeepBlue'
-  }
-  if (aboutClassname === 'AboutOrange'){
-    headstate = 'TopbarOrange'
-  }
-
   const linkstyle = {
       textDecoration:"none"
   }
@@ -55,13 +28,7 @@ const Header = ({ title }) => {
   return (     
     <> 
       <header className='Header'>
-          <div className={
-          !aboutClassname 
-          ? 
-            !dark ? 'Topbar' : 'dTopbar'
-          :
-            headstate
-          }>
+          <div className={!dark ? 'Topbar' : 'dTopbar'}>
               <div className='applogo'>
                 <Link to={'/'}>
                     <img src={logo} className="logoimg" alt="logo"/>
