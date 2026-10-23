@@ -10,7 +10,12 @@ import { useScrollDirection } from './animations/ScrollUpHeader';
 const Header = ({ title }) => {
 
   const { dark, setdark } = useContext(DataContext)
-  const[slider, setslider] = useState(false)
+  const [slider, setslider] = useState(false)
+  const [isActive, setIsActive] = useState(false);
+
+//   const toggleMenu = () => {
+//     setIsActive(!isActive);
+//   };
   
   const scrollDirection = useScrollDirection();
 
@@ -30,6 +35,7 @@ const Header = ({ title }) => {
 
   const handleslider = () =>{
     setslider(!slider)
+    setIsActive(!isActive);
   }
   
   const darkmode = async (e) => {
@@ -108,39 +114,70 @@ const Header = ({ title }) => {
                 <p className={!dark ? 'smallheadtxt lheadtxt' : 'smallheadtxt dheadtxt'}>The Loner</p> 
             </div>
             <div className='smallTopRight'>
-                <button  className='menubtn' onClick={(e)=>handleslider(e)}>
-                    <div className={!dark ? 'headbtnlineone lheadtxt' : 'headbtnlineone dheadtxt'}>
-                        <p className=''>&#8801;</p>
-                    </div>
-                </button>  
+                <button className={`hamburger ${isActive ? 'active' : ''}`} onClick={(e)=>handleslider(e)} aria-label="Toggle navigation" aria-expanded={isActive}>
+                    <span className={!dark ? 'bar lbar' : 'bar dbar'}></span>
+                    <span className={!dark ? 'bar lbar' : 'bar dbar'}></span>
+                    <span className={!dark ? 'bar lbar' : 'bar dbar'}></span>
+                </button>
             </div>                            
         </div>
 
         
         <div className={slider === true ? 'smalllinks' : 'smalllinksclosed'}>  
             <div className={!dark ? 'smallNavbar' : 'dsmallNavbar'}>
-                <div className='smallTopCenter'>
-                    <p className={!dark ? 'smallheadtxt lheadtxt' : 'smallheadtxt dheadtxt'}>The Loner</p> 
-                </div>   
-                        
-                <div className='smalllinklist'>
-                    <Link to={'/'} style={linkstyle} className={!dark ? 'homepos' : 'dhomepos'}>Home</Link>
+
+
+
+                <div className='navBarleft' onClick={(e)=>handleslider(e)}></div>
+                <div className={!dark ? 'navBarright lightnav' : 'navBarright darknav'}>
+                    <div className={!dark ? 'navbarhead lightnavbarborder1' : 'navbarhead darknavbarborder1'}>
+                        <div className='navbarName'>
+                            <p className={!dark ? 'navnametxt lheadtxt' : 'navnametxt dheadtxt'}>Olaitan Seun</p> 
+                            <p className={!dark ? 'navdesctxt lheadtxt' : 'navdesctxt dheadtxt'}>Engineer</p> 
+                        </div>
+                        <div className='lightndark'>                           
+                            <button  className='lightOrDarkbtn' onClick={(e) => {darkmode(e)}}>
+                                <img src={!dark ? lightimg : darkimg} className={dark ? 'lightimg' : 'darkimg'} alt="dark"/>
+                            </button> 
+                        </div>
+                    </div>   
+
+                    <div className='navbarBottom'>
+                        <div className='smallListicle'>
+                            <Link to={'/'} className={!dark ? 'navBarLinks lightnavbarborder' : 'navBarLinks darknavbarborder'}>
+                                <div className='smallLinklist'>
+                                    <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Home</div>
+                                </div>
+                            </Link>                     
+                            <Link to={'/about'} className={!dark ? 'navBarLinks lightnavbarborder' : 'navBarLinks darknavbarborder'}>
+                                <div className='smallLinklist'>
+                                    <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>About</div>
+                                </div>
+                            </Link>                     
+                            <Link to={'/skills'} className={!dark ? 'navBarLinks lightnavbarborder' : 'navBarLinks darknavbarborder'}>
+                                <div className='smallLinklist'>
+                                    <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Skills</div>
+                                </div>
+                            </Link>                     
+                            <Link to={'/contact'} className={!dark ? 'navBarLinks lightnavbarborder' : 'navBarLinks darknavbarborder'}>
+                                <div className='smallLinklist'>
+                                    <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Contact</div>
+                                </div>
+                            </Link>                     
+                            <Link to={'/projects'} className='navBarLinks'>
+                                <div className='smallLinklist'>
+                                    <div style={linkstyle} className={!dark ? 'linkbtn' : 'dlinkbtn'}>Projects</div>
+                                </div>
+                            </Link>    
+                        </div>
+                    </div> 
                 </div>
-                <div className='smalllinklist'>
-                    <Link to={'/about'} style={linkstyle} className={!dark ? 'aboutpos' : 'daboutpos'}>Skills</Link>
-                </div>
-                <div className='smalllinklist'>
-                    <Link to={'/contact'} style={linkstyle} className={!dark ? 'contpos' : 'dcontpos'}>Contact</Link>
-                </div>
-                <div className='smalllinklist'>
-                    <Link to={'/login'} style={linkstyle} className={!dark ? 'portpos' : 'dportpos'}>Portfolio</Link>
-                </div>
-                <div className='lightndark'>                           
-                    <button  className='lightOrDarkbtn' onClick={(e) => {darkmode(e)}}>
-                        <img src={!dark ? lightimg : darkimg} className={dark ? 'lightimg' : 'darkimg'} alt="dark"/>
-                    </button> 
-                </div>     
-        </div>              
+
+
+
+
+                     
+            </div>              
         </div>    
       </header>
     </>

@@ -70,7 +70,7 @@ const About = () => {
     {key: '3', image:reactLogo, alt:'React Logo', name:'React', progress:75},
     {key: '4', image:nodeLogo, alt:'Node Logo', name:'Node JS', progress:70},
     {key: '5', image:mongoLogo, alt:'Mongo Logo', name:'Mongo DB', progress:75},
-    {key: '7', image:postgresLogo, alt:'PostgreSQL Logo', name:'PostgreSQL', progress:75},
+    {key: '6', image:postgresLogo, alt:'PostgreSQL Logo', name:'PostgreSQL', progress:75},
     {key: '7', image:pythonLogo, alt:'Python Logo', name:'Python', progress:80},
     {key: '8', image:pandasLogo, alt:'Pandas Logo', name:'Pandas', progress:40},
     {key: '9', image:gitLogo, alt:'Git Logo', name:'Git', progress:75}
