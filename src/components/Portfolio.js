@@ -21,13 +21,10 @@ const Portfolio = () => {
   // }
 
   let projectList = [
-    {projectImg: githubImage, projectName:"Explore My GitHub Profile", projectLink:"https://github.com/JM-TheLoner", projectDescription:"Browse my repositories, code, and experiments.", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
-    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
-    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]},
-    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
-    {projectImg:"", projectName:"Opalcon Ltd", projectLink:"https://github.com/JM-TheLoner", projectDescription:"BackEnd", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
-    {projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"FrontEnd", projectComponents:["React", "HTML", "CSS", "JavaScript"]}
-  ]
+    {key:'0', projectImg: githubImage, projectName:"Explore My GitHub Profile", projectLink:"https://github.com/JM-TheLoner", projectDescription:"Browse my repositories, code, and experiments.", projectComponents:["React", "HTML", "CSS", "JavaScript"]}, 
+    {key:'1', projectImg:"", projectName:"Opalcon", projectLink:"https://github.com/JM-TheLoner", projectDescription:"A website for a branding service", projectComponents:["Node", "MongoDB", "Express", "JavaScript"]}, 
+    {key:'2', projectImg:"", projectName:"Afri-Pulse", projectLink:"https://github.com/JM-TheLoner", projectDescription:"A blood drive website for people or hospitals looking to donate or recieve", projectComponents:["React", "HTML", "CSS", "JavaScript"]},
+    ]
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -48,6 +45,7 @@ const Portfolio = () => {
             <a href={project.projectLink}
             // onMouseEnter={()=>{playSound(whoosh1)}}
             // onMouseLeave={()=>{playSound(whoosh2)}}
+            key={project.key}
             >
               <div className={!dark ? 'project' : 'dproject'}> 
                 <div className={project===projectList[0] ? 'gitImageContainer' : 'imageContainer'}>

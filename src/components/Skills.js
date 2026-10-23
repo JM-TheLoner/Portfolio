@@ -64,16 +64,16 @@ const About = () => {
   ]
 
   const skills = [    
-    {key: '0', image:htmlLogo, alt:'HTML Logo', name:'HTML', progress:65},
-    {key: '1', image:cssLogo, alt:'CSS Logo', name:'CSS', progress:70},
+    {key: '0', image:htmlLogo, alt:'HTML Logo', name:'HTML', progress:80},
+    {key: '1', image:cssLogo, alt:'CSS Logo', name:'CSS', progress:80},
     {key: '2', image:javascriptLogo, alt:'Javascript Logo', name:'JavaScript', progress:75},
-    {key: '3', image:reactLogo, alt:'React Logo', name:'React', progress:70},
+    {key: '3', image:reactLogo, alt:'React Logo', name:'React', progress:75},
     {key: '4', image:nodeLogo, alt:'Node Logo', name:'Node JS', progress:70},
-    {key: '5', image:mongoLogo, alt:'Mongo Logo', name:'Mongo DB', progress:60},
-    {key: '7', image:postgresLogo, alt:'PostgreSQL Logo', name:'PostgreSQL', progress:50},
-    {key: '7', image:pythonLogo, alt:'Python Logo', name:'Python', progress:70},
+    {key: '5', image:mongoLogo, alt:'Mongo Logo', name:'Mongo DB', progress:75},
+    {key: '7', image:postgresLogo, alt:'PostgreSQL Logo', name:'PostgreSQL', progress:75},
+    {key: '7', image:pythonLogo, alt:'Python Logo', name:'Python', progress:80},
     {key: '8', image:pandasLogo, alt:'Pandas Logo', name:'Pandas', progress:40},
-    {key: '9', image:gitLogo, alt:'Git Logo', name:'Git', progress:50}
+    {key: '9', image:gitLogo, alt:'Git Logo', name:'Git', progress:75}
   ]
 
   useEffect(()=>{

@@ -24,7 +24,7 @@ const About = () => {
     {key:'0', image: FSLogo, alt: 'Full-Stack Icon', name:'Full-Stack Development', description:'I build complete web applications, from the user interface to the systems that power them behind the scenes.'},
     {key:'1', image: FELogo, alt: 'Frontend Icon', name:'Frontend Development', description:'I create attractive, responsive websites that are intuitive to use and work smoothly across devices.'},
     {key:'2', image: BELogo, alt: 'Backend Icon', name:'Backend Development', description:'I build the behind-the-scenes systems that process information, power features, and connect applications.'},
-    {key:'3', image: DBLogo, alt: 'Database Icon', name:'Database Engineering', description:'I organize and manage application data so information can be stored, accessed, and updated reliably.'},
+    {key:'3', image: DBLogo, alt: 'Database Icon', name:'Database Design & Management', description:'I Design databases, organize information, and manage how applications interact with the data.'},
     {key:'4', image: EELogo, alt: 'Electrical Engineering Icon', name:'Electrical Engineering', description:'I apply engineering principles to electrical systems, technical challenges, and practical problems.'}
   ]
 
@@ -97,7 +97,7 @@ return (
             <h1 className={!dark ? 'story lightTextColorA' : 'story darkTextColorA'}>WHAT I DO</h1>            
           </div>
           <div className='aboutBottomDesc'>
-            <h1 className={!dark ? 'storyDesc lightText' : 'storyDesc darkText'}>Services I Offer</h1>            
+            <h1 className={!dark ? 'storyDesc lightText' : 'storyDesc darkText'}>Areas of Expertise</h1>            
           </div>
           <div className='serviceList'>
             {servicesOffered.map((service)=>(

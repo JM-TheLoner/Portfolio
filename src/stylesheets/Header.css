@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://googleapis.com');
 
+.smallHead{
+  display: none;
+}
 .Header {
   height: 60px;
   width: 98%;
@@ -40,19 +44,20 @@
 }
 .applogo{
   display: flex;
+  justify-content: left;
+  gap: 6.5%;
   align-items: center;
-  width: 200px;
+  width: 20%;
 }
  .logoimg{
   height: 43.5px;
   pointer-events: none;
 }
 .headtxt{
-  width: 150px;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 700;
   font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,65 +70,19 @@
   color: #191919;
 }
 .listicle{
-  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  justify-content: center;
+  gap: 12px;
   font-weight: 500;
   font-size: 13px;
   font-family: 'Manrope', sans-serif;
   justify-self: center;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
-.linklist1{
+.linklist{
   background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  border-radius: 15px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition: 150ms ease-in-out 0ms;
-}
-.linklist2{
-  background-color: transparent;  
-  text-decoration: none;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  border-radius: 15px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition: 150ms ease-in-out 0ms;
-}
-.linklist3{
-  background-color: transparent;  
-  text-decoration: none;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  border-radius: 15px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition: 150ms ease-in-out 0ms;
-}
-.linklist4{
-  background-color: transparent;  
-  text-decoration: none;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  border-radius: 15px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition: 150ms ease-in-out 0ms;
-}
-.linklist5{
-  background-color: transparent;  
   text-decoration: none;
   cursor: pointer;
   width: 70px;
@@ -152,9 +111,10 @@
   color: #d8d8d8;
 }
 .lightndark{
-  width: 180px;
+  width: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
+  gap: 15%;
   align-items: center;
 }
 .contlght{
@@ -179,25 +139,28 @@
   color: #F9F9F9;
   width: 95px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-}
-.contlght:hover .talk{
-  color: #F9F9F9;
+  justify-content: center;
+  gap: 8px;
 }
 .dtalk{
   color: #F9F9F9;
   width: 95px;
-  height: 35px;
   display: flex;
-  justify-content: space-between;
-  font-size: 16px;
+  justify-content: center;
+  gap: 8px;
 }
-.btnarrow{
+.btnarrowWord{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.btnarrowSymbol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
   font-weight: 600;
 }
 .talkbtn{  
@@ -211,18 +174,7 @@
   align-items: center;
   transition: 150ms ease-in-out 0ms;
 }
-.lightbtn{
-  background-color: transparent;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  transition: 150ms ease-in-out 0ms;
-  border: none;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.darkbtn{
+.lightOrDarkbtn{
   background-color: transparent;
   height: 20px;
   width: 20px;
@@ -286,1379 +238,227 @@
 
 
 
-.smallHead{
-    backdrop-filter: blur(10px);
+
+
+@media screen and (max-width:599.98px){
+.Header {
   display: none;
 }
+.header--hidden {
+  transform: translateY(-100%);
+}
+.smallHead{
+  display: contents;
+  height: 50px;
+  width: 99%;
+  z-index: 9;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  justify-self: center;
+}
+.smallTopbar{
+  background:#FAFAFCae;
+  width:100%;
+  height: 50px;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.925);
+  box-shadow: 0 0.5px 2px #7e7e7f68;
+  transition: 150ms ease-in-out 0ms;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.dsmallTopbar{
+  background:#050b1aae;
+  width:100%;
+  height: 50px;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  /* box-shadow: 0 0.5px 2px rgba(128, 31, 255, 0.282); */
+  transition: 150ms ease-in-out 0ms;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.smallTopLeft{
+  width: 85%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+ .logoimg{
+  height: 43.5px;
+  pointer-events: none;
+}
+.smallheadtxt{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  transition: 150ms ease-in-out 0ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.smallTopRight{
+  width: 15%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.menubtn{  
+  text-decoration: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: 150ms ease-in-out 0ms;
+  background: transparent;
+  border: none;
+  padding: 20px 5px 10px 5px;
+}
+.headbtnlineone{
+  font-size: 35px;
+  font-weight:lighter;
+  font-family: 'Manrope', sans-serif;
+  transition: 150ms ease-in-out 0ms;
+}
+.smalllinksclosed{
+  display: none;
+}
+.smalllinks{
+  position: absolute;
+  z-index: 8;
+  background-color: #050b1aae;
+  height: 100vh;
+  width: 100vw;
+}
+.smallTopCenter{
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 
-@media screen and (max-width:552px) {
+
+
+
+
+  
+}
+@media screen and (max-width:719.98px) and (min-width:600px) {
   .Header {
-    display: none;
+    height: 50px;
+    }
+  .applogo{
+    gap: 5%;
   }
-  .dHeader {
-    display: none;
+  .logoimg{
+    height: 35.5px;
   }
-  .smallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
+  .headtxt{
+    font-size: 15px;
+    padding-top: 15px;
   }
-  .dsmallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-    margin-bottom: 0px;
+  .listicle{
+    gap: 2px;
+    font-size: 11px;
+  }
+  .linklist{
+    width: 60px;
+    height: 30px;
   }
   .lightndark{
-    position: relative;
-    left: 50%;
-    top: 8px;
-    cursor: pointer;
+    gap: 12%;
   }
-  .lightbtn{
+  .talkbtn{  
+    width: 90px;
     height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;    
-    transition: 100ms ease-in-out 100ms;
-    border: none;
+  }    
+  .talk{
+    width: 85px;
+  }
+  .dtalk{
+    width: 85px;
+  }
+  .btnarrowWord{
+    font-size: 12px;
+  }
+  .btnarrowSymbol{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .lightOrDarkbtn{
+    height: 17px;
+    width: 17px;
   }
   .lightimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .darkbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinright 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
+    height:17px;
   }
   .darkimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    background-color: #e9e9e9;
-    border-radius: 30px;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-  }  
-  .App-logo2{
-    height: 35px;
-    pointer-events: none;
-    position: relative;
-    top: 8px;
-    left: 5px;
-  }
-  .smallTopbar{
-    background:#3272a0;
-    width:100%;
-    box-shadow: 0 0 8px #010921;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallTopbar{
-    background:#010327;
-    width:100%;
-    box-shadow: 0 0 8px #0731b1;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:30%;
-    color: #d8d8d8;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:30%;
-    color: #c1ccff;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallNavbar{    
-    background: #4890c4d7;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border: 2px solid #2a5e83;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .dsmallNavbar{    
-    background:#00022bf5;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border-right: 3px solid #000546;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .smalllinksclosed .smallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .smalllinksclosed .dsmallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .menubtn{
-    height: 2.2em;
-    width: 2.5em;
-    background-color: #969bf777;
-    border-radius:5px;
-    cursor: pointer;
-    margin-top: 9px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-  }
-.headbtnline{
-  font-weight: 500;
-  color: rgb(20, 20, 20);
+    height:17px;
+  } 
 }
-.headbtnlineone{
-  font-size: 40px;
-  margin-top:-11px;
-  margin-left: -2px;
-}
-.smalllinklist{
-  animation: slideopennav 175ms linear 0ms 1;
-  height:2.5em;
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-  margin-bottom: 10px; 
-  margin-left: 20px;
-  text-align: right;
-  width: 90%;
-}
-.smallNavbar .smalllinklist:focus{
-  color: #9c92f8;
-  background-color:#7d68f7;
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.dsmallNavbar .smalllinklist:focus{
-  color: #3f49ff;
-  background-color:rgba(39, 49, 255, 0.918);
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.home{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.proj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.about{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.cont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.dhome{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dproj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dabout{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dcont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-}
-@media screen and (max-width:650px)  and (min-width:552px) {
+@media screen and (max-width:881px) and (min-width:720px) {
   .Header {
-    display: none;
+    height: 50px;
+    }
+  .applogo{
+    gap: 5%;
   }
-  .dHeader {
-    display: none;
+  .logoimg{
+    height: 35.5px;
   }
-  .smallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
+  .headtxt{
+    font-size: 15px;
+    padding-top: 15px;
   }
-  .dsmallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-    margin-bottom: 0px;
+  .listicle{
+    gap: 2px;
+    font-size: 11px;
+  }
+  .linklist{
+    width: 60px;
+    height: 30px;
   }
   .lightndark{
-    position: relative;
-    left: 57%;
-    top: 8px;
-    cursor: pointer;
+    gap: 12%;
   }
-  .lightbtn{
+  .talkbtn{  
+    width: 90px;
     height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinleft 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
+  }    
+  .talk{
+    width: 85px;
+  }
+  .dtalk{
+    width: 85px;
+  }
+  .btnarrowWord{
+    font-size: 12px;
+  }
+  .btnarrowSymbol{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .lightOrDarkbtn{
+    height: 17px;
+    width: 17px;
   }
   .lightimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .darkbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinright 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
+    height:17px;
   }
   .darkimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    background-color: #e9e9e9;
-    border-radius: 30px;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-  }  
-  .App-logo2{
-    height: 35px;
-    pointer-events: none;
-    position: relative;
-    top: 8px;
-    left: 5px;
+    height:17px;
   }
-  .smallTopbar{
-    background:#3272a0;
-    width:100%;
-    box-shadow: 0 0 8px #010921;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallTopbar{
-    background:#010327;
-    width:100%;
-    box-shadow: 0 0 8px #0731b1;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:30%;
-    color: #d8d8d8;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:30%;
-    color: #c1ccff;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallNavbar{    
-    background: #4890c4d7;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border: 2px solid #2a5e83;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .dsmallNavbar{    
-    background:#00022e;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border-right: 3px solid #000546;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .smalllinksclosed .smallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .smalllinksclosed .dsmallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .menubtn{
-    height: 2.2em;
-    width: 2.5em;
-    background-color: #969bf777;
-    border-radius:5px;
-    cursor: pointer;
-    margin-top: 9px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-  }
-.headbtnline{
-  font-weight: 500;
-  color: rgb(20, 20, 20);
-}
-.headbtnlineone{
-  font-size: 40px;
-  margin-top:-11px;
-  margin-left: -2px;
-}
-.smalllinklist{
-  animation: slideopennav 175ms linear 0ms 1;
-  height:2.5em;
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  color: black;
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-  margin-bottom: 10px; 
-  margin-left: 20px;
-  text-align: right;
-  width: 90%;
-}
-.smallNavbar .smalllinklist:focus{
-  color: #9c92f8;
-  background-color:#7d68f7;
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.dsmallNavbar .smalllinklist:focus{
-  color: #3f49ff;
-  background-color:rgba(39, 49, 255, 0.918);
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.home{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.proj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.about{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.cont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.dhome{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dproj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dabout{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dcont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-}
-@media screen and (max-width:720px) and (min-width:650px) {
-  .Header {
-    display: none;
-  }
-  .dHeader {
-    display: none;
-  }
-  .smallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-  }
-  .dsmallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-    margin-bottom: 0px;
-  }
-  .lightndark{
-    position: relative;
-    left: 60%;
-    top: 8px;
-    cursor: pointer;
-  }
-  .lightbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinleft 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
-  }
-  .lightimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .darkbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinright 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
-  }
-  .darkimg{
-    height: 4vmin;
-    pointer-events: none;
-    position: relative;
-    background-color: #e9e9e9;
-    border-radius: 30px;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-  }  
-  .App-logo2{
-    height: 35px;
-    pointer-events: none;
-    position: relative;
-    top: 8px;
-    left: 5px;
-  }
-  .smallTopbar{
-    background:#3272a0;
-    width:100%;
-    box-shadow: 0 0 8px #010921;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallTopbar{
-    background:#010327;
-    width:100%;
-    box-shadow: 0 0 8px #0731b1;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:33%;
-    color: #d8d8d8;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:33%;
-    color: #c1ccff;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallNavbar{    
-    background: #4890c4d7;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border: 2px solid #2a5e83;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .dsmallNavbar{    
-    background:#00022e;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border-right: 3px solid #000546;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .smalllinksclosed .smallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .smalllinksclosed .dsmallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .menubtn{
-    height: 2.2em;
-    width: 2.5em;
-    background-color: #969bf777;
-    border-radius:5px;
-    cursor: pointer;
-    margin-top: 9px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-  }
-.headbtnline{
-  font-weight: 500;
-  color: rgb(20, 20, 20);
-}
-.headbtnlineone{
-  font-size: 40px;
-  margin-top:-11px;
-  margin-left: -2px;
-}
-.smalllinklist{
-  animation: slideopennav 175ms linear 0ms 1;
-  height:2.5em;
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  color: black;
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-  margin-bottom: 10px; 
-  margin-left: 20px;
-  text-align: right;
-  width: 90%;
-}
-.smallNavbar .smalllinklist:focus{
-  color: #9c92f8;
-  background-color:#7d68f7;
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.dsmallNavbar .smalllinklist:focus{
-  color: #3f49ff;
-  background-color:rgba(39, 49, 255, 0.918);
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.home{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.proj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.about{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.cont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.dhome{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dproj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dabout{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dcont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-}
-@media screen and (max-width:840px) and (min-width:720px) {
-  .Header {
-    display: none;
-  }
-  .dHeader {
-    display: none;
-  }
-  .smallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-  }
-  .dsmallHead{
-    backdrop-filter: blur(10px);
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    position: sticky;
-    top: 0;
-    display: block;
-    margin-bottom: 0px;
-  }
-  .lightndark{
-    position: relative;
-    left: 65%;
-    top: 8px;
-    cursor: pointer;
-  }
-  .lightbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinleft 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
-  }
-  .lightimg{
-    height: 5vmin;
-    pointer-events: none;
-    position: relative;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .darkbtn{
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
-    cursor: pointer;
-    position:relative;
-    right: 10%;
-    bottom: 1px;
-    animation: spinright 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    border: none;
-  }
-  .darkimg{
-    height: 4vmin;
-    pointer-events: none;
-    position: relative;
-    background-color: #e9e9e9;
-    border-radius: 30px;
-    right:0px;
-    top: 1px;
-    animation: fadein 100ms linear 0s 1;
-    transition: 100ms ease-in-out 100ms;
-    box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-  }  
-  .App-logo2{
-    height: 35px;
-    pointer-events: none;
-    position: relative;
-    top: 8px;
-    left: 5px;
-  }
-  .smallTopbar{
-    background:#3272a0;
-    width:100%;
-    box-shadow: 0 0 8px #010921;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgba(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallTopbar{
-    background:#010327;
-    width:100%;
-    box-shadow: 0 0 8px #0731b1;    
-    height: 3em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(155, 155, 155, 0.322);
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:36%;
-    color: #d8d8d8;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dsmallheadbtnlinetwo{
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 500;
-    position: relative;
-    bottom:10px;
-    font-family: 'Manrope', sans-serif;
-    left:36%;
-    color: #c1ccff;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .smallNavbar{    
-    background: #4890c4d7;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border: 2px solid #2a5e83;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .dsmallNavbar{    
-    background:#00022e;
-    width: 9em;
-    height: 45em;     
-    z-index: 8;
-    animation: slideinnav 100ms linear 0ms 1, slideopennav 175ms linear 0ms 1;
-    transition: 100ms ease-in-out 100ms;  
-    border-right: 3px solid #000546;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    top: 0px;
-    position: absolute; 
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .smalllinksclosed .smallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .smalllinksclosed .dsmallNavbar{
-    background:transparent;
-    display: none;
-  }
-  .menubtn{
-    height: 2.2em;
-    width: 2.5em;
-    background-color: #969bf777;
-    border-radius:5px;
-    cursor: pointer;
-    margin-top: 9px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-  }
-.headbtnline{
-  font-weight: 500;
-  color: rgb(20, 20, 20);
-}
-.headbtnlineone{
-  font-size: 40px;
-  margin-top:-11px;
-  margin-left: -2px;
-}
-.smalllinklist{
-  animation: slideopennav 175ms linear 0ms 1;
-  height:2.5em;
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  color: black;
-  text-decoration: none;
-  position: relative;
-  left: 20px;
-  margin-bottom: 10px; 
-  margin-left: 20px;
-  text-align: right;
-  width: 90%;
-}
-.smallNavbar .smalllinklist:focus{
-  color: #9c92f8;
-  background-color:#7d68f7;
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.dsmallNavbar .smalllinklist:focus{
-  color: #3f49ff;
-  background-color:rgba(39, 49, 255, 0.918);
-  border: 2px solid rgb(211, 211, 211);
-  border-radius: 0px;
-  cursor: pointer;
-}
-.home{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.proj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.about{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.cont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #d8d8d8;
-}
-.dhome{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dproj{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dabout{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-.dcont{
-  font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
-  position: relative;
-  top: 20px;
-  left: -40px;
-  color: #c1ccff;
-}
-}
-@media screen and (max-width:992px) and (min-width:840px) {
-  .Topbar{
-    background:#3272a0;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .dTopbar{
-    background:#010327;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(9, 0, 87);
-    box-shadow: 0 0 1px #0731b1;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarYellow{
-    background:#ddcf0a;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarBlue{
-    background:#0876e4;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarLightGreen{
-    background:#4fce06;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarYellowExpress{
-    background:#ecde11;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarDarkGreen{
-    background:#48ce0a;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarBlueYellow{
-    background:#0122b1;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .TopbarDeepBlue{
-    background:#0d02a7;
-    width:100%;
-    height: 4em;
-    z-index: 7;
-    display: flex;
-    border-bottom: 0px solid rgb(3, 0, 156);
-    box-shadow: 0 0 1px #010921;
-    transition: 100ms ease-in-out 100ms;
-  }
-  .linklist1{
-    color: black;
-    animation: slideopennav 175ms linear 0ms 1;
-    height:2.5em;
-    font-size: 17px;
-    padding-bottom: 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-    left: 60px;
-  }
-  .home{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 10px;
-    color: #d8d8d8;
-  }
-  .dhome{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 10px;
-    color: #c1ccff;
-  }
-  .linklist2{
-    color: black;
-    animation: slideopennav 175ms linear 0ms 1;
-    height:2.5em;
-    font-size: 17px;
-    padding-bottom: 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-    left: 100px;
-  }
-  .linklist3{
-    color: black;
-    animation: slideopennav 175ms linear 0ms 1;
-    height:2.5em;
-    font-size: 17px;
-    padding-bottom: 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-    left: 130px;
-  }
-  .linklist5{
-    color: black;
-    animation: slideopennav 175ms linear 0ms 1;
-    height:2.5em;
-    font-size: 17px;
-    padding-bottom: 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-    left: 190px;
-  }
-  .proj{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 40px;
-    color: #d8d8d8;
-  }
-  .about{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 40px;
-    color: #d8d8d8;
-  }
-  .cont{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 60px;
-    color: #d8d8d8;
-  }
-  .dproj{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 40px;
-    color: #c1ccff;
-  }
-  .dabout{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 40px;
-    color: #c1ccff;
-  }
-  .dcont{
-    font-family: 'Manrope', sans-serif;
-    transition: 100ms ease-in-out 100ms;
-    position: relative;
-    top: 20px;
-    left: 60px;
-    color: #c1ccff;
-  }
-    .headbtnlinetwo{
-      display:none;      
-    }
-    .dheadbtnlinetwo{
-      display:none;      
-    }
-    .App-logo2{
-      height: 50px;
-      pointer-events: none;
-      position: relative;
-      top:5px;
-      right:45px;
-    }
-    .lightndark{
-      position: relative;
-      left: 45%;
-      top: 15px;
-      cursor: pointer;
-    }
-    .lightbtn{
-      height: 35px;
-      width: 35px;
-      background-color: transparent;
-      cursor: pointer;
-      position:relative;
-      right: 9px;
-      bottom: 1px;
-      animation: spinleft 100ms linear 0s 1;
-      transition: 100ms ease-in-out 100ms;
-      border: none;
-    }
-    .lightimg{
-      height: 4vmin;
-      pointer-events: none;
-      position: relative;
-      right:0px;
-      top: 1px;
-      animation: fadein 100ms linear 0s 1;
-      transition: 100ms ease-in-out 100ms;
-    }
-    .darkbtn{
-      height: 35px;
-      width: 35px;
-      background-color: transparent;
-      cursor: pointer;
-      position:relative;
-      right: 10%;
-      bottom: 1px;
-      animation: spinright 100ms linear 0s 1;
-      transition: 100ms ease-in-out 100ms;
-      border: none;
-    }
-    .darkimg{
-      height: 4vmin;
-      pointer-events: none;
-      position: relative;
-      background-color: #e9e9e9;
-      border-radius: 30px;
-      right:0px;
-      top: 1px;
-      animation: fadein 100ms linear 0s 1;
-      transition: 100ms ease-in-out 100ms;
-      box-shadow: 0 0 1px #e9e9e9, 0 0 10px #e9e9e9, 0 0 15px #adb9ff, 0 0 20px #adb9ff;
-    }  
 }

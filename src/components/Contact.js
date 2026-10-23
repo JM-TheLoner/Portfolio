@@ -27,9 +27,9 @@ const Contact = () => {
   const[nomessage, setnomessage] = useState(false)
 
   const reviews =[
-    {id: 1, name: "Client Name", descriptor: "position", profilePic: "", review: "Working with him was a great experience. He understood the requirements and delivered a solution that met our needs."},
-    {id: 2, name: "Another Client", descriptor: "position", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."},
-    {id: 2, name: "Third Client", descriptor: "position", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."}
+    {id: 0, name: "Ebatamehi Andrew", descriptor: "Email Marketer", profilePic: "", review: "Working with him was a great experience. He understood the requirements and delivered a solution that met our needs."},
+    {id: 1, name: "Solomon-Eseh Emmanuel", descriptor: "Entrepreneur", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."},
+    {id: 2, name: "Olubajo Abednego", descriptor: "Entrepreneur", profilePic: "", review: "He was professional, detail-oriented, and efficient throughout the design process, with great communication and excellent delivery."}
   ]
 
   useEffect(()=>{
@@ -57,8 +57,24 @@ const Contact = () => {
   setnomessage(false)
 
   if (!fullname || !contactaddress || !contactemail || !message){
-    alert(`All Fields Required`)
+    if (fullname){        
+      if (contactemail){        
+        if (contactaddress){          
+          if (message){
+          } else{
+            alert('Please Type a Message')
+          }
+        } else{
+          alert('Please Type A Subject/Headline')
+        }        
+      } else{
+        alert('Please Type Your Email')
+      }      
+    } else{
+      alert('Please Type Your Name')
+    }
   }
+  
 
   if (!fullname){
       fullnamer()
@@ -73,14 +89,6 @@ const Contact = () => {
       messager()
   }
   if (fullname && contactaddress && contactemail && message){
-    setfullname('')
-    setcontactaddress('')
-    setcontactemail('')
-    setmessage('')
-    navigate('/')
-
-    window.scrollTo(0,0)
-
     emailjs.sendForm(
       'service_vvqzpc3',
       'template_ptpiqax', 
@@ -91,9 +99,16 @@ const Contact = () => {
     )
     .then( 
       () => {
-        console.log('SUCCESS!');
+        alert('Message Sent!');
+        setfullname('')
+        setcontactaddress('')
+        setcontactemail('')
+        setmessage('')
+        navigate('/')        
+        window.scrollTo(0,0)
       },
       (error) => {
+        alert('FAILED. Please Try Again');
         console.log('FAILED...', error.text);
       },
     );
@@ -111,7 +126,7 @@ const Contact = () => {
             <h1 className={!dark ? 'testimonialTxt lightWords' : 'testimonialTxt darkWords'}>What Clients Say</h1>
             <div style={{display:"flex", justifyContent:"space-between"}}>
               {reviews.map((review)=>(
-                <div className={!dark ? 'review' : 'dreview'}>   
+                <div className={!dark ? 'review' : 'dreview'} key={review.id}>   
                   <div className='reviewWords'>
                     <FaQuoteLeft size={24} color={!dark ? '#e213fd' : '#7f58ff'} />
                     <p className={!dark ? 'reviewText lightWords' : 'reviewText darkWords'}>{review.review}</p>
