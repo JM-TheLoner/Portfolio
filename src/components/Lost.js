@@ -24,21 +24,6 @@ const Lost = () => {
   return (
       <div className={!dark ? 'Lost' : 'dLost'} style={!dark ? {backgroundImage: `url(${lightlostbg})`} : {backgroundImage: `url(${darklostbg})`} }>
         <Header/>
-        <div className='backgroundspread'>
-          <div className='wave3'>
-            <div className='bg3'></div>
-          </div>
-        </div>
-        <div className='backgroundspread'>
-          <div className='wave2'>
-            <div className='bg2'></div>
-          </div>
-        </div>
-        <div className='backgroundspread'>
-          <div className='wave1'>
-            <div className='bg1'></div>
-          </div>
-        </div>
 
 
         <div className='lostDiv'>
@@ -52,7 +37,7 @@ const Lost = () => {
                 <button className='bottomline' onClick={(e)=>{movehome(e)}}>
                   <div className='lostWork'>
                           <div className='lostbtnswarrow' style={{fontSize: '25px'}}>&#8592;</div>
-                          <div className='lostbtnswarrow' style={{fontSize: '15px'}}>Back To Home</div>
+                          <div className='lostbtnswarrow'>Back To Home</div>
                       </div> 
                 </button>
               </div>

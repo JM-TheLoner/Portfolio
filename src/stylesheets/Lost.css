@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900');
 @import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300');
 
+body::-webkit-scrollbar {
+  display: none;
+}
 .Lost{
     padding: 3px 10px 3px 10px;
     width: 100%;
     height: 100vh;
     transition: 150ms ease-in-out 0ms;
-    overflow-y: hidden;
+    overflow-y: auto;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .dLost{
     background-size: cover;
@@ -19,17 +24,17 @@
     width: 100%;
     height: 100vh;
     transition: 150ms ease-in-out 0ms;
-    overflow-y: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .lostDiv{
-    /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 70px;
     height: calc(100vh - 70px);
 }
 .lostLeft{
-    /* background-color: yellow; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -164,21 +169,19 @@
     transform: translateY(-2px);
 }
 .lostRight{    
-    /* background-color: green; */
     width: 50%;
     display: flex;
     justify-content: left;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 .lostImg{
-    height: 400px;
+    height: 70vh;
     mask-image: linear-gradient(to top, transparent 0%, black 35%);
     transition: 150ms ease-in-out 0ms;
 }
 .dlostImg{
-    height: 400px;
+    height: 70vh;
     mask-image: linear-gradient(to top, transparent 0%, black 15%);
     transition: 150ms ease-in-out 0ms;
 }
@@ -192,15 +195,97 @@
 
 
 
-@media screen and (max-width:612px) {
+@media screen and (max-width:849.98px) {
+    .Lost{
+        padding: 1px 5px 1px 5px;
+    }
+    .dLost{
+        padding: 1px 5px 1px 5px;
+    }
+    .lostDiv{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 60px);
+    }
+    .lostLeft{
+        width: 90%;
+        height: 50%;
+        align-items: center;
+        justify-content: left;
+        padding: 0px 0px 0px 0px;
+    }
+    .lostRight{    
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }    
+    .lostImg{
+        height: 350px;
+    }
+    .dlostImg{
+        height: 350px;
+    }
+    .losthead{
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .firstLine{
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    .secondLine{
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .thirdLine{
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
 
-}
-@media screen and (max-width:680px)  and (min-width:612px){
-    
-}
-@media screen and (max-width:840px) and (min-width:679px) {
-    
-}
+@media screen and (max-width:849.98px) and (min-width:600px) {
+    .lostImg{
+        height: 100%;
+    }
+    .dlostImg{
+        height: 100%;
+    }
+    .losthead{
+        font-size: 23px;
+    }
+    .firstLine{
+        font-size: 45px;
+        margin-bottom: 0px;
+    }
+    .secondLine{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .thirdLine{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .Lost .bottomline{
+        width: 210px;
+        height: 65px;
+    }
+    .dLost .bottomline{
+        width: 210px;
+        height: 65px;
+    }
+    .lostWork{
+        width: 210px;
+        height: 65px;
+        font-size: 20px;
+    }
+} 
 @media screen and (max-width:992px) and (min-width:840px) {
     
 }

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
+body::-webkit-scrollbar {
+  display: none;
+}
 .skills{
   background-color: #F5F4F9;
   padding: 3px 10px 3px 10px;
@@ -7,6 +10,8 @@
   height: 100vh;
   transition: 150ms ease-in-out 0ms;
   overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .dskills{
   background-color: #050B1A;
@@ -15,6 +20,8 @@
   height: 100vh;
   transition: 150ms ease-in-out 0ms;
   overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .skillsContainer{
   margin-top: 70px;

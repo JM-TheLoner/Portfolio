@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
+body::-webkit-scrollbar {
+  display: none;
+}
 .Contact{
   background-color: #F5F4F9;
   padding: 3px 10px 3px 10px;
@@ -7,6 +10,8 @@
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
   transition: 100ms, ease-in-out, 100ms;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .dContact{
   background-color: #050B1A;
@@ -15,6 +20,8 @@
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
   transition: 100ms, ease-in-out, 100ms;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .contactPageCont{  
   margin-top: 75px;

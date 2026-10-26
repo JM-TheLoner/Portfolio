@@ -1,7 +1,7 @@
 import '../stylesheets/Header.css'
 import { Link } from 'react-router-dom';
 import DataContext from '../context/Datacontext'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState, useRef } from 'react'
 import logo from '../Assets/Images/logo.png'
 import lightimg from '../Assets/Images/light.png'
 import darkimg from '../Assets/Images/dark.png' 
@@ -18,29 +18,71 @@ const Header = ({ title }) => {
 //   };
   
   const scrollDirection = useScrollDirection();
+  const topRef = useRef(null);
 
   useEffect(() => {
     if (!slider) return;
 
+    // Save previous styles
     const previousBodyOverflow = document.body.style.overflow;
     const previousDocumentOverflow = document.documentElement.style.overflow;
+
+    // Lock background scrolling
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden';
 
+    // Clean up / unlock when navbar closes
     return () => {
       document.body.style.overflow = previousBodyOverflow;
       document.documentElement.style.overflow = previousDocumentOverflow;
     };
   }, [slider]);
 
-  const handleslider = () =>{
-    setslider(!slider)
-    setIsActive(!isActive);
-  }
+//   const handleslider = () =>{
+//     topRef.current?.scrollIntoView({ behavior: 'smooth' });
+//     window.scrollTo(0,0)
+//     setslider(!slider)
+//     setIsActive(!isActive);
+//   }
+
+
+
+
+
+  const handleslider = () => {
+    if (!slider) {
+      // 1. Scroll to the top anchor instantly while the page is still allowed to scroll
+      topRef.current?.scrollIntoView({ behavior: 'auto' });
+      window.scrollTo(0, 0);
+
+      // 2. Small micro-delay to let the browser execute the jump before locking overflow
+      setTimeout(() => {
+        setslider(true);
+        setIsActive(true);
+      }, 10);
+    } else {
+      // If closing the slider, toggle states normally
+      setslider(false);
+      setIsActive(false);
+    }
+  };
+
+
+
+
+
+
   
   const darkmode = async (e) => {
     e.preventDefault()
-    await localStorage.setItem('darkMode', !dark)
+    localStorage.setItem('darkMode', !dark)
+    await setdark(JSON.parse(localStorage.getItem('darkMode')))
+  }
+  const smalldarkmode = async (e) => {
+    setslider(false);
+    setIsActive(false);
+    e.preventDefault()
+    localStorage.setItem('darkMode', !dark)
     await setdark(JSON.parse(localStorage.getItem('darkMode')))
   }
 
@@ -106,8 +148,8 @@ const Header = ({ title }) => {
 
 
 
-      
-      <header className={`smallHead ${scrollDirection === 'down' ? 'header--hidden' : ''}`}>
+      <div ref={topRef} style={{ position: 'absolute', top: 0, left: 0 }} />
+      <header  className={`smallHead ${scrollDirection === 'down' ? 'header--hidden' : ''}`}>
         <div className={!dark ? 'smallTopbar' : 'dsmallTopbar'}>
             <div className='smallTopLeft'>
                 <img src={logo} className="logoimg" alt="logo"/> 
@@ -136,7 +178,7 @@ const Header = ({ title }) => {
                             <p className={!dark ? 'navdesctxt lheadtxt' : 'navdesctxt dheadtxt'}>Engineer</p> 
                         </div>
                         <div className='lightndark'>                           
-                            <button  className='lightOrDarkbtn' onClick={(e) => {darkmode(e)}}>
+                            <button  className='lightOrDarkbtn' onClick={(e) => {smalldarkmode(e)}}>
                                 <img src={!dark ? lightimg : darkimg} className={dark ? 'lightimg' : 'darkimg'} alt="dark"/>
                             </button> 
                         </div>
