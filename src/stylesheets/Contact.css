@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { /* Optional: Hides scrollbars for a cleaner UI if desired (Chrome/Safari/Firefox) */
   display: none;
 }
 .Contact{
@@ -9,9 +9,8 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
-  transition: 100ms, ease-in-out, 100ms;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox scrollbar remover */
+  -ms-overflow-style: none; /* IE and Edge scrollbar remover */
 }
 .dContact{
   background-color: #050B1A;
@@ -19,23 +18,32 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   padding-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
-  transition: 100ms, ease-in-out, 100ms;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .contactPageCont{  
-  margin-top: 75px;
+  margin-top: 70px;
   height: calc(100% - 70px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 20px 5px 20px;
-
 }
 .testimonialSection{
-  height: 47vh;
+  height: 40%;
   width: 100%;
+  margin-bottom: 5%;
+}
+.contactSection{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+}
+.testimonialLister{
+  display: flex;
+  justify-content: space-between;
 }
 .testimonialTxt{
   text-align: left;
@@ -50,7 +58,7 @@ body::-webkit-scrollbar {
   font-size: 13px;
   cursor: default;
   margin-bottom: 5px;
-  transition: 100ms, ease-in-out, 100ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .dreview{
   backdrop-filter: blur(10px);
@@ -58,7 +66,7 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
   overflow: hidden;
   height: 170px;
-  width: 370px;
+  width: 31.5%;
   border-radius: 10px; 
   padding: 10px 15px 10px 15px;
   background-color: #04051964;
@@ -71,7 +79,7 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
   overflow: hidden;
   height: 170px;
-  width: 370px;
+  width: 31.5%;
   border-radius: 10px; 
   padding: 10px 15px 10px 15px;
   background-color: #c6c6c61b;
@@ -95,6 +103,7 @@ body::-webkit-scrollbar {
   justify-content: left;
   align-items: start;
   padding: 10px 0px 0px 0px;
+  width: 100%;
 }
 .profImage{  
     position: relative;
@@ -120,19 +129,17 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: 13px;
 }
-.contactSection{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 65vh;
-}
 .contactleft{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 30%;
+  align-items: start;
+  width: 35%;
   height: 100%;
+  padding-top: 15px;
 }
 .contactRight{
-  width: 70%;
+  width: 65%;
   height: 100%;
   display: flex;
   justify-content: right;
@@ -167,7 +174,7 @@ body::-webkit-scrollbar {
 }
 .contHeadWrap{
   height: 25px;
-  width: 60%;
+  width: 100%;
 }
 .contacthead{
   text-align: left;
@@ -176,7 +183,7 @@ body::-webkit-scrollbar {
   font-size: 13px;
   cursor: default;
   margin-bottom: -10px;
-  transition: 100ms, ease-in-out, 100ms;
+  transition: 150ms ease-in-out 0ms;
 }
 .contactbody{  
   text-align: left;
@@ -184,7 +191,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   font-size: 23px;
   cursor: default;
-  transition: 100ms, ease-in-out, 100ms;
+  transition: 150ms ease-in-out 0ms;
   margin-bottom: 10px;
 }
 .contactbodylow{  
@@ -194,7 +201,7 @@ body::-webkit-scrollbar {
   font-size: 13px;
   line-height: 1.7;
   cursor: default;
-  transition: 100ms, ease-in-out, 100ms;
+  transition: 150ms ease-in-out 0ms;
   margin-bottom: 10px;
 }
 .contFollowWrap{
@@ -204,14 +211,8 @@ body::-webkit-scrollbar {
   align-items: center;
   margin-bottom: 5px;
 }
-.contactsamelinesocs{
-  display: flex;
-  position: relative;
-  justify-content: left;
-  width:100%;
-}
 .smlogo{
-  height: 4.5vmin;
+  height: 30px;
   pointer-events: none;
   margin: 3px 30px 3px 0px;
   transition: 150ms ease-in-out 0ms;
@@ -225,24 +226,28 @@ body::-webkit-scrollbar {
   transform: translateY(-4px);
 }
 .locinsta{
+  cursor: pointer;
   transition: 150ms ease-in-out 0ms;
 }
 .locinsta:hover{
   transform: translateY(-4px);
 }
 .loctwitter{
+  cursor: pointer;
   transition: 150ms ease-in-out 0ms;
 }
 .loctwitter:hover{
   transform: translateY(-4px);
 }
 .loclinkedin{
+  cursor: pointer;
   transition: 150ms ease-in-out 0ms;
 }
 .loclinkedin:hover{
   transform: translateY(-4px);
 }
 .locgithub{
+  cursor: pointer;
   transition: 150ms ease-in-out 0ms;
 }
 .locgithub:hover{
@@ -270,7 +275,7 @@ body::-webkit-scrollbar {
   justify-content: left;
   align-items: start;
   height: 20px;
-  margin-top: 25px;
+  margin-top: 30px;
   transition: 150ms ease-in-out 0ms;
 }
 .emailSection{
@@ -280,7 +285,7 @@ body::-webkit-scrollbar {
   justify-content: left;
   align-items: start;
   height: 20px;
-  margin-top: 25px;
+  margin-top: 30px;
   transition: 150ms ease-in-out 0ms;
 }
 .phoneNum{
@@ -304,7 +309,7 @@ body::-webkit-scrollbar {
   margin-bottom: 15px;
 }
 .contactwrapper{  
-  width: 90%;
+  width: 98%;
   background: #c6c6c61b;
   backdrop-filter: blur(20px);
   box-shadow: 0 1px 6px rgba(226, 118, 250, 0.350);
@@ -314,7 +319,7 @@ body::-webkit-scrollbar {
   height: 95%;
 }
 .dcontactwrapper{  
-  width: 90%;
+  width: 98%;
   background: #04051964;
   backdrop-filter: blur(20px);
   box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
@@ -471,35 +476,252 @@ body::-webkit-scrollbar {
   font-weight: 500;
   font-size:15px;
   font-family: 'Manrope', sans-serif;
-  transition: 100ms ease-in-out 100ms;
+  transition: 150ms ease-in-out 0ms;
 }
 
-
-/* I haven't worked past this point */
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:849.98px){
   
-
-
-
-
-
-@media screen and (max-width:570px) {
- 
+  .testimonialTxt{
+    margin-bottom: 0px;
+  }
+  .testimonialLister::-webkit-scrollbar {
+    display: none;
+  }
+  .testimonialLister {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .testimonialSection{
+    height: 40%;
+    width: 100%;
+    margin-bottom: 5%;
+    overflow-x: hidden;  /* Prevents the entire web page from breaking or scrolling horizontally */
+  }
+  .testimonialLister{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 10px;
+    -webkit-overflow-scrolling: touch;   /* Smooth scrolling feel for touchscreens */
+    scroll-snap-type: x mandatory;  /* Optional: Optional snapping behavior so a card snaps into position */
+  }
+  .dreview{
+    flex-shrink: 0; /* CRITICAL: Stops the card from shrinking to fit the screen */
+    /* scroll-snap-align: start;   */
+    /* Optional: works hand-in-hand with scroll-snap-type above */
+    height: 145px;
+    width:230px;
+    padding: 10px 7px 10px 7px;
+  }
+  .review{
+    flex-shrink: 0;
+    /* scroll-snap-align: start;   */
+    height: 145px;
+    width:230px;
+    padding: 10px 7px 10px 7px;
+  }
+  .reviewText{
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .reviewIdentity{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 0px 0px;
+  }
+  .profImage{  
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+  }
+  .reviewName{
+    font-size: 12px;
+  }
+  .reviewPos{
+    font-size: 11px;
+  }
+  .contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 60%;
+  }
+  .contactleft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 30%;
+    padding-top: 0px;
+    margin-bottom: 8%;
+  }
+  .contactRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  .contacttext{
+    width: 45%;
+    text-align: left;
+    height: 135px;
+  }
+  .contactFollow{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 135px;
+  }
+  .contacthead{
+    height: 25px;
+    font-weight: 400;
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+  .contactbody{  
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .contactbodylow{  
+    font-size: 10px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+  }
+  .contFollowWrap{
+    height: 25px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: start;
+  }
+  .contLinks{
+    width: 100%;
+  }
+  .smLogos{
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .smlogo{
+    height: 20px;
+    margin: 3px 0px 3px 10px;
+    display: flex;
+    justify-content: right;
+  }
+  .phoneNumSection{
+    margin-top: 15px;
+    flex-direction: row-reverse;
+    justify-content: right;
+  }
+  .emailSection{
+    margin-top: 15px;
+    flex-direction: row-reverse;
+    justify-content: right;
+  }
+  .phoneNum{
+    font-size: 11px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .emailText{
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .contactwrapper{ 
+    width: 100%;
+    padding: 10px 10px;
+    height: 95%;
+  }
+  .dcontactwrapper{
+    width: 100%;
+    padding: 10px 10px;
+    height: 95%;
+  }
 }
-@media screen and (max-width:640px) and (min-width:570px) {
-  
+@media screen and (max-width:1051px) and (min-width:850px) {
+  .dreview{
+    padding: 10px 7px 10px 7px;
+  }
+  .review{
+    padding: 10px 7px 10px 7px;
+  }
+  .reviewText{
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .reviewIdentity{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 0px 0px;
+  }
+  .profImage{  
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+  }
+  .reviewName{
+    font-size: 12px;
+  }
+  .reviewPos{
+    font-size: 11px;
+  }
+  .contacthead{
+    font-weight: 400;
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+  .contactbody{  
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .contactbodylow{  
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .contFollowWrap{
+    margin-bottom: 0px;
+  }
+  .smlogo{
+    height: 22px;
+    margin: 3px 15px 3px 0px;
+  }
+  .phoneNumSection{
+    margin-top: 20px;
+  }
+  .emailSection{
+    margin-top: 20px;
+  }
+  .phoneNum{
+    font-size: 11px;
+    margin-left: 15px;
+  }
+  .emailText{
+    font-size: 11px;
+    margin-left: 15px;
+  }
 }
-@media screen and (max-width:841px) and (min-width:640px) {
-  
+@media screen and (max-width:749.98px){
+  .Contact{
+    padding: 3px 0px 3px 0px; 
+  }
+  .dContact{
+    padding: 3px 0px 3px 0px; 
+  }
+  .contactPageCont{  
+    padding: 0px 7px 5px 7px;
+  } 
 }
-@media screen and (max-width:992px) and (min-width:841px) {
-  
-}
+
+/* Done with mobile view */

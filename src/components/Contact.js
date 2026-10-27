@@ -124,7 +124,7 @@ const Contact = () => {
           <div className='testimonialSection'>
             <p className={!dark ? 'testimonialhead lightTextColor' : 'testimonialhead darkTextColor'}>Testimonials</p>
             <h1 className={!dark ? 'testimonialTxt lightWords' : 'testimonialTxt darkWords'}>What Clients Say</h1>
-            <div style={{display:"flex", justifyContent:"space-between"}}>
+            <div className='testimonialLister'>
               {reviews.map((review)=>(
                 <div className={!dark ? 'review' : 'dreview'} key={review.id}>   
                   <div className='reviewWords'>
@@ -154,67 +154,73 @@ const Contact = () => {
                   <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>LET'S WORK TOGETHER</p>
                 </div>              
                 <p className={!dark ? 'contactbody lightText' : 'contactbody darkText'}>Have a project in mind?</p>
-                <p className={!dark ? 'contactbodylow lightText' : 'contactbodylow darkText'}>I'm always open to discussing new projects and<br/>opportunities. Let's create something amazing together!</p>
+                <p className={!dark ? 'contactbodylow lightText' : 'contactbodylow darkText'}>I'm always open to discussing new projects and opportunities.<br/>Let's create something amazing together!</p>
               </div>
-              <div className='contFollowWrap'>
-                <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>FOLLOW ME</p>
-              </div>              
+              <div className='contactFollow'>
+                <div className='contFollowWrap'>
+                  <p className={!dark ? 'contacthead lightTextColor' : 'contacthead darkTextColor'}>FOLLOW ME</p>
+                </div>              
 
-              <div className='contLinks'>
-                <a
-                    className="locwhat"
-                    href="https://wa.me/qr/7K2XV7UM75H4N1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={whatlight} className="smlogo" alt="whatlight"/>
-                  </a>
-                <a
-                    className="locinsta"
-                    href="https://www.instagram.com/_the.loner"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={insta} className="smlogo" alt="insta"/>
-                  </a>
-                <a
-                    className="loctwitter"
-                    href="https://x.com/JayMono7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={twitter} className="smlogo" alt="twitter"/>
-                  </a>
-                <a
-                    className="loclinkedin"
-                    href="https://www.linkedin.com/in/oluwaseun-olaitan-059b23201"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={linkedin} className="smlogo" alt="linkedin"/>
-                  </a>
-                <a
-                    className="locgithub" 
-                    href="https://github.com/JM-TheLoner"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                      <img src={github} className="smlogo" alt="github"/>
-                  </a>
-                <div className='phoneNumSection'>
-                  <FaPhone size={18} color={!dark ? '#e213fd' : '#7f58ff'} style={{rotate:'90deg'}}/>
-                  <p className='phoneNum'>
-                    <a className={!dark ? 'lightText' : 'darkText'} href='tel:+234-902-328-2736'>+234 902 328 2736</a>            
-                  </p>
-                </div>
+                <div className='contLinks'>
+                  <div className='smLogos'>
+                    <a
+                        className="locwhat"
+                        href="https://wa.me/qr/7K2XV7UM75H4N1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={whatlight} className="smlogo" alt="whatlight"/>
+                      </a>
+                    <a
+                        className="locinsta"
+                        href="https://www.instagram.com/_the.loner"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={insta} className="smlogo" alt="insta"/>
+                      </a>
+                    <a
+                        className="loctwitter"
+                        href="https://x.com/JayMono7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={twitter} className="smlogo" alt="twitter"/>
+                      </a>
+                    <a
+                        className="loclinkedin"
+                        href="https://www.linkedin.com/in/oluwaseun-olaitan-059b23201"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={linkedin} className="smlogo" alt="linkedin"/>
+                      </a>
+                    <a
+                        className="locgithub" 
+                        href="https://github.com/JM-TheLoner"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                          <img src={github} className="smlogo" alt="github"/>
+                      </a>
+                  </div>
+                  
+                  <div className='phoneNumSection'>
+                    <FaPhone size={18} color={!dark ? '#e213fd' : '#7f58ff'} style={{rotate:'90deg'}}/>
+                    <p className='phoneNum'>
+                      <a className={!dark ? 'lightText' : 'darkText'} href='tel:+234-902-328-2736'>+234 902 328 2736</a>            
+                    </p>
+                  </div>
 
-                <div className='emailSection'>              
-                  <FaEnvelope size={18} color={!dark ? '#e213fd' : '#7f58ff'} />
-                  <p className='emailText'>
-                    <a className={!dark ? 'lightText' : 'darkText'} href='mailto:oolaitan13@gmail.com'>Oolaitan13@gmail.com</a>
-                  </p>                      
+                  <div className='emailSection'>              
+                    <FaEnvelope size={18} color={!dark ? '#e213fd' : '#7f58ff'} />
+                    <p className='emailText'>
+                      <a className={!dark ? 'lightText' : 'darkText'} href='mailto:oolaitan13@gmail.com'>Oolaitan13@gmail.com</a>
+                    </p>                      
+                  </div>
                 </div>
-              </div>   
+              </div>
+                 
             </div>
 
             <div className='contactRight'>
