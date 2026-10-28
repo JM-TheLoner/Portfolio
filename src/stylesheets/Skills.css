@@ -115,6 +115,16 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 13%;
   padding: 0px 0px 0px 0px;
+}
+.processTitleBottom{
+  width: 100%;
+  height: 11%;
+  padding: 0px 0px 0px 0px;
+}
+.processDescBottom{
+  width: 100%;
+  height: 13%;
+  padding: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -136,7 +146,6 @@ body::-webkit-scrollbar {
   width: 18%;
   backdrop-filter: blur(2px);
   overflow-wrap: break-word;
-  transition: 150ms ease-in-out 0ms;
   overflow: hidden;
   border-radius: 12px; 
   padding: 12px 15px 12px 15px;
@@ -238,7 +247,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgba(226, 118, 250, 0.501);
 }
 .darkTechBorder{
-  background-color: #0405192b;
+  background-color: #1e00403f;
   box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
   border: 1px solid #a9a3ff67;
 }
@@ -259,6 +268,9 @@ body::-webkit-scrollbar {
   visibility: hidden;
 }
 .skillItem:hover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 20%;
   height: 100%;
   z-index: 10;
@@ -309,55 +321,321 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-
-
-
-/* haven't worked part this line */
-
-
-
-
-
-
-
-.covering{
-  display: none;
+@media screen and (max-width:749.98px){
+  .skills{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .dskills{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .skillsContainer{  
+    padding: 0px 7px 5px 7px;
+    height: fit-content;
+  } 
 }
-@keyframes appear{
-  0%{
-      opacity: 0.5;
-  }    
-  50%{
-      opacity: 0.5; 
+@media screen and (max-width:1051px) and (min-width:750px){
+  .skills{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
   }
-  70%{
-      opacity: 0.5; 
+  .dskills{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
   }
-  100%{
-      opacity: 1; 
-  }
-}
-@keyframes blink{
-  0%{
-      color: #303bff;
-  }    
-  50%{
-      color: #010327; 
-  }
-  70%{
-      color: #303bff;
-  }
-  100%{
-      color: #010327; 
+  .skillsContainer{  
+    padding: 0px 7px 5px 7px;
+    height: fit-content;
   }
 }
+@media screen and (max-width:1051px) and (min-width:750px){
+  .processTitle{
+    height: 6%;
+  }
+  .processStory{
+    font-size: 12px;
+  }  
+  .processDesc{
+    height: 10%;
+  }
+  .processTitleBottom{
+    height: 4%;
+  }
+  .processDescBottom{
+    height: 6%;
+  }
+  .processList{
+    height: 75%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 0px 0px 0px;
+  }
+  .stepItem{  
+    height: 75%;
+    width: 18.5%;
+    flex-shrink: 0;
+    padding: 7px 3px 7px 3px;
+  }
+  .disappearWhenSmall{
+    display: none;
+  }
+  .skillsTopBox{
+    padding: 0px 0px 0px 0px;
+    height: 30%;
+  }
+  .skillsBottomBox{
+    padding: 30px 0px 0px 0px;
+    height: 70%;
+  }  
+  .accordion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 85%;
+    padding: 5px 10px 5px 10px;
+  }
+  .skillItem{
+    width: 31%;
+    height: 100px;
+    border-radius: 9px;
+    padding: 5px 5px 5px 5px;
+    flex-shrink: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightTechBorder{
+    box-shadow: none;
+    border: none;
+  }
+  .darkTechBorder{
+    box-shadow:  none;
+    border: none;
+  }
+  .SkillItemImgCont{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .skillItemImg{
+    position: relative;
+    height: 50px;
+    border-radius: 9px;
+  }
+  .content{
+    visibility: visible;
+    width: 98%;
+    height: 45px;
+    padding: 0px 0px 0px 5px;
+  }
+  .skillText{
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+  }
+  .skillName{
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .skillPro{
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .progressBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:749.98px){
+  .processTitle{
+    height: 6%;
+  }
+  .processStory{
+    font-size: 12px;
+  }  
+  .processDesc{
+    height: 10%;
+  }
+  .processTitleBottom{
+    height: 6%;
+  }
+  .processDescBottom{
+    height: 10%;
+  }
+  .disappearWhenSmall{
+    display: none;
+  }  
+  .skillsTopBox{
+    padding: 0px 0px 0px 0px;
+  }
+  .skillsBottomBox{
+    padding: 30px 0px 0px 0px;
+  }
+  .processList{
+    height: 75%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 0px 0px 0px;
+  }
+  .stepItem{  
+    height: 49%;
+    width: 31%;
+    flex-shrink: 0;
+    padding: 7px 5px 7px 5px;
+  }
+  .stepSymbol{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  .lightStepSymbol{
+    box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
+    border: 0.5px solid rgba(226, 118, 250, 0.501);
+  }
+  .darkStepSymbol{
+    box-shadow:  0 1px 3px rgba(108, 63, 245, 0.350);
+    border: 0.5px solid #a9a3ff67;
+  }
+  .stepNum{
+    font-size: 11px;
+  }
+  .lightNumBG{  
+    height: 15px;
+    width: 17px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .darkNumBG{
+    height: 15px;
+    width: 17px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stepName{
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .stepDesc{
+    font-size: 9px;
+  }  
+  .accordion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 85%;
+    padding: 5px 0px 5px 0px;
+  }
+  .skillItem{
+    width: 48%;
+    height: 45px;
+    border-radius: 9px;
+    padding: 5px 5px 5px 5px;
+    flex-shrink: 0;
+    pointer-events: none;
+    display: flex;
+  }
+  .lightTechBorder{
+    box-shadow: none;
+    border: none;
+  }
+  .darkTechBorder{
+    box-shadow:  none;
+    border: none;
+  }
+  .SkillItemImgCont{
+    height: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .skillItemImg{
+    position: relative;
+    height: 35px;
+    border-radius: 9px;
+  }
+  .content{
+    visibility: visible;
+    width: 80%;
+    height: 45px;
+    padding: 0px 0px 0px 5px;
+  }
+  .skillText{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+  }
+  .skillName{
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .skillPro{
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .progressBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-height:650px) and (min-width:1051.02px){
+  .skillsContainer{
+    justify-content: space-around;    
+  }
+  .skillsTopBox{
+    height: 45%;
+    max-height: 220px;
+  }
+  .processTitle{
+    width: 100%;
+    height: 10%;
+    padding: 0px 0px 0px 0px;
+  }
+  .processDesc{
+    width: 100%;
+    height: 15%;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .processTitleBottom{
+    width: 100%;
+    height: 7%;
+    padding: 0px 0px 0px 0px;
+  }
+  .processDescBottom{
+    width: 100%;
+    height: 12%;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skillItem:hover{
+    height: 220px;
+  }
+}
 
-@media screen and (max-width:560px) {
-    
-}
-@media screen and (max-width:696px) and (min-width:560px) {
-    
-}
-@media screen and (max-width:840px) and (min-width:696px) {
-    
-}
+
+
+/* Done with this page */

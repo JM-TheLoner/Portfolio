@@ -198,16 +198,20 @@ body::-webkit-scrollbar {
 @media screen and (max-width:849.98px) {
     .Lost{
         padding: 1px 5px 1px 5px;
+        min-height: 100vh;
+        overflow: auto;
     }
     .dLost{
         padding: 1px 5px 1px 5px;
+        min-height: 100vh;
+        overflow: auto;
     }
     .lostDiv{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: fit-content;
     }
     .lostLeft{
         width: 90%;

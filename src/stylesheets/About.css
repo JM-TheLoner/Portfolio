@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgba(226, 118, 250, 0.501);
 }
 .darkAboutBorder{
-  background-color: #0405192b;
+  background-color: #1e00403f;
   box-shadow:  0 1px 6px rgba(108, 63, 245, 0.350);
   border: 1px solid #a9a3ff67;
 }
@@ -219,6 +219,7 @@ body::-webkit-scrollbar {
   height: 73%;
   justify-content: space-between;
   padding-top: 3px;
+  flex-wrap: wrap;
 }
 .serviceItem{  
   height: 100%;
@@ -292,24 +293,336 @@ If the attatched CSS configuration does not have the utility class .sr-only defi
   border-width: 0;
 }
 
-/* I haven't worked on code past this point */
 
-
-
-
-
-
-
-
-@media screen and (max-width:560px) {
-
+@media screen and (max-width:1051px) {
+  .aboutTopBox{
+    height: 45%;
+    max-height: none;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutBottomBox{
+    height: 55%;
+    padding: 15px 3px 5px 3px;
+  }
+  .aboutTopLeft{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    margin-top: 5px;
+  }
+  .aboutTopRight{
+    width: 100%;
+    height: 40%;
+    padding: 5px 7px 5px 7px;
+  }
+  .topRightHead{
+    font-size: 20px;
+    height: 20px;
+  }
+  .variable-proximity{
+    font-size: 11px;
+  }
+  .vProx{
+    font-size: 11px;
+    text-align: justify;
+  }
+  .aboutTitle{
+    display: none;
+    position: absolute;
+  }
+  .aboutDesc{
+    width: 200px;
+    height: 25%;
+  }
+  .storyDesc{
+    font-size: 18px;
+  }  
+  .lightAboutBorder{
+    background-color: #c6c6c61b;
+    box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
+    border: 0.5px solid rgba(226, 118, 250, 0.501);
+  }
+  .darkAboutBorder{
+    background-color: #1e00403f;
+    box-shadow:  0 1px 3px rgba(108, 63, 245, 0.350);
+    border: 0.5px solid #a9a3ff67;
+  }
+  .aboutItems{
+    width: 100%;
+    height: 50%;
+    padding: 5px 5px 5px 5px;
+  }
+  .highlightList{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
+  }
+  .highlightItem{  
+    height: 100%;
+    width: 24%;
+    transition: 150ms ease-in-out 0ms;
+    overflow: hidden;
+    padding: 4px 3px 4px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .highlightName{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    transition: 150ms ease-in-out 0ms;
+    line-height: 1.2;
+  }
+  .highlightDesc{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    transition: 150ms ease-in-out 0ms;
+  }
+  .aboutBottomTitle{
+    display: none;
+  }
+  .aboutBottomDesc{
+    width: 100%;
+    height: 8%;
+    padding-top: 3px;
+  }
+  .serviceList{
+    display: flex;
+    height: fit-content;
+    justify-content: left;
+    flex-grow: 1;
+    padding: 5px 0px 5px 0px;
+    gap: 15px;
+  }
+  .serviceItem{  
+    height: 165px;
+    width: 47%;
+    flex-shrink: 0;
+    padding: 7px 7px 7px 7px;
+  }
+  .serviceSymbol{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .lightserviceSymbol{
+    box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
+    border: 0.5px solid rgba(226, 118, 250, 0.501);
+  }
+  .darkserviceSymbol{
+    box-shadow:  0 1px 3px rgba(108, 63, 245, 0.350);
+    border: 0.5px solid #a9a3ff67;
+  }
+  .serviceImage{
+    height: 47px;
+    border-radius: 7px; 
+  }
+  .serviceName{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .serviceDesc{
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
-@media screen and (max-width:696px) and (min-width:560px) {
+@media screen and (max-width:749.98px){
+  .About{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .dAbout{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .aboutContainer{  
+    padding: 0px 7px 5px 7px;
+    height: fit-content;
+    flex-grow: 1;
+  } 
+  .highlightName{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .highlightDesc{
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width:1051px) and (min-width:750px){
+  .About{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .dAbout{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .aboutContainer{  
+    padding: 0px 7px 5px 7px;
+    height: fit-content;
+    flex-grow: 1;
+  } 
+  .aboutTopBox{
+    height: 35%;
+    max-height: none;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutBottomBox{
+    height: 65%;
+    padding: 15px 3px 5px 3px;
+  }
+}
+@media screen and (max-width:1051px) and (min-width:600px){
+  .serviceItem{  
+    height: 170px;
+    width: 31%;
+    flex-shrink: 0;
+    padding: 7px 7px 7px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-height:1025px) and (max-width:1051px) {
+  .About{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .dAbout{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .aboutContainer{  
+    padding: 0px 7px 5px 7px;
+    height: calc(100vh - 95px);
+    flex-grow: 1;
+  }   
+  .aboutTopBox{
+    height: 35%;
+    max-height: none;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutBottomBox{
+    height: 65%;
+    padding: 15px 3px 5px 3px;
+  }
+  .aboutTopRight{
+    height: 35%;    
+  }
+  .aboutTopLeft{
+    height: 65%;
+  }
+  .serviceList{
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width:650px){
+  .aboutDesc{
+    width: 100%;
+  }
+}
+@media screen and (max-height:1024.98px) and (min-height:800px) and (min-width:600px) and (max-width:1051px){
+  .About{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .dAbout{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .aboutContainer{  
+    padding: 0px 7px 5px 7px;
+    height: calc(100vh - 95px);
+    flex-grow: 1;
+  }   
+  .aboutTopBox{
+    height: 40%;
+    max-height: none;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutBottomBox{
+    height: 60%;
+    padding: 10px 3px 5px 3px;
+  }
+  .aboutTopLeft{
+    height: 60%;
+    transition: 150ms ease-in-out 0ms;
+    padding: 0px;
+  }
+  .aboutItems{
+    padding: 10px 5px 5px 5px;
+  }
+  .serviceList{
+    justify-content: left;
+  }
+}
+@media screen and (min-height:650px) and (min-width:1051.02px){
+  .aboutContainer{
+    justify-content: space-around;
+  }
+  .aboutTopBox{
+    height: 38%;
+    max-height: 200px;
+    width: 100%;
+  }
+  .aboutBottomBox{
+    height: 62%;
+    width: 100%;
+    padding: 15px 0px 10px 0px;
+  }
+  .serviceItem{  
+    display: flex;
+    max-height: 250px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .serviceName{
+    font-size: 20px;
+  }
+  .serviceDesc{
+    font-size: 13px;
+  }
+  .serviceSymbol{
+    width: 80px;
+    height: 80px;
+  }
+  .serviceImage{
+    height: 76px;
+  }
+  .aboutBottomTitle{
+    width: 100%;
+    height: 7%;
+    padding-top: 5px;
+  }
+  .aboutBottomDesc{
+    width: 100%;
+    height: 12%;
+    padding-top: 3px;
+  }
+}
 
-}
-@media screen and (max-width:840px) and (min-width:696px) {
 
-}
-@media screen and (max-width:992px) and (min-width:840px) {
-  
-}
+/* Done with this page */

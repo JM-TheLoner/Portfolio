@@ -74,16 +74,19 @@ const Header = ({ title }) => {
 
   
   const darkmode = async (e) => {
-    e.preventDefault()
-    localStorage.setItem('darkMode', !dark)
-    await setdark(JSON.parse(localStorage.getItem('darkMode')))
+    e.preventDefault();
+    const nextMode = !dark; // Calculate the new state
+    setdark(nextMode); // Update React state
+    localStorage.setItem('JMTL_Portfolio_DarkMode', JSON.stringify(nextMode)); // Save using the correct key
+
   }
   const smalldarkmode = async (e) => {
     setslider(false);
     setIsActive(false);
-    e.preventDefault()
-    localStorage.setItem('darkMode', !dark)
-    await setdark(JSON.parse(localStorage.getItem('darkMode')))
+    e.preventDefault()    
+    const nextMode = !dark; 
+    setdark(nextMode); 
+    localStorage.setItem('JMTL_Portfolio_DarkMode', JSON.stringify(nextMode)); 
   }
 
   const linkstyle = {

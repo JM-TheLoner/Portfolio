@@ -281,7 +281,7 @@ a{
     margin-top: 60px;
   }
 }
-@media screen and (max-width:1035px) {
+@media screen and (max-width:1051px) {
   .projTitle{
     width: 95%;
   }
@@ -324,9 +324,13 @@ a{
     margin-bottom: 10px;
   }
   .dproject{
+    height: 270px;
+    width: 330px;
     padding: 4px 4px 10px 4px;
   }
   .project{
+    height: 270px;
+    width: 330px;
     padding: 4px 4px 10px 4px;
   }
   .imageContainer{

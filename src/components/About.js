@@ -33,8 +33,8 @@ const About = () => {
   const highlights = [
     {key:'0', symbol: <BsCodeSlash size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:'Full-Stack', description:'Development'},
     {key:'1', symbol: <FaBolt size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:'Electrical', description:'Engineering'},
-    {key:'2', symbol: <MdCalendarToday size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:`${currentYear-2020}+`, description:'Years Experience'},
-    {key:'3', symbol: <BsCheckCircle size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:'20+', description:'Projects Completed'}
+    {key:'2', symbol: <BsCheckCircle size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:'20+', description:'Projects'},
+    {key:'3', symbol: <MdCalendarToday size={23} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms'}} />, name:`${currentYear-2020}+`, description:'Years Experience'}
   ]
 
   useEffect(()=>{
@@ -76,7 +76,7 @@ return (
             Who Am I
           </h2>
           <div className={!dark ? 'lightText' : 'darkText'}>
-            <p ref={containerRef} style={{position: 'relative'}}>
+            <p ref={containerRef} style={{position: 'relative'}} className='vProx'>
               <VariableProximity
                 label={"I'm a full-stack developer and electrical engineer who enjoys figuring out how things work and finding ways to make them better. I love turning ideas into practical solutions, whether that's building a web application or tackling an engineering problem. I bring creativity, curiosity, and an analytical mindset to everything I do."}
                 fromFontVariationSettings="'wght' 300, 'opsz' 9"

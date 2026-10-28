@@ -21,12 +21,10 @@ import { FiCornerLeftDown } from "react-icons/fi";
 // import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
 
 
-//to play sound on entering portfolio item, uncomment lines 8-9 (import of sounds), _______ (defining sound playing function) and ________ (calling functions on entering item)
+//to play sound on entering portfolio item, uncomment lines 20-21 (import of sounds), 51-54 (defining sound playing function) and 132 (calling functions on entering item)
 
 
 const About = () => { 
-
-  const [progress, setProgress] = useState(null);
 
   const { dark } = useContext(DataContext)
 
@@ -86,7 +84,6 @@ const About = () => {
         <Header/>
         <div className='skillsContainer'>
 
-          {/* <div className='covering'></div> */}
           <div className='skillsTopBox'>
             <div className='processTitle'>
               <h1 className={!dark ? 'processStory lightTextColor' : 'processStory darkTextColor'}>MY PROCESS FLOW</h1>            
@@ -118,20 +115,20 @@ const About = () => {
           </div>
 
           <div className='skillsBottomBox' style={{width:'100%'}}>
-            <div className='processTitle'>
+            <div className='processTitleBottom'>
               <h1 className={!dark ? 'processStory lightTextColor' : 'processStory darkTextColor'}>MY TECH STACK</h1>            
             </div>
-            <div className='processDesc'>
+            <div className='processDescBottom'>
               <h1 className={!dark ? 'processStoryDesc lightText' : 'processStoryDesc darkText'}>Technologies I Work With</h1> 
               <div style={{display:'flex'}}>
-                <FiCornerLeftDown  size={15} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'5px', marginTop:'5px'}} />
-                <h1 className={!dark ? 'techStoryLead lightTextColorB' : 'techStoryLead darkTextColorB'}>Hover to explore</h1> 
+                <FiCornerLeftDown className='disappearWhenSmall' size={15} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'5px', marginTop:'5px'}} />
+                <h1 className={!dark ? 'techStoryLead lightTextColorB disappearWhenSmall' : 'techStoryLead darkTextColorB disappearWhenSmall'}>Hover to explore</h1> 
               </div>              
             </div>
             <div className='accordion'>
             {skills.map(
               (skill)=> (
-                <div className={!dark ? 'skillItem lightTechBorder' : 'skillItem darkTechBorder'} key={skill.key} onMouseEnter={()=>{setProgress(skill.progress)}}
+                <div className={!dark ? 'skillItem lightTechBorder' : 'skillItem darkTechBorder'} key={skill.key}
                  // onMouseEnter={()=>{playSound(draw)}} // onMouseLeave={()=>{playSound(retract)}}
                 > 
                   <div className='SkillItemImgCont' >
@@ -145,7 +142,7 @@ const About = () => {
                       <p className={!dark ? 'skillPro lightText' : 'skillPro darkText'}>{skill.progress}%</p>
                     </div>
                     <div className='progressBar'>
-                      <ProgressBar percentage={progress} />
+                      <ProgressBar percentage={skill.progress || 0} />
                     </div>
                   </div>
                 </div>

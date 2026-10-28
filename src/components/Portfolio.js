@@ -8,7 +8,7 @@ import githubImage from '../Assets/Images/GitHub-Logo.png'
 // import whoosh2 from '../Assets/Audio/hidden-blade-retract.mp3'
 
 
-//to play sound on entering portfolio item, uncomment lines 7-8 (import of sounds), 18-21 (defining sound playing function) and 49-50 (calling functions on entering item)
+//to play sound on entering portfolio item, uncomment lines 7-8 (import of sounds), 18-21 (defining sound playing function) and 46 (calling functions on entering item)
 
 
 const Portfolio = () => {
@@ -43,8 +43,7 @@ const Portfolio = () => {
         >  
           {projectList.map((project)=>(
             <a href={project.projectLink}
-            // onMouseEnter={()=>{playSound(whoosh1)}}
-            // onMouseLeave={()=>{playSound(whoosh2)}}
+            // onMouseEnter={()=>{playSound(whoosh1)}} onMouseLeave={()=>{playSound(whoosh2)}}
             key={project.key}
             >
               <div className={!dark ? 'project' : 'dproject'}> 
