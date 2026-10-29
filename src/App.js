@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import { Route, Routes } from 'react-router-dom'
 import { DataProvider } from './context/Datacontext';
 import { useState } from 'react';
+import { HashRouter as Router } from 'react-router-dom';
 
 function App() {
   const [hasPlayedDecrypt, setHasPlayedDecrypt] = useState(false);
