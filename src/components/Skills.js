@@ -17,6 +17,7 @@ import pythonLogo from '../Assets/Images/python-5.svg'
 import pandasLogo from '../Assets/Images/pandas-2.svg'
 import gitLogo from '../Assets/Images/git-icon.svg';
 import { FiCornerLeftDown } from "react-icons/fi";
+import { TbHandClick } from 'react-icons/tb';
 // import draw from '../Assets/Audio/lightsaber-whoosh-03.mp3'
 // import retract from '../Assets/Audio/lightsaber-whoosh-04.mp3'
 
@@ -33,6 +34,14 @@ const About = () => {
   const [color, setColor] = useState(colorList[8])
   const [size, setSize] = useState(15)
   const [rad, setRad] = useState(15)
+
+  const handleSkillChange = (e, title, lvl, image, alt) => {
+    e.preventDefault()    
+    setname(title)
+    setprogress(lvl)
+    setimg(image)
+    setalt(alt)
+  }
 
   const selectColandSize = () =>{
     let num = (Math.random() * 10)
@@ -73,6 +82,11 @@ const About = () => {
     {key: '8', image:pandasLogo, alt:'Pandas Logo', name:'Pandas', progress:40},
     {key: '9', image:gitLogo, alt:'Git Logo', name:'Git', progress:75}
   ]
+
+  const [progress, setprogress] = useState(skills[0].progress)
+  const [name, setname] = useState(skills[0].name)
+  const [img, setimg] = useState(skills[0].image)
+  const [alt, setalt] = useState(skills[0].alt)
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -120,15 +134,17 @@ const About = () => {
             </div>
             <div className='processDescBottom'>
               <h1 className={!dark ? 'processStoryDesc lightText' : 'processStoryDesc darkText'}>Technologies I Work With</h1> 
-              <div style={{display:'flex'}}>
-                <FiCornerLeftDown className='disappearWhenSmall' size={15} color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'5px', marginTop:'5px'}} />
-                <h1 className={!dark ? 'techStoryLead lightTextColorB disappearWhenSmall' : 'techStoryLead darkTextColorB disappearWhenSmall'}>Hover to explore</h1> 
+              <div className='techPrompt'>
+                <FiCornerLeftDown size={15} className='disappearWhenSmall' color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'5px', marginTop:'5px'}} />
+                <TbHandClick size={13} className='appearWhenSmall' color={!dark ? '#f700ff' : '#b458ff'} style={{transition: '150ms ease-in-out 0ms', marginRight:'2px', marginTop:'-5px'}} />
+                <h1 className={!dark ? 'techStoryLead lightTextColorB disappearWhenSmall' : 'disappearWhenSmall techStoryLead darkTextColorB'}>Hover to explore</h1> 
+                <h1 className={!dark ? 'techStoryLead lightTextColorB appearWhenSmall' : 'appearWhenSmall techStoryLead darkTextColorB'}>Tap to explore</h1> 
               </div>              
             </div>
             <div className='accordion'>
             {skills.map(
               (skill)=> (
-                <div className={!dark ? 'skillItem lightTechBorder' : 'skillItem darkTechBorder'} key={skill.key}
+                <div className={!dark ? 'skillItem lightTechBorder' : 'skillItem darkTechBorder'} key={skill.key} onMouseEnter={()=>{setprogress(skill.progress)}}
                  // onMouseEnter={()=>{playSound(draw)}} // onMouseLeave={()=>{playSound(retract)}}
                 > 
                   <div className='SkillItemImgCont' >
@@ -142,13 +158,42 @@ const About = () => {
                       <p className={!dark ? 'skillPro lightText' : 'skillPro darkText'}>{skill.progress}%</p>
                     </div>
                     <div className='progressBar'>
-                      <ProgressBar percentage={skill.progress || 0} />
+                      <ProgressBar percentage={progress || 0} />
                     </div>
                   </div>
                 </div>
               )
             )}
-          </div>
+            </div>
+            <div className='accordionsmall'>
+              {skills.map(
+                (skill)=> (
+                  <div className={!dark ? 'smallSkillItem smallLightTechBorder' : 'smallSkillItem smallDarkTechBorder'} key={skill.key} onMouseEnter={(e)=>{handleSkillChange(e, skill.name, skill.progress, skill.image, skill.alt)}}
+                  // onMouseEnter={()=>{playSound(draw)}} // onMouseLeave={()=>{playSound(retract)}}
+                  > 
+                    <div className='SkillItemImgCont' >
+                      <div className={!dark ? 'lightTechSymbol' : 'darkTechSymbol'}>
+                        <img className='smallSkillItemImg' src={skill.image} alt={skill.alt}/>
+                      </div>                    
+                    </div>    
+                  </div>
+                )
+              )}              
+              <div className={!dark ? 'lightTechBorder content' : 'darkTechBorder content'}>
+                <div className={!dark ? 'progItemImgCont lightTechBorder' : 'progItemImgCont darkTechBorder'}>
+                  <img className='progItemImg' src={img} alt={alt}/>
+                </div>
+                <div className='skillTextCont'>
+                  <div className='skillText'>
+                    <p className={!dark ? 'skillName lightTextColorB' : 'skillName darkTextColorB'}>{name}</p>
+                    <p className={!dark ? 'skillPro lightText' : 'skillPro darkText'}>{progress ? `${progress}%`: ''}</p>
+                  </div>
+                  <div className='progressBar'>
+                    <ProgressBar percentage={progress || 0} />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           
 

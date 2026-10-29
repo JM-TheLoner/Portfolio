@@ -20,14 +20,14 @@ body::-webkit-scrollbar {
     height: 100vh;
     transition: 150ms ease-in-out 0ms;
     overflow-y: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .spliting{
     margin-top: 70px;
     height: calc(100vh - 70px);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .leftside{
     width:56%;
@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 .headLineContainer{
     position: relative;
     font-family: 'Manrope', sans-serif;
-    width: 26%;
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -46,21 +46,23 @@ body::-webkit-scrollbar {
     background: #e0e0e082;
     padding-top:8px;
     height: 30px;
-    width: 100%;
+    width: fit-content;
     border-radius: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 5px 5px 0px 7px;
 }
 .dheadWrap{
     background: #09004a71;
     padding-top:8px;
     height: 30px;
-    width: 100%;
+    width: fit-content;
     border-radius: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 5px 5px 0px 7px;
 }
 .headLine{
     transition: 150ms ease-in-out 0ms;
@@ -142,7 +144,7 @@ body::-webkit-scrollbar {
     color: transparent;
 }
 .LineFour{
-    background: red;
+    
     font-weight: 400;
     font-size: 16px;
     width: 85%;
@@ -166,7 +168,7 @@ body::-webkit-scrollbar {
     display: inline-block;
 }
 .dLineFour{
-    background: red;
+    
     font-weight: 400;
     font-size: 16px;
     width: 85%;
@@ -333,6 +335,9 @@ body::-webkit-scrollbar {
     width: 41%;
     justify-self: flex-end;
     position: relative;
+    /* 1. Locks the proportions so height automatically updates with width changes */
+    aspect-ratio: 385 / 430; 
+    min-width: 280px;
 }
 .backer{
     width: 385px;
@@ -352,7 +357,6 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-right: 3px;
 }
 .dbacker{
     width: 385px;
@@ -372,32 +376,35 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-right: 3px;
 }
 .homeImg{
     display: block;
     position: relative;
-    width: 390px;
-    height: auto;
+    width: 405px;
     transform: rotate(-2deg);
 }
 .homeImgCont{
-    width: 100%;
+    width: 385px;
+    height: 430px;
+    background: none;
+    border: none;
+    box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
+    border-radius: 30% 18% 70% 18% / 30% 18% 70% 18%;
+    transform: rotate(2deg);
+    transition: 150ms ease-in-out 0ms;
+    position: absolute;
+    justify-self: center;
+    bottom: 0;   
+    Z-index: 0;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
     align-items: end;
-    padding-bottom: 3px;
-
 }
 .homeImgOut{
     display: block;
     position: relative;
-    width: 390px;
-    height: auto;
-    opacity: 1;
+    width: 405px;
+    transform: rotate(-2deg);
     mask-image: linear-gradient(to top, transparent 0%, black 15%);
 }
 .codeImages{
@@ -407,11 +414,11 @@ body::-webkit-scrollbar {
     opacity: 0.9;
 }
 .homeCodeImg{
-    height: 150px;
+    height: 31%;
     position: absolute;
     border-radius: 7px;
     z-index: 2;
-    right: 0%;
+    right: 5%;
     bottom: 7%;
     transition: 150ms ease-in-out 0ms;
     animation: hover 3000ms cubic-bezier(0.45, 0, 0.55, 1) 0s infinite;
@@ -465,15 +472,241 @@ body::-webkit-scrollbar {
 
 
 
-@media screen and (max-width:526px) {
-    
+@media screen and (max-width:749.98px){
+  .Home{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .dHome{
+    padding: 3px 0px 3px 0px; 
+    min-height: 100vh;
+    overflow: auto;
+  }
+  .spliting{  
+    padding: 0px 7px 5px 7px;
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  } 
 }
-@media screen and (max-width:692px) and (min-width:526px) {
-
-}    
-@media screen and (max-width:840px) and (min-width:692px) {    
-
+@media screen and (max-width:1051px) and (min-width:750px){
+  .Home{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .dHome{
+    padding: 3px 0px 3px 0px; 
+    height: 100vh;
+    overflow: auto;
+  }
+  .spliting{  
+    padding: 0px 7px 5px 7px;
+    margin-top: 70px;
+    display: flex;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
 }
-@media screen and (max-width:992px) and (min-width:840px) {
-
+@media screen and (max-width:749.98px){
+    .rightside{
+        width: 100%;
+        height: 70%;
+        margin-top: 100px;
+    }    
+    .backer,
+    .dbacker,
+    .homeImgCont{
+        width: 355px;
+        height: 400px;
+    }
+    .leftside{
+        margin-top: 20px;
+        width:100%;
+        height: 42%;
+        padding: 0px ;
+    }
+    .headLineContainer{
+        height: 10%;
+    }
+    .TopLine{
+        font-size: 60px;
+        height: 25%;
+        width: 100%;
+    }
+    .dTopLine{
+        font-size: 60px;
+        height: 25%;
+        width: 100%;
+    }
+    .LineThree{
+        height: 20%;
+        font-size: 20px;
+        width: 100%;
+    }
+    .dLineThree{
+        height: 20%;
+        font-size: 20px;
+        width: 100%;
+    }
+    .LineFour{
+        font-size: 12px;
+        height: 20%;
+        width: 100%;
+    }
+    .dLineFour{
+        font-size: 12px;
+        height: 20%;
+        width: 100%;
+    }
+    .sidebuttons{
+        height: 20%;
+        width: 100%;
+        justify-content: left;
+        gap: 10%;
+        padding: 0px 0px 5px 0px;
+    }
+    .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+    .dHome .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+}
+@media screen and (max-width:1051px) and (min-width:750px){
+    .rightside{
+        width: 100%;
+        height: 58%;
+        margin-top: 100px;
+    }
+    .backer,
+    .dbacker,
+    .homeImgCont{
+        width: 550px;
+        height: 600px;
+        justify-content: left;
+        top:0;
+    }
+    .homeImg,
+    .homeImgOut{
+        width: 550px
+    }
+    .leftside{
+        margin-top: 20px;
+        width: 100%;
+        height: 35%;
+        padding: 0px;
+    }
+    .headLineContainer{
+        height: 10%;
+    }
+    .TopLine{
+        font-size: 74px;
+        height: 20%;
+        width: 100%;
+    }
+    .dTopLine{
+        font-size: 74px;
+        height: 20%;
+        width: 100%;
+    }
+    .LineThree{
+        height: 10%;
+        font-size: 25px;
+        width: 100%;
+    }
+    .dLineThree{
+        height: 10%;
+        font-size: 25px;
+        width: 100%;
+    }
+    .LineFour{
+        font-size: 15px;
+        height: 13%;
+        width: 100%;
+    }
+    .dLineFour{
+        font-size: 15px;
+        height: 13%;
+        width: 100%;
+    }
+    .sidebuttons{
+        height: 25%;
+        width: 100%;
+        justify-content: left;
+        margin-top: 20px;
+        gap: 5%;
+    }
+    .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+    .dHome .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+}
+@media screen and (min-height:400px) and (min-width:1051.02px){
+    .rightside{
+        max-height: 650px;
+    }
+    .leftside{
+        width:50%;
+    }
+    .TopLine{
+        font-size: 60px;
+        height: 50px;
+    }
+    .dTopLine{
+        font-size: 60px;
+        height: 50px;
+    }
+    .LineThree{
+        height: 50px;
+        font-size: 25px;
+    }
+    .dLineThree{
+        height: 50px;
+        font-size: 25px;
+    }
+    .LineFour{
+        font-size: 13px;
+        height: 50px;
+    }
+    .dLineFour{
+        font-size: 13px;
+        height: 50px;
+    }
+    .sidebuttons{
+        height: 80px;
+        width: 400px;
+    }
+    .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+    .dHome .donbtnhome{
+        width: 180px;
+        height: 45px;
+        border-radius: 7px;
+    }
+}
+@media screen and (max-height:700px) and (max-width:1051.02px){
+    .rightside{
+        display: none;
+    }
+    .leftside{
+        height: 100%;
+    }
 }

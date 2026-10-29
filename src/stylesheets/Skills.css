@@ -223,6 +223,10 @@ body::-webkit-scrollbar {
   font-size: 13px;
   transition: 150ms ease-in-out 0ms;
 }  
+.techPrompt{
+  display: flex;
+  align-items: center;
+}
 .accordion{
   width: 100%;
   display: flex;
@@ -230,6 +234,9 @@ body::-webkit-scrollbar {
   height: 76%;
   transition: 150ms ease-in-out 0ms;
   padding: 10px 0px 0px 0px;
+}
+.accordionsmall{
+  display: none;
 }
 .skillItem{
   backdrop-filter: blur(2px);
@@ -267,25 +274,28 @@ body::-webkit-scrollbar {
 .content{
   visibility: hidden;
 }
-.skillItem:hover{
+.skillItem:hover,
+.skillItem:focus{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 20%;
   height: 100%;
   z-index: 10;
   padding: 10px 10px 10px 10px;
   border-radius: 12px;
 }
-.skillItem:hover .lightTechSymbol{
+.skillItem:hover.lightTechSymbol,
+.skillItem:focus.lightTechSymbol{
   height: 95px;
   border-bottom: 2px solid #870fff;
 }
-.skillItem:hover .darkTechSymbol{
+.skillItem:hover.darkTechSymbol,
+.skillItem:focus.darkTechSymbol{
   height: 95px;
   border-bottom: 2px solid #7f58ff;
 }
-.skillItem:hover .skillItemImg{
+.skillItem:hover .skillItemImg,
+.skillItem:focus .skillItemImg{
   position: relative;
   height: 90px;
   border-radius: 7px;
@@ -293,7 +303,8 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
   transform: translateY(-5px)
 }
-.skillItem:hover .content{
+.skillItem:hover .content,
+.skillItem:focus .content{
   visibility: visible;
 }
 .skillText{
@@ -319,6 +330,9 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.appearWhenSmall{
+  display: none;
 }
 
 @media screen and (max-width:749.98px){
@@ -382,9 +396,6 @@ body::-webkit-scrollbar {
     flex-shrink: 0;
     padding: 7px 3px 7px 3px;
   }
-  .disappearWhenSmall{
-    display: none;
-  }
   .skillsTopBox{
     padding: 0px 0px 0px 0px;
     height: 30%;
@@ -392,66 +403,112 @@ body::-webkit-scrollbar {
   .skillsBottomBox{
     padding: 30px 0px 0px 0px;
     height: 70%;
-  }  
+  }     
   .accordion{
+    display: none;
+  }
+  .accordionsmall{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     height: 85%;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px; 
+    transition: 150ms ease-in-out 0ms;
   }
-  .skillItem{
-    width: 31%;
-    height: 100px;
+  .smallSkillItem{
+    width: 21%;
+    height: 130px;
     border-radius: 9px;
     padding: 5px 5px 5px 5px;
     flex-shrink: 0;
-    pointer-events: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: 150ms ease-in-out 0ms;
     justify-content: center;
   }
-  .lightTechBorder{
-    box-shadow: none;
-    border: none;
+  .smallLightTechBorder{
+    box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
+    border: 0.5px solid rgba(226, 118, 250, 0.501);
+    transition: 150ms ease-in-out 0ms;
   }
-  .darkTechBorder{
-    box-shadow:  none;
-    border: none;
+  .smallDarkTechBorder{
+    box-shadow:  0 1px 3px rgba(108, 63, 245, 0.350);
+    border: 0.5px solid #a9a3ff67;
+    transition: 150ms ease-in-out 0ms;
+  }
+  .smallSkillItem:hover.smallLightTechBorder,
+  .smallSkillItem:focus.smallLightTechBorder{
+    box-shadow: 0 2px 6px rgba(226, 118, 250, 0.515);
+    border: 0.5px solid rgba(226, 118, 250, 0.778);
+  }
+  .smallSkillItem:hover.smallDarkTechBorder,
+  .smallSkillItem:focus.smallDarkTechBorder{
+    box-shadow:  0 2px 6px rgba(108, 63, 245, 0.601);
+    border: 0.5px solid #a9a3fff2;
   }
   .SkillItemImgCont{
-    height: 55px;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     display: flex;
     justify-content: center;
+    pointer-events: none;
   }
-  .skillItemImg{
+  .progItemImgCont{
+    height: 95%;
+    width: 18%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .smallSkillItemImg{
     position: relative;
-    height: 50px;
+    height: 100%;
     border-radius: 9px;
+    transition: 150ms ease-in-out 0ms;
+  }
+  .progItemImg{
+    position: relative;
+    height: 90%;
+    border-radius: 9px;
+    transition: 150ms ease-in-out 0ms;
   }
   .content{
     visibility: visible;
-    width: 98%;
-    height: 45px;
-    padding: 0px 0px 0px 5px;
+    width: 100%;
+    height: 130px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skillTextCont{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
   }
   .skillText{
     display: flex;
     justify-content: space-between;
-    height: 65%;
-    width: 100%;
+    align-items: center;
+    height: 50%;
+    width: 98%;
   }
   .skillName{
     font-weight: 800;
-    font-size: 13px;
+    font-size: 20px;
   }
   .skillPro{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 18px;
   }
   .progressBar{
     width: 100%;
@@ -460,6 +517,15 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width:749.98px){
+  .appearWhenSmall{
+    display: flex;
+  }
+  .techStoryLead{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    transition: 150ms ease-in-out 0ms;
+  }  
   .processTitle{
     height: 6%;
   }
@@ -471,6 +537,9 @@ body::-webkit-scrollbar {
   }
   .processTitleBottom{
     height: 6%;
+  }
+  .techPrompt{
+    justify-content: right;
   }
   .processDescBottom{
     height: 10%;
@@ -537,61 +606,111 @@ body::-webkit-scrollbar {
     font-size: 9px;
   }  
   .accordion{
+    display: none;
+  }
+  .accordionsmall{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
     height: 85%;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 10px 5px 10px; 
+    transition: 150ms ease-in-out 0ms;
   }
-  .skillItem{
-    width: 48%;
-    height: 45px;
+  .smallSkillItem{
+    width: 28%;
+    height: 100px;
     border-radius: 9px;
     padding: 5px 5px 5px 5px;
     flex-shrink: 0;
-    pointer-events: none;
     display: flex;
-  }
-  .lightTechBorder{
-    box-shadow: none;
-    border: none;
-  }
-  .darkTechBorder{
-    box-shadow:  none;
-    border: none;
-  }
-  .SkillItemImgCont{
-    height: 50px;
-    width: 20%;
-    display: flex;
+    transition: 150ms ease-in-out 0ms;
     justify-content: center;
   }
-  .skillItemImg{
+  .smallLightTechBorder{
+    box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
+    border: 0.5px solid rgba(226, 118, 250, 0.501);
+    transition: 150ms ease-in-out 0ms;
+  }
+  .smallDarkTechBorder{
+    box-shadow:  0 1px 3px rgba(108, 63, 245, 0.350);
+    border: 0.5px solid #a9a3ff67;
+    transition: 150ms ease-in-out 0ms;
+  }
+  .smallSkillItem:hover.smallLightTechBorder,
+  .smallSkillItem:focus.smallLightTechBorder{
+    box-shadow: 0 2px 6px rgba(226, 118, 250, 0.515);
+    border: 0.5px solid rgba(226, 118, 250, 0.778);
+  }
+  .smallSkillItem:hover.smallDarkTechBorder,
+  .smallSkillItem:focus.smallDarkTechBorder{
+    box-shadow:  0 2px 6px rgba(108, 63, 245, 0.601);
+    border: 0.5px solid #a9a3fff2;
+  }
+  .SkillItemImgCont{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .progItemImgCont{
+    height: 95%;
+    width: 20%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .smallSkillItemImg{
     position: relative;
-    height: 35px;
+    height: 100%;
     border-radius: 9px;
+    transition: 150ms ease-in-out 0ms;
+  }
+  .progItemImg{
+    position: relative;
+    height: 90%;
+    border-radius: 9px;
+    transition: 150ms ease-in-out 0ms;
   }
   .content{
     visibility: visible;
-    width: 80%;
-    height: 45px;
-    padding: 0px 0px 0px 5px;
+    width: 100%;
+    height: 90px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .skillTextCont{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
   }
   .skillText{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 50%;
-    width: 100%;
+    width: 98%;
   }
   .skillName{
     font-weight: 800;
-    font-size: 13px;
+    font-size: 20px;
   }
   .skillPro{
     font-weight: 400;
-    font-size: 11px;
+    font-size: 18px;
   }
   .progressBar{
     width: 100%;
@@ -631,7 +750,8 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
   }
-  .skillItem:hover{
+  .skillItem:hover,
+  .skillItem:focus{
     height: 220px;
   }
 }
