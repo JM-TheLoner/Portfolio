@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.f0fefb8b.css",
+    "main.js": "/Portfolio/static/js/main.96fe8b62.js",
+    "static/media/darklostbg.png": "/Portfolio/static/media/darklostbg.c376db591cb2a3d33278.png",
+    "static/media/lightlostbg.png": "/Portfolio/static/media/lightlostbg.0c68691908bc189d1f6d.png",
+    "static/media/darkHomeCode.png": "/Portfolio/static/media/darkHomeCode.7b74ced0d30ee7dd8317.png",
+    "static/media/lightHomeCode.png": "/Portfolio/static/media/lightHomeCode.eea385be5166d97f0d0c.png",
+    "static/media/homeimagetop.png": "/Portfolio/static/media/homeimagetop.fc466fab6f6a00cb9d30.png",
+    "static/media/lightLostImg.png": "/Portfolio/static/media/lightLostImg.1152a29519cd71286984.png",
+    "static/media/databaseLogo.png": "/Portfolio/static/media/databaseLogo.00cc86cfa3676681d669.png",
+    "static/media/darkLostImg.png": "/Portfolio/static/media/darkLostImg.6560f72827950e065401.png",
+    "static/media/seesLogo.png": "/Portfolio/static/media/seesLogo.fff373691e486fcf7295.png",
+    "static/media/homeimage.png": "/Portfolio/static/media/homeimage.5b407a38f2b607f1a22e.png",
+    "static/media/logo.png": "/Portfolio/static/media/logo.c1b5973185ab37a8bbc9.png",
+    "static/media/MERN CV.pdf": "/Portfolio/static/media/MERN CV.4e14fc764c847a21f602.pdf",
+    "static/media/insta.png": "/Portfolio/static/media/insta.c660cd393dfe3c267ff1.png",
+    "static/media/GitHub-Logo.png": "/Portfolio/static/media/GitHub-Logo.05525cd9027955dbe054.png",
+    "static/media/backendLogo.png": "/Portfolio/static/media/backendLogo.fa86525a5109655fc724.png",
+    "static/media/frontendLogo.png": "/Portfolio/static/media/frontendLogo.7c08a431401431373dc8.png",
+    "static/media/fullstackLogo.png": "/Portfolio/static/media/fullstackLogo.5d4ba522f5ac7b3b2938.png",
+    "static/media/postgresql.svg": "/Portfolio/static/media/postgresql.326cdc6921da1af4629a2d4b9912b94b.svg",
+    "static/media/react-2.svg": "/Portfolio/static/media/react-2.218dddf397cd98b4c257ff1fc11f85c8.svg",
+    "static/media/nodejs-3.svg": "/Portfolio/static/media/nodejs-3.4f3c72c16844c2ae308bed34e6b242f9.svg",
+    "static/media/python-5.svg": "/Portfolio/static/media/python-5.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "static/media/mongodb-icon-1.svg": "/Portfolio/static/media/mongodb-icon-1.1aca075d5cce0819fea7ea0902d94ce4.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/git-icon.svg": "/Portfolio/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
+    "static/media/css-3.svg": "/Portfolio/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/pandas-2.svg": "/Portfolio/static/media/pandas-2.dc85f1bc9da7aed67ae688763add0e04.svg",
+    "static/media/html-1.svg": "/Portfolio/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/javascript-1.svg": "/Portfolio/static/media/javascript-1.a4370a88cda4f608d472b463536604b0.svg",
+    "main.f0fefb8b.css.map": "/Portfolio/static/css/main.f0fefb8b.css.map",
+    "main.96fe8b62.js.map": "/Portfolio/static/js/main.96fe8b62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0fefb8b.css",
+    "static/js/main.96fe8b62.js"
+  ]
+}
