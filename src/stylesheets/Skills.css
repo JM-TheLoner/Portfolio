@@ -521,6 +521,7 @@ body::-webkit-scrollbar {
     position: relative;
     height: 60px;               /* Fixed pixel height avoids the WebKit render crash */
     width: auto;                /* Keeps natural proportions clean */
+    display: block;
     transition: 150ms ease-in-out 0ms;
   }
 
