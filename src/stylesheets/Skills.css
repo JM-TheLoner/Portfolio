@@ -336,35 +336,27 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width:749.98px){
-  .skills{
+  .skills, .dskills {
     padding: 3px 0px 3px 0px; 
+    height: auto;               /* Changed from 100vh to let content expand naturally */
     min-height: 100vh;
-    overflow: auto;
-  }
-  .dskills{
-    padding: 3px 0px 3px 0px; 
-    min-height: 100vh;
-    overflow: auto;
+    overflow-y: auto;           /* Clean scroll fallback */
   }
   .skillsContainer{  
-    padding: 0px 7px 5px 7px;
-    height: fit-content;
+    padding: 10px 10px 15px 10px; /* Added proper text spacing top/bottom */
+    height: auto;               /* Prevent viewport layout squeezing */
   } 
 }
 @media screen and (max-width:1051px) and (min-width:750px){
-  .skills{
+  .skills, .dskills {
     padding: 3px 0px 3px 0px; 
+    height: auto;               /* Changed from 100vh to avoid clipping content */
     min-height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
   }
-  .dskills{
-    padding: 3px 0px 3px 0px; 
-    min-height: 100vh;
-    overflow: auto;
-  }
-  .skillsContainer{  
-    padding: 0px 7px 5px 7px;
-    height: fit-content;
+  .skillsContainer {  
+    padding: 10px 10px 15px 10px;
+    height: auto;               /* Prevent container squishing layout */
   }
 }
 @media screen and (max-width:1051px) and (min-width:750px){
@@ -517,6 +509,75 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (max-width:749.98px){
+
+
+
+
+
+
+
+
+  .smallSkillItemImg {
+    position: relative;
+    height: 60px;               /* Fixed pixel height avoids the WebKit render crash */
+    width: auto;                /* Keeps natural proportions clean */
+    transition: 150ms ease-in-out 0ms;
+  }
+
+
+  .accordionsmall{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+    padding: 5px 10px 5px 10px; 
+    transition: 150ms ease-in-out 0ms;
+  }
+  .smallSkillItem{
+    width: 28%;
+    height: 110px;
+    border-radius: 9px;
+    padding: 5px 5px 5px 5px;
+    flex-shrink: 0;
+    display: flex;
+    transition: 150ms ease-in-out 0ms;
+    justify-content: center;
+  }
+
+  /* .smallSkillItemImg{
+    position: relative;
+    height: 100%;
+    border-radius: 9px;
+    transition: 150ms ease-in-out 0ms;
+  } */
+
+  .SkillItemImgCont{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   .appearWhenSmall{
     display: flex;
   }

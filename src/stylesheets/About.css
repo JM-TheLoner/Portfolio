@@ -449,7 +449,7 @@ If the attatched CSS configuration does not have the utility class .sr-only defi
     overflow: auto;
   }
   .aboutContainer{  
-    padding: 0px 7px 5px 7px;
+    padding: 10px 10px 15px 10px;
     height: fit-content;
     flex-grow: 1;
   } 
@@ -474,7 +474,7 @@ If the attatched CSS configuration does not have the utility class .sr-only defi
     overflow: auto;
   }
   .aboutContainer{  
-    padding: 0px 7px 5px 7px;
+    padding: 10px 10px 15px 10px;
     height: fit-content;
     flex-grow: 1;
   } 
