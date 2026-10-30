@@ -473,102 +473,96 @@ body::-webkit-scrollbar {
 
 
 @media screen and (max-width:749.98px){
-  .Home{
-    padding: 3px 0px 3px 0px; 
-    min-height: 100vh;
-    overflow: auto;
-  }
-  .dHome{
-    padding: 3px 0px 3px 0px; 
-    min-height: 100vh;
-    overflow: auto;
-  }
-  .spliting{  
-    padding: 0px 7px 5px 7px;
-    margin-top: 70px;
-    min-height: calc(100vh - 70px);
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-  } 
+    .Home, .dHome {
+        padding: 3px 0px; 
+        height: auto;          /* Change from 100vh to auto to let content expand */
+        min-height: 100vh;
+        overflow-y: auto;     /* Ensure clean vertical scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth kinetic scrolling for iOS */
+    }  
+    .spliting {  
+        padding: 20px 15px;    /* Give room so headers don't clip at the top */
+        margin-top: 70px;
+        height: auto;          /* Remove fixed calc heights */
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;  /* Center content horizontally */
+    } 
 }
 @media screen and (max-width:1051px) and (min-width:750px){
-  .Home{
-    padding: 3px 0px 3px 0px; 
-    height: 100vh;
-    overflow: auto;
-  }
-  .dHome{
-    padding: 3px 0px 3px 0px; 
-    height: 100vh;
-    overflow: auto;
-  }
-  .spliting{  
-    padding: 0px 7px 5px 7px;
-    margin-top: 70px;
-    display: flex;
-    height: calc(100vh - 70px);
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
+    .Home, .dHome {
+        padding: 3px 0px; 
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    .spliting {  
+        padding: 20px 15px;
+        margin-top: 70px;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 @media screen and (max-width:749.98px){
-    .rightside{
+    .leftside {
+        margin-top: 40px;      /* Clear push away from rightside image above it */
         width: 100%;
-        height: 70%;
-        margin-top: 100px;
-    }    
-    .backer,
-    .dbacker,
-    .homeImgCont{
-        width: 355px;
+        height: auto;          /* Let content decide the height naturally */
+        padding: 0px;
+    }
+    .rightside {
+        width: 100%;
+        max-width: 355px;      /* Restrict width to avoid horizontal layout breaking */
+        height: 400px;         /* Match child dimensions cleanly */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }   
+    .backer, .dbacker, .homeImgCont {
+        width: 100%;           /* Scale with the rightside wrapper container */
+        max-width: 355px;
         height: 400px;
     }
-    .leftside{
-        margin-top: 20px;
-        width:100%;
-        height: 42%;
-        padding: 0px ;
+    .homeImg, .homeImgOut {
+        width: 100%;           /* Ensure images don't overflow viewport width */
+        max-width: 355px;
+    }
+    .TopLine, .dTopLine, .LineThree, .dLineThree, .LineFour, .dLineFour {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .sidebuttons {
+        height: auto;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0px 0px 5px 0px;
     }
     .headLineContainer{
         height: 10%;
     }
     .TopLine{
         font-size: 60px;
-        height: 25%;
-        width: 100%;
     }
     .dTopLine{
         font-size: 60px;
-        height: 25%;
-        width: 100%;
     }
     .LineThree{
-        height: 20%;
         font-size: 20px;
-        width: 100%;
     }
     .dLineThree{
-        height: 20%;
         font-size: 20px;
-        width: 100%;
     }
     .LineFour{
         font-size: 12px;
-        height: 20%;
-        width: 100%;
     }
     .dLineFour{
         font-size: 12px;
-        height: 20%;
-        width: 100%;
-    }
-    .sidebuttons{
-        height: 20%;
-        width: 100%;
-        justify-content: left;
-        gap: 10%;
-        padding: 0px 0px 5px 0px;
     }
     .donbtnhome{
         width: 180px;
@@ -582,68 +576,62 @@ body::-webkit-scrollbar {
     }
 }
 @media screen and (max-width:1051px) and (min-width:750px){
-    .rightside{
+    .leftside {
+        margin-top: 40px;
         width: 100%;
-        height: 58%;
-        margin-top: 100px;
-    }
-    .backer,
-    .dbacker,
-    .homeImgCont{
-        width: 550px;
-        height: 600px;
-        justify-content: left;
-        top:0;
-    }
-    .homeImg,
-    .homeImgOut{
-        width: 550px
-    }
-    .leftside{
-        margin-top: 20px;
-        width: 100%;
-        height: 35%;
+        height: auto;
         padding: 0px;
     }
+    .rightside {
+        width: 100%;
+        max-width: 550px;
+        height: 600px;
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    .backer, .dbacker, .homeImgCont {
+        width: 100%;
+        max-width: 550px;
+        height: 600px;
+        top: 0;
+    }
+    .homeImg, .homeImgOut {
+        width: 100%;
+        max-width: 550px;
+    }
+    .TopLine, .dTopLine, .LineThree, .dLineThree, .LineFour, .dLineFour {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%;
+    }  
+    .sidebuttons {
+        height: auto;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+        gap: 15px;
+    }    
     .headLineContainer{
         height: 10%;
     }
     .TopLine{
         font-size: 74px;
-        height: 20%;
-        width: 100%;
     }
     .dTopLine{
         font-size: 74px;
-        height: 20%;
-        width: 100%;
     }
     .LineThree{
-        height: 10%;
         font-size: 25px;
-        width: 100%;
     }
     .dLineThree{
-        height: 10%;
         font-size: 25px;
-        width: 100%;
     }
     .LineFour{
         font-size: 15px;
-        height: 13%;
-        width: 100%;
     }
     .dLineFour{
         font-size: 15px;
-        height: 13%;
-        width: 100%;
-    }
-    .sidebuttons{
-        height: 25%;
-        width: 100%;
-        justify-content: left;
-        margin-top: 20px;
-        gap: 5%;
     }
     .donbtnhome{
         width: 180px;
