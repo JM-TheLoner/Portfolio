@@ -519,6 +519,7 @@ body::-webkit-scrollbar {
     width: auto;                /* Keeps natural proportions clean */
     display: block;
     transition: 150ms ease-in-out 0ms;
+    object-fit: contain;
   }
   .accordionsmall{
     width: 100% !important;
