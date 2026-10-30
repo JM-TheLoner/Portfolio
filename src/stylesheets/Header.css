@@ -237,7 +237,7 @@
   .smallHead{
     display: contents;
     height: 50px;
-    width: 99%;
+    width: 100%;
     z-index: 9;
     position: fixed;
     backdrop-filter: blur(15px);
@@ -245,7 +245,7 @@
   }
   .smallTopbar{
     background:#FAFAFC;
-    width:98vw;
+    width:100vw;
     height: 50px;
     z-index: 7;
     display: flex;    
@@ -260,7 +260,7 @@
   }
   .dsmallTopbar{
     background:#050b1a;
-    width:98vw;
+    width:100vw;
     height: 50px;
     z-index: 7;
     display: flex;
