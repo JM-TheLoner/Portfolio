@@ -404,18 +404,20 @@ body::-webkit-scrollbar {
     display: none;
   }
   .accordionsmall{
-    width: 100%;
-    display: flex;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important; 
     justify-content: space-evenly;
-    flex-wrap: wrap;
     gap: 20px;
-    height: 85%;
+    height: auto;
     padding: 5px 10px 5px 10px; 
     transition: 150ms ease-in-out 0ms;
   }
   .smallSkillItem{
-    width: 21%;
-    height: 130px;
+    width: 21% !important;
+    height: 130px !important;
+    box-sizing: border-box;
     border-radius: 9px;
     padding: 5px 5px 5px 5px;
     flex-shrink: 0;
@@ -462,7 +464,9 @@ body::-webkit-scrollbar {
   }
   .smallSkillItemImg{
     position: relative;
-    height: 100%;
+    height: 120px;        /* Fixed pixel height avoids the WebKit render crash */
+    width: auto;                /* Keeps natural proportions clean */
+    display: block;
     border-radius: 9px;
     transition: 150ms ease-in-out 0ms;
   }
@@ -519,7 +523,6 @@ body::-webkit-scrollbar {
     width: auto;                /* Keeps natural proportions clean */
     display: block;
     transition: 150ms ease-in-out 0ms;
-    /* object-fit: contain; */
   }
   .accordionsmall{
     width: 100% !important;
@@ -550,24 +553,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     pointer-events: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   .appearWhenSmall{
     display: flex;
   }
