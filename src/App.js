@@ -4,7 +4,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Lost from './components/Lost'
 import Portfolio from './components/Portfolio';
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { DataProvider } from './context/Datacontext';
 import { useState } from 'react';
 
@@ -12,7 +12,6 @@ function App() {
   const [hasPlayedDecrypt, setHasPlayedDecrypt] = useState(false);
 
   return (
-    <HashRouter>
       <div className="App">
         <DataProvider>
           <Routes>
@@ -25,7 +24,6 @@ function App() {
           </Routes>
         </DataProvider>
       </div>
-    </HashRouter>
   );
 }
 
