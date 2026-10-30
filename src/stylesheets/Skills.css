@@ -519,7 +519,7 @@ body::-webkit-scrollbar {
 
   .smallSkillItemImg {
     position: relative;
-    height: 60px;               /* Fixed pixel height avoids the WebKit render crash */
+    height: 90px;               /* Fixed pixel height avoids the WebKit render crash */
     width: auto;                /* Keeps natural proportions clean */
     display: block;
     transition: 150ms ease-in-out 0ms;
@@ -538,7 +538,7 @@ body::-webkit-scrollbar {
   }
   .smallSkillItem{
     width: 28%;
-    height: 110px;
+    height: 100px;
     border-radius: 9px;
     padding: 5px 5px 5px 5px;
     flex-shrink: 0;
@@ -670,26 +670,6 @@ body::-webkit-scrollbar {
   .accordion{
     display: none;
   }
-  .accordionsmall{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
-    height: 85%;
-    padding: 5px 10px 5px 10px; 
-    transition: 150ms ease-in-out 0ms;
-  }
-  .smallSkillItem{
-    width: 28%;
-    height: 100px;
-    border-radius: 9px;
-    padding: 5px 5px 5px 5px;
-    flex-shrink: 0;
-    display: flex;
-    transition: 150ms ease-in-out 0ms;
-    justify-content: center;
-  }
   .smallLightTechBorder{
     box-shadow: 0 1px 3px rgba(226, 118, 250, 0.350);
     border: 0.5px solid rgba(226, 118, 250, 0.501);
@@ -710,13 +690,6 @@ body::-webkit-scrollbar {
     box-shadow:  0 2px 6px rgba(108, 63, 245, 0.601);
     border: 0.5px solid #a9a3fff2;
   }
-  .SkillItemImgCont{
-    height: 98%;
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;
-  }
   .progItemImgCont{
     height: 95%;
     width: 20%;
@@ -726,12 +699,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     pointer-events: none;
-  }
-  .smallSkillItemImg{
-    position: relative;
-    height: 100%;
-    border-radius: 9px;
-    transition: 150ms ease-in-out 0ms;
   }
   .progItemImg{
     position: relative;
