@@ -2,10 +2,10 @@ import '../stylesheets/Header.css'
 import { Link } from 'react-router-dom';
 import DataContext from '../context/Datacontext'
 import { useContext, useEffect, useState, useRef } from 'react'
+import { useScrollDirection } from './animations/ScrollUpHeader';
 import logo from '../Assets/Images/logo.png'
 import lightimg from '../Assets/Images/light.png'
 import darkimg from '../Assets/Images/dark.png' 
-import { useScrollDirection } from './animations/ScrollUpHeader';
 
 const Header = ({ title }) => {
 
@@ -13,9 +13,6 @@ const Header = ({ title }) => {
   const [slider, setslider] = useState(false)
   const [isActive, setIsActive] = useState(false);
 
-//   const toggleMenu = () => {
-//     setIsActive(!isActive);
-//   };
   
   const scrollDirection = useScrollDirection();
   const topRef = useRef(null);
