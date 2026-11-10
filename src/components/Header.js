@@ -7,7 +7,7 @@ import logo from '../Assets/Images/logo.png'
 import lightimg from '../Assets/Images/light.png'
 import darkimg from '../Assets/Images/dark.png' 
 
-const Header = ({ title }) => {
+const Header = () => {
 
   const { dark, setdark } = useContext(DataContext)
   const [slider, setslider] = useState(false)
